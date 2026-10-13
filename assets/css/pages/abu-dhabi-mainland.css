@@ -18,8 +18,8 @@
 }
 
 .abu-dhabi-mainland-redesign .section-head {
-  max-width: 790px;
-  margin-bottom: 44px;
+  max-width: none;
+  margin-bottom: 32px;
 }
 
 .abu-dhabi-mainland-redesign .section-head p:last-child {
@@ -71,7 +71,13 @@
 .abu-dhabi-mainland-redesign .audience-card,
 .abu-dhabi-mainland-redesign .content-card,
 .abu-dhabi-mainland-redesign .support-card {
-  min-height: 150px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 14px 16px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
   padding: 26px;
   border: 1px solid var(--line);
   background: #fff;
@@ -92,22 +98,31 @@
 .abu-dhabi-mainland-redesign .audience-card i,
 .abu-dhabi-mainland-redesign .content-card i,
 .abu-dhabi-mainland-redesign .support-card i {
-  display: block;
-  margin-bottom: 18px;
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
   color: var(--gold);
-  font-size: 27px;
+  font-size: 42px;
 }
 
 .abu-dhabi-mainland-redesign .audience-card h3,
 .abu-dhabi-mainland-redesign .content-card h3,
 .abu-dhabi-mainland-redesign .support-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
   margin: 0;
   font-size: 20px;
 }
 
 .abu-dhabi-mainland-redesign .content-card p,
 .abu-dhabi-mainland-redesign .support-card p {
-  margin: 9px 0 0;
+  grid-column: 1 / -1;
+  align-self: start;
+  margin: 0;
   font-size: 12px;
   line-height: 1.8;
 }
@@ -145,14 +160,26 @@
 }
 
 .abu-dhabi-mainland-redesign .advantage-grid {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.abu-dhabi-mainland-redesign .advantage-grid .benefit {
+  border: 1px solid #365047;
 }
 
 .abu-dhabi-mainland-redesign .benefit i {
-  display: block;
-  margin-bottom: 22px;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
   color: var(--gold);
-  font-size: 30px;
+  font-size: 42px;
 }
 
 .abu-dhabi-mainland-redesign .licence-grid {
@@ -165,12 +192,11 @@
 }
 
 .abu-dhabi-mainland-redesign .structure-grid {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .abu-dhabi-mainland-redesign .structure-grid .content-card {
-  min-height: 245px;
-  padding: 28px 23px;
+  padding: 26px;
 }
 
 .abu-dhabi-mainland-redesign .process-section {
@@ -186,7 +212,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
-  margin-top: 44px;
+  margin-top: 0;
 }
 
 .abu-dhabi-mainland-redesign .process-step {
@@ -234,10 +260,6 @@
   font-size: 18px;
 }
 
-.abu-dhabi-mainland-redesign .support-card {
-  min-height: 165px;
-}
-
 .abu-dhabi-mainland-redesign .support-card h3 {
   font-family: Montserrat, Arial, sans-serif;
   font-size: 13px;
@@ -246,7 +268,7 @@
 }
 
 .abu-dhabi-mainland-redesign .lead-cta {
-  padding: 92px 0;
+  padding: var(--section-space) 0;
 }
 
 .abu-dhabi-mainland-redesign .lead-layout {
@@ -365,6 +387,9 @@
 }
 
 @media (max-width: 1050px) {
+  .abu-dhabi-mainland-redesign .audience-grid,
+  .abu-dhabi-mainland-redesign .content-card-grid,
+  .abu-dhabi-mainland-redesign .support-grid,
   .abu-dhabi-mainland-redesign .advantage-grid,
   .abu-dhabi-mainland-redesign .structure-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -406,9 +431,11 @@
   .abu-dhabi-mainland-redesign .process-step:nth-child(even)::after {
     display: none;
   }
+}
 
-  .abu-dhabi-mainland-redesign .lead-cta {
-    padding: 72px 0;
+@media (max-width: 600px) {
+  .abu-dhabi-mainland-redesign .licence-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -417,7 +444,6 @@
   .abu-dhabi-mainland-redesign .section-actions,
   .abu-dhabi-mainland-redesign .activity-list,
   .abu-dhabi-mainland-redesign .checklist-grid,
-  .abu-dhabi-mainland-redesign .licence-grid,
   .abu-dhabi-mainland-redesign .structure-grid,
   .abu-dhabi-mainland-redesign .advantage-grid,
   .abu-dhabi-mainland-redesign .process-flow,

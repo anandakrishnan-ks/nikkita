@@ -1,0 +1,19 @@
+/* Keep replacement photos inside the existing wide banner frame. */
+.hero-banner-bottom .box-anim > .refreshed-banner {
+  aspect-ratio: 2880 / 874;
+  height: auto;
+  object-fit: cover;
+  object-position: var(--image-focus, center);
+}
+
+/* Keep the IFZA sign visible when its portrait photo fills a short frame. */
+.about2-area img[src$="/ifza-free-zone.webp"] {
+  object-position: center bottom;
+}
+
+/* Give photo subjects enough room on smaller screens. */
+@media (max-width: 767px) {
+  .hero-banner-bottom .box-anim > .refreshed-banner {
+    aspect-ratio: 16 / 9;
+  }
+}

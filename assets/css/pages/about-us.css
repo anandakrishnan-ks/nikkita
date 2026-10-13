@@ -84,7 +84,7 @@
   width: 100%;
   grid-template-columns: minmax(0, 1.02fr) minmax(420px, 0.98fr);
   align-items: stretch;
-  min-height: 500px;
+  min-height: 360px;
 }
 
 .about-intro-copy {
@@ -92,11 +92,11 @@
   flex-direction: column;
   justify-content: center;
   max-width: 690px;
-  padding: 72px 76px 72px max(48px, calc((100vw - var(--about-max)) / 2));
+  padding: 48px 76px 48px max(48px, calc((100vw - var(--about-max)) / 2));
 }
 
 .about-intro-copy h1 {
-  margin-top: 24px;
+  margin-top: 16px;
   color: var(--about-ink);
   font-family: "Marcellus", serif;
   font-size: clamp(43px, 5.2vw, 44px);
@@ -106,7 +106,7 @@
 }
 
 .about-role {
-  margin-top: 25px !important;
+  margin-top: 16px !important;
   color: var(--about-gold);
   font-family: "Marcellus", serif;
   font-size: 18px;
@@ -116,7 +116,7 @@
 
 .about-lead {
   max-width: 600px;
-  margin-top: 31px !important;
+  margin-top: 20px !important;
   color: var(--about-copy);
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -126,7 +126,7 @@
 
 .about-intro-visual {
   position: relative;
-  min-height: 500px;
+  min-height: 360px;
   overflow: hidden;
 }
 
@@ -141,6 +141,8 @@
 }
 
 .about-intro-visual img {
+  position: absolute;
+  inset: 0;
   height: 100%;
   object-fit: cover;
   object-position: center 53%;
@@ -158,11 +160,14 @@
 }
 
 .about-purpose-visual {
+  position: relative;
   min-height: 640px;
   overflow: hidden;
 }
 
 .about-purpose-visual img {
+  position: absolute;
+  inset: 0;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -439,16 +444,15 @@
     width: min(var(--about-max), calc(100% - 64px));
     max-width: none;
     margin-inline: auto;
-    padding: 82px 0 74px;
+    padding: 44px 0;
   }
 
-  .about-intro-visual,
   .about-purpose-visual {
     min-height: 480px;
   }
 
   .about-intro-visual {
-    min-height: 420px;
+    min-height: 300px;
   }
 
   .about-intro-visual::before {
@@ -495,11 +499,11 @@
   }
 
   .about-intro-copy {
-    padding-block: 68px 62px;
+    padding-block: 36px;
   }
 
   .about-intro-copy h1 {
-    margin-top: 20px;
+    margin-top: 16px;
     font-size: clamp(36px, 8.5vw, 43px);
     line-height: 1.03;
   }
@@ -513,13 +517,16 @@
   }
 
   .about-lead {
-    margin-top: 24px !important;
+    margin-top: 20px !important;
     line-height: 1.65;
   }
 
-  .about-intro-visual,
   .about-purpose-visual {
     min-height: 360px;
+  }
+
+  .about-intro-visual {
+    min-height: 260px;
   }
 
   .about-purpose-copy {
@@ -603,9 +610,12 @@
     letter-spacing: 0.22em;
   }
 
-  .about-intro-visual,
   .about-purpose-visual {
     min-height: 300px;
+  }
+
+  .about-intro-visual {
+    min-height: 220px;
   }
 
   .about-purpose-item {
