@@ -1,0 +1,235 @@
+1:"$Sreact.fragment"
+2:I[13293,["/_next/static/chunks/1__iynblxd4nn.js","/_next/static/chunks/2v9fl_wxqb9qe.js"],"Header"]
+:HL["/assets/imgs/logo.png","image"]
+3:T2cdd,
+<div class="breadcrumb-area">
+    <div class="custom-container">
+        <div class="content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <span class="seperate"></span>
+                <li>Business Setup</li>
+                <span class="seperate"></span>
+                <li>Saudi Arabia</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="service-area">
+    <div class="custom-container">
+        <div class="section-box-white">
+            <span class="service-category-badge"><i class="las la-globe"></i> KSA Market Entry</span>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+                <div class="service-title-accent" style="max-width: 720px;">
+                    <h1 class="sec-title title" style="margin-bottom: 12px;">Business Setup in Saudi Arabia</h1>
+                    <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; margin-bottom: 0;">Establishing your business presence in the Kingdom of Saudi Arabia through structured MISA licensing, foreign ownership frameworks, and corporate registration.</p>
+                </div>
+                <div class="explore-btn-group">
+                    <a href="/contact-us" class="theme-btn"><span></span>Explore KSA Setup</a>
+                    <a href="/contact-us" class="theme-btn"><span></span>Talk to an Advisor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OVERVIEW SECTION -->
+<section class="service-area section-highlight">
+    <div class="custom-container">
+        <div class="overview-box-container">
+            <h2 class="overview-box-heading title">Overview</h2>
+            <p class="text">Saudi Arabia presents significant growth opportunities under Vision 2030. Foreign companies and investors can establish a fully foreign-owned entity or joint venture licensed through the Ministry of Investment (MISA).</p>
+            <h3 class="overview-box-subheading title">Core Pillars of Saudi Arabia Business Setup:</h3>
+            <div class="overview-cards-grid">
+                <div class="overview-card">
+                    <div class="overview-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="overview-card-title title">MISA Investment License</h4>
+                    <ul class="overview-card-points">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Issued by Ministry of Investment Saudi Arabia</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Up to 100% foreign ownership in eligible sectors</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Covers Service, Trading, Industrial &amp; RHQ licenses</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h4 class="overview-card-title title">Commercial Registration (CR)</h4>
+                    <ul class="overview-card-points">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Issued by Ministry of Commerce (MoC)</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Chamber of Commerce attestation</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Legal entity registration (LLC or Branch)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overview-card">
+                    <div class="overview-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                    </div>
+                    <h4 class="overview-card-title title">Post-Setup Registrations</h4>
+                    <ul class="overview-card-points">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>ZATCA (Zakat, Tax &amp; Customs Authority) registration</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>Qiwa, Muqeem &amp; GOSI portal enrollment</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span>GM Visa &amp; Corporate Bank Account setup</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="overview-box-sentence overview-box-footer-sentence">Structured entry ensures seamless market access and full compliance with Saudi Vision 2030 regulations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- BANNER & IMAGE -->
+<section class="hero3-area pt-0">
+    <div class="hero-banner-bottom mt-0">
+        <div class="box-anim">
+            <img src="/assets/imgs/gcc-saudi.jpg" alt="Saudi Arabia Business Setup">
+        </div>
+        <a href="/contact-us" class="quote-now-btn">
+            <div class="border-gradient-shape"></div>
+            Book a Consultation <i class="las la-angle-right"></i>
+        </a>
+    </div>
+</section>
+
+<!-- LICENSE CATEGORIES -->
+<section class="service-area">
+    <div class="custom-container">
+        <div class="section-box-white">
+            <h2 class="sec-title title">MISA License Categories</h2>
+            <div class="comp-white-grid">
+                <div class="comp-white-card">
+                    <h3 class="comp-white-title title">Service License</h3>
+                    <span class="comp-white-cost">Consulting • IT • Engineering • Services</span>
+                    <ul class="comp-white-list">
+                        <li><span>Ownership:</span> <strong>100% Foreign Ownership</strong></li>
+                        <li><span>Office:</span> <strong>Physical KSA office required</strong></li>
+                        <li><span>Best For:</span> <strong>Service-based companies</strong></li>
+                    </ul>
+                </div>
+                <div class="comp-white-card featured">
+                    <h3 class="comp-white-title title">Trading License</h3>
+                    <span class="comp-white-cost">Wholesale • Retail • E-Commerce</span>
+                    <ul class="comp-white-list">
+                        <li><span>Ownership:</span> <strong>100% or JV structure</strong></li>
+                        <li><span>Capital:</span> <strong>Capital requirements vary by activity</strong></li>
+                        <li><span>Best For:</span> <strong>Trading &amp; distribution</strong></li>
+                    </ul>
+                </div>
+                <div class="comp-white-card">
+                    <h3 class="comp-white-title title">Regional HQ (RHQ)</h3>
+                    <span class="comp-white-cost">MENA Headquarter Operations</span>
+                    <ul class="comp-white-list">
+                        <li><span>Incentives:</span> <strong>0% Tax incentives &amp; privileges</strong></li>
+                        <li><span>Mandate:</span> <strong>Oversight of regional entities</strong></li>
+                        <li><span>Best For:</span> <strong>Multinational corporations</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA & DISCLAIMER -->
+<section class="about2-area section-highlight">
+    <div class="custom-container">
+        <div class="custom-row">
+            <div class="left-content">
+                <div class="section-header">
+                    <h2 class="title">Start with clarity – Saudi Arabia</h2>
+                </div>
+                <img src="/assets/imgs/about-2.jpg" alt="Saudi Arabia Setup - Nikki Advisory">
+            </div>
+            <div class="right-content">
+                <img src="/assets/imgs/about-3.jpg" alt="Saudi Arabia Business Advisory">
+
+                <p>Connect with our team for clear guidance on foreign investment licensing and business setup in Saudi Arabia.</p>
+                
+                <a href="/contact-us" class="theme-btn">
+                    <span></span>
+                    CONTACT US
+                </a>
+                <p class="small" style="margin-top:1.5rem;opacity:.75;font-size:.9rem;">
+                    All services are subject to applicable laws and regulations of the respective jurisdiction. Requirements may vary depending on business activity, structure, and regulatory framework.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+8:X
+d:X
+d:C
+0:{"buildId":"a3bMau9S11vl5O8OBctcQ","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"saudi-page","children":[["$","div",null,{"id":"fixed-sidebar","children":[["$","span",null,{"id":"close-sidebar","children":[["$","span",null,{}],["$","span",null,{}]]}],["$","div",null,{"className":"sidebar-inner","children":[["$","div",null,{"className":"content","children":[["$","a",null,{"href":"/","className":"logo","children":["$","img",null,{"src":"/assets/imgs/logo.png","alt":"Nikki Advisory"}]}],["$","p",null,{"children":"Nikki Advisory provides strategic business setup and advisory services across the UAE, Saudi Arabia, and Bahrain. We help entrepreneurs and businesses choose the right structure, jurisdiction, and compliance pathway for long-term success."}],["$","ul",null,{"className":"social-icons","children":[["$","li","https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr",{"children":["$","a",null,{"href":"https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr","target":"_blank","rel":"noopener noreferrer","aria-label":"Instagram","children":["$","i",null,{"className":"lab la-instagram"}]}]}],["$","li","https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr",{"children":["$","a",null,{"href":"https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr","target":"_blank","rel":"noopener noreferrer","aria-label":"Facebook","children":["$","i",null,{"className":"lab la-facebook"}]}]}],["$","li","https://www.linkedin.com/company/nikkiadvisory/",{"children":["$","a",null,{"href":"https://www.linkedin.com/company/nikkiadvisory/","target":"_blank","rel":"noopener noreferrer","aria-label":"LinkedIn","children":["$","i",null,{"className":"lab la-linkedin"}]}]}]]}]]}],["$","ul",null,{"className":"contact-info","children":[["$","li",null,{"children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," ",["$","span",null,{"children":"E-mail:"}],["$","a",null,{"href":"mailto:info@nikkiadvisory.com","children":"info@nikkiadvisory.com"}]]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-phone","aria-hidden":"true"}]," ",["$","span",null,{"children":"Phone:"}],["$","a",null,{"href":"tel:+971****0000","children":"+971 XX XXX XXXX"}]]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-globe","aria-hidden":"true"}]," ",["$","span",null,{"children":"Services:"}],"UAE • Saudi Arabia • Bahrain"]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-compass","aria-hidden":"true"}]," ",["$","span",null,{"children":"Approach:"}],"Start With Clarity"]}]]}]]}]]}],["$","div",null,{"className":"header-bar-wrap","children":["$","div",null,{"className":"custom-container","children":["$","div",null,{"className":"custom-row","children":[["$","div",null,{"className":"left"}],["$","div",null,{"className":"right","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"mailto:info@nikkiadvisory.com","children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," ","info@nikkiadvisory.com"]}]}],["$","li",null,{"children":["$","a",null,{"href":"tel:+971****0000","children":[["$","i",null,{"className":"las la-phone","aria-hidden":"true"}]," ","+971 XX XXX XXXX"]}]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-clock","aria-hidden":"true"}]," ","Working Days, 9am-6pm"]}]]}]}]]}]}]}],["$","$L2",null,{}],["$","div",null,{"className":"page-html","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],["$L5"],"$L6"]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$8","varyParams":null},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$8","varyParams":"$d"},{"rsc":"$Le","isPartial":"$@f","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@10","rootVaryParams":null,"needsRuntimeRequest":"$@11"}
+15:I[97367,["/_next/static/chunks/1__iynblxd4nn.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+18:I[97367,["/_next/static/chunks/1__iynblxd4nn.js"],"ViewportBoundary"]
+19:I[97367,["/_next/static/chunks/1__iynblxd4nn.js"],"MetadataBoundary"]
+1a:I[27201,["/_next/static/chunks/1__iynblxd4nn.js"],"IconMark"]
+1b:I[39756,["/_next/static/chunks/1__iynblxd4nn.js"],"default"]
+1c:I[37457,["/_next/static/chunks/1__iynblxd4nn.js"],"default"]
+1d:I[34111,["/_next/static/chunks/1__iynblxd4nn.js"],"ThemeScripts"]
+:HL["/_next/static/chunks/038uro3qq6je7.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap","style"]
+:HL["/assets/css/bootstrap.min.css","style"]
+:HL["/assets/css/swiper.min.css","style"]
+:HL["/assets/css/aos.css","style"]
+:HL["/assets/css/style.css","style"]
+:HL["/assets/css/responsive.css","style"]
+:HL["/assets/css/line-awesome.min.css","style"]
+:HL["/assets/css/site.css","style"]
+4:["$","footer",null,{"className":"footer-area","children":[["$","span",null,{"className":"border-gradient-shape"}],["$","div",null,{"className":"custom-container","children":[["$","div",null,{"className":"custom-row","children":[["$","div",null,{"className":"footer-widget footer-left","children":[["$","a",null,{"href":"/","className":"logo","children":["$","img",null,{"src":"/assets/imgs/logo.png","alt":"Nikki Advisory"}]}],["$","p",null,{"children":"Business Advisory & Setup Support across UAE, Saudi Arabia & Bahrain. Nikki Advisory helps entrepreneurs and businesses make structured and informed decisions."}],["$","ul",null,{"className":"social-icons","children":[["$","li","https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr",{"children":["$","a",null,{"href":"https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr","target":"_blank","rel":"noopener noreferrer","aria-label":"Instagram","children":["$","i",null,{"className":"lab la-instagram"}]}]}],["$","li","https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr",{"children":["$","a",null,{"href":"https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr","target":"_blank","rel":"noopener noreferrer","aria-label":"Facebook","children":["$","i",null,{"className":"lab la-facebook"}]}]}],["$","li","https://www.linkedin.com/company/nikkiadvisory/",{"children":["$","a",null,{"href":"https://www.linkedin.com/company/nikkiadvisory/","target":"_blank","rel":"noopener noreferrer","aria-label":"LinkedIn","children":["$","i",null,{"className":"lab la-linkedin"}]}]}]]}]]}],["$","div",null,{"className":"right","children":[["$","div",null,{"className":"footer-links","children":[["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Company"}],["$","ul",null,{"children":[["$","li","Company-/about-us-About Us",{"children":["$","a",null,{"href":"/about-us","children":"About Us"}]}],["$","li","Company-/pricing-Pricing",{"children":["$","a",null,{"href":"/pricing","children":"Pricing"}]}],["$","li","Company-/blogs-Blogs",{"children":["$","a",null,{"href":"/blogs","children":"Blogs"}]}],["$","li","Company-/contact-us-Contact",{"children":["$","a",null,{"href":"/contact-us","children":"Contact"}]}]]}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Business Setup"}],["$","ul",null,{"children":[["$","li","Business Setup-/business-setup-uae-Setup Guide – UAE",{"children":["$","a",null,{"href":"/business-setup-uae","children":"Setup Guide – UAE"}]}],["$","li","Business Setup-/saudi-arabia-Saudi Arabia",{"children":["$","a",null,{"href":"/saudi-arabia","children":"Saudi Arabia"}]}],["$","li","Business Setup-/bahrain-Bahrain",{"children":["$","a",null,{"href":"/bahrain","children":"Bahrain"}]}],["$","li","Business Setup-/pricing-Cost & Process",{"children":["$","a",null,{"href":"/pricing","children":"Cost & Process"}]}]]}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li","Services-/pro-government-services-PRO Services",{"children":["$","a",null,{"href":"/pro-government-services","children":"PRO Services"}]}],["$","li","Services-/corporate-compliance-Compliance",{"children":["$","a",null,{"href":"/corporate-compliance","children":"Compliance"}]}],["$","li","Services-/accounting-bookkeeping-Accounting",{"children":["$","a",null,{"href":"/accounting-bookkeeping","children":"Accounting"}]}],["$","li","Services-/business-structuring-Structuring",{"children":["$","a",null,{"href":"/business-structuring","children":"Structuring"}]}]]}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Hours"}],["$","ul",null,{"children":[["$","li",null,{"children":"Mon - Fri"}],["$","li",null,{"children":"9am - 6pm"}],["$","li",null,{"children":"Sat - Sun"}],["$","li",null,{"children":"10am - 4pm"}]]}]]}]]}],["$","div",null,{"className":"footer-contact-infos","children":[["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":[["$","i",null,{"className":"las la-map-marker-alt","aria-hidden":"true"}]," ","ADDRESS"]}],["$","p",null,{"children":"United Arab Emirates"}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," Contact"]}],["$","ul",null,{"children":"$L12"}]]}],"$L13"]}]]}]]}],"$L14"]}]]}]
+5:["$","script","script-0",{"src":"/_next/static/chunks/2v9fl_wxqb9qe.js","async":true}]
+6:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+9:["$","$1","h",{"children":[null,["$","$L18",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#1C1C1C"}]]}],["$","div",null,{"hidden":true,"children":["$","$L19",null,{"children":["$","$16",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Business Setup in Saudi Arabia | MISA Licensing & Registration | Nikki Advisory"}],["$","meta","1",{"name":"description","content":"Set up your business in Saudi Arabia with Nikki Advisory. Guidance on MISA licensing, Commercial Registration (CR), 100% foreign ownership, and Vision 2030 regulatory compliance."}],["$","meta","2",{"name":"application-name","content":"Nikki Advisory"}],["$","meta","3",{"name":"author","content":"Nikki Advisory"}],["$","meta","4",{"name":"keywords","content":"Saudi Arabia Business Setup, MISA License KSA, Foreign Ownership Saudi Arabia, Company Formation Riyadh, KSA Business Advisory"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","link","6",{"rel":"canonical","href":"https://nikkiadvisory.com/saudi-arabia/"}],["$","meta","7",{"property":"og:title","content":"Business Setup in Saudi Arabia | MISA Licensing & Registration | Nikki Advisory"}],["$","meta","8",{"property":"og:description","content":"Set up your business in Saudi Arabia with Nikki Advisory. Guidance on MISA licensing, Commercial Registration (CR), 100% foreign ownership, and Vision 2030 regulatory compliance."}],["$","meta","9",{"property":"og:url","content":"https://nikkiadvisory.com/saudi-arabia/"}],["$","meta","10",{"property":"og:site_name","content":"Nikki Advisory"}],["$","meta","11",{"property":"og:locale","content":"en_US"}],["$","meta","12",{"property":"og:image","content":"https://nikkiadvisory.com/assets/imgs/logo.png"}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Business Setup in Saudi Arabia | MISA Licensing & Registration | Nikki Advisory"}],["$","meta","16",{"name":"twitter:description","content":"Set up your business in Saudi Arabia with Nikki Advisory. Guidance on MISA licensing, Commercial Registration (CR), 100% foreign ownership, and Vision 2030 regulatory compliance."}],["$","meta","17",{"name":"twitter:image","content":"https://nikkiadvisory.com/assets/imgs/logo.png"}],["$","link","18",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","19",{"rel":"icon","href":"/assets/imgs/logo.png"}],["$","$L1a","20",{}]]}]}]}],null]}]
+b:["$","$1","c",{"children":[null,["$","$L1b",null,{"parallelRouterKey":"children","template":["$","$L1c",null,{}]}]]}]
+e:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/038uro3qq6je7.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1__iynblxd4nn.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap","rel":"stylesheet"}],[["$","link","/assets/css/bootstrap.min.css",{"rel":"stylesheet","href":"/assets/css/bootstrap.min.css"}],["$","link","/assets/css/swiper.min.css",{"rel":"stylesheet","href":"/assets/css/swiper.min.css"}],["$","link","/assets/css/aos.css",{"rel":"stylesheet","href":"/assets/css/aos.css"}],["$","link","/assets/css/style.css",{"rel":"stylesheet","href":"/assets/css/style.css"}],["$","link","/assets/css/responsive.css",{"rel":"stylesheet","href":"/assets/css/responsive.css"}],["$","link","/assets/css/line-awesome.min.css",{"rel":"stylesheet","href":"/assets/css/line-awesome.min.css"}],["$","link","/assets/css/site.css",{"rel":"stylesheet","href":"/assets/css/site.css"}]]]}],["$","body",null,{"children":[["$","div",null,{"id":"custom-cursor-inner"}],["$","div",null,{"id":"custom-cursor"}],["$","$L1b",null,{"parallelRouterKey":"children","template":["$","$L1c",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","a",null,{"href":"https://wa.me/971000000000?text=Hi%2C%20I%20would%20like%20to%20understand%20business%20setup%20in%20UAE%20%2F%20Saudi%20Arabia%20%2F%20Bahrain.","className":"whatsapp-float","target":"_blank","rel":"noopener noreferrer","aria-label":"Chat on WhatsApp","style":{"position":"fixed","bottom":24,"right":24,"zIndex":9999,"background":"#25D366","color":"#fff","width":56,"height":56,"borderRadius":"50%","display":"flex","alignItems":"center","justifyContent":"center","boxShadow":"0 4px 14px rgba(0,0,0,.25)","fontSize":28,"textDecoration":"none"},"children":["$","i",null,{"className":"lab la-whatsapp"}]}],["$","$L1d",null,{}]]}]]}]]}]
+12:["$","li",null,{"children":["$","a",null,{"href":"mailto:info@nikkiadvisory.com","children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," ","info@nikkiadvisory.com"]}]}]
+13:["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":[["$","i",null,{"className":"las la-globe","aria-hidden":"true"}]," Countries"]}],["$","ul",null,{"children":[["$","li",null,{"children":"UAE"}],["$","li",null,{"children":"Saudi Arabia"}],["$","li",null,{"children":"Bahrain"}]]}]]}]
+14:["$","div",null,{"className":"copyright-area","children":[["$","p",null,{"children":["© All rights reserved by ",["$","a",null,{"href":"/","children":"Nikki Advisory"}]]}],["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"/terms-and-conditions","children":"Terms & Conditions"}]}],["$","li",null,{"children":["$","a",null,{"href":"/privacy-policy","children":"Privacy Policy"}]}]]}]]}]
+17:null
+11:true
+8:300
+8:C
+10:0
+a:"$undefined"
+c:"$undefined"
+f:"$undefined"
+7:"$undefined"

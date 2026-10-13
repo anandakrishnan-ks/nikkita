@@ -1,0 +1,387 @@
+1:"$Sreact.fragment"
+2:I[13293,["/_next/static/chunks/1__iynblxd4nn.js","/_next/static/chunks/2v9fl_wxqb9qe.js"],"Header"]
+:HL["/assets/imgs/logo.png","image"]
+3:T5c7c,<div class="breadcrumb-area">
+                <div class="custom-container">
+                    <div class="content">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <span class="seperate"></span>
+                            <li>Services</li>
+                            <span class="seperate"></span>
+                            <li>Accounting &amp; Bookkeeping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Service Hero Section (White Box with Category Badge & Left Accent) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="section-box-white">
+                    <span class="service-category-badge"><i class="las la-calculator"></i> Financial Management &amp; Reporting</span>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+                        <div class="service-title-accent" style="max-width: 680px;">
+                            <h1 class="sec-title title" style="margin-bottom: 12px;">Accounting &amp; Bookkeeping</h1>
+                            <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; margin-bottom: 0;">Accounting and bookkeeping services including financial record management, reporting support, and operational financial coordination across UAE, Saudi Arabia, and Bahrain.</p>
+                        </div>
+                        <div class="explore-btn-group">
+                            <a href="/contact-us" class="theme-btn"><span></span>Book a Consultation</a>
+                            <a href="/contact-us" class="theme-btn"><span></span>Talk to an Advisor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section (Dark Box Grid) -->
+        <section class="service-area section-highlight">
+            <div class="custom-container">
+                <div class="overview-box-container">
+                    <h2 class="overview-box-heading title">Overview</h2>
+                    <p class="text">Accurate financial management supports compliance, reporting readiness, and informed business decision-making across GCC operational environments.</p>
+                    <h3 class="overview-box-subheading title">Our Accounting &amp; Bookkeeping execution pillars:</h3>
+                    <div class="overview-cards-grid">
+                        <div class="overview-card">
+                            <div class="overview-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="overview-card-title title">Bookkeeping &amp; Records</h4>
+                            <ul class="overview-card-points">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Day-to-day transaction recording &amp; ledger entry</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Bank reconciliations &amp; statement matching</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Accounts payable &amp; receivable ledger maintenance</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="overview-card">
+                            <div class="overview-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <h4 class="overview-card-title title">Financial Statements</h4>
+                            <ul class="overview-card-points">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Profit &amp; Loss statements &amp; Balance Sheets</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Management financial summaries &amp; cash flow reports</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>IFRS compliant financial reporting standards</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="overview-card">
+                            <div class="overview-card-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <h4 class="overview-card-title title">Audit &amp; Payroll</h4>
+                            <ul class="overview-card-points">
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>External audit coordination &amp; schedule prep</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Basic payroll coordination &amp; WPS file preparation</span>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>VAT &amp; Corporate tax readiness calculations</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="overview-box-sentence overview-box-footer-sentence">Structured bookkeeping ensures tax readiness, statutory audit compliance, and financial clarity.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner + Quote CTA -->
+        <section class="hero3-area pt-0">
+            <div class="hero-banner-bottom mt-0">
+                <div class="box-anim">
+                    <img src="/assets/imgs/hero-3.jpeg" alt="Accounting & Bookkeeping">
+                </div>
+                <a href="/contact-us" class="quote-now-btn">
+                    <div class="border-gradient-shape"></div>
+                    Book a Consultation <i class="las la-angle-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Quick Takeaways (Dark Box) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="section-box-dark">
+                    <h2 class="sec-title title">Key Service Takeaways</h2>
+                    <div class="direction-cards-wrap">
+                        <div class="direction-item-card">
+                            <span class="direction-item-label">General Ledger &amp; Bank Reconciliation</span>
+                            <span class="direction-item-badge">Monthly Maintenance</span>
+                        </div>
+                        <div class="direction-item-card">
+                            <span class="direction-item-label">Financial Statements &amp; Management Reports</span>
+                            <span class="direction-item-badge">Audit Ready</span>
+                        </div>
+                        <div class="direction-item-card">
+                            <span class="direction-item-label">Payroll WPS &amp; Tax Readiness</span>
+                            <span class="direction-item-badge">Fully Coordinated</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Capability Pillars (White Box Grid) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="section-box-white">
+                    <h2 class="sec-title title">Service Deliverables</h2>
+                    <div class="comp-white-grid">
+                        <div class="comp-white-card">
+                            <h3 class="comp-white-title title">Bookkeeping</h3>
+                            <span class="comp-white-cost">Coverage: UAE • KSA • Bahrain</span>
+                            <ul class="comp-white-list">
+                                <li><span>Transactions:</span> <strong>Ledger Maintenance</strong></li>
+                                <li><span>Reconciliation:</span> <strong>Bank &amp; Card Statements</strong></li>
+                                <li><span>Invoicing:</span> <strong>Receivables &amp; Payables</strong></li>
+                                <li><span>Software:</span> <strong>Cloud Accounting Setup</strong></li>
+                            </ul>
+                        </div>
+                        <div class="comp-white-card featured">
+                            <h3 class="comp-white-title title">Financial Reporting</h3>
+                            <span class="comp-white-cost">Coverage: Management &amp; Authorities</span>
+                            <ul class="comp-white-list">
+                                <li><span>Profit &amp; Loss:</span> <strong>Monthly &amp; Quarterly</strong></li>
+                                <li><span>Balance Sheet:</span> <strong>Year-End Reporting</strong></li>
+                                <li><span>Cash Flow:</span> <strong>Operational Summaries</strong></li>
+                                <li><span>Standards:</span> <strong>IFRS Compliant</strong></li>
+                            </ul>
+                        </div>
+                        <div class="comp-white-card">
+                            <h3 class="comp-white-title title">Audit Assistance</h3>
+                            <span class="comp-white-cost">Coverage: Approved Auditors</span>
+                            <ul class="comp-white-list">
+                                <li><span>Schedules:</span> <strong>Auditor Lead Sheets</strong></li>
+                                <li><span>Coordination:</span> <strong>External Audit Liaison</strong></li>
+                                <li><span>Tax Audit:</span> <strong>FTA Document Prep</strong></li>
+                                <li><span>WPS Payroll:</span> <strong>Salary File Generation</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="color: #64748b; font-size: 0.9rem; font-style: italic; margin-bottom: 16px;">Scope dependent on transaction volume and entity complexity.</p>
+                    <p class="inline-res-link"><a href="/contact-us" class="theme-btn"><span></span>Request Accounting Support</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Accounting Breakdown & Guidelines (Side-by-Side 2 Columns Grid) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="setup-two-cols-grid">
+                    <div class="section-box-white col-box">
+                        <div>
+                            <h2 class="sec-title title">Core Bookkeeping Services</h2>
+                            <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Structured bookkeeping routines designed for business clarity and legal compliance.</p>
+                            <ul class="setup-points-list col-points white-points">
+                                <li class="white-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Bookkeeping and transaction recording</span>
+                                </li>
+                                <li class="white-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Financial summaries and reporting support</span>
+                                </li>
+                                <li class="white-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Audit coordination assistance</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-box-white col-box">
+                        <div>
+                            <h2 class="sec-title title">Financial Governance</h2>
+                            <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px;">Maintaining financial visibility to empower management decision-making.</p>
+                            <ul class="setup-points-list col-points white-points">
+                                <li class="white-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Maintain structured financial records</span>
+                                </li>
+                                <li class="white-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Improve operational financial visibility</span>
+                                </li>
+                                <li class="white-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Support business continuity and reporting requirements</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Execution Matters (Dark Split Box) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="section-box-dark">
+                    <div class="setup-split-grid">
+                        <div>
+                            <h2 class="sec-title title">Why Organized Accounting Matters</h2>
+                            <p class="premium-desc">Properly maintained financial books facilitate smooth bank compliance reviews, VAT return filings, and corporate tax audits.</p>
+                            <ul class="setup-points-list">
+                                <li class="setup-point-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Eliminate end-of-year accounting backlogs</span>
+                                </li>
+                                <li class="setup-point-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Ensure full alignment with corporate tax laws</span>
+                                </li>
+                                <li class="setup-point-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a050" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    <span>Provide clear financial visibility to shareholders</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="setup-img-box">
+                            <img src="/assets/imgs/about-1.webp" alt="Accounting Execution">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Advisory Services Navigator (White Box Grid) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="section-box-white">
+                    <h2 class="sec-title title">Explore Advisory Services</h2>
+                    <p style="color: #475569; font-size: 1.02rem; margin-bottom: 20px;">Seamlessly access specialized advisory and government execution services across GCC jurisdictions.</p>
+                    <div class="service-nav-grid">
+                        <a href="/pro-government-services" class="service-nav-card">
+                            <i class="las la-passport"></i>
+                            <span>PRO &amp; Government</span>
+                        </a>
+                        <a href="/corporate-compliance" class="service-nav-card">
+                            <i class="las la-shield-alt"></i>
+                            <span>Corporate Compliance</span>
+                        </a>
+                        <a href="/accounting-bookkeeping" class="service-nav-card active">
+                            <i class="las la-calculator"></i>
+                            <span>Accounting &amp; Bookkeeping</span>
+                        </a>
+                        <a href="/company-liquidation" class="service-nav-card">
+                            <i class="las la-file-contract"></i>
+                            <span>Company Liquidation</span>
+                        </a>
+                        <a href="/business-support" class="service-nav-card">
+                            <i class="las la-hands-helping"></i>
+                            <span>Business Support</span>
+                        </a>
+                        <a href="/business-structuring" class="service-nav-card">
+                            <i class="las la-sitemap"></i>
+                            <span>Business Structuring</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Need Assistance? (Dark Box) -->
+        <section class="service-area">
+            <div class="custom-container">
+                <div class="assistance-box">
+                    <h2 class="title">Need Accounting Support?</h2>
+                    <p>Accounting requirements and documentation may vary depending on jurisdiction and business structure.</p>
+                    <p>Connect with our team for clear and practical guidance tailored to your operational requirements.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start with Clarity CTA Section -->
+        <section class="about2-area section-highlight">
+            <div class="custom-container">
+                <div class="custom-row">
+                    <div class="left-content">
+                        <div class="section-header">
+                            <h2 class="title">Start with clarity</h2>
+                        </div>
+                        <img src="/assets/imgs/about-2.jpg" alt="Nikki Advisory">
+                    </div>
+                    <div class="right-content">
+                        <img src="/assets/imgs/about-3.jpg" alt="Business advisory">
+                        <p>Make informed decisions before you begin your business journey.</p>
+                        
+                        <a href="/contact-us" class="theme-btn">
+                            <span></span>
+                            CONTACT US
+                        </a>
+                        <p class="small" style="margin-top:1.5rem;opacity:.75;font-size:.9rem;">All services are subject to applicable laws and regulations of the respective jurisdiction. Requirements may vary depending on business activity, structure, and regulatory framework.</p>
+                    </div>
+                </div>
+            </div>
+        </section>8:X
+d:X
+d:C
+0:{"buildId":"a3bMau9S11vl5O8OBctcQ","data":[{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"about-page","children":[["$","div",null,{"id":"fixed-sidebar","children":[["$","span",null,{"id":"close-sidebar","children":[["$","span",null,{}],["$","span",null,{}]]}],["$","div",null,{"className":"sidebar-inner","children":[["$","div",null,{"className":"content","children":[["$","a",null,{"href":"/","className":"logo","children":["$","img",null,{"src":"/assets/imgs/logo.png","alt":"Nikki Advisory"}]}],["$","p",null,{"children":"Nikki Advisory provides strategic business setup and advisory services across the UAE, Saudi Arabia, and Bahrain. We help entrepreneurs and businesses choose the right structure, jurisdiction, and compliance pathway for long-term success."}],["$","ul",null,{"className":"social-icons","children":[["$","li","https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr",{"children":["$","a",null,{"href":"https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr","target":"_blank","rel":"noopener noreferrer","aria-label":"Instagram","children":["$","i",null,{"className":"lab la-instagram"}]}]}],["$","li","https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr",{"children":["$","a",null,{"href":"https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr","target":"_blank","rel":"noopener noreferrer","aria-label":"Facebook","children":["$","i",null,{"className":"lab la-facebook"}]}]}],["$","li","https://www.linkedin.com/company/nikkiadvisory/",{"children":["$","a",null,{"href":"https://www.linkedin.com/company/nikkiadvisory/","target":"_blank","rel":"noopener noreferrer","aria-label":"LinkedIn","children":["$","i",null,{"className":"lab la-linkedin"}]}]}]]}]]}],["$","ul",null,{"className":"contact-info","children":[["$","li",null,{"children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," ",["$","span",null,{"children":"E-mail:"}],["$","a",null,{"href":"mailto:info@nikkiadvisory.com","children":"info@nikkiadvisory.com"}]]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-phone","aria-hidden":"true"}]," ",["$","span",null,{"children":"Phone:"}],["$","a",null,{"href":"tel:+971****0000","children":"+971 XX XXX XXXX"}]]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-globe","aria-hidden":"true"}]," ",["$","span",null,{"children":"Services:"}],"UAE • Saudi Arabia • Bahrain"]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-compass","aria-hidden":"true"}]," ",["$","span",null,{"children":"Approach:"}],"Start With Clarity"]}]]}]]}]]}],["$","div",null,{"className":"header-bar-wrap","children":["$","div",null,{"className":"custom-container","children":["$","div",null,{"className":"custom-row","children":[["$","div",null,{"className":"left"}],["$","div",null,{"className":"right","children":["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"mailto:info@nikkiadvisory.com","children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," ","info@nikkiadvisory.com"]}]}],["$","li",null,{"children":["$","a",null,{"href":"tel:+971****0000","children":[["$","i",null,{"className":"las la-phone","aria-hidden":"true"}]," ","+971 XX XXX XXXX"]}]}],["$","li",null,{"children":[["$","i",null,{"className":"las la-clock","aria-hidden":"true"}]," ","Working Days, 9am-6pm"]}]]}]}]]}]}]}],["$","$L2",null,{}],["$","div",null,{"className":"page-html","dangerouslySetInnerHTML":{"__html":"$3"}}],"$L4"]}],["$L5"],"$L6"]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$8","varyParams":null},{"rsc":"$Lb","isPartial":"$@c","staleTime":"$8","varyParams":"$d"},{"rsc":"$Le","isPartial":"$@f","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@10","rootVaryParams":null,"needsRuntimeRequest":"$@11"}
+15:I[97367,["/_next/static/chunks/1__iynblxd4nn.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+18:I[97367,["/_next/static/chunks/1__iynblxd4nn.js"],"ViewportBoundary"]
+19:I[97367,["/_next/static/chunks/1__iynblxd4nn.js"],"MetadataBoundary"]
+1a:I[27201,["/_next/static/chunks/1__iynblxd4nn.js"],"IconMark"]
+1b:I[39756,["/_next/static/chunks/1__iynblxd4nn.js"],"default"]
+1c:I[37457,["/_next/static/chunks/1__iynblxd4nn.js"],"default"]
+1d:I[34111,["/_next/static/chunks/1__iynblxd4nn.js"],"ThemeScripts"]
+:HL["/_next/static/chunks/038uro3qq6je7.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap","style"]
+:HL["/assets/css/bootstrap.min.css","style"]
+:HL["/assets/css/swiper.min.css","style"]
+:HL["/assets/css/aos.css","style"]
+:HL["/assets/css/style.css","style"]
+:HL["/assets/css/responsive.css","style"]
+:HL["/assets/css/line-awesome.min.css","style"]
+:HL["/assets/css/site.css","style"]
+4:["$","footer",null,{"className":"footer-area","children":[["$","span",null,{"className":"border-gradient-shape"}],["$","div",null,{"className":"custom-container","children":[["$","div",null,{"className":"custom-row","children":[["$","div",null,{"className":"footer-widget footer-left","children":[["$","a",null,{"href":"/","className":"logo","children":["$","img",null,{"src":"/assets/imgs/logo.png","alt":"Nikki Advisory"}]}],["$","p",null,{"children":"Business Advisory & Setup Support across UAE, Saudi Arabia & Bahrain. Nikki Advisory helps entrepreneurs and businesses make structured and informed decisions."}],["$","ul",null,{"className":"social-icons","children":[["$","li","https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr",{"children":["$","a",null,{"href":"https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&utm_source=qr","target":"_blank","rel":"noopener noreferrer","aria-label":"Instagram","children":["$","i",null,{"className":"lab la-instagram"}]}]}],["$","li","https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr",{"children":["$","a",null,{"href":"https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr","target":"_blank","rel":"noopener noreferrer","aria-label":"Facebook","children":["$","i",null,{"className":"lab la-facebook"}]}]}],["$","li","https://www.linkedin.com/company/nikkiadvisory/",{"children":["$","a",null,{"href":"https://www.linkedin.com/company/nikkiadvisory/","target":"_blank","rel":"noopener noreferrer","aria-label":"LinkedIn","children":["$","i",null,{"className":"lab la-linkedin"}]}]}]]}]]}],["$","div",null,{"className":"right","children":[["$","div",null,{"className":"footer-links","children":[["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Company"}],["$","ul",null,{"children":[["$","li","Company-/about-us-About Us",{"children":["$","a",null,{"href":"/about-us","children":"About Us"}]}],["$","li","Company-/pricing-Pricing",{"children":["$","a",null,{"href":"/pricing","children":"Pricing"}]}],["$","li","Company-/blogs-Blogs",{"children":["$","a",null,{"href":"/blogs","children":"Blogs"}]}],["$","li","Company-/contact-us-Contact",{"children":["$","a",null,{"href":"/contact-us","children":"Contact"}]}]]}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Business Setup"}],["$","ul",null,{"children":[["$","li","Business Setup-/business-setup-uae-Setup Guide – UAE",{"children":["$","a",null,{"href":"/business-setup-uae","children":"Setup Guide – UAE"}]}],["$","li","Business Setup-/saudi-arabia-Saudi Arabia",{"children":["$","a",null,{"href":"/saudi-arabia","children":"Saudi Arabia"}]}],["$","li","Business Setup-/bahrain-Bahrain",{"children":["$","a",null,{"href":"/bahrain","children":"Bahrain"}]}],["$","li","Business Setup-/pricing-Cost & Process",{"children":["$","a",null,{"href":"/pricing","children":"Cost & Process"}]}]]}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Services"}],["$","ul",null,{"children":[["$","li","Services-/pro-government-services-PRO Services",{"children":["$","a",null,{"href":"/pro-government-services","children":"PRO Services"}]}],["$","li","Services-/corporate-compliance-Compliance",{"children":["$","a",null,{"href":"/corporate-compliance","children":"Compliance"}]}],["$","li","Services-/accounting-bookkeeping-Accounting",{"children":["$","a",null,{"href":"/accounting-bookkeeping","children":"Accounting"}]}],["$","li","Services-/business-structuring-Structuring",{"children":["$","a",null,{"href":"/business-structuring","children":"Structuring"}]}]]}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":"Hours"}],["$","ul",null,{"children":[["$","li",null,{"children":"Mon - Fri"}],["$","li",null,{"children":"9am - 6pm"}],["$","li",null,{"children":"Sat - Sun"}],["$","li",null,{"children":"10am - 4pm"}]]}]]}]]}],["$","div",null,{"className":"footer-contact-infos","children":[["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":[["$","i",null,{"className":"las la-map-marker-alt","aria-hidden":"true"}]," ","ADDRESS"]}],["$","p",null,{"children":"United Arab Emirates"}]]}],["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," Contact"]}],["$","ul",null,{"children":"$L12"}]]}],"$L13"]}]]}]]}],"$L14"]}]]}]
+5:["$","script","script-0",{"src":"/_next/static/chunks/2v9fl_wxqb9qe.js","async":true}]
+6:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+9:["$","$1","h",{"children":[null,["$","$L18",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#1C1C1C"}]]}],["$","div",null,{"hidden":true,"children":["$","$L19",null,{"children":["$","$16",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Accounting & Bookkeeping Services in UAE, Saudi Arabia & Bahrain | Nikki Advisory"}],["$","meta","1",{"name":"description","content":"Accounting and bookkeeping services including financial record management, reporting support, and operational financial coordination across UAE, Saudi Arabia, and Bahrain."}],["$","meta","2",{"name":"application-name","content":"Nikki Advisory"}],["$","meta","3",{"name":"author","content":"Nikki Advisory"}],["$","meta","4",{"name":"keywords","content":"Nikki Advisory, UAE Business Setup, Company Formation, GCC Business Advisory"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","link","6",{"rel":"canonical","href":"https://nikkiadvisory.com/accounting-bookkeeping/"}],["$","meta","7",{"property":"og:title","content":"Accounting & Bookkeeping Services in UAE, Saudi Arabia & Bahrain | Nikki Advisory"}],["$","meta","8",{"property":"og:description","content":"Accounting and bookkeeping services including financial record management, reporting support, and operational financial coordination across UAE, Saudi Arabia, and Bahrain."}],["$","meta","9",{"property":"og:url","content":"https://nikkiadvisory.com/accounting-bookkeeping/"}],["$","meta","10",{"property":"og:site_name","content":"Nikki Advisory"}],["$","meta","11",{"property":"og:locale","content":"en_US"}],["$","meta","12",{"property":"og:image","content":"https://nikkiadvisory.com/assets/imgs/logo.png"}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Accounting & Bookkeeping Services in UAE, Saudi Arabia & Bahrain | Nikki Advisory"}],["$","meta","16",{"name":"twitter:description","content":"Accounting and bookkeeping services including financial record management, reporting support, and operational financial coordination across UAE, Saudi Arabia, and Bahrain."}],["$","meta","17",{"name":"twitter:image","content":"https://nikkiadvisory.com/assets/imgs/logo.png"}],["$","link","18",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","19",{"rel":"icon","href":"/assets/imgs/logo.png"}],["$","$L1a","20",{}]]}]}]}],null]}]
+b:["$","$1","c",{"children":[null,["$","$L1b",null,{"parallelRouterKey":"children","template":["$","$L1c",null,{}]}]]}]
+e:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/038uro3qq6je7.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1__iynblxd4nn.js","async":true}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"preconnect","href":"https://fonts.googleapis.com"}],["$","link",null,{"rel":"preconnect","href":"https://fonts.gstatic.com","crossOrigin":"anonymous"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap","rel":"stylesheet"}],[["$","link","/assets/css/bootstrap.min.css",{"rel":"stylesheet","href":"/assets/css/bootstrap.min.css"}],["$","link","/assets/css/swiper.min.css",{"rel":"stylesheet","href":"/assets/css/swiper.min.css"}],["$","link","/assets/css/aos.css",{"rel":"stylesheet","href":"/assets/css/aos.css"}],["$","link","/assets/css/style.css",{"rel":"stylesheet","href":"/assets/css/style.css"}],["$","link","/assets/css/responsive.css",{"rel":"stylesheet","href":"/assets/css/responsive.css"}],["$","link","/assets/css/line-awesome.min.css",{"rel":"stylesheet","href":"/assets/css/line-awesome.min.css"}],["$","link","/assets/css/site.css",{"rel":"stylesheet","href":"/assets/css/site.css"}]]]}],["$","body",null,{"children":[["$","div",null,{"id":"custom-cursor-inner"}],["$","div",null,{"id":"custom-cursor"}],["$","$L1b",null,{"parallelRouterKey":"children","template":["$","$L1c",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","a",null,{"href":"https://wa.me/971000000000?text=Hi%2C%20I%20would%20like%20to%20understand%20business%20setup%20in%20UAE%20%2F%20Saudi%20Arabia%20%2F%20Bahrain.","className":"whatsapp-float","target":"_blank","rel":"noopener noreferrer","aria-label":"Chat on WhatsApp","style":{"position":"fixed","bottom":24,"right":24,"zIndex":9999,"background":"#25D366","color":"#fff","width":56,"height":56,"borderRadius":"50%","display":"flex","alignItems":"center","justifyContent":"center","boxShadow":"0 4px 14px rgba(0,0,0,.25)","fontSize":28,"textDecoration":"none"},"children":["$","i",null,{"className":"lab la-whatsapp"}]}],["$","$L1d",null,{}]]}]]}]]}]
+12:["$","li",null,{"children":["$","a",null,{"href":"mailto:info@nikkiadvisory.com","children":[["$","i",null,{"className":"las la-envelope","aria-hidden":"true"}]," ","info@nikkiadvisory.com"]}]}]
+13:["$","div",null,{"className":"footer-widget footer-widget-link","children":[["$","h3",null,{"children":[["$","i",null,{"className":"las la-globe","aria-hidden":"true"}]," Countries"]}],["$","ul",null,{"children":[["$","li",null,{"children":"UAE"}],["$","li",null,{"children":"Saudi Arabia"}],["$","li",null,{"children":"Bahrain"}]]}]]}]
+14:["$","div",null,{"className":"copyright-area","children":[["$","p",null,{"children":["© All rights reserved by ",["$","a",null,{"href":"/","children":"Nikki Advisory"}]]}],["$","ul",null,{"children":[["$","li",null,{"children":["$","a",null,{"href":"/terms-and-conditions","children":"Terms & Conditions"}]}],["$","li",null,{"children":["$","a",null,{"href":"/privacy-policy","children":"Privacy Policy"}]}]]}]]}]
+17:null
+11:true
+8:300
+8:C
+10:0
+a:"$undefined"
+c:"$undefined"
+f:"$undefined"
+7:"$undefined"

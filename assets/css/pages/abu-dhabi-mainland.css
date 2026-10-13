@@ -1,0 +1,440 @@
+@import url("mainland-base.css");
+
+/* Abu Dhabi Mainland page-specific layouts. */
+.abu-dhabi-mainland-redesign .hero-actions,
+.abu-dhabi-mainland-redesign .section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.abu-dhabi-mainland-redesign .hero-image .cover {
+  object-position: center 48%;
+}
+
+.abu-dhabi-mainland-redesign .hero-content p {
+  max-width: 620px;
+}
+
+.abu-dhabi-mainland-redesign .section-head {
+  max-width: 790px;
+  margin-bottom: 44px;
+}
+
+.abu-dhabi-mainland-redesign .section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.abu-dhabi-mainland-redesign .activity-list,
+.abu-dhabi-mainland-redesign .checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
+  padding: 0;
+  margin: 28px 0 0;
+  list-style: none;
+}
+
+.abu-dhabi-mainland-redesign .activity-list li,
+.abu-dhabi-mainland-redesign .checklist-grid li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: #394942;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.abu-dhabi-mainland-redesign .activity-list i,
+.abu-dhabi-mainland-redesign .checklist-grid i {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #a9823f;
+  font-size: 16px;
+}
+
+.abu-dhabi-mainland-redesign .suitability {
+  background: var(--cream);
+}
+
+.abu-dhabi-mainland-redesign .audience-grid,
+.abu-dhabi-mainland-redesign .content-card-grid,
+.abu-dhabi-mainland-redesign .support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.abu-dhabi-mainland-redesign .audience-card,
+.abu-dhabi-mainland-redesign .content-card,
+.abu-dhabi-mainland-redesign .support-card {
+  min-height: 150px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.abu-dhabi-mainland-redesign .audience-card:hover,
+.abu-dhabi-mainland-redesign .content-card:hover,
+.abu-dhabi-mainland-redesign .support-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9a050;
+  box-shadow: 0 16px 36px rgba(18, 38, 32, 0.08);
+}
+
+.abu-dhabi-mainland-redesign .audience-card i,
+.abu-dhabi-mainland-redesign .content-card i,
+.abu-dhabi-mainland-redesign .support-card i {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 27px;
+}
+
+.abu-dhabi-mainland-redesign .audience-card h3,
+.abu-dhabi-mainland-redesign .content-card h3,
+.abu-dhabi-mainland-redesign .support-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.abu-dhabi-mainland-redesign .content-card p,
+.abu-dhabi-mainland-redesign .support-card p {
+  margin: 9px 0 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.abu-dhabi-mainland-redesign .consideration,
+.abu-dhabi-mainland-redesign .advisory-callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 28px;
+  padding: 25px 28px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.abu-dhabi-mainland-redesign .consideration i,
+.abu-dhabi-mainland-redesign .advisory-callout i {
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.abu-dhabi-mainland-redesign .consideration strong,
+.abu-dhabi-mainland-redesign .advisory-callout strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.abu-dhabi-mainland-redesign .consideration p,
+.abu-dhabi-mainland-redesign .advisory-callout p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.abu-dhabi-mainland-redesign .advantage-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.abu-dhabi-mainland-redesign .benefit i {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--gold);
+  font-size: 30px;
+}
+
+.abu-dhabi-mainland-redesign .licence-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.abu-dhabi-mainland-redesign .structure-section,
+.abu-dhabi-mainland-redesign .cost-section {
+  background: var(--cream);
+}
+
+.abu-dhabi-mainland-redesign .structure-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.abu-dhabi-mainland-redesign .structure-grid .content-card {
+  min-height: 245px;
+  padding: 28px 23px;
+}
+
+.abu-dhabi-mainland-redesign .process-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.abu-dhabi-mainland-redesign .process-section p {
+  color: #c2d0c8;
+}
+
+.abu-dhabi-mainland-redesign .process-flow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 44px;
+}
+
+.abu-dhabi-mainland-redesign .process-step {
+  position: relative;
+  min-height: 150px;
+  padding: 26px 20px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.abu-dhabi-mainland-redesign .process-step::after {
+  content: "→";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -18px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--green);
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.abu-dhabi-mainland-redesign .process-step:last-child::after {
+  display: none;
+}
+
+.abu-dhabi-mainland-redesign .process-step span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--gold);
+  font:
+    21px/1 Marcellus,
+    Georgia,
+    serif;
+}
+
+.abu-dhabi-mainland-redesign .process-step h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.abu-dhabi-mainland-redesign .support-card {
+  min-height: 165px;
+}
+
+.abu-dhabi-mainland-redesign .support-card h3 {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.abu-dhabi-mainland-redesign .lead-cta {
+  padding: 92px 0;
+}
+
+.abu-dhabi-mainland-redesign .lead-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.abu-dhabi-mainland-redesign .lead-copy {
+  padding-top: 28px;
+}
+
+.abu-dhabi-mainland-redesign .lead-copy h2 {
+  color: #fff;
+}
+
+.abu-dhabi-mainland-redesign .lead-copy p {
+  color: #d4dcd6;
+}
+
+.abu-dhabi-mainland-redesign .lead-quote {
+  margin-top: 28px;
+  padding-left: 18px;
+  border-left: 2px solid var(--gold);
+  color: #efe5d1 !important;
+  font-size: 13px;
+}
+
+.abu-dhabi-mainland-redesign .lead-form {
+  padding: 38px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.abu-dhabi-mainland-redesign .lead-form h3 {
+  margin-bottom: 8px;
+  font-size: 29px;
+}
+
+.abu-dhabi-mainland-redesign .lead-form > p {
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+.abu-dhabi-mainland-redesign .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.abu-dhabi-mainland-redesign .form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.abu-dhabi-mainland-redesign .form-field.full {
+  grid-column: 1 / -1;
+}
+
+.abu-dhabi-mainland-redesign .form-field label {
+  color: #35453e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.abu-dhabi-mainland-redesign .form-field input,
+.abu-dhabi-mainland-redesign .form-field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #d9ddd8;
+  border-radius: 0;
+  outline: none;
+  background: #fbfbf8;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 0.2s ease;
+}
+
+.abu-dhabi-mainland-redesign .form-field input:focus,
+.abu-dhabi-mainland-redesign .form-field textarea:focus {
+  border-color: var(--gold);
+}
+
+.abu-dhabi-mainland-redesign .form-field input[readonly] {
+  color: #59675f;
+  background: #f1f2ed;
+}
+
+.abu-dhabi-mainland-redesign .form-field textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.abu-dhabi-mainland-redesign .form-submit {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.abu-dhabi-mainland-redesign .form-submit .button {
+  width: 100%;
+}
+
+.abu-dhabi-mainland-redesign .form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #78827c !important;
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .abu-dhabi-mainland-redesign .advantage-grid,
+  .abu-dhabi-mainland-redesign .structure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .abu-dhabi-mainland-redesign .process-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .abu-dhabi-mainland-redesign .process-step:nth-child(3)::after {
+    display: none;
+  }
+
+  .abu-dhabi-mainland-redesign .lead-layout {
+    gap: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .abu-dhabi-mainland-redesign .audience-grid,
+  .abu-dhabi-mainland-redesign .content-card-grid,
+  .abu-dhabi-mainland-redesign .support-grid,
+  .abu-dhabi-mainland-redesign .lead-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .abu-dhabi-mainland-redesign .licence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .abu-dhabi-mainland-redesign .process-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .abu-dhabi-mainland-redesign .process-step:nth-child(3)::after {
+    display: block;
+  }
+
+  .abu-dhabi-mainland-redesign .process-step:nth-child(even)::after {
+    display: none;
+  }
+
+  .abu-dhabi-mainland-redesign .lead-cta {
+    padding: 72px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .abu-dhabi-mainland-redesign .hero-actions,
+  .abu-dhabi-mainland-redesign .section-actions,
+  .abu-dhabi-mainland-redesign .activity-list,
+  .abu-dhabi-mainland-redesign .checklist-grid,
+  .abu-dhabi-mainland-redesign .licence-grid,
+  .abu-dhabi-mainland-redesign .structure-grid,
+  .abu-dhabi-mainland-redesign .advantage-grid,
+  .abu-dhabi-mainland-redesign .process-flow,
+  .abu-dhabi-mainland-redesign .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .abu-dhabi-mainland-redesign .hero-actions,
+  .abu-dhabi-mainland-redesign .section-actions {
+    display: grid;
+  }
+
+  .abu-dhabi-mainland-redesign .process-step::after {
+    display: none !important;
+  }
+
+  .abu-dhabi-mainland-redesign .lead-form {
+    padding: 28px 21px;
+  }
+}

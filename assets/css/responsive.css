@@ -1,0 +1,1697 @@
+
+
+
+@media (max-width: 1400px) {
+    .faq3-area .custom-row .right {
+        max-width: 600px;
+    }
+    .faq3-area .custom-row .left {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width: 1226px) {
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-img-box {
+        max-width: 500px;
+    }
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content h1 {
+        font-size: 44px;
+        line-height: 44.7px;
+    }
+    .faq3-area .custom-row .right {
+        max-width: 500px;
+    }
+    .about7-area .custom-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero6-area .right {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .hero6-area .content .title br {
+        display: none;
+    }
+    .hero6-area .content .title {
+        font-size: 44px;
+        line-height: 44.7px;
+    }
+    .hero6-area .img-box {
+        max-width: 340px;
+    }
+    .home6-page .contact-area .custom-row {
+        gap: 70px;
+    }
+    .demo-blog-area .right {
+        gap: 20px;
+    }
+    .demo-blog-area .right img {
+        max-width: 200px;
+    }
+    .portfolio-detail-wrap .custom-container,
+    .service-detail-wrap .custom-container,
+    .ticket-detail-area .custom-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .ticket-detail-area .custom-row {
+        gap: 70px;
+    }
+}
+@media (max-width: 1085px) {
+    .header-bar-wrap {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .about6-area .custom-row {
+        gap: 60px;
+    }
+    .blog-detail-area .custom-container,
+    .blog-area .custom-container,
+    .work-query-page .faq2-area .custom-container,
+    .faq-page .faq2-area .custom-container,
+    .client-area .custom-container,
+    .demo-blog-area .custom-container,
+    .landing-page .header-wrap .custom-container,
+    .hero10-area .custom-container,
+    .about8-area .custom-container,
+    .team-area .custom-container,
+    .ticket-area .custom-container,
+    .about6-area .custom-container,
+    .hero5-area .custom-container,
+    .about4-area .custom-container,
+    .about5-area .custom-container,
+    .service3-area .custom-container,
+    .client-area .custom-container,
+    .hero3-area .custom-container,
+    .home3-page .faq2-area .custom-container,
+    .header-wrap .custom-container,
+    .header-bar-wrap .custom-container,
+    .service5-area .custom-container,
+    .faq-area .custom-container,
+    .about3-area .custom-container,
+    .service2-area .custom-container,
+    .video2-area .custom-container,
+    .about2-area .custom-container,
+    .footer-area .custom-container,
+    .newsletter-area .custom-container,
+    .pricing-table-area .custom-container,
+    .team-area .custom-container,
+    .about-area .custom-container,
+    .contact-area .custom-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero5-area .img-box {
+        right: 20px;
+    }
+    .contact-area .custom-row {
+        gap: 100px;
+    }
+    .video2-area .video-bg iframe {
+        height: 100%;
+    }
+    .home3-page .faq-area .custom-row .left,
+    .faq-area .custom-row .left {
+        padding: 40px 70px;
+    }
+    .home3-page .faq-area .custom-row .left {
+        padding-top: 70px;
+    }
+    .contact2-area .custom-row {
+        align-items: normal;
+    }
+    .hero3-area .hero-banner-top .title {
+        font-size: 44px;
+        line-height: 52.5px;
+    }
+    .client-items {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 56px;
+    }
+    .about5-area .custom-row {
+        gap: 60px;
+    }
+    .hero4-area .left {
+        padding-left: 20px;
+    }
+    .header-wrap.header-style-4 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .about8-area .img-box {
+        max-width: 500px;
+    }
+    .about8-area .custom-row {
+        gap: 70px;
+    }
+}
+@media (max-width: 1024px) {
+    .sidebar-icon a > i {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    .sidebar-icon a.active-hum > svg {
+        transform: scale(0);
+    }
+    .sidebar-icon a.active-hum > i {
+        opacity: 1;
+        visibility: visible;
+    }
+    .home6-row {
+        flex-direction: column;
+    }
+    .home6-row > .left,
+    .home6-page .header-wrap .select-timezone,
+    #fixed-sidebar,
+    .header-style-2 .select-timezone,
+    .header-wrap .menu-wrap {
+        display: none;
+    }
+    .home6-page .header-wrap .sidebar-icon {
+        display: block;
+    }
+    .header-wrap {
+        padding: 22px 0;
+    }
+    .header-style-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .responsive-menu nav ul li.dropdown-active .dropdown {
+        max-height: 400px;
+        overflow-x: hidden;
+    }
+    .responsive-menu.active {
+        max-height: 500px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        /* opacity: 1; */
+        visibility: visible;
+    }
+    .service-area .section-header {
+        gap: 24px;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin-bottom: 80px;
+    }
+
+    .service-box .service-img {
+        height: auto;
+    }
+    .story-area .custom-container {
+        padding: 0 20px;
+    }
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-img-box {
+        max-width: 400px;
+    }
+    .hero-slider-style-2 {
+        min-height: 500px;
+    }
+    .hero-slider-style-2 .quote-now-btn {
+        padding: 30px 70px 25px 30px;
+    }
+    .about3-area .left {
+        width: 40%;
+    }
+    .about3-area .right {
+        width: 60%;
+        padding: 50px 20px 50px 70px;
+    }
+    .contact2-area .right {
+        padding: 45px 60px;
+    }
+    .home6-page .contact-area,
+    .home6-page .pricing-table-area {
+        padding-right: 0;
+    }
+    .home6-page .pricing-table-area .custom-container,
+    .home6-page .service3-area .custom-container,
+    .home6-page .contact-area .custom-container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .sticky2-menu {
+        width: 100%;
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: row;
+        position: absolute;
+        top: 0;
+    }
+    .horizontal-section-scroll {
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow: inherit;
+    }
+    .home10-page {
+        padding-left: 0;
+    }
+    .horizontal-section-scroll > section {
+        max-width: 100%;
+        width: 100%;
+    }
+    .hero10-area {
+        padding-top: 55px;
+    }
+    .hero10-area .right {
+        max-width: 430px;
+    }
+    .service7-area {
+        overflow: hidden;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .contact-and-footer-area .left, .pricing-table2-area .left, .service8-area .left, .service7-area .left {
+        max-width: 430px;
+        height: auto;
+    }
+    .contact-and-footer-area .right, .service8-area .right, .service7-area .right {
+        padding: 80px 60px;
+    }
+    .service8-area .content-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .service8-area {
+        margin-bottom: 120px;
+    }
+    .portfolio3-area .portfolio-item {
+        max-width: 100%;
+        width: 33.333333%;
+    }
+    .horizontal-section-scroll .portfolio3-area {
+        width: 1005px;
+    }
+    .portfolio3-area .portfolio-item .quote-now-btn {
+        bottom: 30px;
+    }
+    .horizontal-section-scroll .story2-area {
+        padding: 120px 0;
+    }
+    .horizontal-section-scroll .pricing-table2-area {
+        padding-bottom: 120px;
+    }
+    .horizontal-section-scroll .pricing-table2-area .custom-row {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 40px;
+    }
+    .horizontal-section-scroll .pricing-table2-area .right {
+        padding: 0;
+        width: 100%;
+    }
+    .horizontal-section-scroll .contact-and-footer-area .left {
+        max-width: 100%;
+        max-height: 500px;
+    }
+    .horizontal-section-scroll .contact-and-footer-area .custom-row {
+        flex-direction: column;
+    }
+    .horizontal-section-scroll .contact-and-footer-area {
+        height: auto;
+        margin-left: 0;
+    }
+    .horizontal-section-scroll .contact-and-footer-area .right-content {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .contact-and-footer-area .border-gradient-shape {
+        width: 100%;
+    }
+    .hero-landing-area .content .title {
+        font-size: 44px;
+        line-height: 48.59px;
+    }
+    .ticket-detail-area .content-box .infos {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .portfolio-single-3-page .portfolio-detail-wrap .imgs .left,
+    .portfolio-single-2-page .portfolio-detail-wrap .imgs .box-anim:first-child,
+    .portfolio-detail-wrap .imgs .box-anim:last-child,
+    .service-detail-wrap .imgs .box-anim:last-child {
+        max-width: 400px;
+    }
+    .portfolio-detail-wrap .portfolio-detail-content,
+    .service-detail-wrap .service-detail-content {
+        column-gap: 60px;
+    }
+    .portfolio-single-3-page .portfolio-detail-wrap .imgs .left .box-anim{
+        max-width: 100%;
+    }
+
+}
+@media (max-width: 982px) {
+    .hero-slider-thumbnail  .thumb-content {
+        padding: 26px 37px 10px 37px;
+        width: 200px;
+    }
+    .hero-slider-thumbnail {
+        bottom: auto;
+        top: 100%;
+    }
+    .header-wrap .custom-container {
+        padding: 0 20px;
+    }
+    .hero-slider-wrap .swiper-container {
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+    .hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content p {
+        max-height: 200px;
+    }
+    .hero-slider-thumbnail  .thumb-content {
+        width: 33%;
+        flex: 1;
+        padding: 22px 27px 16px 27px;
+    }
+    .hero-slider-thumbnail {
+        padding: 0 15px;
+        width: 100%;
+        right: 0;
+    }
+    .hero-slider-thumbnail .thumb-content h1 {
+        line-height: 1;
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    .video-area .video-content-wrap .video-play-btn {
+        width: 150px;
+        height: 150px;
+        z-index: 9;
+    }
+    .testimonial-area .testimonial-content p br {
+        display: none;
+    }
+    .testimonial-area .testimonial-content {
+        padding: 0 20px;
+    }
+    .contact-area {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    .contact-area .custom-row {
+        flex-wrap: wrap;
+    }
+    .contact-area .contact-form {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .about-area .custom-row {
+        gap: 70px;
+        justify-content: space-between;
+    }
+    .about-area .right::before {
+        left: -80px;
+    }
+    .about-area .right {
+        padding-top: 100px;
+    }
+    .about-area .content {
+        padding-top: 107px;
+    }
+    .newsletter-area .custom-row {
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-area .custom-row {
+        gap: 100px;
+    }
+    .video-popover .video-popover-inner iframe {
+        width: 400px;
+        height: 280px;
+    }
+    .hero-slider-style-2 .swiper-slide .slide-inner .hero-slide-content-wrap {
+        gap: 58px;
+    }
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content h1 {
+        font-size: 34px;
+        line-height: 34.7px;
+    }
+    .hero-slider-style-2 .quote-now-btn {
+        right: auto;
+        left: 20px;
+        bottom: 0;
+    }
+    .hero-slider-style-2 .hero-slider-2-pagination {
+        left: 57%;
+    }
+    .about2-area .custom-row {
+        gap: 80px;
+    }
+    .faq-area .custom-row {
+        flex-direction: column;
+    }
+    .faq-area .custom-row .right,
+    .faq-area .custom-row .left {
+        width: 100%;
+    }
+    .faq-area .custom-row .right {
+        max-height: 450px;
+    }
+    .home3-page .faq2-area .custom-row {
+        flex-direction: row;
+        gap: 50px;
+    }
+    .home3-page .faq2-area .custom-row .left {
+        padding: 0;
+    }
+    .home3-page .faq2-area .custom-row {
+        flex-direction: column;
+    }
+    .home3-page .faq2-area .faq-list {
+        max-width: 100%;
+    }
+    .hero3-area .hero-banner-top .title {
+        font-size: 34px;
+        line-height: 42.5px;
+    }
+    .client-area .custom-row {
+        gap: 60px;
+    }
+    .client-area .left {
+        max-width: 300px;
+    }
+    .service3-area .custom-row {
+        row-gap: 50px;
+        flex-direction: column;
+    }
+    .service3-items {
+        column-gap: 60px;
+    }
+    .about5-area .right {
+        max-width: 400px;
+    }
+    .home3-page .faq-area .faq-content {
+        max-width: 100%;
+    }
+    .hero4-area .custom-row {
+        gap: 80px;
+    }
+    .hero4-area .section-heading .title {
+        font-size: 44px;
+        line-height: 44.7px;
+    }
+    .hero4-area .left {
+        max-width: 360px;
+    }
+    .about4-area .custom-row {
+        gap: 20px;
+    }
+    .faq-area.faq3-area .custom-row .right {
+        max-width: 100%;
+    }
+    .about7-area .custom-row {
+        gap: 70px;
+    }
+    .team3-area .teams-wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .team3-area .teams-wrap .team-slide-box:nth-child(4) {
+        margin-top: 0;
+    }
+    .team3-area .teams-wrap .team-slide-box:nth-child(5) {
+        margin-top: 35px;
+    }
+    .home6-row > .right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero6-area .img-box {
+        height: 510px;
+    }
+    .video-area .video-bg {
+        height: 470px;
+    }
+    .mentor-lists {
+        gap: 40px;
+    }
+    .service6-lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .service6-lists .service6-box:nth-child(1),
+    .service6-lists .service6-box:nth-child(2) {
+        border-bottom: 0.5px solid #fff;
+    }
+    .service6-box > a {
+        min-height: 200px;
+    }
+    .faq4-area .custom-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .faq4-area .right {
+        max-width: 100%;
+    }
+    .about8-area .img-box {
+        max-width: 400px;
+    }
+    .hero8-wrapper .custom-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .home9-page #multiscroll .hero-content .title {
+        font-size: 44px;
+        line-height: 44.7px;
+    }
+    .home9-page #multiscroll .ms-right .contact-form-content,
+    .home9-page #multiscroll .ms-left .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .home9-page #multiscroll .ms-right .service-consulting,
+    .home9-page #multiscroll .ms-right .right-content {
+        padding-left: 40px;
+    }
+    .home9-page #multiscroll .ms-left .service3-items {
+        /* grid-template-columns: 1fr; */
+        column-gap: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .demo-area .demo-boxes.column-2,
+    .demo-area .demo-boxes {
+        column-gap: 30px;
+    }
+    .demo-area .demo-boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+    .demo-blog-area .content {
+        max-width: 100%;
+    }
+    .demo-blog-area .custom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .faq-page .faq2-area {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    .faq-page .faq2-area .custom-row .left,
+    .faq-page .faq-area .faq-content {
+        padding-top: 0;
+    }
+    .faq-page .faq2-area .faq-content .title,
+    .faq-page .faq2-area .faq-content .section-header {
+        max-width: 100%;
+    }
+    .ticket-detail-area .img-box {
+        max-width: 450px;
+    }
+    .blog-detail-area .custom-row,
+    .blog-area .custom-row {
+        gap: 50px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hero3-area .hero-banner-top,
+    .service-area .section-header {
+        flex-direction: column;
+    }
+    .portfolio-single-3-page .portfolio-detail-wrap .imgs .left,
+    .portfolio-single-2-page .portfolio-detail-wrap .imgs .box-anim:first-child,
+    .work-query-page .faq2-area .faq-content .title,
+    .work-query-page .faq2-area .faq-content .section-header,
+    .service-area .section-header .left,
+    .service-area .section-header .right {
+        max-width: 100%;
+    }
+    .pricing-table2-area .pricing-table-lists,
+    .mentor-lists,
+    .team3-area .teams-wrap,
+    .teams-wrap,
+    .pricing-table-lists,
+    .story-items,
+    .service-items {
+        grid-template-columns: 1fr 1fr;
+    }
+    .video-area .video-content-wrap .content {
+        max-width: 300px;
+        padding: 25px 40px;
+    }
+    .video-area .video-content-wrap .content h2 {
+        /* font-size: 18px;
+        line-height: 24.7px; */
+        margin-bottom: 8px;
+    }
+    .about4-area .content,
+    .client-area .left {
+        max-width: 100%;
+    }
+    .about7-area,
+    .about4-area,
+    .about5-area {
+        padding-top: 120px;
+    }
+    .about7-area {
+        padding-bottom: 120px;
+    }
+    .blog-post {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    .portfolio-detail-wrap .imgs .box-anim:last-child,
+    .service-detail-wrap .imgs .box-anim:last-child,
+    .blog-detail-area .sidebar, .blog-area .sidebar {
+        max-width: 100%;
+    }
+    .portfolio-detail-wrap .portfolio-detail-content,
+    .portfolio-detail-wrap .imgs,
+    .service-detail-wrap .service-detail-content,
+    .service-detail-wrap .imgs,
+    .blog-detail-area .custom-row,
+    .blog-area .custom-row,
+    .ticket-detail-area .custom-row,
+    .hero-landing-area .custom-row,
+    .hero10-area .custom-container .custom-row,
+    .contact-and-footer-area .contact-form-and-info,
+    .about8-area .custom-row,
+    .hero6-area .custom-row,
+    .about7-area .custom-row,
+    .about6-area .custom-row,
+    .about4-area .custom-row,
+    .about5-area .custom-row,
+    .client-area .custom-row,
+    .contact2-area .custom-row,
+    .service5-area .section-header,
+    .about-area .custom-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about7-area .left .box-anim {
+        margin-left: 0;
+    }
+    .service5-area .section-header {
+        gap: 10px;
+    }
+    .about-area .content {
+        padding-top: 0;
+    }
+    .hero-landing-area .right,
+    .contact2-area .img-box,
+    .contact2-area .right,
+    .about-area .right::before {
+        width: 100%;
+    }
+    .hero6-area .img-box {
+        max-width: 100%;
+    }
+    .contact2-area .right {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .team-area .custom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 50px;
+    }
+    .footer-area .custom-row {
+        flex-direction: column;
+    }
+    .footer-area .footer-links,
+    .footer-contact-infos {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+    .hero-slider-style-2 {
+        min-height: inherit;
+        padding-top: 40px;
+    }
+    .hero-slider-style-2 .hero-slider-2-pagination {
+        left: auto;
+        right: 0px;
+        margin-left: 0;
+        bottom: 26px;
+    }
+    .hero-slider-wrap .swiper-container {
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .hero-slider-style-2.hero-slider-wrap .swiper-container {
+        padding-bottom: 70px;
+    }
+    .hero-slider-style-2 .swiper-slide .slide-inner .hero-slide-content-wrap {
+        flex-direction: column;
+    }
+    .hero-slider-wrap .slide-inner {
+        position: relative;
+    }
+    .hero-slider-style-2 .quote-now-btn {
+        display: none;
+    }
+    .hero-slider-style-2 .hero-slider-2-pagination {
+        right: auto;
+        left: 10px;
+        bottom: 28px;
+        transform: translate(0, 0);
+    }
+    .hero-slider-style-2::before {
+        height: 100%;
+    }
+    .about2-area .custom-row {
+        flex-direction: column;
+    }
+    .video2-area .video-bg {
+        height: 380px;
+    }
+    .video2-area .section-heading {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .about6-area .right,
+    .video2-area .section-heading p {
+        max-width: 100%;
+    }
+    .service2-items {
+        column-gap: 20px;
+    }
+    .service2-items .service2-box {
+        max-width: 48%;
+    }
+    .service5-area .custom-row {
+        flex-wrap: wrap;
+    }
+    .service5-area .img-box .box-anim img {
+        object-fit: cover;
+    }
+    .service5-area .img-box .box-anim {
+        height: 100%;
+    }
+    .service5-area .img-box {
+        width: 48%;
+    }
+    .funfacts-wrap .funfact-items {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 25px;
+    }
+    .hero3-area .funfact-box {
+        width: 30%;
+    }
+    .hero4-area {
+        padding-top: 80px;
+    }
+    .hero4-area .custom-row {
+        flex-direction: column;
+    }
+    .hero4-area .left {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .portfolio-detail-wrap,
+    .service-detail-wrap {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .portfolio-detail-wrap .portfolio-detail-content,
+    .service-detail-wrap .service-detail-content,
+    .about4-area .custom-row {
+        gap: 50px;
+    }
+    .hero5-area .img-box {
+        max-width: calc(100% - 200px);
+        bottom: auto;
+        top: 40px;
+    }
+    .about6-area {
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+    .hero5-area .custom-container {
+        padding-top: 100px;
+    }
+    .hero5-area .content .title {
+        font-size: 60px;
+        line-height: 60.3px;
+    }
+    .ticket-box h4 {
+        padding-right: 130px;
+    }
+    .team3-area .teams-wrap .team-slide-box:nth-child(5),
+    .team3-area .teams-wrap .team-slide-box:nth-child(even) {
+        margin-top: 0;
+    }
+    .team3-area .teams-wrap {
+        gap: 20px;
+    }
+    .hero-slider-style-2.hero7-slider-wrap .hero-slide-content-wrap .hero-img-box {
+        max-width: 100%;
+        max-height: 350px;
+    }
+    .hero7-slider-wrap {
+        padding-bottom: 80px;
+    }
+    .hero7-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content h1 br {
+        display: none;
+    }
+    .hero7-slider-wrap.hero-slider-wrap .swiper-container {
+        padding-bottom: 60px;
+    }
+    .hero7-slider-wrap.hero-slider-wrap .swiper-container {
+        left: 0;
+    }
+    .hero7-slider-wrap.hero-slider-style-2 .swiper-slide .slide-inner .hero-slide-content-wrap {
+        padding-right: 0;
+    }
+    .home7-page .about6-area .left .quote-now-btn {
+        left: auto;
+        right: 0;
+    }
+    .about8-area .img-box .shape-img {
+        bottom: -30px;
+    }
+    .about8-area {
+        padding-bottom: 0;
+    }
+    html, body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .home9-page #multiscroll .ms-right .service-consulting,
+    .home9-page #multiscroll .ms-right .right-content,
+    .home9-page #multiscroll .ms-left .service3-items,
+    .home9-page #multiscroll .ms-right .contact-form-content,
+    .home9-page #multiscroll .ms-left .hero-content {
+        padding: 50px 20px;
+    }
+    .contact-and-footer-area .left, .pricing-table2-area .left, .service8-area .left, .service7-area .left,
+    .hero10-area .right,
+    .home9-page #multiscroll .hero-img {
+        max-height: 400px;
+    }
+    .ticket-detail-area .img-box,
+    .contact-and-footer-area .left, .pricing-table2-area .left, .service8-area .left, .service7-area .left,
+    .hero10-area .right,
+    .home9-page #multiscroll .ms-left .faq-list {
+        max-width: 100%;
+    }
+    .ticket-detail-area {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .hero10-area {
+        padding-top: 120px;
+    }
+    .hero10-area .custom-container .custom-row {
+        gap: 50px;
+    }
+    .horizontal-section-scroll .service7-area .custom-row {
+        flex-direction: column;
+    }
+    .contact-and-footer-area .right, .service8-area .right, .service7-area .right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .service8-area .custom-row {
+        flex-direction: column;
+    }
+    .horizontal-section-scroll .portfolio3-area .custom-row {
+        flex-wrap: wrap;
+    }
+    .portfolio3-area .portfolio-item .quote-now-btn {
+        padding: 30px 25px 20px 30px;
+    }
+    .portfolio3-area .portfolio-item {
+        width: 50%;
+    }
+    .portfolio3-area .portfolio-item .quote-now-btn .title {
+        font-size: 20px;
+        margin: 0;
+        line-height: 1;
+    }
+    .coming-soon .content {
+        padding: 40px;
+    }
+    .coming-soon {
+        height: calc(100vh - 68px);
+    }
+    .hero-landing-area .imgs {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .hero-landing-area {
+        overflow: hidden;
+    }
+    .hero-landing-area .content {
+        padding-bottom: 0;
+    }
+    .demo-features-area .custom-container,
+    .demo-blog-area .custom-container,
+    .fully-responsive-area .custom-container,
+    .inner-pages-area .custom-container,
+    .demo-area .custom-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .demo-area .section-heading .title br {
+        display: none;
+    }
+    .inner-pages-area .section-header .title,
+    .demo-area .section-heading .title {
+        line-height: 44.13px;
+    }
+    .demo-features-area {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .demo-footer-area .footer-right-imgs {
+        position: relative;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+    .demo-footer-area .footer-right-imgs img:first-child {
+        position: absolute;
+        margin-right: 0;
+        left: -100px;
+    }
+    .demo-footer-area .custom-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .demo-footer-area .content {
+        padding-bottom: 40px;
+        padding-top: 120px;
+    }
+    .hero-slider-wrap .slide-inner .hero-slide-content {
+        padding-top: 40px;
+    }
+    .hero-slider-style-2.hero-slider-wrap .slide-inner .hero-slide-content {
+        padding-top: 0;
+    }
+    .hero-style-1.hero-slider-wrap .slide-inner .hero-slide-content {
+        padding: 70px 0;
+    }
+    .hero-style-1.hero-slider-wrap .slide-inner .hero-slide-content-wrap {
+        min-height: 475px;
+    }
+    .breadcrumb-area {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+    .breadcrumb-area .content ul li {
+        font-size: 34px;
+    }
+    .portfolio-page .service-area,
+    .blog-area,
+    .pricing-page .pricing-table-area,
+    .work-query-page .faq2-area,
+    .work-query-page .service-area,
+    .service3-area,
+    .service-area {
+        padding-top: 120px;
+    }
+    .service-box .service-img {
+        max-width: 100%;
+    }
+    .team-area .left {
+        padding-right: 0;
+        max-width: 100%;
+    }
+    .portfolio-page .service-area,
+    .blog-area,
+    .pricing-page .pricing-table-area,
+    .work-query-page .faq2-area,
+    .work-query-page .service-area,
+    .team-page .about8-area {
+        padding-bottom: 120px;
+    }
+    .team-page .about6-area .left .quote-now-btn {
+        left: auto;
+        right: 0;
+    }
+    .work-query-page .faq2-area .custom-row .left {
+        padding-top: 0;
+    }
+    .blog-author-box {
+        flex-direction: column;
+    }
+    .comment .comment {
+        padding-left: 40px;
+    }
+    .blog-detail-area .blog-post .tags {
+        flex-wrap: wrap;
+    }
+    .about-area .img-box img:not(.border-shape){
+        height: auto;
+    }
+
+}
+@media (max-width: 628px) {
+    .header-bar-wrap .custom-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .header-bar-wrap .right ul {
+        gap: 26px;
+    }
+    .header-bar-wrap .right ul li + li::before {
+        left: -13px;
+    }
+    .about3-area .custom-row {
+        flex-direction: column;
+    }
+    .about3-area .left {
+        width: 100%;
+        max-height: 400px;
+    }
+    .about3-area .right {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .about6-area .left {
+        width: 100%;
+    }
+    .about6-area .left .quote-now-btn {
+        right: 0;
+    }
+    .about6-area .left img {
+        width: calc(100% - 60px);
+    }
+    .about6-area .left .quote-now-btn {
+        font-size: 18px;
+        line-height: 23.7px;
+        padding: 35px 36px;
+    }
+    .service6-lists,
+    .mentor-lists {
+        grid-template-columns: 1fr;
+    }
+    .service6-lists .service6-box:nth-child(3) {
+        border-bottom: 0.5px solid #fff;
+    }
+    .home6-page .pricing-table-area {
+        padding-top: 120px;
+    }
+    .interactive-portfolio .box-img {
+        height: 230px;
+    }
+    .interactive-portfolio .title {
+        font-size: 22px;
+    }
+    .interactive-portfolio .box-img {
+        left: auto;
+        right: 10%;
+    }
+    .hero-interactive-portfolios {
+        justify-content: center;
+        padding: 60px 0;
+    }
+    .hero-slider-wrap .swiper-container {
+        margin-left: 0;
+    }
+    .hero-slider-wrap .slide-inner .hero-slide-content-wrap {
+        padding-left: 30px;
+    }
+    .video-area {
+        position: relative;
+        padding-bottom: 120px;
+    }
+    .video-area .video-content-wrap {
+        position: static;
+    }
+    .video-area .video-content-wrap .content {
+        left: 15px;
+        max-width: calc(100% - 30px);
+    }
+    .video-area .video-content-wrap .video-play-btn {
+        top: 34%;
+    }
+    .faq-list .faq-item .accordion-header button {
+        padding-right: 8px;
+    }
+    .blog-detail-area .blog-post .img-box1 {
+        flex-direction: column;
+    }
+    .blog-detail-area .blog-post .img-box1 .right {
+        max-width: 100%;
+    }
+    #custom-cursor-inner,
+    #custom-cursor {
+        display: none;
+    }
+
+}
+@media (max-width: 525px) {
+    .service-area {
+        padding: 100px 0;
+    }
+    .story-area,
+    .testimonial-area,
+    .service2-area,
+    .about2-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .service5-area {
+        padding-top: 100px;
+    }
+    .hero-slider-thumbnail {
+        display: none;
+    }
+    .hero-slider-wrap .slide-inner .hero-slide-content-wrap {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0;
+    }
+    .hero-slider-wrap .slide-inner .hero-slide-content h1 {
+        font-size: 44px;
+        line-height: 44.1px;
+    }
+    .hero-slider-wrap .slide-inner .hero-slide-content h1 br {
+        display: none;
+    }
+    .hero-slider-wrap {
+        min-height: 450px;
+    }
+    .hero-style-1.hero-slider-wrap {
+        min-height: 350px;
+
+    }
+    .header-bar-wrap .right ul {
+        /* flex-direction: column; */
+        column-gap: 15px;
+        row-gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header-bar-wrap .right ul li::before {
+        display: none;
+    }
+    .team3-area {
+        padding-top: 120px;
+    }
+    .service-items {
+        row-gap: 40px;
+    }
+    .service-items,
+    .demo-area .demo-boxes,
+    .pricing-table2-area .pricing-table-lists,
+    .team3-area .teams-wrap,
+    .teams-wrap,
+    .service3-items,
+    .client-items,
+    .pricing-table-lists,
+    .story-items {
+        grid-template-columns: 1fr;
+    }
+    .about-area .img-box {
+        width: 100%;
+        height: 400px;
+    }
+    .about-area .img-box .border-shape {
+        left: auto;
+        right: 20px;
+    }
+    .ticket-area .section-heading .title br {
+        display: none;
+    }
+    .ticket-area .section-heading {
+        margin-bottom: 45px;
+    }
+    
+    .blog-post .title,
+    .demo-footer-area .content .title,
+    .demo-features-area .section-header .title,
+    .coming-soon .content .title,
+    .home9-page #multiscroll .ms-right .contact-form-content .title,
+    .home9-page #multiscroll .ms-right .hero-content .title,
+    .home9-page #multiscroll .ms-right .right-content .title,
+    .home9-page #multiscroll .ms-left .hero-content-faq .title,
+    .home9-page #multiscroll .hero-content .title,
+    .ticket-area .section-heading .title,
+    .about7-area .section-header .title,
+    .about6-area .content .title,
+    .about4-area .content .title,
+    .about5-area .section-header .title,
+    .service3-area .section-header .title,
+    .client-area .section-heading .title,
+    .faq-area .faq-content .title,
+    .portfolio-area .section-heading .title,
+    .service2-area .section-heading .title,
+    .video2-area .section-heading .title,
+    .about2-area .left-content .title,
+    .newsletter-area .title,
+    .pricing-table-area .section-header h1,
+    .story-area .section-header h1,
+    .section-header-default-content .title {
+        /* font-size: 24px;
+        line-height: 31.4px; */
+    }
+    .gallery-box .gallery-content {
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+    .testimonial-area {
+        padding-bottom: 120px;
+    }
+    .team-area .right {
+        position: relative;
+        flex: 1;
+        width: 100%;
+    }
+    .team-area .team-slider-wrap {
+        width: 100% !important;
+        overflow: hidden;
+    }
+    .team-slide-box .content .title {
+        font-size: 20px;
+    }
+    .team-area .left {
+        padding-right: 0;
+    }
+    .service2-items .service2-box {
+        max-width: 100%;
+    }
+    .home3-page .service2-area {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    .service3-area {
+        padding-top: 80px;
+    }
+    .client-area {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .portfolio3-area .portfolio-item,
+    .footer-contact-infos .footer-widget-link,
+    .footer-area .footer-links .footer-widget {
+        width: 100%;
+    }
+    .service2-items {
+        row-gap: 40px;
+    }
+    .copyright-area {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        row-gap: 5px;
+        padding-bottom: 15px;
+    }
+    .footer-area .border-gradient-shape {
+        bottom: 50px;
+    }
+    .video-area .video-content-wrap .video-play-btn {
+        width: 120px;
+        height: 120px;
+    }
+    .testimonial-area .testimonial-button-next, .testimonial-area .testimonial-button-prev {
+        display: none;
+    }
+    .hero-slider-style-2 .swiper-slide .slide-inner .hero-slide-content-wrap {
+        gap: 38px;
+        padding-right: 0;
+    }
+    .service2-box .title {
+        font-size: 20px;
+    }
+    .service2-box p {
+        font-size: 14px;
+    }
+    .video2-area .video-bg {
+        height: 260px;
+    }
+    .home3-page .faq-area .custom-row .left,
+    .faq-area .custom-row .left {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .home3-page .faq2-area .custom-row .left {
+        padding: 0;
+    }
+    .service5-area .img-box {
+        width: 100%;
+    }
+    .hero-banner-bottom .quote-now-btn {
+        padding: 30px 50px 20px 30px;
+    }
+    .hero5-area {
+        padding-bottom: 120px;
+    }
+    .hero5-area .content .title {
+        font-size: 50px;
+        line-height: 50.3px;
+    }
+    .hero5-area .img-box {
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        height: 100%;
+        right: 0;
+    }
+    .hero5-area .content p,
+    .hero5-area .content .title {
+        color: #ffffff;
+    }
+    .hero5-area .content .theme-btn {
+        color: #ffffff;
+    }
+    .hero5-area .content .theme-btn::before,
+    .hero5-area .content .theme-btn::after,
+    .hero5-area .content .theme-btn span::after,
+    .hero5-area .content .theme-btn span::before {
+        background: #ffffff;
+    }
+    .hero5-area .content .theme-btn span {
+        border-color: #ffffff;
+    }
+    .hero5-area .custom-container {
+        min-height: calc(80vh - 55px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 0 40px 50px 40px;
+    }
+    .header-style-4 .logo {
+        padding: 18px 30px;
+    }
+    .mentor-area {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .hero6-area .right {
+        padding: 40px;
+    }
+    .hero6-area .content .title {
+        font-size: 34px;
+        line-height: 34.7px;
+    }
+
+    .horizontal-section-scroll .contact-and-footer-area .footer-infos {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 48px;
+        flex-direction: column;
+    }
+    .hero10-area .content .title {
+        font-size: 38px;
+        line-height: 38.8px;
+    }
+
+    .coming-soon .content {
+        max-width: calc(100% - 20px);
+    }
+    .coming-soon .content p {
+        font-size: 12px;
+        line-height: 24.6px;
+        margin-bottom: 30px;
+    }
+    .coming-soon .content #countdown ul li span {
+        font-size: 36px;
+    }
+    .coming-soon .content #countdown ul {
+        gap: 43px;
+    }
+    .hero-landing-area .custom-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero-landing-area .right img:nth-child(2) {
+        max-width: 85%;
+    }
+    .hero-landing-area {
+        padding-top: 150px;
+    }
+    .demo-area .demo-boxes {
+        row-gap: 50px;
+    }
+    .demo-area .demo-boxes.first-box .demo-box .demo-img img {
+        height: auto;
+    }
+    .demo-area .demo-boxes.column-2 {
+        grid-template-columns: 1fr;
+    }
+    .demo-blog-area .right {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about7-area .left {
+        width: 100%;
+    }
+    .about7-area .right,
+    .about7-area .left .box-anim,
+    .demo-blog-area .right img {
+        max-width: 100%;
+    }
+    .hero-style-1.hero-slider-wrap .slide-inner .hero-slide-content-wrap {
+        min-height: auto;
+    }
+    .breadcrumb-area {
+        padding-top: 150px;
+        padding-bottom: 30px;
+    }
+    .service-area .section-header .left .title {
+        line-height: 36.4px;
+    }
+    .about-area .content {
+        max-width: 100%;
+    }
+    .breadcrumb-area .content ul li {
+        font-size: 26px;
+    }
+    .blog-post .meta {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .comment .comment-inner {
+        flex-direction: column;
+    }
+    .blog-comment-form form .row-group {
+        grid-template-columns: 1fr;
+    }
+    .hero-style-1.hero-slider-wrap {
+        min-height: calc(100vh - 220px);
+        height: calc(100vh - 220px);
+    }
+    .footer-area .footer-links {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .header-wrap .logo img {
+        max-width: 130px;
+    }
+    .header-wrap.header-style-1 {
+        padding: 15px 0;
+    }
+    .hero-slider-wrap .swiper-container {
+        padding-bottom: 0;
+    }
+    .hero-style-1.hero-slider-wrap .slide-inner .hero-slide-content {
+        padding-bottom: 50px;
+    }
+    .section-header-default-content ul li {
+        font-size: 16px;
+        line-height: 33.3px;
+    }
+    .story-box .content-box ul li {
+        font-size: 14px;
+    }
+    .story-box .content-box h1 {
+        font-size: 24px;
+        line-height: 31.7px;
+    }
+    .team-slide-box img {
+        width: 100%;
+    }
+    .pricing-table ul li {
+        font-size: 14px;
+        line-height: 33.3px;
+    }
+    .about8-area .img-box,
+    .home6-page .service3-area .section-heading,
+    .home3-page .faq-area .custom-row .right,
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-img-box,
+    .footer-area .footer-left {
+        max-width: 100%;
+    }
+    .footer-widget p {
+        font-size: 14px;
+        line-height: 25.4px;
+    }
+    .service3-box .title {
+        font-size: 20px;
+    }
+    .team3-area .teams-wrap .team-slide-box {
+        height: 450px;
+    }
+    .video-area .video-bg {
+        height: 270px;
+    }
+    .video-area {
+        padding-bottom: 134px;
+    }
+    .home6-page .video-area .video-content-wrap .content {
+        max-width: 100%;
+        left: 0;
+    }
+    .hero-slider-wrap .swiper-container {
+        width: 100%;
+        left: 0;
+    }
+    .hero-slider-style-2.hero-slider-wrap .slide-inner .hero-slide-content {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .hero-slider-style-2 .hero-slider-2-pagination {
+        left: 40px;
+    }
+    .home7-page .about6-area .left .quote-now-btn {
+        align-items: flex-start;
+    }
+    .about6-area .left .quote-now-btn {
+        font-size: 22px;
+    }
+    .portfolio3-area .portfolio-item .quote-now-btn .title {
+        font-size: 26px;
+    }
+    .landing-page .header-wrap.header-style-1 {
+        padding: 32px 0;
+    }
+    .service2-box p br {
+        display: none;
+    }
+    .demo-features-area .service2-items .service2-box-style2 {
+        max-width: 100%;
+    }
+    .funfacts-wrap .funfact-items {
+        justify-content: center;
+    }
+    .client-area .border-gradient-shape,
+    .about3-area .border-gradient-shape,
+    .video2-area .border-gradient-shape {
+        right: 10px;
+        top: 10px;
+    }
+    .newsletter2-area .border-gradient-shape,
+    .faq-area .border-gradient-shape {
+        left: 10px;
+        top: 10px;
+    }
+    .faq-area .border-gradient-shape-cf {
+        left: 26px !important;
+        top: 12px !important;
+    }
+    .footer-area .border-gradient-shape {
+        right: 10px;
+    }
+    .ticket-area .border-gradient-shape {
+        right: 26px;
+        top: 12px;
+    }
+    .hero7-slider-wrap {
+        padding-top: 0;
+    }
+    
+    .hero-slider-2-pagination-cf{
+        bottom: 5px !important;
+    }
+    .service-detail-wrap .service-detail-content .detail-list{
+        display: grid;
+        gap: 0px;
+        grid-template-columns:auto auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        /* font-size: 26px;
+        line-height: 36.4px; */
+    }
+    .service-items {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .service-box .service-img {
+        max-width: 100%;
+    }
+    .contact-form .title {
+        /* font-size: 24px; */
+    }
+    .testimonial-area .testimonial-content p {
+        /* font-size: 15px; */
+        /* line-height: 25.3px; */
+    }
+    .copyright-area ul {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+    .about4-area .imgs {
+        flex-direction: column;
+    }
+    .about4-area .right {
+        width: 100%;
+    }
+    .about4-area .imgs .box-anim {
+        width: 100%;
+    }
+    .about4-area .imgs .box-anim  img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .hero5-area .content .title {
+        font-size: 40px;
+        line-height: 40.3px;
+    }
+    .ticket-box h4 {
+        padding-right: 0;
+    }
+    .ticket-box > a {
+        position: relative;
+        top: 0;
+        display: inline-block;
+        margin-top: 13px;
+    }
+    .fully-responsive-area::before {
+        height: 50%;
+    }
+    .demo-blog-area .content .title,
+    .inner-pages-area .section-header .title,
+    .fully-responsive-area .section-heading .title,
+    .about8-area .content .title,
+    .mentor-area .section-heading .title,
+    .team3-area .section-heading .title {
+        /* font-size: 24px;
+        line-height: 31.4px; */
+    }
+    .interactive-portfolio {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .interactive-portfolio {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .interactive-portfolio:hover .box-img {
+        width: 180px;
+    }
+    .hero-landing-area .imgs img:first-child {
+        left: -155px;
+    }
+    .contact2-area .right {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 407px) {
+    .hero-slider-wrap .slide-inner .hero-slide-content p {
+        font-size: 13px;
+        line-height: 22.6px;
+    }
+}
