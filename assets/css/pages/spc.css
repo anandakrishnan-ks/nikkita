@@ -1,0 +1,727 @@
+@import url("mainland-base.css");
+
+.spc-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgb(9 27 22 / 90%), rgb(9 27 22 / 55%) 55%, rgb(9 27 22 / 72%)),
+    url("../../imgs/sharjah-mainland/sharjah-commercial-district.jpg") !important;
+  background-position: center 54% !important;
+  background-size: cover !important;
+}
+
+.spc-redesign .hero-actions,
+.spc-redesign .section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.spc-redesign .hero-image .cover {
+  object-position: center 48%;
+}
+
+.spc-redesign .section-head {
+  max-width: 760px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.spc-redesign .section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.spc-redesign .overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: clamp(32px, 6vw, 76px);
+  align-items: center;
+}
+
+.spc-redesign .overview-visual {
+  position: relative;
+  min-height: 380px;
+}
+
+.spc-redesign .overview-visual img,
+.spc-redesign .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spc-redesign .photo-tag {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 290px;
+  padding: 19px 22px;
+  background: var(--green);
+  color: #fff;
+}
+
+.spc-redesign .photo-tag span,
+.spc-redesign .photo-tag small {
+  display: block;
+}
+
+.spc-redesign .photo-tag span {
+  margin-bottom: 5px;
+  font-family: Marcellus, Georgia, serif;
+  font-size: 19px;
+}
+
+.spc-redesign .photo-tag small {
+  color: #d6ded8;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.spc-redesign .activity-list,
+.spc-redesign .checklist-grid,
+.spc-redesign .cost-card ul {
+  padding: 0;
+  margin: 25px 0 0;
+  list-style: none;
+}
+
+.spc-redesign .activity-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.spc-redesign .activity-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.spc-redesign .activity-list i,
+.spc-redesign .content-card > i,
+.spc-redesign .support-card > i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 24px;
+}
+
+.spc-redesign .suitability,
+.spc-redesign .structure-section,
+.spc-redesign .cost-section,
+.spc-redesign .requirements {
+  background: var(--cream);
+}
+
+.spc-redesign .audience-grid,
+.spc-redesign .content-card-grid,
+.spc-redesign .support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.spc-redesign .content-card,
+.spc-redesign .audience-card,
+.spc-redesign .support-card {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 12px 15px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.spc-redesign .content-card:hover,
+.spc-redesign .audience-card:hover,
+.spc-redesign .support-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+  box-shadow: 0 14px 30px rgb(18 38 32 / 8%);
+}
+
+.spc-redesign .content-card h3,
+.spc-redesign .audience-card h3,
+.spc-redesign .support-card h3 {
+  min-width: 0;
+  margin: 0;
+  font-size: 19px;
+}
+
+.spc-redesign .content-card p,
+.spc-redesign .support-card p {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.spc-redesign .audience-card {
+  grid-template-columns: 38px minmax(0, 1fr);
+  min-height: 100px;
+}
+
+.spc-redesign .audience-card i {
+  color: var(--gold);
+  font-size: 27px;
+}
+
+.spc-redesign .benefits {
+  background: var(--green);
+  color: #fff;
+}
+
+.spc-redesign .benefits-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  margin-bottom: 28px;
+}
+
+.spc-redesign .benefits-top h2 {
+  margin-bottom: 0;
+}
+
+.spc-redesign .benefits-top p {
+  max-width: 410px;
+  margin: 0;
+  color: #cbd8ce;
+}
+
+.spc-redesign .benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.spc-redesign .benefit {
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.spc-redesign .benefit i {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--gold);
+  font-size: 28px;
+}
+
+.spc-redesign .benefit h3 {
+  font-size: 19px;
+}
+
+.spc-redesign .benefit p {
+  margin: 0;
+  color: #cbd8ce;
+  font-size: 12px;
+}
+
+.spc-redesign .fit-grid,
+.spc-redesign .cost-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.spc-redesign .fit-panel {
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.spc-redesign .fit-panel.alt {
+  background: var(--green);
+  color: #fff;
+}
+
+.spc-redesign .fit-panel h3 {
+  margin: 0;
+  font-size: 23px;
+}
+
+.spc-redesign .fit-panel ul {
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.spc-redesign .fit-panel li {
+  position: relative;
+  padding: 10px 0 10px 23px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+
+.spc-redesign .fit-panel.alt li {
+  border-color: #365047;
+  color: #dce4df;
+}
+
+.spc-redesign .fit-panel li::before {
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  content: "✓";
+}
+
+.spc-redesign .fit-panel p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.spc-redesign .fit-panel.alt p {
+  color: #dce4df;
+}
+
+.spc-redesign .advisory-callout,
+.spc-redesign .consideration {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  margin-top: 25px;
+  padding: 20px 23px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.spc-redesign .advisory-callout i,
+.spc-redesign .consideration i {
+  color: var(--gold);
+  font-size: 22px;
+}
+
+.spc-redesign .advisory-callout p,
+.spc-redesign .consideration p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.spc-redesign .related-links {
+  margin: 22px 0 0;
+  font-size: 12px;
+}
+
+.spc-redesign .related-links a {
+  color: var(--green);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+.spc-redesign .checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 26px;
+}
+
+.spc-redesign .checklist-grid li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: #394942;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.spc-redesign .checklist-grid i {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.spc-redesign .process-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.spc-redesign .process-section p {
+  color: #c2d0c8;
+}
+
+.spc-redesign .process-flow {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.spc-redesign .process-step {
+  min-width: 0;
+  padding: 22px 16px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.spc-redesign .process-step > span {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--gold);
+  font-family: Marcellus, Georgia, serif;
+  font-size: 22px;
+}
+
+.spc-redesign .process-step h3 {
+  font-size: 17px;
+}
+
+.spc-redesign .process-step p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.spc-redesign .cost-card {
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.spc-redesign .cost-card:nth-child(2) {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+
+.spc-redesign .cost-card h3 {
+  font-size: 25px;
+}
+
+.spc-redesign .cost-card:nth-child(2) p,
+.spc-redesign .cost-card:nth-child(2) li {
+  color: #dce4df;
+}
+
+.spc-redesign .cost-card p {
+  font-size: 12px;
+}
+
+.spc-redesign .cost-card li {
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+}
+
+.spc-redesign .cost-card:nth-child(2) li {
+  border-color: #365047;
+}
+
+.spc-redesign .cost-card li::before {
+  margin-right: 9px;
+  color: var(--gold);
+  content: "+";
+}
+
+.spc-redesign .lead-panel {
+  margin-top: 28px;
+  padding: 25px 28px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.spc-redesign .lead-panel p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.spc-redesign .decision-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.spc-redesign .decision-section .section-head h2 {
+  color: #fff;
+}
+
+.spc-redesign .decision-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.spc-redesign .decision-list div {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 19px;
+  border: 1px solid #365047;
+  color: #e0e6e1;
+  font-size: 12px;
+}
+
+.spc-redesign .decision-list i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 19px;
+}
+
+.spc-redesign .decision-section blockquote {
+  margin: 24px 0 0;
+  padding: 20px 23px;
+  border-left: 3px solid var(--gold);
+  background: #183029;
+  color: #e0e6e1;
+  font-family: Marcellus, Georgia, serif;
+  font-size: 19px;
+}
+
+.spc-redesign .faq {
+  background: #fff;
+}
+
+.spc-redesign .faq-header {
+  margin-bottom: 30px;
+}
+
+.spc-redesign .faq-header h2 {
+  margin-bottom: 12px;
+}
+
+.spc-redesign .faq-header p {
+  margin: 0;
+}
+
+.spc-redesign .faq-list {
+  border-top: 1px solid var(--line);
+}
+
+.spc-redesign .faq-item {
+  border-bottom: 1px solid var(--line);
+}
+
+.spc-redesign .faq-q {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  padding: 15px 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 500 14px/1.55 Montserrat, Arial, sans-serif;
+  text-align: left;
+}
+
+.spc-redesign .faq-q span:last-child {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.spc-redesign .faq-answer {
+  max-width: 930px;
+  padding: 0 50px 20px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.spc-redesign .faq-answer p {
+  margin: 0;
+}
+
+.spc-redesign .faq-item:not(.open) .faq-answer {
+  display: none;
+}
+
+.spc-redesign .final-cta {
+  position: relative;
+  overflow: hidden;
+  background: var(--green);
+  color: #fff;
+}
+
+.spc-redesign .cta-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.75fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.spc-redesign .final-cta h2 {
+  color: #fff;
+}
+
+.spc-redesign .final-cta p {
+  color: #d4dcd6;
+}
+
+.spc-redesign .lead-form {
+  padding: 26px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.spc-redesign .lead-form h3 {
+  font-size: 23px;
+}
+
+.spc-redesign .lead-form > p,
+.spc-redesign .form-note {
+  font-size: 11px;
+}
+
+.spc-redesign .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.spc-redesign .form-field {
+  min-width: 0;
+}
+
+.spc-redesign .form-field.full {
+  grid-column: 1 / -1;
+}
+
+.spc-redesign .form-field label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.spc-redesign .form-field input,
+.spc-redesign .form-field textarea {
+  width: 100%;
+  min-height: 45px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 12px/1.5 Montserrat, Arial, sans-serif;
+}
+
+.spc-redesign .form-field textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.spc-redesign .form-submit {
+  margin-top: 16px;
+}
+
+.spc-redesign .form-note {
+  margin: 12px 0 0;
+}
+
+@media (max-width: 1050px) {
+  .spc-redesign .benefit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .spc-redesign .process-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .spc-redesign .decision-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .spc-redesign .hero-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spc-redesign .hero-content {
+    padding: 40px 0;
+  }
+
+  .spc-redesign .hero-image {
+    min-height: 300px;
+    margin: 0 -29px;
+  }
+
+  .spc-redesign .overview-grid,
+  .spc-redesign .fit-grid,
+  .spc-redesign .cost-grid,
+  .spc-redesign .cta-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .spc-redesign .overview-visual {
+    min-height: 310px;
+  }
+
+  .spc-redesign .audience-grid,
+  .spc-redesign .content-card-grid,
+  .spc-redesign .support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .spc-redesign .benefits-top {
+    display: block;
+  }
+
+  .spc-redesign .benefits-top p {
+    margin-top: 14px;
+  }
+
+  .spc-redesign .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .spc-redesign .section-head {
+    text-align: left;
+  }
+}
+
+@media (max-width: 520px) {
+  .spc-redesign .activity-list,
+  .spc-redesign .checklist-grid,
+  .spc-redesign .audience-grid,
+  .spc-redesign .content-card-grid,
+  .spc-redesign .support-grid,
+  .spc-redesign .benefit-grid,
+  .spc-redesign .process-flow,
+  .spc-redesign .decision-list,
+  .spc-redesign .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .spc-redesign .form-field.full {
+    grid-column: auto;
+  }
+
+  .spc-redesign .content-card,
+  .spc-redesign .audience-card,
+  .spc-redesign .support-card,
+  .spc-redesign .fit-panel,
+  .spc-redesign .cost-card,
+  .spc-redesign .lead-form {
+    padding: 20px;
+  }
+
+  .spc-redesign .hero-actions .button,
+  .spc-redesign .section-actions .button {
+    width: 100%;
+  }
+
+  .spc-redesign .faq-q {
+    gap: 14px;
+    font-size: 13px;
+  }
+}

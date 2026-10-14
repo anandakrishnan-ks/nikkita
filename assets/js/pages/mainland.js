@@ -3,10 +3,13 @@
   "use strict";
 
   function track(eventName, details) {
+    var pageRoot = document.querySelector(".mainland-redesign");
     var payload = Object.assign(
       {
         event: eventName,
-        page_type: "mainland_service",
+        page_type:
+          (pageRoot && pageRoot.getAttribute("data-page-type")) ||
+          "mainland_service",
         landing_page: window.location.pathname,
       },
       details || {},
@@ -31,7 +34,12 @@
         button.setAttribute("aria-expanded", String(opening));
 
         var indicator = button.lastElementChild;
-        if (indicator) indicator.textContent = opening ? "−" : "+";
+        if (indicator && indicator.classList.contains("faq-indicator")) {
+          indicator.classList.toggle("la-plus", !opening);
+          indicator.classList.toggle("la-minus", opening);
+        } else if (indicator) {
+          indicator.textContent = opening ? "−" : "+";
+        }
       });
     });
 
@@ -69,9 +77,10 @@
       });
 
       form.addEventListener("submit", function () {
+        var interestField = form.querySelector('[name="business_interest"]');
         track("generate_lead", {
           form_name: form.getAttribute("data-lead-form"),
-          business_interest: "Abu Dhabi Mainland",
+          business_interest: interestField ? interestField.value : "Mainland",
         });
       });
     });

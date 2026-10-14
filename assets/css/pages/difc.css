@@ -1,0 +1,301 @@
+@import url("spc.css");
+
+.difc-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgb(9 27 22 / 90%), rgb(9 27 22 / 55%) 55%, rgb(9 27 22 / 72%)),
+    url("../../imgs/dubai-mainland/dubai-skyline.jpg") !important;
+  background-position: center 44% !important;
+  background-size: cover !important;
+}
+
+.difc-redesign .hero-image .cover {
+  object-position: center 42%;
+}
+
+.difc-redesign .overview-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+}
+
+.difc-redesign .sector-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.difc-redesign .sector-card {
+  display: flex;
+  min-width: 0;
+  min-height: 68px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+
+.difc-redesign .sector-card i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 21px;
+}
+
+.difc-redesign .benefit-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.difc-redesign .benefit:first-child {
+  border-color: var(--gold);
+}
+
+.difc-redesign .fit-panel h3 {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.difc-redesign .fit-panel h3 i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 23px;
+}
+
+.difc-redesign .fit-panel.alt h3 i {
+  color: #e0bd75;
+}
+
+.difc-redesign .licence-grid,
+.difc-redesign .structure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.difc-redesign .licence-card,
+.difc-redesign .structure-card {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 10px 13px;
+  align-content: start;
+  min-width: 0;
+  padding: 23px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.difc-redesign .licence-card.regulated {
+  border-top: 3px solid var(--gold);
+}
+
+.difc-redesign .licence-card > i,
+.difc-redesign .structure-card > i {
+  grid-column: 1;
+  grid-row: 1;
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.difc-redesign .licence-card h3,
+.difc-redesign .structure-card h3 {
+  grid-column: 2;
+  margin: 0;
+  font-size: 19px;
+}
+
+.difc-redesign .licence-card p,
+.difc-redesign .structure-card p {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 12px;
+}
+
+.difc-redesign .licence-card .regulatory-label {
+  grid-column: 1 / -1;
+  justify-self: start;
+  padding: 5px 9px;
+  background: #f5f2ea;
+  color: #78602d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.difc-redesign .special-structures {
+  margin-top: 18px;
+  padding: 25px;
+  border-left: 3px solid var(--gold);
+  background: var(--cream);
+}
+
+.difc-redesign .special-structures h3 {
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+
+.difc-redesign .special-structures p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.difc-redesign .structure-note {
+  margin-top: 18px;
+  font-size: 12px;
+}
+
+.difc-redesign .requirements {
+  background: var(--cream);
+}
+
+.difc-redesign .requirements-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.difc-redesign .requirements-copy {
+  padding: 26px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.difc-redesign .requirements-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.difc-redesign .checklist-grid {
+  margin-top: 0;
+}
+
+.difc-redesign .process-step {
+  position: relative;
+}
+
+.difc-redesign .process-step.regulatory-step {
+  border-color: var(--gold);
+  background: #203a32;
+}
+
+.difc-redesign .cost-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+}
+
+.difc-redesign .decision-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.difc-redesign .consideration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.difc-redesign .consideration-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.difc-redesign .consideration-card.priority {
+  border-top: 3px solid var(--gold);
+}
+
+.difc-redesign .consideration-card > i {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.difc-redesign .consideration-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.difc-redesign .consideration-card p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.difc-redesign .support-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.difc-redesign .support-callout {
+  margin-top: 22px;
+  padding: 20px 23px;
+  border-left: 3px solid var(--gold);
+  background: var(--cream);
+  font-family: Marcellus, Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.difc-redesign .form-field input,
+.difc-redesign .form-field select,
+.difc-redesign .form-field textarea {
+  width: 100%;
+  min-height: 45px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 400 12px/1.5 Montserrat, Arial, sans-serif;
+}
+
+.difc-redesign .form-field textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.difc-redesign .difc-honeypot {
+  display: none !important;
+}
+
+@media (max-width: 1050px) {
+  .difc-redesign .sector-grid,
+  .difc-redesign .benefit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .difc-redesign .consideration-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .difc-redesign .overview-grid,
+  .difc-redesign .requirements-layout,
+  .difc-redesign .cost-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .difc-redesign .sector-grid,
+  .difc-redesign .support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .difc-redesign .benefit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .difc-redesign .sector-grid,
+  .difc-redesign .licence-grid,
+  .difc-redesign .structure-grid,
+  .difc-redesign .consideration-grid,
+  .difc-redesign .support-grid,
+  .difc-redesign .benefit-grid,
+  .difc-redesign .decision-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

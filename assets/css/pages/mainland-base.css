@@ -1,4 +1,29 @@
-/* Page-specific styling imported from the approved Dubai Mainland design. */
+/* Shared Dubai, Abu Dhabi, and Sharjah Mainland presentation system. */
+
+.mainland-breadcrumb {
+  display: flex;
+  min-height: 118px !important;
+  align-items: flex-end;
+  padding: 92px 0 18px !important;
+  background: #122620;
+}
+
+.mainland-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.9), rgba(9, 27, 22, 0.55) 55%, rgba(9, 27, 22, 0.72)),
+    url("../../imgs/mainland/common-mainland-breadcrumb.jpg") !important;
+  background-position: center 54% !important;
+  background-size: cover !important;
+}
+
+.mainland-breadcrumb .content ul li {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.32);
+}
+
+.mainland-breadcrumb .content ul li:last-child {
+  color: #ead19d !important;
+  text-decoration: none;
+}
 
 .mainland-redesign {
   --green: #122620;
@@ -163,31 +188,39 @@
   overflow: hidden;
 }
 .mainland-redesign .hero-layout {
-  min-height: 640px;
+  min-height: 520px;
   display: grid;
-  grid-template-columns: 52% 48%;
+  grid-template-columns: 56% 44%;
   align-items: stretch;
 }
 .mainland-redesign .hero-content {
-  padding: 90px max(40px, calc((100vw - var(--max)) / 2)) 100px 0;
+  padding: 58px clamp(32px, 4vw, 60px) 62px 0;
   align-self: center;
 }
 .mainland-redesign .hero-content p {
   max-width: 565px;
 }
 .mainland-redesign .hero-sub {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.7;
   color: #47564e;
   font-weight: 500;
   max-width: 580px !important;
 }
-.mainland-redesign .hero-actions {
-  margin-top: 35px;
+.mainland-redesign .hero .hero-actions {
+  margin-top: 24px;
+}
+.mainland-redesign .hero .button {
+  min-height: 48px;
+  gap: 20px;
+  padding: 12px 18px;
 }
 .mainland-redesign .hero-image {
   position: relative;
-  min-height: 640px;
-  margin-right: calc((min(100vw, var(--max)) - 100vw) / 2);
+  min-height: 520px;
+  margin-right: calc(
+    (min(var(--max), calc(100vw - 88px)) - 100vw) / 2
+  );
   background: #c6c6b5;
 }
 .mainland-redesign .cover {
@@ -690,10 +723,15 @@
     width: min(100% - 58px, var(--max));
   }
   .mainland-redesign .hero-layout {
-    grid-template-columns: 53% 47%;
+    min-height: 480px;
+    grid-template-columns: 55% 45%;
   }
   .mainland-redesign .hero-content {
-    padding-right: 40px;
+    padding: 48px 32px 52px 0;
+  }
+  .mainland-redesign .hero-image {
+    min-height: 480px;
+    margin-right: -29px;
   }
   .mainland-redesign .overview-grid {
     gap: 60px;
@@ -712,6 +750,23 @@
   }
 }
 @media (max-width: 760px) {
+  .mainland-breadcrumb {
+    min-height: 104px !important;
+    padding: 84px 0 14px !important;
+  }
+
+  .mainland-breadcrumb .content ul {
+    gap: 6px !important;
+  }
+
+  .mainland-breadcrumb .content ul li {
+    font-size: 11px !important;
+  }
+
+  .mainland-breadcrumb .content ul .seperate {
+    width: 8px !important;
+  }
+
   .mainland-redesign {
     --section-space: 44px;
     font-size: 14px;
@@ -720,7 +775,8 @@
     width: calc(100% - 40px);
   }
   .mainland-redesign h1 {
-    font-size: clamp(36px, 8.5vw, 43px);
+    font-size: clamp(32px, 8vw, 38px);
+    margin: 15px 0 18px;
   }
   .mainland-redesign h2 {
     font-size: clamp(30px, 5.8vw, 34px);
@@ -736,11 +792,11 @@
     grid-template-columns: 1fr;
   }
   .mainland-redesign .hero-content {
-    padding: 69px 20px 62px 0;
+    padding: 42px 0 38px;
   }
   .mainland-redesign .hero-image {
-    min-height: 350px;
-    height: 350px;
+    min-height: 280px;
+    height: 280px;
     margin: 0 -20px;
   }
   .mainland-redesign .hero-layout {
@@ -811,11 +867,19 @@
     --section-space: 40px;
   }
   .mainland-redesign .hero-image {
-    height: 295px;
-    min-height: 295px;
+    height: 230px;
+    min-height: 230px;
+  }
+  .mainland-redesign .hero .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .mainland-redesign .hero .hero-actions .button {
+    width: 100%;
   }
   .mainland-redesign .hero-sub {
-    font-size: 16px;
+    font-size: 15px;
   }
   .mainland-redesign .lead {
     font-size: 14px;
