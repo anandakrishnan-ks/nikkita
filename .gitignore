@@ -1,0 +1,8 @@
+# Temporary browser testing profiles and audits
+.chrome-bc-audit/
+.edge-qa-profile/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

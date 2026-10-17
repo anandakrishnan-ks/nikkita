@@ -76,11 +76,33 @@
         });
       });
 
-      form.addEventListener("submit", function () {
+      form.addEventListener("submit", function (event) {
         var interestField = form.querySelector('[name="business_interest"]');
-        track("generate_lead", {
+        var activityField = form.querySelector('[name="proposed_activity"]');
+        var requirementField = form.querySelector('[name="requirement"]');
+        var licenceField = form.querySelector('[name="preferred_licence"]');
+        var trapField = form.querySelector('[name="company_site"]');
+
+        if (trapField && trapField.value.trim()) {
+          event.preventDefault();
+          return;
+        }
+
+        // A mailto form hands the enquiry to the visitor's email app; the site
+        // cannot confirm that the message was actually sent.
+        var isEmailHandoff = /^mailto:/i.test(form.getAttribute("action") || "");
+        track(isEmailHandoff ? "enquiry_handoff" : "generate_lead", {
           form_name: form.getAttribute("data-lead-form"),
           business_interest: interestField ? interestField.value : "Mainland",
+          facility_requirement: form.elements.facility_requirement
+            ? form.elements.facility_requirement.value || "not_specified"
+            : "not_applicable",
+          preferred_licence: licenceField ? licenceField.value : "not_provided",
+          qualification_status:
+            (activityField && activityField.value.trim()) ||
+            (requirementField && requirementField.value.trim())
+              ? "qualified_intent"
+              : "basic_enquiry",
         });
       });
     });

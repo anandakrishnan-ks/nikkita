@@ -1,0 +1,1348 @@
+@import url("mainland-base.css");
+
+/* Dubai South page-specific layouts. */
+.dubai-south-redesign .hero-actions,
+.dubai-south-redesign .section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.dubai-south-redesign .hero-image .cover {
+  object-position: center 44%;
+}
+
+.dubai-south-redesign .hero-content p {
+  max-width: 620px;
+}
+
+.dubai-south-redesign .section-head {
+  max-width: none;
+  margin-bottom: 32px;
+}
+
+.dubai-south-redesign .section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.dubai-south-redesign .activity-list,
+.dubai-south-redesign .checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
+  padding: 0;
+  margin: 28px 0 0;
+  list-style: none;
+}
+
+.dubai-south-redesign .activity-list li,
+.dubai-south-redesign .checklist-grid li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: #394942;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.dubai-south-redesign .activity-list i,
+.dubai-south-redesign .checklist-grid i {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #a9823f;
+  font-size: 16px;
+}
+
+.dubai-south-redesign .suitability {
+  background: var(--cream);
+}
+
+.dubai-south-redesign .audience-grid,
+.dubai-south-redesign .content-card-grid,
+.dubai-south-redesign .support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.dubai-south-redesign .audience-card,
+.dubai-south-redesign .content-card,
+.dubai-south-redesign .support-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 14px 16px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dubai-south-redesign .audience-card:hover,
+.dubai-south-redesign .content-card:hover,
+.dubai-south-redesign .support-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9a050;
+  box-shadow: 0 16px 36px rgba(18, 38, 32, 0.08);
+}
+
+.dubai-south-redesign .audience-card i,
+.dubai-south-redesign .content-card i,
+.dubai-south-redesign .support-card i {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.dubai-south-redesign .audience-card h3,
+.dubai-south-redesign .content-card h3,
+.dubai-south-redesign .support-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.dubai-south-redesign .content-card p,
+.dubai-south-redesign .support-card p {
+  grid-column: 1 / -1;
+  align-self: start;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.dubai-south-redesign .consideration,
+.dubai-south-redesign .advisory-callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 28px;
+  padding: 25px 28px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.dubai-south-redesign .consideration i,
+.dubai-south-redesign .advisory-callout i {
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.dubai-south-redesign .consideration strong,
+.dubai-south-redesign .advisory-callout strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.dubai-south-redesign .consideration p,
+.dubai-south-redesign .advisory-callout p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.dubai-south-redesign .advantage-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.dubai-south-redesign .advantage-grid .benefit {
+  border: 1px solid #365047;
+}
+
+.dubai-south-redesign .benefit i {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.dubai-south-redesign .licence-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dubai-south-redesign .licence-grid .licence-secondary {
+  grid-column: 1 / -1;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.dubai-south-redesign .licence-grid .licence-secondary p {
+  grid-column: 2;
+}
+
+.dubai-south-redesign .considerations-section {
+  background: #fff;
+}
+
+.dubai-south-redesign .considerations-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.dubai-south-redesign .structure-section,
+.dubai-south-redesign .cost-section {
+  background: var(--cream);
+}
+
+.dubai-south-redesign .structure-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dubai-south-redesign .structure-grid .content-card {
+  padding: 26px;
+}
+
+.dubai-south-redesign .process-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.dubai-south-redesign .process-section p {
+  color: #c2d0c8;
+}
+
+.dubai-south-redesign .process-flow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 0;
+}
+
+.dubai-south-redesign .process-step {
+  position: relative;
+  min-height: 150px;
+  padding: 26px 20px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.dubai-south-redesign .process-step::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -18px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.dubai-south-redesign .process-step::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -8px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--green);
+  border-right: 2px solid var(--green);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.dubai-south-redesign .process-step:last-child::after,
+.dubai-south-redesign .process-step:last-child::before {
+  display: none;
+}
+
+.dubai-south-redesign .process-step span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--gold);
+  font:
+    21px/1 Marcellus,
+    Georgia,
+    serif;
+}
+
+.dubai-south-redesign .process-step h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.dubai-south-redesign .support-card h3 {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.dubai-south-redesign .timing-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 24px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #365047;
+  color: #dce6e1;
+  font-size: 12px;
+}
+
+.dubai-south-redesign .timing-note i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.dubai-south-redesign .timing-note strong {
+  color: #fff;
+}
+
+.dubai-south-redesign .source-note {
+  margin: 24px 0 0;
+  color: #77827c;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.dubai-south-redesign .source-note a {
+  color: #936d2d;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dubai-south-redesign .button .las {
+  flex: 0 0 auto;
+  font-size: 18px;
+}
+
+.dubai-south-redesign .final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.dubai-south-redesign .lead-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: var(--section-space) 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
+    linear-gradient(135deg, #0d211b 0%, var(--green) 52%, #1b382f 100%);
+  color: #fff;
+}
+
+.dubai-south-redesign .lead-cta::before,
+.dubai-south-redesign .lead-cta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(226, 197, 137, 0.16);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.dubai-south-redesign .lead-cta::before {
+  width: 520px;
+  height: 520px;
+  top: -310px;
+  right: -135px;
+  box-shadow: 0 0 0 92px rgba(255, 255, 255, 0.018);
+}
+
+.dubai-south-redesign .lead-cta::after {
+  width: 260px;
+  height: 260px;
+  bottom: -185px;
+  left: 7%;
+}
+
+.dubai-south-redesign .lead-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: clamp(42px, 6vw, 82px);
+  align-items: center;
+}
+
+.dubai-south-redesign .lead-copy {
+  max-width: 490px;
+  padding: 10px 0;
+}
+
+.dubai-south-redesign .lead-copy .eyebrow {
+  color: #d8b66f;
+}
+
+.dubai-south-redesign .lead-copy h2 {
+  max-width: 470px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.dubai-south-redesign .lead-copy p {
+  max-width: 455px;
+  margin-bottom: 0;
+  color: #d4dcd6;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.dubai-south-redesign .lead-quote {
+  margin-top: 30px !important;
+  padding: 17px 18px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1 !important;
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+}
+
+.dubai-south-redesign .lead-cta .button-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.dubai-south-redesign .lead-cta .button-outline:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--green);
+}
+
+.dubai-south-redesign .lead-form {
+  position: relative;
+  padding: clamp(28px, 3.3vw, 42px);
+  border-top: 4px solid var(--gold);
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
+}
+
+.dubai-south-redesign .lead-form h3 {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-size: clamp(26px, 2.5vw, 32px);
+}
+
+.dubai-south-redesign .lead-form > p {
+  margin-bottom: 25px;
+  color: #68736d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.dubai-south-redesign .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.dubai-south-redesign .form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.dubai-south-redesign .form-field.full {
+  grid-column: 1 / -1;
+}
+
+.dubai-south-redesign .form-field label {
+  color: #35453e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dubai-south-redesign .form-field input,
+.dubai-south-redesign .form-field select,
+.dubai-south-redesign .form-field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #d5dbd6;
+  border-radius: 0;
+  outline: none;
+  background: #fbfbf8;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dubai-south-redesign .form-field input:focus,
+.dubai-south-redesign .form-field select:focus,
+.dubai-south-redesign .form-field textarea:focus {
+  border-color: var(--gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(201, 160, 80, 0.12);
+}
+
+.dubai-south-redesign .form-field input[readonly] {
+  color: #59675f;
+  background: #f1f2ed;
+}
+
+.dubai-south-redesign .form-field textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.dubai-south-redesign .form-field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #5e6b64 50%),
+    linear-gradient(135deg, #5e6b64 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 21px,
+    calc(100% - 13px) 21px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.dubai-south-redesign .form-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.dubai-south-redesign .form-submit {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.dubai-south-redesign .form-submit .button {
+  width: 100%;
+  min-height: 56px;
+}
+
+.dubai-south-redesign .form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #78827c !important;
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .dubai-south-redesign .audience-grid,
+  .dubai-south-redesign .content-card-grid,
+  .dubai-south-redesign .support-grid,
+  .dubai-south-redesign .advantage-grid,
+  .dubai-south-redesign .structure-grid,
+  .dubai-south-redesign .considerations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dubai-south-redesign .process-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dubai-south-redesign .process-step:nth-child(3)::after,
+  .dubai-south-redesign .process-step:nth-child(3)::before {
+    display: none;
+  }
+
+  .dubai-south-redesign .lead-layout {
+    gap: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .dubai-south-redesign .audience-grid,
+  .dubai-south-redesign .content-card-grid,
+  .dubai-south-redesign .support-grid,
+  .dubai-south-redesign .lead-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .lead-layout {
+    gap: 36px;
+  }
+
+  .dubai-south-redesign .lead-copy {
+    max-width: 620px;
+    padding: 0;
+  }
+
+  .dubai-south-redesign .lead-copy h2,
+  .dubai-south-redesign .lead-copy p {
+    max-width: 620px;
+  }
+
+  .dubai-south-redesign .licence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dubai-south-redesign .process-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dubai-south-redesign .process-step:nth-child(3)::after,
+  .dubai-south-redesign .process-step:nth-child(3)::before {
+    display: block;
+  }
+
+  .dubai-south-redesign .process-step:nth-child(even)::after,
+  .dubai-south-redesign .process-step:nth-child(even)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .dubai-south-redesign .licence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .licence-grid .licence-secondary {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .dubai-south-redesign .hero-actions,
+  .dubai-south-redesign .section-actions,
+  .dubai-south-redesign .final-actions,
+  .dubai-south-redesign .activity-list,
+  .dubai-south-redesign .checklist-grid,
+  .dubai-south-redesign .structure-grid,
+  .dubai-south-redesign .considerations-grid,
+  .dubai-south-redesign .advantage-grid,
+  .dubai-south-redesign .process-flow,
+  .dubai-south-redesign .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .hero-actions,
+  .dubai-south-redesign .section-actions {
+    display: grid;
+  }
+
+  .dubai-south-redesign .process-step::after,
+  .dubai-south-redesign .process-step::before {
+    display: none !important;
+  }
+
+  .dubai-south-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+
+  .dubai-south-redesign .lead-cta::before {
+    right: -300px;
+  }
+
+  .dubai-south-redesign .final-actions {
+    display: grid;
+    gap: 10px;
+  }
+
+  .dubai-south-redesign .final-actions .button {
+    width: 100%;
+  }
+}
+
+/* Dubai South content variations and compact responsive layout. */
+.dubai-south-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
+    url("../../imgs/dubai-south/dubai-south-aviation-logistics-corridor.webp") !important;
+  background-position: center 47% !important;
+}
+
+.dubai-south-redesign {
+  --section-space: 54px;
+}
+
+.dubai-south-redesign .hero-layout,
+.dubai-south-redesign .hero-image {
+  min-height: 500px;
+}
+
+.dubai-south-redesign .hero-content {
+  padding-top: 49px;
+  padding-bottom: 53px;
+}
+
+.dubai-south-redesign .hero-image .cover {
+  object-position: 49% center;
+}
+
+.dubai-south-redesign .overview-visual {
+  height: 520px;
+}
+
+.dubai-south-redesign .overview-visual .cover {
+  object-position: center 48%;
+}
+
+.dubai-south-redesign .compact-head {
+  max-width: 880px;
+  margin-bottom: 26px;
+}
+
+.dubai-south-redesign .business-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.dubai-south-redesign .business-area-grid span {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  background: #fbfbf8;
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dubai-south-redesign .business-area-grid i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.dubai-south-redesign .section-soft {
+  background: var(--cream);
+}
+
+.dubai-south-redesign .mini-title {
+  margin: 24px 0 0;
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dubai-south-redesign .overview-visual {
+  overflow: hidden;
+}
+
+.dubai-south-redesign .overview-visual figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  padding: 12px 14px;
+  background: rgba(12, 34, 27, 0.86);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.dubai-south-redesign .fit-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.dubai-south-redesign .fit-card {
+  padding: 28px 29px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  background: #fff;
+}
+
+.dubai-south-redesign .fit-card-caution {
+  border-top-color: #738178;
+}
+
+.dubai-south-redesign .fit-card-heading {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.dubai-south-redesign .fit-card-heading i {
+  color: var(--gold);
+  font-size: 29px;
+}
+
+.dubai-south-redesign .fit-card-caution .fit-card-heading i {
+  color: #718078;
+}
+
+.dubai-south-redesign .fit-card-heading h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.dubai-south-redesign .fit-card ul,
+.dubai-south-redesign .requirement-panel ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dubai-south-redesign .fit-card li {
+  position: relative;
+  padding: 9px 0 9px 17px;
+  border-bottom: 1px solid #eaebe6;
+  color: #526159;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dubai-south-redesign .fit-card li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: #a9823f;
+}
+
+.dubai-south-redesign .fit-card-detailed li strong,
+.dubai-south-redesign .fit-card-detailed li span {
+  display: block;
+}
+
+.dubai-south-redesign .fit-card-detailed li strong {
+  margin-bottom: 2px;
+  color: var(--green);
+  font-size: 11px;
+}
+
+.dubai-south-redesign .fit-card-detailed li span {
+  color: #69766f;
+  font-size: 10px;
+}
+
+.dubai-south-redesign .prominent-callout {
+  background: #f0ede5;
+}
+
+.dubai-south-redesign .advantage-grid .benefit h3 {
+  color: #fff;
+}
+
+.dubai-south-redesign .advantage-grid .benefit p {
+  color: #c8d4cd;
+}
+
+.dubai-south-redesign .advantage-grid .logistics-card {
+  border-color: var(--gold);
+  background: #1a3a31;
+}
+
+.dubai-south-redesign .activity-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.dubai-south-redesign .activity-card-grid .content-card {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 10px;
+  padding: 23px 20px;
+}
+
+.dubai-south-redesign .activity-card-grid .content-card i,
+.dubai-south-redesign .activity-card-grid .content-card h3,
+.dubai-south-redesign .activity-card-grid .content-card p {
+  grid-column: 1;
+}
+
+.dubai-south-redesign .activity-card-grid .content-card i {
+  grid-row: 1;
+  width: 42px;
+  height: 42px;
+  font-size: 36px;
+}
+
+.dubai-south-redesign .activity-card-grid .content-card h3 {
+  grid-row: 2;
+  font-size: 19px;
+}
+
+.dubai-south-redesign .activity-card-grid .content-card p {
+  grid-row: 3;
+}
+
+.dubai-south-redesign .requirements-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.dubai-south-redesign .requirement-panel {
+  padding: 29px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.dubai-south-redesign .requirement-panel-head {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.dubai-south-redesign .requirement-panel-head span {
+  color: var(--gold);
+  font: 21px/1 Marcellus, Georgia, serif;
+}
+
+.dubai-south-redesign .requirement-panel-head h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.dubai-south-redesign .requirement-panel li {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e9e4;
+  color: #4e5d55;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dubai-south-redesign .requirement-panel li i {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.dubai-south-redesign .cost-setup-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+  gap: 20px;
+}
+
+.dubai-south-redesign .cost-factor-panel,
+.dubai-south-redesign .cost-advisor-panel {
+  padding: 33px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.dubai-south-redesign .cost-factor-panel h3,
+.dubai-south-redesign .cost-advisor-panel h3 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.dubai-south-redesign .cost-factor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.dubai-south-redesign .cost-factor-grid span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 49px;
+  padding: 10px 12px;
+  background: var(--cream);
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dubai-south-redesign .cost-factor-grid i {
+  color: var(--gold);
+  font-size: 21px;
+}
+
+.dubai-south-redesign .cost-note {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+  color: #59675f;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.dubai-south-redesign .cost-advisor-panel {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.dubai-south-redesign .cost-advisor-panel .eyebrow {
+  color: var(--gold);
+}
+
+.dubai-south-redesign .cost-advisor-panel h3 {
+  margin-top: 12px;
+  color: #fff;
+}
+
+.dubai-south-redesign .cost-advisor-panel p {
+  color: #c8d4cd;
+  font-size: 12px;
+}
+
+.dubai-south-redesign .cost-advisor-panel .button {
+  margin-top: 12px;
+}
+
+.dubai-south-redesign .decision-section {
+  position: relative;
+  overflow: hidden;
+  background: #0e211b;
+  color: #fff;
+}
+
+.dubai-south-redesign .decision-section::after {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  right: -190px;
+  bottom: -310px;
+  border: 1px solid rgba(201, 160, 80, 0.18);
+  border-radius: 50%;
+}
+
+.dubai-south-redesign .decision-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(250px, 0.68fr) minmax(0, 1.32fr);
+  gap: 28px 52px;
+  align-items: start;
+}
+
+.dubai-south-redesign .decision-copy .eyebrow {
+  color: var(--gold);
+}
+
+.dubai-south-redesign .decision-copy h2 {
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.dubai-south-redesign .decision-copy p {
+  margin: 0;
+  color: #bfcac4;
+  font-size: 13px;
+}
+
+.dubai-south-redesign .decision-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.dubai-south-redesign .decision-list > div {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid #304a40;
+  background: #173029;
+  color: #e7ece9;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.dubai-south-redesign .decision-list i {
+  color: var(--gold);
+  font-size: 23px;
+}
+
+.dubai-south-redesign .decision-grid blockquote {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 17px 20px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1;
+  font: 400 17px/1.65 Marcellus, Georgia, serif;
+}
+
+.dubai-south-redesign .considerations-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dubai-south-redesign .related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 19px;
+  border-top: 1px solid var(--line);
+  color: #637069;
+  font-size: 11px;
+}
+
+.dubai-south-redesign .related-links > span {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.dubai-south-redesign .related-links a {
+  color: #997331;
+  font-weight: 600;
+}
+
+.dubai-south-redesign .related-links a:hover {
+  text-decoration: underline;
+}
+
+.dubai-south-redesign .lead-cta {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.dubai-south-redesign .lead-form {
+  padding: 34px;
+}
+
+.dubai-south-redesign .form-field textarea {
+  min-height: 96px;
+}
+
+@media (max-width: 1050px) {
+  .dubai-south-redesign {
+    --section-space: 49px;
+  }
+
+  .dubai-south-redesign .activity-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dubai-south-redesign .fit-card ul,
+  .dubai-south-redesign .requirement-panel ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .dubai-south-redesign {
+    --section-space: 42px;
+  }
+
+  .dubai-south-redesign .hero-layout,
+  .dubai-south-redesign .hero-image {
+    min-height: unset;
+  }
+
+  .dubai-south-redesign .overview-visual {
+    height: 390px;
+  }
+
+  .dubai-south-redesign .fit-columns,
+  .dubai-south-redesign .requirements-split,
+  .dubai-south-redesign .cost-setup-grid,
+  .dubai-south-redesign .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .activity-card-grid,
+  .dubai-south-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dubai-south-redesign .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .process-step {
+    min-height: 0;
+  }
+
+  .dubai-south-redesign .process-step::after,
+  .dubai-south-redesign .process-step::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .dubai-south-redesign {
+    --section-space: 38px;
+  }
+
+  .dubai-south-redesign .business-area-grid,
+  .dubai-south-redesign .activity-card-grid,
+  .dubai-south-redesign .considerations-grid,
+  .dubai-south-redesign .cost-factor-grid,
+  .dubai-south-redesign .decision-list {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .fit-card,
+  .dubai-south-redesign .requirement-panel,
+  .dubai-south-redesign .cost-factor-panel,
+  .dubai-south-redesign .cost-advisor-panel {
+    padding: 24px 20px;
+  }
+
+  .dubai-south-redesign .fit-card-heading h3,
+  .dubai-south-redesign .requirement-panel-head h3 {
+    font-size: 22px;
+  }
+
+  .dubai-south-redesign .cost-advisor-panel .button {
+    width: 100%;
+  }
+
+  .dubai-south-redesign .decision-grid {
+    gap: 23px;
+  }
+
+  .dubai-south-redesign .related-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dubai-south-redesign .lead-cta {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .dubai-south-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+}
+
+/* Keep the six licence routes balanced without creating oversized cards. */
+@media (min-width: 1051px) {
+  .dubai-south-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dubai-south-redesign .licence-grid .content-card,
+  .dubai-south-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .dubai-south-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dubai-south-redesign .licence-grid .content-card,
+  .dubai-south-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1051px) {
+  .dubai-south-redesign .compact-benefits,
+  .dubai-south-redesign .support-grid-eight {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.dubai-south-redesign .compact-benefits .benefit {
+  grid-template-rows: minmax(50px, auto) auto;
+  min-height: 166px;
+  padding: 23px 22px;
+}
+
+.dubai-south-redesign .compact-benefits .benefit > span {
+  grid-column: 1 / -1;
+  color: #c8d4cd;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.dubai-south-redesign .support-subtitle {
+  margin: 18px 0 0;
+  color: var(--green);
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.dubai-south-redesign .support-card {
+  grid-template-rows: auto auto;
+}
+
+.dubai-south-redesign .support-card ul {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dubai-south-redesign .support-card li {
+  position: relative;
+  padding: 3px 0 3px 13px;
+  color: #65736c;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.dubai-south-redesign .support-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.dubai-south-redesign .compact-benefits .feature-benefit {
+  border-color: var(--gold);
+  background: #193b31;
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .dubai-south-redesign .compact-benefits,
+  .dubai-south-redesign .support-grid-eight {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .dubai-south-redesign .compact-benefits,
+  .dubai-south-redesign .support-grid-eight {
+    grid-template-columns: 1fr;
+  }
+
+  .dubai-south-redesign .compact-benefits .benefit {
+    min-height: 0;
+  }
+}
+
+

@@ -1,0 +1,1351 @@
+@import url("mainland-base.css");
+
+/* Ajman NuVentures page-specific layouts. */
+.nuventures-redesign .hero-actions,
+.nuventures-redesign .section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.nuventures-redesign .hero-image .cover {
+  object-position: center 44%;
+}
+
+.nuventures-redesign .hero-content p {
+  max-width: 620px;
+}
+
+.nuventures-redesign .section-head {
+  max-width: none;
+  margin-bottom: 32px;
+}
+
+.nuventures-redesign .section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.nuventures-redesign .activity-list,
+.nuventures-redesign .checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
+  padding: 0;
+  margin: 28px 0 0;
+  list-style: none;
+}
+
+.nuventures-redesign .activity-list li,
+.nuventures-redesign .checklist-grid li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: #394942;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.nuventures-redesign .activity-list i,
+.nuventures-redesign .checklist-grid i {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #a9823f;
+  font-size: 16px;
+}
+
+.nuventures-redesign .suitability {
+  background: var(--cream);
+}
+
+.nuventures-redesign .audience-grid,
+.nuventures-redesign .content-card-grid,
+.nuventures-redesign .support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.nuventures-redesign .audience-card,
+.nuventures-redesign .content-card,
+.nuventures-redesign .support-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 14px 16px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.nuventures-redesign .audience-card:hover,
+.nuventures-redesign .content-card:hover,
+.nuventures-redesign .support-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9a050;
+  box-shadow: 0 16px 36px rgba(18, 38, 32, 0.08);
+}
+
+.nuventures-redesign .audience-card i,
+.nuventures-redesign .content-card i,
+.nuventures-redesign .support-card i {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.nuventures-redesign .audience-card h3,
+.nuventures-redesign .content-card h3,
+.nuventures-redesign .support-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.nuventures-redesign .content-card p,
+.nuventures-redesign .support-card p {
+  grid-column: 1 / -1;
+  align-self: start;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.nuventures-redesign .consideration,
+.nuventures-redesign .advisory-callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 28px;
+  padding: 25px 28px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.nuventures-redesign .consideration i,
+.nuventures-redesign .advisory-callout i {
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.nuventures-redesign .consideration strong,
+.nuventures-redesign .advisory-callout strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.nuventures-redesign .consideration p,
+.nuventures-redesign .advisory-callout p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.nuventures-redesign .advantage-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.nuventures-redesign .advantage-grid .benefit {
+  border: 1px solid #365047;
+}
+
+.nuventures-redesign .benefit i {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.nuventures-redesign .licence-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nuventures-redesign .licence-grid .licence-secondary {
+  grid-column: 1 / -1;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.nuventures-redesign .licence-grid .licence-secondary p {
+  grid-column: 2;
+}
+
+.nuventures-redesign .considerations-section {
+  background: #fff;
+}
+
+.nuventures-redesign .considerations-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.nuventures-redesign .structure-section,
+.nuventures-redesign .cost-section {
+  background: var(--cream);
+}
+
+.nuventures-redesign .structure-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.nuventures-redesign .structure-grid .content-card {
+  padding: 26px;
+}
+
+.nuventures-redesign .process-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.nuventures-redesign .process-section p {
+  color: #c2d0c8;
+}
+
+.nuventures-redesign .process-flow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 0;
+}
+
+.nuventures-redesign .process-step {
+  position: relative;
+  min-height: 150px;
+  padding: 26px 20px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.nuventures-redesign .process-step::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -18px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.nuventures-redesign .process-step::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -8px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--green);
+  border-right: 2px solid var(--green);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.nuventures-redesign .process-step:last-child::after,
+.nuventures-redesign .process-step:last-child::before {
+  display: none;
+}
+
+.nuventures-redesign .process-step span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--gold);
+  font:
+    21px/1 Marcellus,
+    Georgia,
+    serif;
+}
+
+.nuventures-redesign .process-step h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.nuventures-redesign .support-card h3 {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.nuventures-redesign .timing-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 24px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #365047;
+  color: #dce6e1;
+  font-size: 12px;
+}
+
+.nuventures-redesign .timing-note i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.nuventures-redesign .timing-note strong {
+  color: #fff;
+}
+
+.nuventures-redesign .source-note {
+  margin: 24px 0 0;
+  color: #77827c;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.nuventures-redesign .source-note a {
+  color: #936d2d;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nuventures-redesign .button .las {
+  flex: 0 0 auto;
+  font-size: 18px;
+}
+
+.nuventures-redesign .final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.nuventures-redesign .lead-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: var(--section-space) 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
+    linear-gradient(135deg, #0d211b 0%, var(--green) 52%, #1b382f 100%);
+  color: #fff;
+}
+
+.nuventures-redesign .lead-cta::before,
+.nuventures-redesign .lead-cta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(226, 197, 137, 0.16);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nuventures-redesign .lead-cta::before {
+  width: 520px;
+  height: 520px;
+  top: -310px;
+  right: -135px;
+  box-shadow: 0 0 0 92px rgba(255, 255, 255, 0.018);
+}
+
+.nuventures-redesign .lead-cta::after {
+  width: 260px;
+  height: 260px;
+  bottom: -185px;
+  left: 7%;
+}
+
+.nuventures-redesign .lead-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: clamp(42px, 6vw, 82px);
+  align-items: center;
+}
+
+.nuventures-redesign .lead-copy {
+  max-width: 490px;
+  padding: 10px 0;
+}
+
+.nuventures-redesign .lead-copy .eyebrow {
+  color: #d8b66f;
+}
+
+.nuventures-redesign .lead-copy h2 {
+  max-width: 470px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.nuventures-redesign .lead-copy p {
+  max-width: 455px;
+  margin-bottom: 0;
+  color: #d4dcd6;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.nuventures-redesign .lead-quote {
+  margin-top: 30px !important;
+  padding: 17px 18px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1 !important;
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+}
+
+.nuventures-redesign .lead-cta .button-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.nuventures-redesign .lead-cta .button-outline:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--green);
+}
+
+.nuventures-redesign .lead-form {
+  position: relative;
+  padding: clamp(28px, 3.3vw, 42px);
+  border-top: 4px solid var(--gold);
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
+}
+
+.nuventures-redesign .lead-form h3 {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-size: clamp(26px, 2.5vw, 32px);
+}
+
+.nuventures-redesign .lead-form > p {
+  margin-bottom: 25px;
+  color: #68736d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.nuventures-redesign .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.nuventures-redesign .form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.nuventures-redesign .form-field.full {
+  grid-column: 1 / -1;
+}
+
+.nuventures-redesign .form-field label {
+  color: #35453e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nuventures-redesign .form-field input,
+.nuventures-redesign .form-field select,
+.nuventures-redesign .form-field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #d5dbd6;
+  border-radius: 0;
+  outline: none;
+  background: #fbfbf8;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.nuventures-redesign .form-field input:focus,
+.nuventures-redesign .form-field select:focus,
+.nuventures-redesign .form-field textarea:focus {
+  border-color: var(--gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(201, 160, 80, 0.12);
+}
+
+.nuventures-redesign .form-field input[readonly] {
+  color: #59675f;
+  background: #f1f2ed;
+}
+
+.nuventures-redesign .form-field textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.nuventures-redesign .form-field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #5e6b64 50%),
+    linear-gradient(135deg, #5e6b64 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 21px,
+    calc(100% - 13px) 21px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.nuventures-redesign .form-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.nuventures-redesign .form-submit {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.nuventures-redesign .form-submit .button {
+  width: 100%;
+  min-height: 56px;
+}
+
+.nuventures-redesign .form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #78827c !important;
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .nuventures-redesign .audience-grid,
+  .nuventures-redesign .content-card-grid,
+  .nuventures-redesign .support-grid,
+  .nuventures-redesign .advantage-grid,
+  .nuventures-redesign .structure-grid,
+  .nuventures-redesign .considerations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nuventures-redesign .process-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .nuventures-redesign .process-step:nth-child(3)::after,
+  .nuventures-redesign .process-step:nth-child(3)::before {
+    display: none;
+  }
+
+  .nuventures-redesign .lead-layout {
+    gap: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .nuventures-redesign .audience-grid,
+  .nuventures-redesign .content-card-grid,
+  .nuventures-redesign .support-grid,
+  .nuventures-redesign .lead-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .lead-layout {
+    gap: 36px;
+  }
+
+  .nuventures-redesign .lead-copy {
+    max-width: 620px;
+    padding: 0;
+  }
+
+  .nuventures-redesign .lead-copy h2,
+  .nuventures-redesign .lead-copy p {
+    max-width: 620px;
+  }
+
+  .nuventures-redesign .licence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nuventures-redesign .process-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nuventures-redesign .process-step:nth-child(3)::after,
+  .nuventures-redesign .process-step:nth-child(3)::before {
+    display: block;
+  }
+
+  .nuventures-redesign .process-step:nth-child(even)::after,
+  .nuventures-redesign .process-step:nth-child(even)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .nuventures-redesign .licence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .licence-grid .licence-secondary {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .nuventures-redesign .hero-actions,
+  .nuventures-redesign .section-actions,
+  .nuventures-redesign .final-actions,
+  .nuventures-redesign .activity-list,
+  .nuventures-redesign .checklist-grid,
+  .nuventures-redesign .structure-grid,
+  .nuventures-redesign .considerations-grid,
+  .nuventures-redesign .advantage-grid,
+  .nuventures-redesign .process-flow,
+  .nuventures-redesign .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .hero-actions,
+  .nuventures-redesign .section-actions {
+    display: grid;
+  }
+
+  .nuventures-redesign .process-step::after,
+  .nuventures-redesign .process-step::before {
+    display: none !important;
+  }
+
+  .nuventures-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+
+  .nuventures-redesign .lead-cta::before {
+    right: -300px;
+  }
+
+  .nuventures-redesign .final-actions {
+    display: grid;
+    gap: 10px;
+  }
+
+  .nuventures-redesign .final-actions .button {
+    width: 100%;
+  }
+}
+
+/* Ajman NuVentures content variations and compact responsive layout. */
+.nuventures-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
+    url("../../imgs/ajman-nuventures/ajman-nuventures-digital-business-district.webp") !important;
+  background-position: center 54% !important;
+}
+
+.nuventures-redesign {
+  --section-space: 54px;
+}
+
+.nuventures-redesign .hero-layout,
+.nuventures-redesign .hero-image {
+  min-height: 500px;
+}
+
+.nuventures-redesign .hero-content {
+  padding-top: 49px;
+  padding-bottom: 53px;
+}
+
+.nuventures-redesign .hero-image .cover {
+  object-position: 49% center;
+}
+
+.nuventures-redesign .overview-visual {
+  height: 520px;
+}
+
+.nuventures-redesign .overview-visual .cover {
+  object-position: center 48%;
+}
+
+.nuventures-redesign .compact-head {
+  max-width: 880px;
+  margin-bottom: 26px;
+}
+
+.nuventures-redesign .business-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.nuventures-redesign .business-area-grid span {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  background: #fbfbf8;
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.nuventures-redesign .business-area-grid i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.nuventures-redesign .section-soft {
+  background: var(--cream);
+}
+
+.nuventures-redesign .mini-title {
+  margin: 24px 0 0;
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nuventures-redesign .overview-visual {
+  overflow: hidden;
+}
+
+.nuventures-redesign .overview-visual figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  padding: 12px 14px;
+  background: rgba(12, 34, 27, 0.86);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.nuventures-redesign .fit-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.nuventures-redesign .fit-card {
+  padding: 28px 29px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  background: #fff;
+}
+
+.nuventures-redesign .fit-card-caution {
+  border-top-color: #738178;
+}
+
+.nuventures-redesign .fit-card-heading {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.nuventures-redesign .fit-card-heading i {
+  color: var(--gold);
+  font-size: 29px;
+}
+
+.nuventures-redesign .fit-card-caution .fit-card-heading i {
+  color: #718078;
+}
+
+.nuventures-redesign .fit-card-heading h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.nuventures-redesign .fit-card ul,
+.nuventures-redesign .requirement-panel ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nuventures-redesign .fit-card li {
+  position: relative;
+  padding: 9px 0 9px 17px;
+  border-bottom: 1px solid #eaebe6;
+  color: #526159;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.nuventures-redesign .fit-card li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: #a9823f;
+}
+
+.nuventures-redesign .fit-card-detailed li strong,
+.nuventures-redesign .fit-card-detailed li span {
+  display: block;
+}
+
+.nuventures-redesign .fit-card-detailed li strong {
+  margin-bottom: 2px;
+  color: var(--green);
+  font-size: 11px;
+}
+
+.nuventures-redesign .fit-card-detailed li span {
+  color: #69766f;
+  font-size: 10px;
+}
+
+.nuventures-redesign .prominent-callout {
+  background: #f0ede5;
+}
+
+.nuventures-redesign .advantage-grid .benefit h3 {
+  color: #fff;
+}
+
+.nuventures-redesign .advantage-grid .benefit p {
+  color: #c8d4cd;
+}
+
+.nuventures-redesign .advantage-grid .logistics-card {
+  border-color: var(--gold);
+  background: #1a3a31;
+}
+
+.nuventures-redesign .activity-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.nuventures-redesign .activity-card-grid .content-card {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 10px;
+  padding: 23px 20px;
+}
+
+.nuventures-redesign .activity-card-grid .content-card i,
+.nuventures-redesign .activity-card-grid .content-card h3,
+.nuventures-redesign .activity-card-grid .content-card p {
+  grid-column: 1;
+}
+
+.nuventures-redesign .activity-card-grid .content-card i {
+  grid-row: 1;
+  width: 42px;
+  height: 42px;
+  font-size: 36px;
+}
+
+.nuventures-redesign .activity-card-grid .content-card h3 {
+  grid-row: 2;
+  font-size: 19px;
+}
+
+.nuventures-redesign .activity-card-grid .content-card p {
+  grid-row: 3;
+}
+
+.nuventures-redesign .requirements-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.nuventures-redesign .requirement-panel {
+  padding: 29px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.nuventures-redesign .requirement-panel-head {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.nuventures-redesign .requirement-panel-head span {
+  color: var(--gold);
+  font: 21px/1 Marcellus, Georgia, serif;
+}
+
+.nuventures-redesign .requirement-panel-head h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nuventures-redesign .requirement-panel li {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e9e4;
+  color: #4e5d55;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.nuventures-redesign .requirement-panel li i {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.nuventures-redesign .cost-setup-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+  gap: 20px;
+}
+
+.nuventures-redesign .cost-factor-panel,
+.nuventures-redesign .cost-advisor-panel {
+  padding: 33px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.nuventures-redesign .cost-factor-panel h3,
+.nuventures-redesign .cost-advisor-panel h3 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.nuventures-redesign .cost-factor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.nuventures-redesign .cost-factor-grid span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 49px;
+  padding: 10px 12px;
+  background: var(--cream);
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.nuventures-redesign .cost-factor-grid i {
+  color: var(--gold);
+  font-size: 21px;
+}
+
+.nuventures-redesign .cost-note {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+  color: #59675f;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.nuventures-redesign .cost-advisor-panel {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.nuventures-redesign .cost-advisor-panel .eyebrow {
+  color: var(--gold);
+}
+
+.nuventures-redesign .cost-advisor-panel h3 {
+  margin-top: 12px;
+  color: #fff;
+}
+
+.nuventures-redesign .cost-advisor-panel p {
+  color: #c8d4cd;
+  font-size: 12px;
+}
+
+.nuventures-redesign .cost-advisor-panel .button {
+  margin-top: 12px;
+}
+
+.nuventures-redesign .decision-section {
+  position: relative;
+  overflow: hidden;
+  background: #0e211b;
+  color: #fff;
+}
+
+.nuventures-redesign .decision-section::after {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  right: -190px;
+  bottom: -310px;
+  border: 1px solid rgba(201, 160, 80, 0.18);
+  border-radius: 50%;
+}
+
+.nuventures-redesign .decision-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(250px, 0.68fr) minmax(0, 1.32fr);
+  gap: 28px 52px;
+  align-items: start;
+}
+
+.nuventures-redesign .decision-copy .eyebrow {
+  color: var(--gold);
+}
+
+.nuventures-redesign .decision-copy h2 {
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.nuventures-redesign .decision-copy p {
+  margin: 0;
+  color: #bfcac4;
+  font-size: 13px;
+}
+
+.nuventures-redesign .decision-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.nuventures-redesign .decision-list > div {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid #304a40;
+  background: #173029;
+  color: #e7ece9;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.nuventures-redesign .decision-list i {
+  color: var(--gold);
+  font-size: 23px;
+}
+
+.nuventures-redesign .decision-grid blockquote {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 17px 20px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1;
+  font: 400 17px/1.65 Marcellus, Georgia, serif;
+}
+
+.nuventures-redesign .considerations-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.nuventures-redesign .related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 19px;
+  border-top: 1px solid var(--line);
+  color: #637069;
+  font-size: 11px;
+}
+
+.nuventures-redesign .related-links > span {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.nuventures-redesign .related-links a {
+  color: #997331;
+  font-weight: 600;
+}
+
+.nuventures-redesign .related-links a:hover {
+  text-decoration: underline;
+}
+
+.nuventures-redesign .lead-cta {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.nuventures-redesign .lead-form {
+  padding: 34px;
+}
+
+.nuventures-redesign .form-field textarea {
+  min-height: 96px;
+}
+
+@media (max-width: 1050px) {
+  .nuventures-redesign {
+    --section-space: 49px;
+  }
+
+  .nuventures-redesign .activity-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .nuventures-redesign .fit-card ul,
+  .nuventures-redesign .requirement-panel ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .nuventures-redesign {
+    --section-space: 42px;
+  }
+
+  .nuventures-redesign .hero-layout,
+  .nuventures-redesign .hero-image {
+    min-height: unset;
+  }
+
+  .nuventures-redesign .overview-visual {
+    height: 390px;
+  }
+
+  .nuventures-redesign .fit-columns,
+  .nuventures-redesign .requirements-split,
+  .nuventures-redesign .cost-setup-grid,
+  .nuventures-redesign .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .activity-card-grid,
+  .nuventures-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nuventures-redesign .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .process-step {
+    min-height: 0;
+  }
+
+  .nuventures-redesign .process-step::after,
+  .nuventures-redesign .process-step::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .nuventures-redesign {
+    --section-space: 38px;
+  }
+
+  .nuventures-redesign .business-area-grid,
+  .nuventures-redesign .activity-card-grid,
+  .nuventures-redesign .considerations-grid,
+  .nuventures-redesign .cost-factor-grid,
+  .nuventures-redesign .decision-list {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .fit-card,
+  .nuventures-redesign .requirement-panel,
+  .nuventures-redesign .cost-factor-panel,
+  .nuventures-redesign .cost-advisor-panel {
+    padding: 24px 20px;
+  }
+
+  .nuventures-redesign .fit-card-heading h3,
+  .nuventures-redesign .requirement-panel-head h3 {
+    font-size: 22px;
+  }
+
+  .nuventures-redesign .cost-advisor-panel .button {
+    width: 100%;
+  }
+
+  .nuventures-redesign .decision-grid {
+    gap: 23px;
+  }
+
+  .nuventures-redesign .related-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nuventures-redesign .lead-cta {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .nuventures-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+}
+
+/* Keep the five core activity routes aligned in a compact row. */
+@media (min-width: 1051px) {
+  .nuventures-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .nuventures-redesign .licence-grid .content-card {
+    grid-column: span 2;
+  }
+
+  .nuventures-redesign .licence-grid .licence-secondary {
+    grid-column: span 5;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .nuventures-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nuventures-redesign .licence-grid .content-card,
+  .nuventures-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1051px) {
+  .nuventures-redesign .compact-benefits,
+  .nuventures-redesign .support-grid-eight {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.nuventures-redesign .compact-benefits .benefit {
+  grid-template-rows: minmax(50px, auto) auto;
+  min-height: 166px;
+  padding: 23px 22px;
+}
+
+.nuventures-redesign .compact-benefits .benefit > span {
+  grid-column: 1 / -1;
+  color: #c8d4cd;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.nuventures-redesign .support-subtitle {
+  margin: 18px 0 0;
+  color: var(--green);
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nuventures-redesign .support-card {
+  grid-template-rows: auto auto;
+}
+
+.nuventures-redesign .support-card ul {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nuventures-redesign .support-card li {
+  position: relative;
+  padding: 3px 0 3px 13px;
+  color: #65736c;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.nuventures-redesign .support-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.nuventures-redesign .compact-benefits .feature-benefit {
+  border-color: var(--gold);
+  background: #193b31;
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .nuventures-redesign .compact-benefits,
+  .nuventures-redesign .support-grid-eight {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .nuventures-redesign .compact-benefits,
+  .nuventures-redesign .support-grid-eight {
+    grid-template-columns: 1fr;
+  }
+
+  .nuventures-redesign .compact-benefits .benefit {
+    min-height: 0;
+  }
+}
+
+

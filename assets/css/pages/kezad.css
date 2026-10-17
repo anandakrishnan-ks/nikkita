@@ -1,0 +1,1522 @@
+@import url("mainland-base.css");
+
+/* KEZAD Free Zone page-specific layouts. */
+.kezad-redesign .hero-actions,
+.kezad-redesign .section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.kezad-redesign .hero-image .cover {
+  object-position: center 44%;
+}
+
+.kezad-redesign .hero-content p {
+  max-width: 620px;
+}
+
+.kezad-redesign .section-head {
+  max-width: none;
+  margin-bottom: 32px;
+}
+
+.kezad-redesign .section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.kezad-redesign .activity-list,
+.kezad-redesign .checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
+  padding: 0;
+  margin: 28px 0 0;
+  list-style: none;
+}
+
+.kezad-redesign .activity-list li,
+.kezad-redesign .checklist-grid li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: #394942;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.kezad-redesign .activity-list i,
+.kezad-redesign .checklist-grid i {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #a9823f;
+  font-size: 16px;
+}
+
+.kezad-redesign .suitability {
+  background: var(--cream);
+}
+
+.kezad-redesign .audience-grid,
+.kezad-redesign .content-card-grid,
+.kezad-redesign .support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.kezad-redesign .audience-card,
+.kezad-redesign .content-card,
+.kezad-redesign .support-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 14px 16px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.kezad-redesign .audience-card:hover,
+.kezad-redesign .content-card:hover,
+.kezad-redesign .support-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9a050;
+  box-shadow: 0 16px 36px rgba(18, 38, 32, 0.08);
+}
+
+.kezad-redesign .audience-card i,
+.kezad-redesign .content-card i,
+.kezad-redesign .support-card i {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.kezad-redesign .audience-card h3,
+.kezad-redesign .content-card h3,
+.kezad-redesign .support-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.kezad-redesign .content-card p,
+.kezad-redesign .support-card p {
+  grid-column: 1 / -1;
+  align-self: start;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.kezad-redesign .consideration,
+.kezad-redesign .advisory-callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 28px;
+  padding: 25px 28px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.kezad-redesign .consideration i,
+.kezad-redesign .advisory-callout i {
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.kezad-redesign .consideration strong,
+.kezad-redesign .advisory-callout strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.kezad-redesign .consideration p,
+.kezad-redesign .advisory-callout p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.kezad-redesign .advantage-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.kezad-redesign .advantage-grid .benefit {
+  border: 1px solid #365047;
+}
+
+.kezad-redesign .benefit i {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.kezad-redesign .licence-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.kezad-redesign .licence-grid .licence-secondary {
+  grid-column: 1 / -1;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.kezad-redesign .licence-grid .licence-secondary p {
+  grid-column: 2;
+}
+
+.kezad-redesign .considerations-section {
+  background: #fff;
+}
+
+.kezad-redesign .considerations-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.kezad-redesign .structure-section,
+.kezad-redesign .cost-section {
+  background: var(--cream);
+}
+
+.kezad-redesign .structure-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.kezad-redesign .structure-grid .content-card {
+  padding: 26px;
+}
+
+.kezad-redesign .process-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.kezad-redesign .process-section p {
+  color: #c2d0c8;
+}
+
+.kezad-redesign .process-flow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 0;
+}
+
+.kezad-redesign .process-step {
+  position: relative;
+  min-height: 150px;
+  padding: 26px 20px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.kezad-redesign .process-step::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -18px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.kezad-redesign .process-step::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -8px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--green);
+  border-right: 2px solid var(--green);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.kezad-redesign .process-step:last-child::after,
+.kezad-redesign .process-step:last-child::before {
+  display: none;
+}
+
+.kezad-redesign .process-step span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--gold);
+  font:
+    21px/1 Marcellus,
+    Georgia,
+    serif;
+}
+
+.kezad-redesign .process-step h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.kezad-redesign .support-card h3 {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.kezad-redesign .timing-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 24px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #365047;
+  color: #dce6e1;
+  font-size: 12px;
+}
+
+.kezad-redesign .timing-note i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.kezad-redesign .timing-note strong {
+  color: #fff;
+}
+
+.kezad-redesign .source-note {
+  margin: 24px 0 0;
+  color: #77827c;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.kezad-redesign .source-note a {
+  color: #936d2d;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.kezad-redesign .button .las {
+  flex: 0 0 auto;
+  font-size: 18px;
+}
+
+.kezad-redesign .final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.kezad-redesign .lead-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: var(--section-space) 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
+    linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
+    url("../../imgs/new/optimized/kizad-logistics.webp") center 47% / cover no-repeat;
+  color: #fff;
+}
+
+.kezad-redesign .lead-cta::before,
+.kezad-redesign .lead-cta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(226, 197, 137, 0.16);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.kezad-redesign .lead-cta::before {
+  width: 520px;
+  height: 520px;
+  top: -310px;
+  right: -135px;
+  box-shadow: 0 0 0 92px rgba(255, 255, 255, 0.018);
+}
+
+.kezad-redesign .lead-cta::after {
+  width: 260px;
+  height: 260px;
+  bottom: -185px;
+  left: 7%;
+}
+
+.kezad-redesign .lead-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: clamp(42px, 6vw, 82px);
+  align-items: center;
+}
+
+.kezad-redesign .lead-copy {
+  max-width: 490px;
+  padding: 10px 0;
+}
+
+.kezad-redesign .lead-copy .eyebrow {
+  color: #d8b66f;
+}
+
+.kezad-redesign .lead-copy h2 {
+  max-width: 470px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.kezad-redesign .lead-copy p {
+  max-width: 455px;
+  margin-bottom: 0;
+  color: #d4dcd6;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.kezad-redesign .lead-quote {
+  margin-top: 30px !important;
+  padding: 17px 18px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1 !important;
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+}
+
+.kezad-redesign .lead-cta .button-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.kezad-redesign .lead-cta .button-outline:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--green);
+}
+
+.kezad-redesign .lead-form {
+  position: relative;
+  padding: clamp(28px, 3.3vw, 42px);
+  border-top: 4px solid var(--gold);
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
+}
+
+.kezad-redesign .lead-form h3 {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-size: clamp(26px, 2.5vw, 32px);
+}
+
+.kezad-redesign .lead-form > p {
+  margin-bottom: 25px;
+  color: #68736d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.kezad-redesign .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.kezad-redesign .form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.kezad-redesign .form-field.full {
+  grid-column: 1 / -1;
+}
+
+.kezad-redesign .form-field label {
+  color: #35453e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kezad-redesign .form-field input,
+.kezad-redesign .form-field select,
+.kezad-redesign .form-field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #d5dbd6;
+  border-radius: 0;
+  outline: none;
+  background: #fbfbf8;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.kezad-redesign .form-field input:focus,
+.kezad-redesign .form-field select:focus,
+.kezad-redesign .form-field textarea:focus {
+  border-color: var(--gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(201, 160, 80, 0.12);
+}
+
+.kezad-redesign .form-field input[readonly] {
+  color: #59675f;
+  background: #f1f2ed;
+}
+
+.kezad-redesign .form-field textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.kezad-redesign .form-field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #5e6b64 50%),
+    linear-gradient(135deg, #5e6b64 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 21px,
+    calc(100% - 13px) 21px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.kezad-redesign .form-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.kezad-redesign .form-submit {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.kezad-redesign .form-submit .button {
+  width: 100%;
+  min-height: 56px;
+}
+
+.kezad-redesign .form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #78827c !important;
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .kezad-redesign .audience-grid,
+  .kezad-redesign .content-card-grid,
+  .kezad-redesign .support-grid,
+  .kezad-redesign .advantage-grid,
+  .kezad-redesign .structure-grid,
+  .kezad-redesign .considerations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kezad-redesign .process-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .kezad-redesign .process-step:nth-child(3)::after,
+  .kezad-redesign .process-step:nth-child(3)::before {
+    display: none;
+  }
+
+  .kezad-redesign .lead-layout {
+    gap: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .kezad-redesign .audience-grid,
+  .kezad-redesign .content-card-grid,
+  .kezad-redesign .support-grid,
+  .kezad-redesign .lead-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .lead-layout {
+    gap: 36px;
+  }
+
+  .kezad-redesign .lead-copy {
+    max-width: 620px;
+    padding: 0;
+  }
+
+  .kezad-redesign .lead-copy h2,
+  .kezad-redesign .lead-copy p {
+    max-width: 620px;
+  }
+
+  .kezad-redesign .licence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kezad-redesign .process-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kezad-redesign .process-step:nth-child(3)::after,
+  .kezad-redesign .process-step:nth-child(3)::before {
+    display: block;
+  }
+
+  .kezad-redesign .process-step:nth-child(even)::after,
+  .kezad-redesign .process-step:nth-child(even)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .kezad-redesign .licence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .licence-grid .licence-secondary {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .kezad-redesign .hero-actions,
+  .kezad-redesign .section-actions,
+  .kezad-redesign .final-actions,
+  .kezad-redesign .activity-list,
+  .kezad-redesign .checklist-grid,
+  .kezad-redesign .structure-grid,
+  .kezad-redesign .considerations-grid,
+  .kezad-redesign .advantage-grid,
+  .kezad-redesign .process-flow,
+  .kezad-redesign .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .hero-actions,
+  .kezad-redesign .section-actions {
+    display: grid;
+  }
+
+  .kezad-redesign .process-step::after,
+  .kezad-redesign .process-step::before {
+    display: none !important;
+  }
+
+  .kezad-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+
+  .kezad-redesign .lead-cta::before {
+    right: -300px;
+  }
+
+  .kezad-redesign .final-actions {
+    display: grid;
+    gap: 10px;
+  }
+
+  .kezad-redesign .final-actions .button {
+    width: 100%;
+  }
+}
+
+/* KEZAD Free Zone content variations and compact responsive layout. */
+.kezad-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
+    url("../../imgs/new/optimized/kizad-logistics.webp") !important;
+  background-position: center 47% !important;
+}
+
+.kezad-redesign {
+  --section-space: 54px;
+}
+
+.kezad-redesign .hero-layout,
+.kezad-redesign .hero-image {
+  min-height: 500px;
+}
+
+.kezad-redesign .hero-content {
+  padding-top: 49px;
+  padding-bottom: 53px;
+}
+
+.kezad-redesign .hero-image .cover {
+  object-position: 49% center;
+}
+
+.kezad-redesign .overview-visual {
+  height: 520px;
+}
+
+.kezad-redesign .overview-visual .cover {
+  object-position: center 48%;
+}
+
+.kezad-redesign .compact-head {
+  max-width: 880px;
+  margin-bottom: 26px;
+}
+
+.kezad-redesign .business-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.kezad-redesign .business-area-grid span {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  background: #fbfbf8;
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.kezad-redesign .business-area-grid i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.kezad-redesign .section-soft {
+  background: var(--cream);
+}
+
+.kezad-redesign .mini-title {
+  margin: 24px 0 0;
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kezad-redesign .overview-visual {
+  overflow: hidden;
+}
+
+.kezad-redesign .overview-visual figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  padding: 12px 14px;
+  background: rgba(12, 34, 27, 0.86);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.kezad-redesign .fit-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.kezad-redesign .fit-card {
+  padding: 28px 29px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  background: #fff;
+}
+
+.kezad-redesign .fit-card-caution {
+  border-top-color: #738178;
+}
+
+.kezad-redesign .fit-card-heading {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.kezad-redesign .fit-card-heading i {
+  color: var(--gold);
+  font-size: 29px;
+}
+
+.kezad-redesign .fit-card-caution .fit-card-heading i {
+  color: #718078;
+}
+
+.kezad-redesign .fit-card-heading h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.kezad-redesign .fit-card ul,
+.kezad-redesign .requirement-panel ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kezad-redesign .fit-card li {
+  position: relative;
+  padding: 9px 0 9px 17px;
+  border-bottom: 1px solid #eaebe6;
+  color: #526159;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.kezad-redesign .fit-card li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: #a9823f;
+}
+
+.kezad-redesign .fit-card-detailed li strong,
+.kezad-redesign .fit-card-detailed li span {
+  display: block;
+}
+
+.kezad-redesign .fit-card-detailed li strong {
+  margin-bottom: 2px;
+  color: var(--green);
+  font-size: 11px;
+}
+
+.kezad-redesign .fit-card-detailed li span {
+  color: #69766f;
+  font-size: 10px;
+}
+
+.kezad-redesign .prominent-callout {
+  background: #f0ede5;
+}
+
+.kezad-redesign .advantage-grid .benefit h3 {
+  color: #fff;
+}
+
+.kezad-redesign .advantage-grid .benefit p {
+  color: #c8d4cd;
+}
+
+.kezad-redesign .advantage-grid .logistics-card {
+  border-color: var(--gold);
+  background: #1a3a31;
+}
+
+.kezad-redesign .activity-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.kezad-redesign .activity-card-grid .content-card {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 10px;
+  padding: 23px 20px;
+}
+
+.kezad-redesign .activity-card-grid .content-card i,
+.kezad-redesign .activity-card-grid .content-card h3,
+.kezad-redesign .activity-card-grid .content-card p {
+  grid-column: 1;
+}
+
+.kezad-redesign .activity-card-grid .content-card i {
+  grid-row: 1;
+  width: 42px;
+  height: 42px;
+  font-size: 36px;
+}
+
+.kezad-redesign .activity-card-grid .content-card h3 {
+  grid-row: 2;
+  font-size: 19px;
+}
+
+.kezad-redesign .activity-card-grid .content-card p {
+  grid-row: 3;
+}
+
+.kezad-redesign .requirements-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.kezad-redesign .requirement-panel {
+  padding: 29px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.kezad-redesign .requirement-panel-head {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.kezad-redesign .requirement-panel-head span {
+  color: var(--gold);
+  font: 21px/1 Marcellus, Georgia, serif;
+}
+
+.kezad-redesign .requirement-panel-head h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.kezad-redesign .requirement-panel li {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e9e4;
+  color: #4e5d55;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.kezad-redesign .requirement-panel li i {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.kezad-redesign .cost-setup-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+  gap: 20px;
+}
+
+.kezad-redesign .cost-factor-panel,
+.kezad-redesign .cost-advisor-panel {
+  padding: 33px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.kezad-redesign .cost-factor-panel h3,
+.kezad-redesign .cost-advisor-panel h3 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.kezad-redesign .cost-factor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.kezad-redesign .cost-factor-grid span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 49px;
+  padding: 10px 12px;
+  background: var(--cream);
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.kezad-redesign .cost-factor-grid i {
+  color: var(--gold);
+  font-size: 21px;
+}
+
+.kezad-redesign .cost-note {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+  color: #59675f;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.kezad-redesign .cost-advisor-panel {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.kezad-redesign .cost-advisor-panel .eyebrow {
+  color: var(--gold);
+}
+
+.kezad-redesign .cost-advisor-panel h3 {
+  margin-top: 12px;
+  color: #fff;
+}
+
+.kezad-redesign .cost-advisor-panel p {
+  color: #c8d4cd;
+  font-size: 12px;
+}
+
+.kezad-redesign .cost-advisor-panel .button {
+  margin-top: 12px;
+}
+
+.kezad-redesign .decision-section {
+  position: relative;
+  overflow: hidden;
+  background: #0e211b;
+  color: #fff;
+}
+
+.kezad-redesign .decision-section::after {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  right: -190px;
+  bottom: -310px;
+  border: 1px solid rgba(201, 160, 80, 0.18);
+  border-radius: 50%;
+}
+
+.kezad-redesign .decision-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(250px, 0.68fr) minmax(0, 1.32fr);
+  gap: 28px 52px;
+  align-items: start;
+}
+
+.kezad-redesign .decision-copy .eyebrow {
+  color: var(--gold);
+}
+
+.kezad-redesign .decision-copy h2 {
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.kezad-redesign .decision-copy p {
+  margin: 0;
+  color: #bfcac4;
+  font-size: 13px;
+}
+
+.kezad-redesign .decision-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.kezad-redesign .decision-list > div {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid #304a40;
+  background: #173029;
+  color: #e7ece9;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.kezad-redesign .decision-list i {
+  color: var(--gold);
+  font-size: 23px;
+}
+
+.kezad-redesign .decision-grid blockquote {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 17px 20px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1;
+  font: 400 17px/1.65 Marcellus, Georgia, serif;
+}
+
+.kezad-redesign .considerations-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.kezad-redesign .related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 19px;
+  border-top: 1px solid var(--line);
+  color: #637069;
+  font-size: 11px;
+}
+
+.kezad-redesign .related-links > span {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.kezad-redesign .related-links a {
+  color: #997331;
+  font-weight: 600;
+}
+
+.kezad-redesign .related-links a:hover {
+  text-decoration: underline;
+}
+
+.kezad-redesign .lead-cta {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.kezad-redesign .lead-form {
+  padding: 34px;
+}
+
+.kezad-redesign .form-field textarea {
+  min-height: 96px;
+}
+
+@media (max-width: 1050px) {
+  .kezad-redesign {
+    --section-space: 49px;
+  }
+
+  .kezad-redesign .activity-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .kezad-redesign .fit-card ul,
+  .kezad-redesign .requirement-panel ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .kezad-redesign {
+    --section-space: 42px;
+  }
+
+  .kezad-redesign .hero-layout,
+  .kezad-redesign .hero-image {
+    min-height: unset;
+  }
+
+  .kezad-redesign .overview-visual {
+    height: 390px;
+  }
+
+  .kezad-redesign .fit-columns,
+  .kezad-redesign .requirements-split,
+  .kezad-redesign .cost-setup-grid,
+  .kezad-redesign .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .activity-card-grid,
+  .kezad-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kezad-redesign .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .process-step {
+    min-height: 0;
+  }
+
+  .kezad-redesign .process-step::after,
+  .kezad-redesign .process-step::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .kezad-redesign {
+    --section-space: 38px;
+  }
+
+  .kezad-redesign .business-area-grid,
+  .kezad-redesign .activity-card-grid,
+  .kezad-redesign .considerations-grid,
+  .kezad-redesign .cost-factor-grid,
+  .kezad-redesign .decision-list {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .fit-card,
+  .kezad-redesign .requirement-panel,
+  .kezad-redesign .cost-factor-panel,
+  .kezad-redesign .cost-advisor-panel {
+    padding: 24px 20px;
+  }
+
+  .kezad-redesign .fit-card-heading h3,
+  .kezad-redesign .requirement-panel-head h3 {
+    font-size: 22px;
+  }
+
+  .kezad-redesign .cost-advisor-panel .button {
+    width: 100%;
+  }
+
+  .kezad-redesign .decision-grid {
+    gap: 23px;
+  }
+
+  .kezad-redesign .related-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .kezad-redesign .lead-cta {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .kezad-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+}
+
+/* Keep the six licence routes balanced without creating oversized cards. */
+@media (min-width: 1051px) {
+  .kezad-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .kezad-redesign .licence-grid .content-card,
+  .kezad-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .kezad-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kezad-redesign .licence-grid .content-card,
+  .kezad-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1051px) {
+  .kezad-redesign .compact-benefits,
+  .kezad-redesign .support-grid-eight {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.kezad-redesign .compact-benefits .benefit {
+  grid-template-rows: minmax(50px, auto) auto;
+  min-height: 166px;
+  padding: 23px 22px;
+}
+
+.kezad-redesign .compact-benefits .benefit > span {
+  grid-column: 1 / -1;
+  color: #c8d4cd;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.kezad-redesign .support-subtitle {
+  margin: 18px 0 0;
+  color: var(--green);
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.kezad-redesign .support-card {
+  grid-template-rows: auto auto;
+}
+
+.kezad-redesign .support-card ul {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kezad-redesign .support-card li {
+  position: relative;
+  padding: 3px 0 3px 13px;
+  color: #65736c;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.kezad-redesign .support-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.kezad-redesign .compact-benefits .feature-benefit {
+  border-color: var(--gold);
+  background: #193b31;
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .kezad-redesign .compact-benefits,
+  .kezad-redesign .support-grid-eight {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .kezad-redesign .compact-benefits,
+  .kezad-redesign .support-grid-eight {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .compact-benefits .benefit {
+    min-height: 0;
+  }
+}
+
+
+
+
+/* KEZAD-specific emphasis and balanced card grids. */
+.kezad-redesign .facility-step {
+  border-color: var(--gold);
+  background: #214137;
+}
+
+.kezad-redesign .facility-step span,
+.kezad-redesign .facility-step h3 {
+  color: #fff;
+}
+
+.kezad-redesign .facility-priority {
+  border-left: 3px solid var(--gold);
+  background: #f0ede5;
+}
+
+.kezad-redesign .facility-priority i {
+  color: var(--gold);
+}
+
+.kezad-redesign .licence-grid .content-card {
+  min-height: 177px;
+}
+
+@media (min-width: 1051px) {
+  .kezad-redesign .structure-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .kezad-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .kezad-redesign .structure-grid,
+  .kezad-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .kezad-redesign .structure-grid,
+  .kezad-redesign .considerations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+}
+
+.kezad-redesign .decision-section {
+  background:
+    linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
+    url("../../imgs/new/optimized/kizad-logistics.webp") center / cover no-repeat;
+}
+
+/* KEZAD's infrastructure choice is the page's main differentiator. */
+.kezad-redesign .facility-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.kezad-redesign .facility-band strong,
+.kezad-redesign .facility-band span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 13px;
+  font: 600 11px/1.4 Montserrat, Arial, sans-serif;
+}
+
+.kezad-redesign .facility-band strong {
+  color: #fff;
+  background: var(--green);
+}
+
+.kezad-redesign .facility-band span {
+  color: #35453e;
+  border: 1px solid #dfe4de;
+  background: #f8f7f3;
+}
+
+.kezad-redesign .activity-card-grid.licence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.kezad-redesign .licence-grid .content-card {
+  min-height: 205px;
+}
+
+.kezad-redesign .structure-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.kezad-redesign .jurisdiction-choice {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(210px, .6fr);
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 22px;
+  padding: clamp(24px, 3vw, 38px);
+  border-left: 4px solid var(--gold);
+  background: #193b31;
+  color: #fff;
+}
+
+.kezad-redesign .jurisdiction-choice .eyebrow {
+  color: #d5ad61;
+}
+
+.kezad-redesign .jurisdiction-choice h3 {
+  margin: 8px 0 10px;
+  color: #fff;
+  font-size: clamp(23px, 2.5vw, 32px);
+}
+
+.kezad-redesign .jurisdiction-choice p {
+  max-width: 720px;
+  margin: 0;
+  color: #e1e8e2;
+}
+
+.kezad-redesign .jurisdiction-choice a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 15px;
+  color: #102b23;
+  background: var(--gold);
+  font: 650 11px/1.4 Montserrat, Arial, sans-serif;
+}
+
+.kezad-redesign .jurisdiction-choice a:hover,
+.kezad-redesign .jurisdiction-choice a:focus-visible {
+  background: #e5c17d;
+}
+
+.kezad-redesign .lead-cta {
+  background: linear-gradient(90deg, rgba(10, 31, 25, .97), rgba(10, 31, 25, .88)),
+    url("../../imgs/new/optimized/kizad-logistics.webp") center / cover no-repeat;
+}
+
+@media (max-width: 1050px) {
+  .kezad-redesign .jurisdiction-choice {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .kezad-redesign .activity-card-grid.licence-grid,
+  .kezad-redesign .structure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kezad-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+
+  .whatsapp-float.kezad-form-visible {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+  }
+}

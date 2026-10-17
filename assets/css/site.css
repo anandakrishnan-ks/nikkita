@@ -808,19 +808,19 @@ img {
 /* ---------- WhatsApp float ---------- */
 .whatsapp-float {
   position: fixed;
-  bottom: 22px;
-  right: 22px;
+  bottom: 24px;
+  right: 24px;
   z-index: 9999;
   background: #25d366;
   color: #fff !important;
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex !important;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-  font-size: 26px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  font-size: 28px;
   text-decoration: none !important;
 }
 
@@ -1819,17 +1819,47 @@ html body .contact-form {
 
 .home-page .home-more-actions .theme-btn {
   color: #fff;
-  border-color: transparent;
 }
 
 .home-page .home-more-actions .theme-btn::before,
-.home-page .home-more-actions .theme-btn::after {
+.home-page .home-more-actions .theme-btn::after,
+.home-page .home-more-actions .theme-btn span::before,
+.home-page .home-more-actions .theme-btn span::after {
   background: #fff;
+}
+
+.home-page .home-more-actions .theme-btn span {
   border-color: #fff;
 }
 
 .home-page .home-more-actions .theme-btn-outline {
   color: var(--primary, #d3b184);
+}
+
+.home-page .home-more-actions .theme-btn-outline::before,
+.home-page .home-more-actions .theme-btn-outline::after,
+.home-page .home-more-actions .theme-btn-outline span::before,
+.home-page .home-more-actions .theme-btn-outline span::after {
+  background: var(--primary, #d3b184);
+}
+
+.home-page .home-more-actions .theme-btn-outline span {
+  border-color: var(--primary, #d3b184);
+}
+
+.home-page .home-more-actions .theme-btn:hover {
+  color: var(--primary, #d3b184);
+}
+
+.home-page .home-more-actions .theme-btn:hover::before,
+.home-page .home-more-actions .theme-btn:hover::after,
+.home-page .home-more-actions .theme-btn:hover span::before,
+.home-page .home-more-actions .theme-btn:hover span::after {
+  background: var(--primary, #d3b184);
+}
+
+.home-page .home-more-actions .theme-btn:hover span {
+  border-color: var(--primary, #d3b184);
 }
 
 .home-page .home-more-points {
@@ -1859,6 +1889,21 @@ html body .contact-form {
   line-height: 1.2;
   margin-top: 1px;
   flex: 0 0 auto;
+}
+
+.home-page .contact-area .home-contact-copy p {
+  font-size: 11px !important;
+  line-height: 1.45 !important;
+}
+
+.home-page .contact-area .home-contact-label {
+  font-size: 10px;
+}
+
+.home-page .contact-area .home-contact-country {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
 }
 
 @media (max-width: 767px) {
@@ -2596,7 +2641,7 @@ html.has-custom-cursor label {
   display: contents;
 }
 
-/* Reference-matched emerald skyline footer (DAFZA + Sharjah Mainland). */
+/* Site-wide reference-matched emerald skyline footer. */
 footer.footer-reference {
   --footer-gold: #e1ad44;
   --footer-ink: #032d25;
@@ -2667,7 +2712,7 @@ footer.footer-reference .footer-left p {
   max-width: 465px;
   margin: 0 0 14px !important;
   color: rgba(255, 255, 255, 0.94) !important;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.55 !important;
 }
@@ -2698,7 +2743,7 @@ footer.footer-reference .footer-links h3 {
   position: relative;
   margin: 0 0 40px !important;
   color: var(--footer-gold) !important;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 650;
   line-height: 1.2;
   letter-spacing: 0.12em;
@@ -2717,7 +2762,7 @@ footer.footer-reference .footer-links h3::after {
 footer.footer-reference .footer-widget-link ul li,
 footer.footer-reference .footer-widget-link ul li a {
   color: rgba(255, 255, 255, 0.96) !important;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.4 !important;
 }
@@ -2795,7 +2840,7 @@ footer.footer-reference .footer-contact-infos .footer-widget + .footer-widget {
 footer.footer-reference .footer-contact-infos h3 {
   margin: 0 0 10px !important;
   color: var(--footer-gold) !important;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 650;
   line-height: 1.2;
   letter-spacing: 0.06em;
@@ -2822,7 +2867,7 @@ footer.footer-reference .footer-contact-infos li,
 footer.footer-reference .footer-contact-infos li a {
   margin: 0 !important;
   color: rgba(255, 255, 255, 0.96) !important;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.7 !important;
 }
 
@@ -2859,7 +2904,7 @@ footer.footer-reference .copyright-area p,
 footer.footer-reference .copyright-area a,
 footer.footer-reference .copyright-area li a {
   color: rgba(255, 255, 255, 0.95) !important;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.35;
 }
 
@@ -2973,7 +3018,7 @@ footer.footer-reference .copyright-area li + li::before {
   }
 
   footer.footer-reference .footer-left p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   footer.footer-reference .social-icons {
@@ -2999,3 +3044,207 @@ footer.footer-reference .copyright-area li + li::before {
     justify-content: flex-start;
   }
 }
+
+  /* Shared homepage-style outline treatment for calls to action site-wide. */
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button) {
+    --site-cta-text: #122620 !important;
+    --site-cta-line: #122620 !important;
+    --site-cta-accent: #c9a050 !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    min-height: 48px !important;
+    padding: 12px 32px 12px 38px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-image:
+      linear-gradient(var(--site-cta-line), var(--site-cta-line)),
+      linear-gradient(var(--site-cta-line), var(--site-cta-line)),
+      linear-gradient(var(--site-cta-line), var(--site-cta-line)),
+      linear-gradient(var(--site-cta-line), var(--site-cta-line)) !important;
+    background-position:
+      left top,
+      right bottom,
+      left bottom,
+      right top !important;
+    background-repeat: no-repeat !important;
+    background-size:
+      calc(100% - 10px) 1px,
+      1px calc(100% - 10px),
+      calc(100% - 10px) 1px,
+      1px calc(100% - 10px) !important;
+    box-shadow: none !important;
+    color: var(--site-cta-text) !important;
+    font: 500 10px/1.5 Montserrat, Arial, sans-serif !important;
+    letter-spacing: 0.08em !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    transition: color 0.3s ease, padding 0.3s ease !important;
+    cursor: pointer;
+  }
+
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button)::before {
+    position: absolute !important;
+    top: -4px !important;
+    right: 0 !important;
+    width: 1px !important;
+    height: 14px !important;
+    background: var(--site-cta-line) !important;
+    content: "" !important;
+    transform: rotate(-45deg) !important;
+    transform-origin: bottom !important;
+    transition: background 0.3s ease !important;
+  }
+
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button)::after {
+    position: absolute !important;
+    top: 50% !important;
+    left: -12px !important;
+    width: 45px !important;
+    height: 1px !important;
+    margin-top: -1px !important;
+    background: var(--site-cta-line) !important;
+    content: "" !important;
+    transition:
+      left 0.3s ease,
+      background 0.3s ease !important;
+  }
+
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button):is(:hover, :focus-visible) {
+    --site-cta-line: var(--site-cta-accent) !important;
+    padding-right: 38px !important;
+    padding-left: 32px !important;
+    color: var(--site-cta-accent) !important;
+    background-image:
+      linear-gradient(var(--site-cta-accent), var(--site-cta-accent)),
+      linear-gradient(var(--site-cta-accent), var(--site-cta-accent)),
+      linear-gradient(var(--site-cta-accent), var(--site-cta-accent)),
+      linear-gradient(var(--site-cta-accent), var(--site-cta-accent)) !important;
+  }
+
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button):is(:hover, :focus-visible)::before {
+    background: var(--site-cta-accent) !important;
+  }
+
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button):is(:hover, :focus-visible)::after {
+    left: calc(100% - 33px) !important;
+    background: var(--site-cta-accent) !important;
+  }
+
+  html body main :is(.button-outline, .theme-btn-outline, .sv-button--outline, .sa-button--outline, .pc-button--outline) {
+    --site-cta-text: #a37c35 !important;
+    --site-cta-line: #a37c35 !important;
+  }
+
+  html body main :is(.button-outline, .theme-btn-outline, .sv-button--outline, .sa-button--outline, .pc-button--outline):is(:hover, :focus-visible) {
+    color: var(--site-cta-accent) !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero, .home-page .hero-slider-wrap, .home-page .home-more-area) :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button) {
+    --site-cta-text: #fff !important;
+    --site-cta-line: #fff !important;
+    --site-cta-accent: #d3b184 !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero, .home-page .hero-slider-wrap, .home-page .home-more-area) :is(.button-outline, .theme-btn-outline, .sv-button--outline, .sa-button--outline, .pc-button--outline) {
+    --site-cta-text: #d3b184 !important;
+    --site-cta-line: #d3b184 !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn {
+    color: #fff !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn::before,
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn::after,
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn span::before,
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn span::after {
+    background: #fff !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn span {
+    border-color: #fff !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn:is(:hover, :focus-visible) {
+    color: #d3b184 !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn:is(:hover, :focus-visible)::before,
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn:is(:hover, :focus-visible)::after,
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn:is(:hover, :focus-visible) span::before,
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn:is(:hover, :focus-visible) span::after {
+    background: #d3b184 !important;
+  }
+
+  html body main :is(.lead-cta, .decision-section, .final-cta, .section-box-dark, .not-found-hero) .theme-btn:is(:hover, :focus-visible) span {
+    border-color: #d3b184 !important;
+  }
+
+  html body main .theme-btn > span {
+    display: none !important;
+  }
+
+  html body main .theme-btn-outline {
+    --site-cta-text: #a37c35 !important;
+    --site-cta-line: #a37c35 !important;
+  }
+
+  html body main :is(.theme-btn, .theme-btn-outline):focus-visible {
+    outline: 2px solid var(--site-cta-accent) !important;
+    outline-offset: 4px !important;
+  }
+
+  html body main :is(.button, .theme-btn, .sv-button, .sa-button, .pc-button, .bc-button):focus-visible {
+    outline: 2px solid var(--site-cta-accent) !important;
+    outline-offset: 4px !important;
+  }
+
+  .zone-intro-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .zone-intro-content {
+    max-width: 680px;
+  }
+
+  .zone-intro-title {
+    margin-bottom: 12px !important;
+  }
+
+  .zone-intro-summary,
+  .zone-section-intro {
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .zone-intro-summary {
+    margin-bottom: 0;
+  }
+
+  .zone-section-intro {
+    margin-bottom: 24px;
+  }
+
+  .zone-cost-note {
+    margin-bottom: 16px;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  .zone-footnote {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    opacity: 0.75;
+  }

@@ -1,0 +1,2050 @@
+@import url("mainland-base.css");
+
+@font-face {
+  font-family: "Line Awesome Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../../fonts/la-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Line Awesome Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/la-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Line Awesome Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/la-brands-400.woff2") format("woff2");
+}
+
+/* RAK ICC page-specific layouts. */
+.rak-icc-redesign .hero-actions,
+.rak-icc-redesign .section-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.rak-icc-redesign .hero-image .cover {
+  object-position: center 44%;
+}
+
+.rak-icc-redesign .hero-content p {
+  max-width: 620px;
+}
+
+.rak-icc-redesign .section-head {
+  max-width: none;
+  margin-bottom: 32px;
+}
+
+.rak-icc-redesign .section-head p:last-child {
+  margin-bottom: 0;
+}
+
+.rak-icc-redesign .activity-list,
+.rak-icc-redesign .checklist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
+  padding: 0;
+  margin: 28px 0 0;
+  list-style: none;
+}
+
+.rak-icc-redesign .activity-list li,
+.rak-icc-redesign .checklist-grid li {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: #394942;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.rak-icc-redesign .activity-list i,
+.rak-icc-redesign .checklist-grid i {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: #a9823f;
+  font-size: 16px;
+}
+
+.rak-icc-redesign .suitability {
+  background: var(--cream);
+}
+
+.rak-icc-redesign .audience-grid,
+.rak-icc-redesign .content-card-grid,
+.rak-icc-redesign .support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.rak-icc-redesign .audience-card,
+.rak-icc-redesign .content-card,
+.rak-icc-redesign .support-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: minmax(60px, auto);
+  gap: 14px 16px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.rak-icc-redesign .audience-card:hover,
+.rak-icc-redesign .content-card:hover,
+.rak-icc-redesign .support-card:hover {
+  transform: translateY(-3px);
+  border-color: #c9a050;
+  box-shadow: 0 16px 36px rgba(18, 38, 32, 0.08);
+}
+
+.rak-icc-redesign .audience-card i,
+.rak-icc-redesign .content-card i,
+.rak-icc-redesign .support-card i {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.rak-icc-redesign .audience-card h3,
+.rak-icc-redesign .content-card h3,
+.rak-icc-redesign .support-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.rak-icc-redesign .content-card p,
+.rak-icc-redesign .support-card p {
+  grid-column: 1 / -1;
+  align-self: start;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.rak-icc-redesign .consideration,
+.rak-icc-redesign .advisory-callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 28px;
+  padding: 25px 28px;
+  border-left: 3px solid var(--gold);
+  background: #fff;
+}
+
+.rak-icc-redesign .consideration i,
+.rak-icc-redesign .advisory-callout i {
+  color: var(--gold);
+  font-size: 25px;
+}
+
+.rak-icc-redesign .consideration strong,
+.rak-icc-redesign .advisory-callout strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--green);
+  font-size: 13px;
+}
+
+.rak-icc-redesign .consideration p,
+.rak-icc-redesign .advisory-callout p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.rak-icc-redesign .advantage-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  border: 0;
+  background: transparent;
+}
+
+.rak-icc-redesign .advantage-grid .benefit {
+  border: 1px solid #365047;
+}
+
+.rak-icc-redesign .benefit i {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  color: var(--gold);
+  font-size: 42px;
+}
+
+.rak-icc-redesign .licence-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.rak-icc-redesign .licence-grid .licence-secondary {
+  grid-column: 1 / -1;
+  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.rak-icc-redesign .licence-grid .licence-secondary p {
+  grid-column: 2;
+}
+
+.rak-icc-redesign .considerations-section {
+  background: #fff;
+}
+
+.rak-icc-redesign .considerations-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .structure-section,
+.rak-icc-redesign .cost-section {
+  background: var(--cream);
+}
+
+.rak-icc-redesign .structure-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .structure-grid .content-card {
+  padding: 26px;
+}
+
+.rak-icc-redesign .process-section {
+  background: var(--green);
+  color: #fff;
+}
+
+.rak-icc-redesign .process-section p {
+  color: #c2d0c8;
+}
+
+.rak-icc-redesign .process-flow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 0;
+}
+
+.rak-icc-redesign .process-step {
+  position: relative;
+  min-height: 150px;
+  padding: 26px 20px;
+  border: 1px solid #365047;
+  background: #183029;
+}
+
+.rak-icc-redesign .process-step::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: -18px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.rak-icc-redesign .process-step::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -8px;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid var(--green);
+  border-right: 2px solid var(--green);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.rak-icc-redesign .process-step:last-child::after,
+.rak-icc-redesign .process-step:last-child::before {
+  display: none;
+}
+
+.rak-icc-redesign .process-step span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--gold);
+  font:
+    21px/1 Marcellus,
+    Georgia,
+    serif;
+}
+
+.rak-icc-redesign .process-step h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.rak-icc-redesign .support-card h3 {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.rak-icc-redesign .timing-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 24px 0 0;
+  padding: 18px 20px;
+  border: 1px solid #365047;
+  color: #dce6e1;
+  font-size: 12px;
+}
+
+.rak-icc-redesign .timing-note i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.rak-icc-redesign .timing-note strong {
+  color: #fff;
+}
+
+.rak-icc-redesign .source-note {
+  margin: 24px 0 0;
+  color: #77827c;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.rak-icc-redesign .source-note a {
+  color: #936d2d;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rak-icc-redesign .button .las {
+  flex: 0 0 auto;
+  font-size: 18px;
+}
+
+.rak-icc-redesign .final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.rak-icc-redesign .lead-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: var(--section-space) 0;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
+    linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
+    url("../../imgs/rak-icc/international-architecture.webp") center 47% / cover no-repeat;
+  color: #fff;
+}
+
+.rak-icc-redesign .lead-cta::before,
+.rak-icc-redesign .lead-cta::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(226, 197, 137, 0.16);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.rak-icc-redesign .lead-cta::before {
+  width: 520px;
+  height: 520px;
+  top: -310px;
+  right: -135px;
+  box-shadow: 0 0 0 92px rgba(255, 255, 255, 0.018);
+}
+
+.rak-icc-redesign .lead-cta::after {
+  width: 260px;
+  height: 260px;
+  bottom: -185px;
+  left: 7%;
+}
+
+.rak-icc-redesign .lead-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: clamp(42px, 6vw, 82px);
+  align-items: center;
+}
+
+.rak-icc-redesign .lead-copy {
+  max-width: 490px;
+  padding: 10px 0;
+}
+
+.rak-icc-redesign .lead-copy .eyebrow {
+  color: #d8b66f;
+}
+
+.rak-icc-redesign .lead-copy h2 {
+  max-width: 470px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.rak-icc-redesign .lead-copy p {
+  max-width: 455px;
+  margin-bottom: 0;
+  color: #d4dcd6;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.rak-icc-redesign .lead-quote {
+  margin-top: 30px !important;
+  padding: 17px 18px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1 !important;
+  font-size: 12px !important;
+  line-height: 1.8 !important;
+}
+
+.rak-icc-redesign .lead-cta .button-outline {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.rak-icc-redesign .lead-cta .button-outline:hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--green);
+}
+
+.rak-icc-redesign .lead-form {
+  position: relative;
+  padding: clamp(28px, 3.3vw, 42px);
+  border-top: 4px solid var(--gold);
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.26);
+}
+
+.rak-icc-redesign .lead-form h3 {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-size: clamp(26px, 2.5vw, 32px);
+}
+
+.rak-icc-redesign .lead-form > p {
+  margin-bottom: 25px;
+  color: #68736d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.rak-icc-redesign .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.rak-icc-redesign .form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.rak-icc-redesign .form-field.full {
+  grid-column: 1 / -1;
+}
+
+.rak-icc-redesign .form-field label {
+  color: #35453e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rak-icc-redesign .form-field input,
+.rak-icc-redesign .form-field select,
+.rak-icc-redesign .form-field textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #d5dbd6;
+  border-radius: 0;
+  outline: none;
+  background: #fbfbf8;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.rak-icc-redesign .form-field input:focus,
+.rak-icc-redesign .form-field select:focus,
+.rak-icc-redesign .form-field textarea:focus {
+  border-color: var(--gold);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(201, 160, 80, 0.12);
+}
+
+.rak-icc-redesign .form-field input[readonly] {
+  color: #59675f;
+  background: #f1f2ed;
+}
+
+.rak-icc-redesign .form-field textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.rak-icc-redesign .form-field select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #5e6b64 50%),
+    linear-gradient(135deg, #5e6b64 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 21px,
+    calc(100% - 13px) 21px;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+.rak-icc-redesign .form-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.rak-icc-redesign .form-submit {
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+.rak-icc-redesign .form-submit .button {
+  width: 100%;
+  min-height: 56px;
+}
+
+.rak-icc-redesign .form-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #78827c !important;
+  font-size: 10px;
+}
+
+@media (max-width: 1050px) {
+  .rak-icc-redesign .audience-grid,
+  .rak-icc-redesign .content-card-grid,
+  .rak-icc-redesign .support-grid,
+  .rak-icc-redesign .advantage-grid,
+  .rak-icc-redesign .structure-grid,
+  .rak-icc-redesign .considerations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rak-icc-redesign .process-flow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .rak-icc-redesign .process-step:nth-child(3)::after,
+  .rak-icc-redesign .process-step:nth-child(3)::before {
+    display: none;
+  }
+
+  .rak-icc-redesign .lead-layout {
+    gap: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign .audience-grid,
+  .rak-icc-redesign .content-card-grid,
+  .rak-icc-redesign .support-grid,
+  .rak-icc-redesign .lead-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .lead-layout {
+    gap: 36px;
+  }
+
+  .rak-icc-redesign .lead-copy {
+    max-width: 620px;
+    padding: 0;
+  }
+
+  .rak-icc-redesign .lead-copy h2,
+  .rak-icc-redesign .lead-copy p {
+    max-width: 620px;
+  }
+
+  .rak-icc-redesign .licence-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rak-icc-redesign .process-flow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rak-icc-redesign .process-step:nth-child(3)::after,
+  .rak-icc-redesign .process-step:nth-child(3)::before {
+    display: block;
+  }
+
+  .rak-icc-redesign .process-step:nth-child(even)::after,
+  .rak-icc-redesign .process-step:nth-child(even)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .rak-icc-redesign .licence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .licence-grid .licence-secondary {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .rak-icc-redesign .hero-actions,
+  .rak-icc-redesign .section-actions,
+  .rak-icc-redesign .final-actions,
+  .rak-icc-redesign .activity-list,
+  .rak-icc-redesign .checklist-grid,
+  .rak-icc-redesign .structure-grid,
+  .rak-icc-redesign .considerations-grid,
+  .rak-icc-redesign .advantage-grid,
+  .rak-icc-redesign .process-flow,
+  .rak-icc-redesign .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .hero-actions,
+  .rak-icc-redesign .section-actions {
+    display: grid;
+  }
+
+  .rak-icc-redesign .process-step::after,
+  .rak-icc-redesign .process-step::before {
+    display: none !important;
+  }
+
+  .rak-icc-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+
+  .rak-icc-redesign .lead-cta::before {
+    right: -300px;
+  }
+
+  .rak-icc-redesign .final-actions {
+    display: grid;
+    gap: 10px;
+  }
+
+  .rak-icc-redesign .final-actions .button {
+    width: 100%;
+  }
+}
+
+/* Compact service-page layout. */
+.rak-icc-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
+    url("../../imgs/rak-icc/international-architecture.webp") !important;
+  background-position: center 47% !important;
+}
+
+.rak-icc-redesign {
+  --section-space: 54px;
+}
+
+.rak-icc-redesign .hero-layout,
+.rak-icc-redesign .hero-image {
+  min-height: 500px;
+}
+
+.rak-icc-redesign .hero-content {
+  padding-top: 49px;
+  padding-bottom: 53px;
+}
+
+.rak-icc-redesign .hero-image .cover {
+  object-position: 49% center;
+}
+
+.rak-icc-redesign .overview-visual {
+  height: 520px;
+}
+
+.rak-icc-redesign .overview-visual .cover {
+  object-position: center 48%;
+}
+
+.rak-icc-redesign .compact-head {
+  max-width: 880px;
+  margin-bottom: 26px;
+}
+
+.rak-icc-redesign .business-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.rak-icc-redesign .business-area-grid span {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  min-height: 42px;
+  padding: 9px 11px;
+  border: 1px solid var(--line);
+  background: #fbfbf8;
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.rak-icc-redesign .business-area-grid i {
+  flex: 0 0 auto;
+  color: var(--gold);
+  font-size: 20px;
+}
+
+.rak-icc-redesign .section-soft {
+  background: var(--cream);
+}
+
+.rak-icc-redesign .mini-title {
+  margin: 24px 0 0;
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rak-icc-redesign .overview-visual {
+  overflow: hidden;
+}
+
+.rak-icc-redesign .overview-visual figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  padding: 12px 14px;
+  background: rgba(12, 34, 27, 0.86);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.rak-icc-redesign .fit-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.rak-icc-redesign .fit-card {
+  padding: 28px 29px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  background: #fff;
+}
+
+.rak-icc-redesign .fit-card-caution {
+  border-top-color: #738178;
+}
+
+.rak-icc-redesign .fit-card-heading {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.rak-icc-redesign .fit-card-heading i {
+  color: var(--gold);
+  font-size: 29px;
+}
+
+.rak-icc-redesign .fit-card-caution .fit-card-heading i {
+  color: #718078;
+}
+
+.rak-icc-redesign .fit-card-heading h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.rak-icc-redesign .fit-card ul,
+.rak-icc-redesign .requirement-panel ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rak-icc-redesign .fit-card li {
+  position: relative;
+  padding: 9px 0 9px 17px;
+  border-bottom: 1px solid #eaebe6;
+  color: #526159;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.rak-icc-redesign .fit-card li::before {
+  content: "+";
+  position: absolute;
+  left: 0;
+  color: #a9823f;
+}
+
+.rak-icc-redesign .fit-card-detailed li strong,
+.rak-icc-redesign .fit-card-detailed li span {
+  display: block;
+}
+
+.rak-icc-redesign .fit-card-detailed li strong {
+  margin-bottom: 2px;
+  color: var(--green);
+  font-size: 11px;
+}
+
+.rak-icc-redesign .fit-card-detailed li span {
+  color: #69766f;
+  font-size: 10px;
+}
+
+.rak-icc-redesign .prominent-callout {
+  background: #f0ede5;
+}
+
+.rak-icc-redesign .advantage-grid .benefit h3 {
+  color: #fff;
+}
+
+.rak-icc-redesign .advantage-grid .benefit p {
+  color: #c8d4cd;
+}
+
+.rak-icc-redesign .advantage-grid .logistics-card {
+  border-color: var(--gold);
+  background: #1a3a31;
+}
+
+.rak-icc-redesign .activity-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rak-icc-redesign .activity-card-grid .content-card {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 10px;
+  padding: 23px 20px;
+}
+
+.rak-icc-redesign .activity-card-grid .content-card i,
+.rak-icc-redesign .activity-card-grid .content-card h3,
+.rak-icc-redesign .activity-card-grid .content-card p {
+  grid-column: 1;
+}
+
+.rak-icc-redesign .activity-card-grid .content-card i {
+  grid-row: 1;
+  width: 42px;
+  height: 42px;
+  font-size: 36px;
+}
+
+.rak-icc-redesign .activity-card-grid .content-card h3 {
+  grid-row: 2;
+  font-size: 19px;
+}
+
+.rak-icc-redesign .activity-card-grid .content-card p {
+  grid-row: 3;
+}
+
+.rak-icc-redesign .requirements-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.rak-icc-redesign .requirement-panel {
+  padding: 29px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.rak-icc-redesign .requirement-panel-head {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.rak-icc-redesign .requirement-panel-head span {
+  color: var(--gold);
+  font: 21px/1 Marcellus, Georgia, serif;
+}
+
+.rak-icc-redesign .requirement-panel-head h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.rak-icc-redesign .requirement-panel li {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e9e4;
+  color: #4e5d55;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.rak-icc-redesign .requirement-panel li i {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.rak-icc-redesign .cost-setup-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(300px, 0.88fr);
+  gap: 20px;
+}
+
+.rak-icc-redesign .cost-factor-panel,
+.rak-icc-redesign .cost-advisor-panel {
+  padding: 33px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.rak-icc-redesign .cost-factor-panel h3,
+.rak-icc-redesign .cost-advisor-panel h3 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.rak-icc-redesign .cost-factor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.rak-icc-redesign .cost-factor-grid span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 49px;
+  padding: 10px 12px;
+  background: var(--cream);
+  color: #35453e;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.rak-icc-redesign .cost-factor-grid i {
+  color: var(--gold);
+  font-size: 21px;
+}
+
+.rak-icc-redesign .cost-note {
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--gold);
+  color: #59675f;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.rak-icc-redesign .cost-advisor-panel {
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.rak-icc-redesign .cost-advisor-panel .eyebrow {
+  color: var(--gold);
+}
+
+.rak-icc-redesign .cost-advisor-panel h3 {
+  margin-top: 12px;
+  color: #fff;
+}
+
+.rak-icc-redesign .cost-advisor-panel p {
+  color: #c8d4cd;
+  font-size: 12px;
+}
+
+.rak-icc-redesign .cost-advisor-panel .button {
+  margin-top: 12px;
+}
+
+.rak-icc-redesign .decision-section {
+  position: relative;
+  overflow: hidden;
+  background: #0e211b;
+  color: #fff;
+}
+
+.rak-icc-redesign .decision-section::after {
+  content: "";
+  position: absolute;
+  width: 460px;
+  height: 460px;
+  right: -190px;
+  bottom: -310px;
+  border: 1px solid rgba(201, 160, 80, 0.18);
+  border-radius: 50%;
+}
+
+.rak-icc-redesign .decision-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(250px, 0.68fr) minmax(0, 1.32fr);
+  gap: 28px 52px;
+  align-items: start;
+}
+
+.rak-icc-redesign .decision-copy .eyebrow {
+  color: var(--gold);
+}
+
+.rak-icc-redesign .decision-copy h2 {
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.rak-icc-redesign .decision-copy p {
+  margin: 0;
+  color: #bfcac4;
+  font-size: 13px;
+}
+
+.rak-icc-redesign .decision-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.rak-icc-redesign .decision-list > div {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 11px;
+  align-items: start;
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid #304a40;
+  background: #173029;
+  color: #e7ece9;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.rak-icc-redesign .decision-list i {
+  color: var(--gold);
+  font-size: 23px;
+}
+
+.rak-icc-redesign .decision-grid blockquote {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 17px 20px;
+  border-left: 2px solid var(--gold);
+  background: rgba(255, 255, 255, 0.045);
+  color: #efe5d1;
+  font: 400 17px/1.65 Marcellus, Georgia, serif;
+}
+
+.rak-icc-redesign .considerations-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 19px;
+  border-top: 1px solid var(--line);
+  color: #637069;
+  font-size: 11px;
+}
+
+.rak-icc-redesign .related-links > span {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.rak-icc-redesign .related-links a {
+  color: #997331;
+  font-weight: 600;
+}
+
+.rak-icc-redesign .related-links a:hover {
+  text-decoration: underline;
+}
+
+.rak-icc-redesign .lead-cta {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.rak-icc-redesign .lead-form {
+  padding: 34px;
+}
+
+.rak-icc-redesign .form-field textarea {
+  min-height: 96px;
+}
+
+@media (max-width: 1050px) {
+  .rak-icc-redesign {
+    --section-space: 49px;
+  }
+
+  .rak-icc-redesign .activity-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .fit-card ul,
+  .rak-icc-redesign .requirement-panel ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign {
+    --section-space: 42px;
+  }
+
+  .rak-icc-redesign .hero-layout,
+  .rak-icc-redesign .hero-image {
+    min-height: unset;
+  }
+
+  .rak-icc-redesign .overview-visual {
+    height: 390px;
+  }
+
+  .rak-icc-redesign .fit-columns,
+  .rak-icc-redesign .requirements-split,
+  .rak-icc-redesign .cost-setup-grid,
+  .rak-icc-redesign .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .activity-card-grid,
+  .rak-icc-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .process-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .process-step {
+    min-height: 0;
+  }
+
+  .rak-icc-redesign .process-step::after,
+  .rak-icc-redesign .process-step::before {
+    display: none !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .rak-icc-redesign {
+    --section-space: 38px;
+  }
+
+  .rak-icc-redesign .business-area-grid,
+  .rak-icc-redesign .activity-card-grid,
+  .rak-icc-redesign .considerations-grid,
+  .rak-icc-redesign .cost-factor-grid,
+  .rak-icc-redesign .decision-list {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .fit-card,
+  .rak-icc-redesign .requirement-panel,
+  .rak-icc-redesign .cost-factor-panel,
+  .rak-icc-redesign .cost-advisor-panel {
+    padding: 24px 20px;
+  }
+
+  .rak-icc-redesign .fit-card-heading h3,
+  .rak-icc-redesign .requirement-panel-head h3 {
+    font-size: 22px;
+  }
+
+  .rak-icc-redesign .cost-advisor-panel .button {
+    width: 100%;
+  }
+
+  .rak-icc-redesign .decision-grid {
+    gap: 23px;
+  }
+
+  .rak-icc-redesign .related-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rak-icc-redesign .lead-cta {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .rak-icc-redesign .lead-form {
+    padding: 27px 20px 24px;
+  }
+}
+
+/* Keep multi-card grids balanced without oversized cards. */
+@media (min-width: 1051px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .licence-grid .content-card,
+  .rak-icc-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .licence-grid .content-card,
+  .rak-icc-redesign .licence-grid .licence-secondary {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1051px) {
+  .rak-icc-redesign .compact-benefits,
+  .rak-icc-redesign .support-grid-eight {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.rak-icc-redesign .compact-benefits .benefit {
+  grid-template-rows: minmax(50px, auto) auto;
+  min-height: 166px;
+  padding: 23px 22px;
+}
+
+.rak-icc-redesign .compact-benefits .benefit > span {
+  grid-column: 1 / -1;
+  color: #c8d4cd;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.rak-icc-redesign .support-subtitle {
+  margin: 18px 0 0;
+  color: var(--green);
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rak-icc-redesign .support-card {
+  grid-template-rows: auto auto;
+}
+
+.rak-icc-redesign .support-card ul {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rak-icc-redesign .support-card li {
+  position: relative;
+  padding: 3px 0 3px 13px;
+  color: #65736c;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.rak-icc-redesign .support-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.rak-icc-redesign .compact-benefits .feature-benefit {
+  border-color: var(--gold);
+  background: #193b31;
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .rak-icc-redesign .compact-benefits,
+  .rak-icc-redesign .support-grid-eight {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .rak-icc-redesign .compact-benefits,
+  .rak-icc-redesign .support-grid-eight {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .compact-benefits .benefit {
+    min-height: 0;
+  }
+}
+
+
+
+
+/* Card emphasis and balanced grids. */
+.rak-icc-redesign .facility-step {
+  border-color: var(--gold);
+  background: #214137;
+}
+
+.rak-icc-redesign .facility-step span,
+.rak-icc-redesign .facility-step h3 {
+  color: #fff;
+}
+
+.rak-icc-redesign .facility-priority {
+  border-left: 3px solid var(--gold);
+  background: #f0ede5;
+}
+
+.rak-icc-redesign .facility-priority i {
+  color: var(--gold);
+}
+
+.rak-icc-redesign .licence-grid .content-card {
+  min-height: 177px;
+}
+
+@media (min-width: 1051px) {
+  .rak-icc-redesign .structure-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .rak-icc-redesign .structure-grid,
+  .rak-icc-redesign .considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .rak-icc-redesign .structure-grid,
+  .rak-icc-redesign .considerations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+}
+
+.rak-icc-redesign .decision-section {
+  background:
+    linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
+    url("../../imgs/rak-icc/international-architecture.webp") center / cover no-repeat;
+}
+
+/* Registry structure is the page's main differentiator. */
+.rak-icc-redesign .facility-band {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.rak-icc-redesign .facility-band strong,
+.rak-icc-redesign .facility-band span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 13px;
+  font: 600 11px/1.4 Montserrat, Arial, sans-serif;
+}
+
+.rak-icc-redesign .facility-band strong {
+  color: #fff;
+  background: var(--green);
+}
+
+.rak-icc-redesign .facility-band span {
+  color: #35453e;
+  border: 1px solid #dfe4de;
+  background: #f8f7f3;
+}
+
+.rak-icc-redesign .activity-card-grid.licence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .licence-grid .content-card {
+  min-height: 205px;
+}
+
+.rak-icc-redesign .structure-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .jurisdiction-choice {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(210px, .6fr);
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 22px;
+  padding: clamp(24px, 3vw, 38px);
+  border-left: 4px solid var(--gold);
+  background: #193b31;
+  color: #fff;
+}
+
+.rak-icc-redesign .jurisdiction-choice .eyebrow {
+  color: #d5ad61;
+}
+
+.rak-icc-redesign .jurisdiction-choice h3 {
+  margin: 8px 0 10px;
+  color: #fff;
+  font-size: clamp(23px, 2.5vw, 32px);
+}
+
+.rak-icc-redesign .jurisdiction-choice p {
+  max-width: 720px;
+  margin: 0;
+  color: #e1e8e2;
+}
+
+.rak-icc-redesign .jurisdiction-choice a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 15px;
+  color: #102b23;
+  background: var(--gold);
+  font: 650 11px/1.4 Montserrat, Arial, sans-serif;
+}
+
+.rak-icc-redesign .jurisdiction-choice a:hover,
+.rak-icc-redesign .jurisdiction-choice a:focus-visible {
+  background: #e5c17d;
+}
+
+.rak-icc-redesign .lead-cta {
+  background: linear-gradient(90deg, rgba(10, 31, 25, .97), rgba(10, 31, 25, .88)),
+    url("../../imgs/rak-icc/international-architecture.webp") center / cover no-repeat;
+}
+
+@media (max-width: 1050px) {
+  .rak-icc-redesign .jurisdiction-choice {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid,
+  .rak-icc-redesign .structure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+
+}
+
+/* RAK ICC: international structure, not a conventional UAE operating licence. */
+.rak-icc-redesign .hero-image .cover {
+  object-position: center 50%;
+}
+
+.rak-icc-redesign .hero-distinction {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  max-width: 620px;
+  margin: 25px 0 0;
+  padding: 14px 16px;
+  border-left: 3px solid var(--gold);
+  background: #eae7df;
+  color: #34453d;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.rak-icc-redesign .hero-distinction i {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #a77b32;
+  font-size: 20px;
+}
+
+.rak-icc-redesign .hero-distinction strong {
+  color: var(--green);
+}
+
+.rak-icc-redesign .registry-distinction-callout {
+  margin-top: 23px;
+  padding: 20px 22px;
+  background: var(--cream);
+}
+
+.rak-icc-redesign .registry-business-panel .business-area-grid span:last-child {
+  grid-column: 1 / -1;
+}
+
+.rak-icc-redesign .advantage-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .offshore-structure-card {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+  max-width: 980px;
+  padding: clamp(26px, 4vw, 45px);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  background: #fff;
+}
+
+.rak-icc-redesign .offshore-structure-icon {
+  display: grid;
+  width: 68px;
+  height: 68px;
+  place-items: center;
+  border: 1px solid #d7bc83;
+  background: #f8f3e9;
+  color: #a57b37;
+  font-size: 35px;
+}
+
+.rak-icc-redesign .offshore-structure-card h3 {
+  margin: 0 0 12px;
+  font-size: clamp(26px, 2.8vw, 34px);
+}
+
+.rak-icc-redesign .offshore-structure-card p {
+  max-width: 740px;
+  margin-bottom: 10px;
+}
+
+.rak-icc-redesign .offshore-structure-card .offshore-structure-note {
+  margin: 19px 0 0;
+  padding: 13px 16px;
+  border-left: 2px solid var(--gold);
+  background: var(--cream);
+  color: #34453d;
+  font-size: 12px;
+}
+
+.rak-icc-redesign .decision-list > div:last-child {
+  grid-column: auto;
+}
+
+/* RAK ICC: compact registry-specific cards and the RAKEZ distinction. */
+.rak-icc-redesign .registry-business-panel .business-area-grid span:last-child {
+  grid-column: auto;
+}
+
+.rak-icc-redesign .advantage-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .registry-structure-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .registry-structure-grid .content-card {
+  min-height: 225px;
+}
+
+.rak-icc-redesign .registry-considerations-grid {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .registry-considerations-grid .content-card {
+  grid-column: span 3;
+}
+
+.rak-icc-redesign .registry-considerations-grid .content-card:nth-child(n + 5) {
+  grid-column: span 4;
+}
+
+.rak-icc-redesign .registry-considerations-grid .registry-priority {
+  border-top: 3px solid var(--gold);
+  background: #fcfaf5;
+}
+
+.rak-icc-redesign .registry-support-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.rak-icc-redesign #requirements .timing-note a {
+  color: #886329;
+  font-weight: 650;
+  text-decoration: underline;
+}
+
+.rak-icc-redesign .registry-comparison {
+  background: #fff;
+}
+
+.rak-icc-redesign .registry-compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.rak-icc-redesign .registry-compare-card {
+  min-width: 0;
+  padding: clamp(22px, 3vw, 36px);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  background: var(--cream);
+}
+
+.rak-icc-redesign .registry-compare-rakez {
+  border-top-color: #738178;
+  background: #f4f6f2;
+}
+
+.rak-icc-redesign .registry-compare-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dce1da;
+}
+
+.rak-icc-redesign .registry-compare-heading > i {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  flex: 0 0 auto;
+  place-items: center;
+  background: #eadfca;
+  color: #9a7437;
+  font-size: 27px;
+}
+
+.rak-icc-redesign .registry-compare-rakez .registry-compare-heading > i {
+  background: #dfe6dc;
+  color: #627568;
+}
+
+.rak-icc-redesign .registry-compare-heading span {
+  display: block;
+  color: #6d786f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.rak-icc-redesign .registry-compare-heading h3 {
+  margin: 3px 0 0;
+  font-size: clamp(27px, 3vw, 36px);
+}
+
+.rak-icc-redesign .registry-compare-card ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 18px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rak-icc-redesign .registry-compare-card li {
+  position: relative;
+  padding: 11px 0 11px 19px;
+  border-bottom: 1px solid #e3e5df;
+  color: #394941;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rak-icc-redesign .registry-compare-card li::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.rak-icc-redesign .registry-compare-rakez li::before {
+  background: #788c7b;
+}
+
+.rak-icc-redesign .registry-compare-note {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 18px 0 0;
+  padding: 14px 17px;
+  border-left: 2px solid var(--gold);
+  background: var(--cream);
+  color: #4c5d53;
+  font-size: 12px;
+}
+
+.rak-icc-redesign .registry-compare-note i {
+  margin-top: 2px;
+  color: #a47a34;
+  font-size: 18px;
+}
+
+.rak-icc-redesign .registry-compare-note a {
+  color: #886329;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (min-width: 1051px) and (max-width: 1280px) {
+  .rak-icc-redesign .advantage-grid,
+  .rak-icc-redesign .registry-support-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .rak-icc-redesign .advantage-grid,
+  .rak-icc-redesign .registry-structure-grid,
+  .rak-icc-redesign .registry-support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .registry-considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .registry-considerations-grid .content-card,
+  .rak-icc-redesign .registry-considerations-grid .content-card:nth-child(n + 5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign .advantage-grid,
+  .rak-icc-redesign .registry-structure-grid,
+  .rak-icc-redesign .registry-support-grid,
+  .rak-icc-redesign .registry-compare-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .registry-structure-grid .content-card {
+    min-height: 0;
+  }
+
+  .rak-icc-redesign .registry-considerations-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .registry-considerations-grid .content-card,
+  .rak-icc-redesign .registry-considerations-grid .content-card:nth-child(n + 5) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .rak-icc-redesign .registry-considerations-grid,
+  .rak-icc-redesign .registry-compare-card ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rak-icc-redesign .considerations-grid .registry-priority {
+  border-top: 3px solid var(--gold);
+  background: #fcfaf5;
+}
+
+.rak-icc-redesign #requirements .timing-note a {
+  color: #886329;
+  font-weight: 650;
+  text-decoration: underline;
+}
+
+@media (min-width: 761px) and (max-width: 1120px) {
+  .rak-icc-redesign .advantage-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign .advantage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .offshore-structure-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .rak-icc-redesign .registry-business-panel .business-area-grid span:last-child {
+    grid-column: auto;
+  }
+}
+
+/* RAK ICC overview and compact use-case grid. */
+.rak-icc-redesign .hero-image .cover {
+  object-position: center 54%;
+}
+
+.rak-icc-redesign .registry-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  align-items: start;
+  gap: clamp(32px, 5vw, 70px);
+}
+
+.rak-icc-redesign .registry-overview-copy p {
+  max-width: 610px;
+}
+
+.rak-icc-redesign .registry-business-panel {
+  min-width: 0;
+  padding: clamp(22px, 2.7vw, 34px);
+  border: 1px solid var(--line);
+  background: var(--cream);
+}
+
+.rak-icc-redesign .registry-business-panel h3 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.rak-icc-redesign .registry-business-panel .business-area-grid {
+  margin-top: 22px;
+}
+
+.rak-icc-redesign .advisory-callout a {
+  color: #886329;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rak-icc-redesign .activity-card-grid.licence-grid,
+.rak-icc-redesign .structure-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .licence-grid .content-card {
+  min-height: 265px;
+}
+
+.rak-icc-redesign #requirements .timing-note {
+  border-color: #d9dfd8;
+  background: #fff;
+  color: #47564e;
+}
+
+.rak-icc-redesign #requirements .timing-note strong {
+  color: var(--green);
+}
+
+.rak-icc-redesign .decision-section {
+  background:
+    linear-gradient(105deg, rgba(9, 29, 23, .98), rgba(9, 29, 23, .91)),
+    url("../../imgs/rak-icc/international-architecture.webp") center / cover no-repeat;
+}
+
+.rak-icc-redesign .support-card p {
+  line-height: 1.65;
+}
+
+@media (min-width: 761px) and (max-width: 1180px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid,
+  .rak-icc-redesign .structure-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .rak-icc-redesign .registry-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .registry-business-panel .business-area-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid,
+  .rak-icc-redesign .structure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+
+  .rak-icc-redesign .registry-business-panel .business-area-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .whatsapp-float.rak-icc-cta-visible {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 520px) {
+  .rak-icc-redesign .registry-business-panel .business-area-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RAK ICC responsive refinements. */
+.rak-icc-redesign .image-caption {
+  max-width: calc(100% - 72px);
+}
+
+@media (max-width: 1050px) {
+  .whatsapp-float.rak-icc-cta-visible {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+  }
+}
+
+.rak-icc-redesign .hero-image .cover {
+  object-position: center 50%;
+}
+
+.rak-icc-redesign .activity-card-grid.licence-grid,
+.rak-icc-redesign .structure-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.rak-icc-redesign .licence-grid .content-card {
+  min-height: 215px;
+}
+
+.rak-icc-redesign .decision-list > div:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid,
+  .rak-icc-redesign .structure-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rak-icc-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .rak-icc-redesign .activity-card-grid.licence-grid,
+  .rak-icc-redesign .structure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rak-icc-redesign .licence-grid .content-card {
+    min-height: 0;
+  }
+}
+
+.rak-icc-redesign .decision-list > div:last-child {
+  grid-column: auto;
+}

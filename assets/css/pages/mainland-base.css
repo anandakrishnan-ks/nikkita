@@ -164,6 +164,13 @@
   border-color: var(--green);
   color: white;
 }
+.mainland-redesign .small-note-spaced {
+  margin-top: 22px;
+}
+.mainland-redesign .req-notice-icon {
+  color: var(--gold);
+  font-size: 25px;
+}
 .mainland-redesign .arrow {
   font-size: 18px;
   font-weight: 400;
