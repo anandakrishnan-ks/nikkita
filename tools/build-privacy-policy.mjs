@@ -81,7 +81,7 @@ const sections = [
 ].join('\n');
 
 const page = `<div class="privacy-suite">
-  <nav class="pp-breadcrumb" aria-label="Breadcrumb"><div class="pp-container"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy Policy</span></div></nav>
+  <nav class="pp-breadcrumb visual-breadcrumb visual-breadcrumb--legal" aria-label="Breadcrumb"><div class="pp-container visual-breadcrumb__inner"><p class="visual-breadcrumb__title">Privacy Policy</p><div class="visual-breadcrumb__trail"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy Policy</span></div></div></nav>
   <header class="pp-hero"><div class="pp-container"><span class="pp-kicker">Privacy &amp; confidentiality</span><h1>Privacy Policy</h1><p>Nikki Advisory respects your privacy and is committed to protecting the personal, business and consultation information entrusted to us.</p><span class="pp-tagline">Structured decisions lead to stable businesses.</span></div></header>
   <div class="pp-container pp-content-layout"><aside class="pp-sidebar" aria-label="Policy sections"><div class="pp-sidebar-inner"><span class="pp-sidebar-label">On this page</span>${toc()}<div class="pp-sidebar-help"><span>Privacy enquiry</span><a href="mailto:info@nikkiadvisory.com">info@nikkiadvisory.com <i class="las la-arrow-up-right" aria-hidden="true"></i></a></div></div></aside>
   <div class="pp-main"><details class="pp-mobile-toc"><summary>Jump to a section <i class="las la-angle-down" aria-hidden="true"></i></summary><nav aria-label="Policy sections">${toc()}</nav></details><article aria-label="Privacy policy">${sections}</article></div></div>

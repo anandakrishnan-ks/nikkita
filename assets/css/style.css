@@ -1480,7 +1480,7 @@ main section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 .funfacts-wrap .custom-container {
     max-width: 1149px;
@@ -4213,7 +4213,7 @@ section.active .section-header .subtitle::before {
 }
 .story-box .img-box {
     position: relative;
-    margin-bottom: 26px;
+    /* margin-bottom: 26px; */
 }
 .story-box .img-box img {
     display: block;
@@ -4239,6 +4239,8 @@ section.active .section-header .subtitle::before {
     color: var(--primary);
     line-height: 1;
     margin-bottom: 8px;
+    font-size: 14px;
+    /* display: none; */
 }
 .story-box .content-box h1 {
     color: var(--dark);
@@ -4843,7 +4845,7 @@ section.active .section-header .subtitle::before {
     align-items: center;
     justify-content: center;
     /* border: 1px solid rgb(211 177 132 / 40%); */
-    padding: 60px 50px 50px 50px;
+    padding: 22px;
     transition: .6s;
 }
 .pricing-table::before {
@@ -4878,6 +4880,8 @@ section.active .section-header .subtitle::before {
 .pricing-table .subtitle {
     color: var(--primary);
     line-height: 1;
+    font-size: 13px;
+    font-weight: 500;
     margin-bottom: 17px;
 }
 .pricing-table .title sup {

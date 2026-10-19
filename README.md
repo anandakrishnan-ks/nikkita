@@ -30,12 +30,11 @@ Nikki Advisory is a multi-page, zero-build corporate advisory and business setup
 ├── .htaccess                            # Apache configuration (rewrites, clean URLs, cache headers)
 │
 ├── pricing.html                         # Pricing suite hub
-├── pricing/                             # Structured pricing directory endpoints
-│   ├── uae-mainland/index.html
-│   ├── uae-free-zone/index.html
-│   ├── uae-offshore/index.html
-│   ├── saudi-arabia/index.html
-│   └── bahrain/index.html
+├── uae-mainland-pricing.html            # Flat pricing detail endpoints
+├── uae-free-zone-pricing.html
+├── uae-offshore-pricing.html
+├── saudi-arabia-pricing.html
+├── bahrain-pricing.html
 │
 ├── services.html                        # Services overview hub
 ├── services/                            # Structured service directory endpoints
@@ -92,13 +91,13 @@ Nikki Advisory is a multi-page, zero-build corporate advisory and business setup
 - `corporate-compliance.html` (`services/corporate-compliance/`) — Regulatory reporting, AML/CFT, and ESR filings.
 - `pro-government-services.html` (`services/pro-services/`) — Visa processing, ministry approvals, and labor services.
 
-### 3. Pricing Suite (`/pricing/`)
+### 3. Pricing Suite
 - `pricing.html` — Central pricing estimator and fee comparison matrix.
-- `pricing/uae-mainland/` — Cost breakdowns for DED Mainland licenses.
-- `pricing/uae-free-zone/` — Package comparisons across key UAE free zones.
-- `pricing/uae-offshore/` — Formation fees for international business companies.
-- `pricing/saudi-arabia/` — MISA license costs and commercial registration estimates.
-- `pricing/bahrain/` — Sijilat registration and CR cost guides.
+- `uae-mainland-pricing.html` — Cost breakdowns for DED Mainland licenses.
+- `uae-free-zone-pricing.html` — Package comparisons across key UAE free zones.
+- `uae-offshore-pricing.html` — Formation fees for international business companies.
+- `saudi-arabia-pricing.html` — MISA license costs and commercial registration estimates.
+- `bahrain-pricing.html` — Sijilat registration and CR cost guides.
 
 ### 4. Mainland Formations
 - `dubai-mainland.html` — Dubai Department of Economy and Tourism (DET) setup.
@@ -144,7 +143,7 @@ Nikki Advisory is a multi-page, zero-build corporate advisory and business setup
 
 ### Hostinger / Apache Server Deployment
 1. Upload all root `.html` files, `favicon.ico`, `sitemap.xml`, and `.htaccess` directly into `public_html/`.
-2. Upload the `assets/`, `services/`, and `pricing/` directories into `public_html/`.
+2. Upload the `assets/` and `services/` directories into `public_html/`. Pricing pages are flat root-level HTML files.
 3. Ensure `.htaccess` is uploaded to enable:
    - Trailing slash redirection for directory URLs.
    - Clean `.html` URL rewrite mapping.

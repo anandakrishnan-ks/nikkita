@@ -54,7 +54,7 @@ const sections = [
 ].join('\n');
 
 const page = `<div class="privacy-suite terms-suite">
-  <nav class="pp-breadcrumb" aria-label="Breadcrumb"><div class="pp-container"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Terms &amp; Conditions</span></div></nav>
+  <nav class="pp-breadcrumb visual-breadcrumb visual-breadcrumb--legal" aria-label="Breadcrumb"><div class="pp-container visual-breadcrumb__inner"><p class="visual-breadcrumb__title">Terms &amp; Conditions</p><div class="visual-breadcrumb__trail"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Terms &amp; Conditions</span></div></div></nav>
   <header class="pp-hero"><div class="pp-container"><span class="pp-kicker">Website &amp; service terms</span><h1>Terms &amp; Conditions</h1><p>These Terms &amp; Conditions govern the use of the Nikki Advisory website and the provision of its business setup, advisory and related services across the UAE, Saudi Arabia and Bahrain.</p><span class="pp-tagline">Structured decisions lead to stable businesses.</span></div></header>
   <div class="pp-container pp-content-layout"><aside class="pp-sidebar" aria-label="Terms sections"><div class="pp-sidebar-inner"><span class="pp-sidebar-label">On this page</span>${toc()}<div class="pp-sidebar-help"><span>Terms enquiry</span><a href="mailto:info@nikkiadvisory.com">info@nikkiadvisory.com <i class="las la-arrow-up-right" aria-hidden="true"></i></a></div></div></aside>
   <div class="pp-main"><details class="pp-mobile-toc"><summary>Jump to a section <i class="las la-angle-down" aria-hidden="true"></i></summary><nav aria-label="Terms sections">${toc()}</nav></details><article aria-label="Terms and conditions">${sections}</article></div></div>

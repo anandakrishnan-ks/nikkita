@@ -21,8 +21,8 @@ const replacePageBody = (file, startMarker, content, bodyClass) => {
 
 const blogContent = `<!-- Page-specific content -->
       <div class="bc-suite bc-blog-suite">
-        <nav class="bc-breadcrumb" aria-label="Breadcrumb">
-          <div class="bc-container"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Insights</span></div>
+        <nav class="bc-breadcrumb visual-breadcrumb visual-breadcrumb--blog" aria-label="Breadcrumb">
+          <div class="bc-container visual-breadcrumb__inner"><p class="visual-breadcrumb__title">Insights &amp; Articles</p><div class="visual-breadcrumb__trail"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Insights</span></div></div>
         </nav>
 
         <section class="bc-blog-hero">
@@ -120,22 +120,9 @@ const blogContent = `<!-- Page-specific content -->
 
 const contactContent = `<!-- Page-specific content -->
       <div class="bc-suite bc-contact-suite">
-        <nav class="bc-breadcrumb" aria-label="Breadcrumb">
-          <div class="bc-container"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact Us</span></div>
+        <nav class="bc-breadcrumb visual-breadcrumb visual-breadcrumb--contact" aria-label="Breadcrumb">
+          <div class="bc-container visual-breadcrumb__inner"><p class="visual-breadcrumb__title">Contact Us</p><div class="visual-breadcrumb__trail"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact Us</span></div></div>
         </nav>
-
-        <section class="bc-contact-hero">
-          <div class="bc-container bc-contact-hero-grid">
-            <div>
-              <span class="bc-eyebrow">Start with clarity</span>
-              <h1>Let’s shape the right path for your business.</h1>
-            </div>
-            <div class="bc-contact-hero-copy">
-              <p>Share your requirements and we will respond with clear next steps for the UAE, Saudi Arabia or Bahrain.</p>
-              <div class="bc-market-pills" aria-label="Markets served"><span>UAE</span><span>Saudi Arabia</span><span>Bahrain</span></div>
-            </div>
-          </div>
-        </section>
 
         <section class="bc-contact-main">
           <div class="bc-container bc-contact-layout">
@@ -148,8 +135,14 @@ const contactContent = `<!-- Page-specific content -->
                 <a href="tel:+971****0000"><i class="las la-phone" aria-hidden="true"></i><span><small>Call us</small><strong>+971 XX XXX XXXX</strong></span></a>
                 <div><i class="las la-map-marker-alt" aria-hidden="true"></i><span><small>Based in</small><strong>United Arab Emirates</strong></span></div>
               </div>
-              <a class="bc-whatsapp-link" href="https://wa.me/971000000000?text=Hi%2C%20I%20would%20like%20to%20understand%20business%20setup%20in%20UAE%20%2F%20Saudi%20Arabia%20%2F%20Bahrain." target="_blank" rel="noopener noreferrer"><i class="lab la-whatsapp" aria-hidden="true"></i>Chat on WhatsApp <i class="las la-arrow-up-right" aria-hidden="true"></i></a>
+              <nav class="bc-contact-socials" aria-label="Connect with Nikki Advisory on social media">
+                <a href="https://www.linkedin.com/company/nikkiadvisory/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="lab la-linkedin-in" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/nikkiadvisory?igsh=MW0zbHl0b3p1cXQ0NA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="lab la-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/share/199ZkXJF8D/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="lab la-facebook-f" aria-hidden="true"></i></a>
+                <a href="https://wa.me/971000000000?text=Hi%2C%20I%20would%20like%20to%20understand%20business%20setup%20in%20UAE%20%2F%20Saudi%20Arabia%20%2F%20Bahrain." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="lab la-whatsapp" aria-hidden="true"></i></a>
+              </nav>
               <p class="bc-contact-note">Services are subject to the laws, regulations and authority requirements of the relevant jurisdiction.</p>
+              <a class="bc-contact-logo" href="index.html" aria-label="Nikki Advisory home"><img src="assets/imgs/logo/logo.png" alt="Nikki Advisory" /></a>
             </aside>
 
             <div class="bc-form-card">

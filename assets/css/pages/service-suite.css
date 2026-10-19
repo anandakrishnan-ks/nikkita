@@ -51,7 +51,8 @@
 .sv-hero-figure figcaption { position: absolute; z-index: 1; left: 25px; bottom: 20px; color: #fff; font-size: 9px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .sv-hero--hub .sv-hero-figure img { object-position: 62% center; }
 
-.sv-section { padding: clamp(50px, 5vw, 68px) 0; }
+.sv-section { padding: clamp(42px, 4.2vw, 58px) 0; }
+.service-suite > .sv-section { border-top: 1px solid var(--sv-line); }
 .sv-section--soft { background: var(--sv-paper); }
 .sv-section-head { max-width: 770px; margin-bottom: 29px; }
 .sv-section h2 { margin: 16px 0 12px; font-size: clamp(34px, 3.5vw, 51px); line-height: 1.14; }
@@ -85,10 +86,10 @@
 .sv-decision-rail i { color: var(--sv-gold-dark); font-size: 13px; }
 
 .sv-note { padding: 0 0 32px; background: var(--sv-paper); }
-.sv-note-box { display: flex; gap: 21px; align-items: flex-start; padding: 27px 31px; border-left: 3px solid var(--sv-gold); background: #eaece5; }
-.sv-note-box > i { flex: 0 0 auto; margin-top: 2px; color: var(--sv-gold-dark); font-size: 25px; }
-.sv-note-box h2 { margin: 0 0 8px; font-size: 27px; }
-.sv-note-box p { margin: 0; color: #43554b; font-size: 12px; }
+.sv-note-box.sv-notice-card { display: flex; gap: 15px; align-items: flex-start; padding: 17px 21px; border-left: 3px solid var(--sv-gold); background: #eaece5; }
+.sv-notice-card > .sv-notice-icon { flex: 0 0 auto; margin-top: 1px; color: var(--sv-gold-dark); font-size: 20px; }
+.sv-notice-card .sv-notice-heading { margin: 0 0 5px; font-size: 18px; line-height: 1.25; }
+.sv-notice-card .sv-notice-copy { margin: 0; color: #43554b; font-size: 10.5px; line-height: 1.6; }
 .sv-related { padding: 0 0 46px; background: var(--sv-paper); }
 .sv-related .sv-container { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .sv-related strong { margin-right: 5px; color: #597065; font-size: 11px; font-weight: 700; }
@@ -123,8 +124,8 @@
 .sv-form-trap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
 .sv-disclaimer { position: relative; max-width: 1000px; margin: 36px auto 0; color: #acbdb0; font-size: 10px; line-height: 1.7; text-align: center; }
 
-.sv-hub-intro { padding-bottom: 28px; background: #fff; }
-.sv-hub-intro + .sv-section { padding-top: 30px; }
+.sv-hub-intro { padding-bottom: 20px; background: #fff; }
+.sv-hub-intro + .sv-section { padding-top: 22px; }
 .sv-hub-intro .sv-container { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
 .sv-hub-intro h2 { max-width: 770px; }
 .sv-hub-intro p { max-width: 330px; margin: 0 0 5px; color: var(--sv-muted); font-size: 13px; }
@@ -182,7 +183,7 @@
   .sv-breadcrumb .sv-container { font-size: 10px; }
   .sv-hero-actions .sv-button { width: 100%; }
   .sv-hero-figure { height: 255px; }
-  .sv-section { padding: 48px 0; }
+  .sv-section { padding: 40px 0; }
   .sv-section h2 { font-size: 34px; }
   .sv-scope-grid, .sv-scope-list, .sv-form-grid { grid-template-columns: 1fr; }
   .sv-scope-card { min-height: 138px; padding: 21px; }
@@ -190,10 +191,10 @@
   .sv-scope-list { padding: 0 20px; }
   .sv-scope-list .sv-scope-card { min-height: 0; }
   .sv-note { padding-bottom: 26px; }
-  .sv-note-box { padding: 22px; gap: 13px; }
+  .sv-note-box.sv-notice-card { padding: 14px 16px; gap: 11px; }
   .sv-related { padding-bottom: 38px; }
-  .sv-hub-intro { padding-bottom: 22px; }
-  .sv-hub-intro + .sv-section { padding-top: 25px; }
+  .sv-hub-intro { padding-bottom: 18px; }
+  .sv-hub-intro + .sv-section { padding-top: 20px; }
   .sv-form { padding: 24px 20px; }
   .sv-hub-card { display: block; }
   .sv-hub-card figure { height: 195px; }

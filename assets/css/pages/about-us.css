@@ -1,5 +1,32 @@
 .about-page .breadcrumb-area {
-  display: none;
+  display: flex;
+  min-height: clamp(220px, 24vw, 300px) !important;
+  align-items: flex-end;
+  padding: 180px 0 28px;
+  background: #122620;
+}
+
+.about-page .breadcrumb-area::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.88), rgba(9, 27, 22, 0.48) 58%, rgba(9, 27, 22, 0.68)),
+    url("../../imgs/aboug-breadcrumb-bg.jpg");
+  background-position: center;
+}
+
+.about-page .breadcrumb-area .content ul li:last-child {
+  color: #ead19d;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .about-page .breadcrumb-area {
+    min-height: 178px !important;
+    padding: 128px 0 22px;
+  }
+
+  .about-page .breadcrumb-area .content ul li {
+    font-size: 18px;
+  }
 }
 
 .about-redesign {
@@ -150,6 +177,7 @@
 
 /* Section 02: Vision and mission */
 .about-purpose {
+  border-top: 1px solid var(--about-line);
   background: var(--about-cream);
 }
 
@@ -191,7 +219,7 @@
   grid-template-columns: 90px minmax(0, 1fr);
   gap: 30px;
   align-items: start;
-  padding: 54px 0;
+  padding: 42px 0;
 }
 
 .about-purpose-item + .about-purpose-item {
@@ -227,7 +255,8 @@
 
 /* Section 03: Principles */
 .about-principles {
-  padding: 104px 0 112px;
+  padding: 76px 0 82px;
+  border-top: 1px solid var(--about-line);
   background:
     linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
     var(--about-cream);
@@ -337,6 +366,7 @@
   position: relative;
   min-height: 470px;
   overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
   background: #171714;
 }
 
@@ -473,7 +503,7 @@
   .about-purpose-item {
     grid-template-columns: 82px minmax(0, 1fr);
     gap: 26px;
-    padding-block: 46px;
+    padding-block: 38px;
   }
 
   .about-purpose-icon {
@@ -536,7 +566,7 @@
   .about-purpose-item {
     grid-template-columns: 68px minmax(0, 1fr);
     gap: 19px;
-    padding-block: 39px;
+    padding-block: 32px;
   }
 
   .about-purpose-icon {
@@ -554,7 +584,7 @@
   }
 
   .about-principles {
-    padding-block: 76px 82px;
+    padding-block: 58px 64px;
   }
 
   .about-section-heading {

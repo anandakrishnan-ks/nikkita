@@ -1,5 +1,13 @@
 RewriteEngine On
 
+# Preserve legacy pricing URLs while keeping all pricing documents at the site root.
+RewriteRule ^pricing/$ pricing [R=301,L]
+RewriteRule ^pricing/uae-mainland/?$ uae-mainland-pricing [R=301,L]
+RewriteRule ^pricing/uae-free-zone/?$ uae-free-zone-pricing [R=301,L]
+RewriteRule ^pricing/uae-offshore/?$ uae-offshore-pricing [R=301,L]
+RewriteRule ^pricing/saudi-arabia/?$ saudi-arabia-pricing [R=301,L]
+RewriteRule ^pricing/bahrain/?$ bahrain-pricing [R=301,L]
+
 # Redirect direct .html requests to the extensionless URL.
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]) [NC]
 RewriteRule ^(.+)\.html$ $1 [R=301,L,NE]
