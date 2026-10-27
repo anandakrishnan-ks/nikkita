@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 @font-face {
   font-family: "Line Awesome Free";
@@ -374,7 +374,7 @@
   background:
     radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
     linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
-    url("../../imgs/ajman-offshore/international-structure.webp") center 47% / cover no-repeat;
+    var(--banner-ajman-offshore-ajman-waterfront-real-maryam20) center 47% / cover no-repeat;
   color: #fff;
 }
 
@@ -698,8 +698,8 @@
 .offshore-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/ajman-offshore/international-structure.webp") !important;
-  background-position: center 47% !important;
+    var(--banner-ajman-offshore-ajman-waterfront-real-maryam20) !important;
+  background-position: center 54% !important;
 }
 
 .offshore-redesign {
@@ -1428,7 +1428,7 @@
 .offshore-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
-    url("../../imgs/ajman-offshore/international-structure.webp") center / cover no-repeat;
+    var(--banner-ajman-offshore-ajman-waterfront-real-maryam20) center / cover no-repeat;
 }
 
 /* Offshore structure is the page's main differentiator. */
@@ -1519,7 +1519,7 @@
 
 .offshore-redesign .lead-cta {
   background: linear-gradient(90deg, rgba(10, 31, 25, .97), rgba(10, 31, 25, .88)),
-    url("../../imgs/ajman-offshore/international-structure.webp") center / cover no-repeat;
+    var(--banner-ajman-offshore-ajman-waterfront-real-maryam20) center / cover no-repeat;
 }
 
 @media (max-width: 1050px) {
@@ -1574,10 +1574,6 @@
   margin-top: 23px;
   padding: 20px 22px;
   background: var(--cream);
-}
-
-.offshore-redesign .offshore-business-panel .business-area-grid span:last-child {
-  grid-column: 1 / -1;
 }
 
 .offshore-redesign .advantage-grid {
@@ -1657,12 +1653,9 @@
     gap: 18px;
   }
 
-  .offshore-redesign .offshore-business-panel .business-area-grid span:last-child {
-    grid-column: auto;
-  }
 }
 
-/* Ajman Offshore overview and compact purpose grid. */
+/* Ajman Offshore overview. */
 .offshore-redesign .hero-image .cover {
   object-position: center 54%;
 }
@@ -1678,20 +1671,15 @@
   max-width: 610px;
 }
 
-.offshore-redesign .offshore-business-panel {
+.offshore-redesign .ajman-offshore-overview-visual {
   min-width: 0;
-  padding: clamp(22px, 2.7vw, 34px);
-  border: 1px solid var(--line);
-  background: var(--cream);
-}
-
-.offshore-redesign .offshore-business-panel h3 {
+  width: 100%;
+  height: clamp(320px, 35vw, 520px);
   margin: 0;
-  font-size: 26px;
 }
 
-.offshore-redesign .offshore-business-panel .business-area-grid {
-  margin-top: 22px;
+.offshore-redesign .ajman-offshore-overview-visual .cover {
+  object-position: center;
 }
 
 .offshore-redesign .advisory-callout a {
@@ -1723,7 +1711,7 @@
 .offshore-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, .98), rgba(9, 29, 23, .91)),
-    url("../../imgs/ajman-offshore/international-structure.webp") center / cover no-repeat;
+    var(--banner-ajman-offshore-ajman-waterfront-real-maryam20) center / cover no-repeat;
 }
 
 .offshore-redesign .support-card p {
@@ -1745,10 +1733,6 @@
   .offshore-redesign .offshore-overview-grid {
     grid-template-columns: 1fr;
   }
-
-  .offshore-redesign .offshore-business-panel .business-area-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
@@ -1761,8 +1745,8 @@
     min-height: 0;
   }
 
-  .offshore-redesign .offshore-business-panel .business-area-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .offshore-redesign .ajman-offshore-overview-visual {
+    height: clamp(280px, 78vw, 390px);
   }
 
   .whatsapp-float.offshore-cta-visible {
@@ -1772,15 +1756,15 @@
   }
 }
 
-@media (max-width: 520px) {
-  .offshore-redesign .offshore-business-panel .business-area-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Offshore responsive refinements. */
 .offshore-redesign .image-caption {
   max-width: calc(100% - 72px);
+}
+
+.offshore-redesign .image-caption a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 @media (max-width: 1050px) {
@@ -1792,7 +1776,7 @@
 }
 
 .offshore-redesign .hero-image .cover {
-  object-position: center 50%;
+  object-position: 52% center;
 }
 
 .offshore-redesign .activity-card-grid.licence-grid,

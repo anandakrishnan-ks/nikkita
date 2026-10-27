@@ -12,11 +12,6 @@ function nikkiSwiper(selector, options) {
     }
 }
 
-var menu = [];
-jQuery('.hero-slide-container .swiper-slide').each(function (index) {
-    menu.push(jQuery(this).find('.slide-inner').attr("data-text"));
-});
-
 let items = [
     {
         title: 'DUBAI',
@@ -31,8 +26,31 @@ let items = [
         desc: ''
     }
 ];
-var interleaveOffset = 0.5;
+function labelHeroPagination(slider) {
+    Promise.resolve().then(function () {
+        // Looping slides are cloned by Swiper; keep a single document H1.
+        slider.el.querySelectorAll('.swiper-slide-duplicate h1').forEach(function (heading) {
+            var replacement = document.createElement('h2');
+            Array.prototype.forEach.call(heading.attributes, function (attribute) {
+                replacement.setAttribute(attribute.name, attribute.value);
+            });
+            while (heading.firstChild) replacement.appendChild(heading.firstChild);
+            heading.replaceWith(replacement);
+        });
+        if (!slider.pagination || !slider.pagination.bullets) return;
+        Array.prototype.forEach.call(slider.pagination.bullets, function (bullet, index) {
+            bullet.setAttribute('aria-label', 'Show ' + items[index].title + ' slide');
+            if (index === slider.realIndex) bullet.setAttribute('aria-current', 'true');
+            else bullet.removeAttribute('aria-current');
+        });
+    });
+}
 var swiperOptions = {
+    on: {
+        init: function () { labelHeroPagination(this); },
+        loopFix: function () { labelHeroPagination(this); },
+        paginationUpdate: function () { labelHeroPagination(this); }
+    },
     loop: true,
     speed: 1000,
     parallax: true,
@@ -48,197 +66,13 @@ var swiperOptions = {
         el: '.hero-slider-thumbnail',
         clickable: true,
         renderBullet: function (index, className) {
-            return '<div class="thumb-content ' + className + '"><span>' + items[index].title + '</span><h1>' + items[index].desc + '</h1></div>';
+            return '<button type="button" class="thumb-content ' + className + '"><span>' + items[index].title + '</span></button>';
         },
     },
-    on: {
-        progress: function () {
-            // var swiper = this;
-            // for (var i = 0; i < swiper.slides.length; i++) {
-            //     var slideProgress = swiper.slides[i].progress;
-            //     var innerOffset = swiper.width * interleaveOffset;
-            //     var innerTranslate = slideProgress * innerOffset;
-            //     swiper.slides[i].querySelector(".slide-inner").style.transform =
-            //         "translate3d(0, 0, " + innerTranslate + "px)";
-            // }
-        },
 
-        touchStart: function () {
-            // var swiper = this;
-            // for (var i = 0; i < swiper.slides.length; i++) {
-            //     swiper.slides[i].style.transition = "";
-            // }
-        },
-
-        setTransition: function (speed) {
-            // var swiper = this;
-            // for (var i = 0; i < swiper.slides.length; i++) {
-            //     swiper.slides[i].style.transition = speed + "ms";
-            //     swiper.slides[i].querySelector(".slide-inner").style.transition =
-            //         speed + "ms";
-            // }
-        }
-    }
 };
 
 var swiper = nikkiSwiper(".hero-slide-container", swiperOptions);
-
-// DATA BACKGROUND IMAGE
-// var sliderBgSetting = $(".slide-bg-image");
-// sliderBgSetting.each(function (indx) {
-//     if ($(this).attr("data-background")) {
-//         $(this).css("background-image", "url(" + $(this).data("background") + ")");
-//     }
-// });
-
-// Testimonial
-var swiper3 = nikkiSwiper(".testimonial-slider", {
-    spaceBetween: 20,
-    slidesPerView: 1,
-    speed: 1500,
-    loop: false,
-    navigation: {
-        nextEl: ".testimonial-button-next",
-        prevEl: ".testimonial-button-prev",
-    },
-});
-
-// Gallery
-var swiper2 = nikkiSwiper(".gallery-slider", {
-    spaceBetween: 20,
-    slidesPerView: 3,
-    breakpoints: {
-        525: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1200: {
-            slidesPerView: 3
-        }
-    }
-});
-
-// Team
-var swiper4 = nikkiSwiper(".team-slider", {
-    spaceBetween: 20,
-    slidesPerView: 2,
-    breakpoints: {
-        525: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1200: {
-            slidesPerView: 2
-        }
-    }
-});
-
-// Hero Slider 2
-var swiper4 = nikkiSwiper(".hero-slide-container2", {
-    spaceBetween: 20,
-    slidesPerView: 1,
-    autoplay: {
-        delay: 5500,
-        disableOnInteraction: false,
-    },
-    fadeEffect: {crossFade: true},
-    effect: 'fade',
-    navigation: {
-        nextEl: ".hero-slider-2-next",
-        prevEl: ".hero-slider-2-prev",
-    },
-    pagination: {
-        el: '.hero-slider-2-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="' + className + '"></span>';
-        },
-    },
-});
-
-
-// Portfolio
-var swiper4 = nikkiSwiper(".portfolio-slider", {
-    spaceBetween: 20,
-    slidesPerView: 3,
-    loop: true,
-    speed: 10000,
-    grabCursor: false,
-    mousewheelControl: false,
-    pauseOnMouseEnter: true,
-    autoplay: {
-        delay: 1,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-    },
-    breakpoints: {
-        525: {
-            slidesPerView: 2
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1200: {
-            slidesPerView: 3
-        }
-    }
-});
-
-
-// Gallery
-var swiper4 = nikkiSwiper(".gallery2-slider", {
-    slidesPerView: 3,
-    loop: true,
-    speed: 5000,
-    autoplay: {
-        delay: 50,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-    },
-    breakpoints: {
-        525: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        1200: {
-            slidesPerView: 3
-        }
-    }
-});
-
-
-
-// Inner Pages
-var swiper5 = nikkiSwiper(".innerpages-slider", {
-    slidesPerView: 3,
-    spaceBetween: 52,
-    speed: 1500,
-    // autoplay: {
-    //     delay: 6500,
-    //     disableOnInteraction: false,
-    // },
-    breakpoints: {
-        525: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        1200: {
-            slidesPerView: 3
-        }
-    }
-});
-
-
 
 // Split screen
 if ($('#multiscroll').length) {
@@ -310,13 +144,6 @@ if ($('.video-play-btn').length) {
 }
 
 
-
-try {
-    AOS.init({
-        once: true,
-        duration: 500,
-    });
-} catch (err) {}
 
 if ($('.counter').length) {
     try {

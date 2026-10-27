@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* Ajman Free Zone page-specific layouts. */
 .ajman-free-zone-redesign .hero-actions,
@@ -666,7 +666,7 @@
 .ajman-free-zone-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/ajman-free-zone/ajman-port-business-logistics.webp") !important;
+    var(--banner-ajman-offshore-ajman-waterfront-real-maryam20) !important;
   background-position: center 54% !important;
 }
 
@@ -688,12 +688,14 @@
   object-position: 49% center;
 }
 
-.ajman-free-zone-redesign .overview-visual {
-  height: 520px;
+.ajman-free-zone-redesign #overview .overview-visual {
+  min-width: 0;
+  height: auto;
+  margin: 0;
 }
 
-.ajman-free-zone-redesign .overview-visual .cover {
-  object-position: center 48%;
+.ajman-free-zone-redesign #overview .overview-visual .cover {
+  height: auto;
 }
 
 .ajman-free-zone-redesign .compact-head {
@@ -743,10 +745,7 @@
 }
 
 .ajman-free-zone-redesign .overview-visual figcaption {
-  position: absolute;
-  right: 18px;
-  bottom: 18px;
-  left: 18px;
+  position: static;
   padding: 12px 14px;
   background: rgba(12, 34, 27, 0.86);
   color: #fff;
@@ -1138,10 +1137,6 @@
   .ajman-free-zone-redesign .hero-layout,
   .ajman-free-zone-redesign .hero-image {
     min-height: unset;
-  }
-
-  .ajman-free-zone-redesign .overview-visual {
-    height: 390px;
   }
 
   .ajman-free-zone-redesign .fit-columns,

@@ -1,6 +1,7 @@
 /* Bahrain detail page inherits the shared GCC editorial system from Saudi. */
-@import url("./saudi-suite.css");
+@import url("./saudi-suite.css?v=20261023-banners-search");
 
+.bahrain-suite .sa-hero-image { margin-right:min(calc(605px - 50vw), -32px); }
 .bahrain-suite .sa-hero-image img { object-position:right center; }
 .bahrain-suite .sa-market-highlights span { font-size:18px; line-height:1.25; }
 .bahrain-suite .bh-cost-equivalent { margin-bottom:11px; color:#96712f; font-weight:700; }
@@ -9,11 +10,13 @@
 .bahrain-suite .bh-support-grid article:nth-child(4),
 .bahrain-suite .bh-support-grid article:nth-child(5) { grid-column:span 1; }
 @media (max-width:820px) {
+  .bahrain-suite .sa-hero-image { margin-inline:-21px; }
   .bahrain-suite .sa-hero-image img { object-position:70% center; }
   .bahrain-suite .bh-support-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .bahrain-suite .bh-support-grid article:last-child { grid-column:1 / -1; }
 }
 @media (max-width:600px) {
+  .bahrain-suite .sa-hero-image { margin-inline:-16px; }
   .bahrain-suite .sa-market-highlights span { font-size:14px; overflow-wrap:anywhere; }
   .bahrain-suite .bh-support-grid { grid-template-columns:1fr; }
   .bahrain-suite .bh-support-grid article:last-child { grid-column:auto; }

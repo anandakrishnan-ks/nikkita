@@ -78,6 +78,12 @@
     text-transform: uppercase;
 }
 
+.pc-hero .pc-kicker, .pc-guide-hero .pc-kicker {
+    font-size: 10px;
+    letter-spacing: .17em;
+    line-height: 1.4;
+}
+
 .pc-kicker::before {
     content: "";
     display: block;
@@ -148,15 +154,16 @@
 .pc-hero h1 {
     max-width: 650px;
     margin: 20px 0 22px;
-    font-size: clamp(43px,4.7vw,54px);
-    line-height: 1.09;
+    font-size: clamp(34px,3.5vw,39px);
+    line-height: 1.08;
 }
 
 .pc-hero-copy > p {
     max-width: 560px;
     margin: 0;
     color: #3f5348;
-    font-size: clamp(14px,1.15vw,16px);
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .pc-hero-actions {
@@ -181,7 +188,7 @@
 .pc-hero-image {
     position: relative;
     min-width: 0;
-    margin: 0;
+    margin: 0 min(calc(605px - 50vw), -32px) 0 0;
     background: #e4e4dc;
 }
 
@@ -836,8 +843,8 @@
 
 .pc-guide-hero h1 {
     margin: 20px 0;
-    font-size: clamp(42px,4.4vw,63px);
-    line-height: 1.1;
+    font-size: clamp(34px,3.5vw,39px);
+    line-height: 1.08;
 }
 
 .pc-guide-hero p {
@@ -845,11 +852,12 @@
     margin: 0;
     color: #3d5146;
     font-size: 14px;
+    line-height: 1.7;
 }
 
 .pc-guide-hero figure {
     min-width: 0;
-    margin: 0;
+    margin: 0 min(calc(605px - 50vw), -32px) 0 0;
     overflow: hidden;
 }
 
@@ -1078,6 +1086,7 @@
 
     .pc-hero-image, .pc-guide-hero figure {
         height: 320px;
+        margin-inline: -21px;
     }
 
     .pc-section-heading {
@@ -1149,10 +1158,6 @@
         font-size: 10px;
     }
 
-    .pc-hero h1, .pc-guide-hero h1 {
-        font-size: clamp(38px,10vw,49px);
-    }
-
     .pc-hero-copy, .pc-guide-hero-grid > div {
         padding: 45px 0 42px;
     }
@@ -1164,6 +1169,7 @@
 
     .pc-hero-image, .pc-guide-hero figure {
         height: 250px;
+        margin-inline: -16px;
     }
 
     .pc-section {
@@ -1246,5 +1252,16 @@
 
     .pc-tax.pc-notice-card {
         padding: 11px 13px;
+    }
+}
+
+/* Keep pricing hero typography in step with service-detail pages on phones. */
+@media (max-width: 760px) {
+    .pc-hero h1, .pc-guide-hero h1 {
+        font-size: clamp(29px,7.2vw,34px);
+    }
+
+    .pc-hero-copy > p, .pc-guide-hero-grid > div > p {
+        font-size: 13px;
     }
 }

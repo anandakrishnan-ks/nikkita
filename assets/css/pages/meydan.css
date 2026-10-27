@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* Meydan Free Zone page-specific layouts. */
 .meydan-redesign .hero-actions,
@@ -350,7 +350,7 @@
   background:
     radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
     linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
-    url("../../imgs/meydan/meydan-commercial-environment.webp") center 47% / cover no-repeat;
+    var(--banner-new-images-optimized-dubai-skyline-dusk) center 47% / cover no-repeat;
   color: #fff;
 }
 
@@ -673,9 +673,9 @@
 /* Meydan Free Zone content variations and compact responsive layout. */
 .meydan-breadcrumb::before {
   background-image:
-    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/meydan/meydan-dubai-business-district.webp") !important;
-  background-position: center 47% !important;
+    linear-gradient(90deg, rgba(4, 11, 27, 0.72), rgba(4, 11, 27, 0.23) 55%, rgba(4, 11, 27, 0.08)),
+    var(--banner-meydan-meydan-bridge-breadcrumb-wide) !important;
+  background-position: center, center 48% !important;
 }
 
 .meydan-redesign {

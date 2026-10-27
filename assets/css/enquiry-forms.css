@@ -1,0 +1,237 @@
+.nikki-phone {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.nikki-phone .nikki-dial-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 0 110px;
+  width: 110px !important;
+  min-width: 0;
+  min-height: 47px;
+  padding: 0;
+  border: 1px solid #d4dad3;
+  border-radius: 0;
+  background: #f1f5ef;
+  color: #20352b;
+  font: 600 12px/1.4 Montserrat, Arial, sans-serif;
+  cursor: pointer;
+}
+
+.nikki-phone .nikki-dial-control::after {
+  content: "";
+  position: absolute;
+  right: 11px;
+  top: calc(50% - 3px);
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.nikki-phone .nikki-dial-label {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+
+.nikki-phone .nikki-dial-trigger {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  width: 100% !important;
+  min-height: 44px;
+  margin: 0;
+  padding: 0 24px 0 10px;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  appearance: none;
+}
+
+.nikki-phone .nikki-dial-trigger:hover { background: rgba(32, 53, 43, .05); }
+.nikki-phone select.nikki-dial-code[hidden] { display: none !important; }
+
+.nikki-country-picker {
+  position: fixed;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  max-width: calc(100vw - 24px);
+  padding: 14px;
+  border: 1px solid #cdd9cf;
+  border-radius: 8px;
+  background: #fff;
+  color: #20352b;
+  box-shadow: 0 12px 36px rgba(16, 43, 36, .2);
+  font: 400 13px/1.5 Montserrat, Arial, sans-serif;
+  text-align: left;
+}
+
+.nikki-country-picker[hidden] { display: none; }
+.nikki-country-picker * { box-sizing: border-box; }
+.nikki-country-search-label { margin: 0; color: #405449; font-size: 11px; font-weight: 600; }
+
+.nikki-country-picker .nikki-country-search {
+  flex: none;
+  display: block;
+  width: 100%;
+  height: 44px;
+  min-height: 0;
+  margin: 0;
+  padding: 10px 11px;
+  border: 1px solid #aebfb0;
+  border-radius: 4px;
+  background: #fbfcfa;
+  color: #142e22;
+  font: inherit;
+  /* A 16px input also prevents automatic zoom on mobile Safari. */
+  font-size: 16px;
+  line-height: 1.4;
+  outline-offset: 2px;
+}
+
+.nikki-country-picker .nikki-country-search:focus { outline: 2px solid #a77a2e; }
+.nikki-country-search::placeholder { color: #65766a; font-size: 12px; }
+
+.nikki-country-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.nikki-country-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  margin: 0;
+  padding: 10px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.nikki-country-option > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.nikki-country-code { flex: none; color: #4e6155; font-variant-numeric: tabular-nums; }
+.nikki-country-option[aria-selected="true"] { font-weight: 600; }
+.nikki-country-option:hover,
+.nikki-country-option.is-active { background: #edf3ea; color: #173c2d; }
+.nikki-country-summary { flex: none; margin: 0; color: #65766a; font-size: 11px; }
+
+.nikki-phone .nikki-dial-control:focus-within {
+  outline: 2px solid #b89352;
+  outline-offset: 2px;
+}
+
+.nikki-phone input[name="phone"] {
+  flex: 1 1 auto;
+  width: 1% !important;
+  min-width: 0;
+  margin: 0 !important;
+}
+
+.enquiry-status {
+  margin: 10px 0 0;
+  font: inherit;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.enquiry-status[data-state="success"] { color: #276a3a; }
+.enquiry-status[data-state="error"] { color: #aa3333; }
+
+/* The consultation card uses one joined phone control on both desktop and mobile. */
+.bc-contact-form .nikki-phone {
+  gap: 0;
+  min-height: 50px;
+  border: 1px solid #cdd9cf;
+  background: #fbfcfa;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.bc-contact-form .nikki-phone:hover { border-color: #aebfb0; }
+.bc-contact-form .nikki-phone:focus-within {
+  border-color: #a77a2e;
+  box-shadow: 0 0 0 3px rgba(167, 122, 46, .13);
+}
+
+.bc-contact-form .nikki-phone .nikki-dial-control {
+  flex-basis: 112px;
+  width: 112px !important;
+  min-height: 48px;
+  border: 0;
+  border-right: 1px solid #d6dfd7;
+  background: #eef3ed;
+  color: #173c2d;
+}
+
+.bc-contact-form .nikki-phone .nikki-dial-control:focus-within {
+  outline: 0;
+  background: #e7efe5;
+}
+
+.bc-contact-form .nikki-phone input[name="phone"] {
+  min-height: 48px;
+  padding: 12px 14px !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #142e22 !important;
+  font-size: 12px !important;
+}
+
+.bc-contact-form .nikki-phone input[name="phone"]:focus {
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.bc-form-heading > span { color: #82591c; }
+.bc-form-heading p { color: #405449; }
+.bc-contact-form .bc-field label { color: #243e31; font-size: 10.5px; }
+.bc-contact-form .bc-field input,
+.bc-contact-form .bc-field select,
+.bc-contact-form .bc-field textarea { font-size: 12px !important; }
+.bc-contact-form .bc-field input::placeholder,
+.bc-contact-form .bc-field textarea::placeholder { color: #65766a; }
+.bc-form-privacy { color: #4e6155; font-size: 10.5px; }
+.bc-form-security {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 15px !important;
+  color: #4e6155;
+  font-size: 10.5px;
+  line-height: 1.55;
+}
+.bc-form-security i { flex: none; color: #82591c; font-size: 15px; }
+.bc-form-security a { color: #644817; text-decoration: underline; text-underline-offset: 2px; }
+.bc-form-result[data-state="success"] { color: #176445; }
+.bc-form-result[data-state="error"] { color: #9b302c; }
+.bc-contact-panel .bc-contact-methods small { color: #c3d5c9; }
+
+@media (max-width: 420px) {
+  .nikki-phone { gap: 6px; }
+  .nikki-phone .nikki-dial-control { flex-basis: 100px; width: 100px !important; }
+  .bc-contact-form .nikki-phone { gap: 0; }
+  .bc-contact-form .nikki-phone .nikki-dial-control { flex-basis: 104px; width: 104px !important; }
+}

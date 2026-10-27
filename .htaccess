@@ -1,18 +1,244 @@
+Options -Indexes -MultiViews
+ErrorDocument 404 /404.html
+AddType application/manifest+json .webmanifest
+AddType text/plain .txt
 RewriteEngine On
 
-# Preserve legacy pricing URLs while keeping all pricing documents at the site root.
-RewriteRule ^pricing/$ pricing [R=301,L]
-RewriteRule ^pricing/uae-mainland/?$ uae-mainland-pricing [R=301,L]
-RewriteRule ^pricing/uae-free-zone/?$ uae-free-zone-pricing [R=301,L]
-RewriteRule ^pricing/uae-offshore/?$ uae-offshore-pricing [R=301,L]
-RewriteRule ^pricing/saudi-arabia/?$ saudi-arabia-pricing [R=301,L]
-RewriteRule ^pricing/bahrain/?$ bahrain-pricing [R=301,L]
+# Configuration and bundled PHP dependencies must never be served as files.
+<FilesMatch "^(?:config(?:\.local)?\.php|.*\.example)$">
+  Require all denied
+</FilesMatch>
+RewriteRule ^assets/mail/vendor(?:/|$) - [F,L,NC]
+RewriteRule ^assets/mail/email-templates\.php$ - [F,L,NC]
+RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L,NC]
+RewriteRule \.(?:bak|orig|save|tmp|log|sql)$ - [F,L,NC]
 
-# Redirect direct .html requests to the extensionless URL.
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[\s?]) [NC]
-RewriteRule ^(.+)\.html$ $1 [R=301,L,NE]
+# One public origin for all pages and assets.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.nikkiadvisory\.com(?::[0-9]+)?$ [NC]
+RewriteRule ^ https://nikkiadvisory.com%{REQUEST_URI} [R=301,L,NE]
 
-# Serve the matching .html file for extensionless URLs.
+# Keep unpublished source and backup files out of the public site.
+RewriteRule ^(?:legacy-next-export|tools)(?:/|$) - [R=404,L,NC]
+RewriteRule ^index\ copy\.html$ - [R=404,L,NC]
+RewriteRule ^README\.md$ - [R=404,L,NC]
+
+# HTML must revalidate; only content-versioned CSS/JS may be cached immutably.
+RewriteCond %{QUERY_STRING} (^|&)v=[0-9a-f]{12}(&|$)
+RewriteRule \.(?:css|js)$ - [E=NIKKI_VERSIONED_ASSET:1]
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:html?|txt|xml|webmanifest)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(?:css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+    Header set Cache-Control "public, max-age=31536000, immutable" env=NIKKI_VERSIONED_ASSET
+  </FilesMatch>
+  <FilesMatch "\.(?:woff2?|png|jpe?g|webp|avif|svg|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.php$">
+    Header always set X-Robots-Tag "noindex, nofollow"
+  </FilesMatch>
+  <Files "404.html">
+    Header always set X-Robots-Tag "noindex, follow"
+  </Files>
+</IfModule>
+<IfModule mod_filter.c>
+  <IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json application/xml text/xml image/svg+xml application/manifest+json
+  </IfModule>
+</IfModule>
+
+# Compatibility URLs for reorganized static assets.
+RewriteRule ^assets/js/COUNTRY_CODES_SOURCE\.md$ /assets/js/data/COUNTRY_CODES_SOURCE.md [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/about\-about\-breadcrumb\-advisory\-office\-v2-(960|1600|2164|mobile\-640|mobile\-960)\.webp$ /assets/images/about/office-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/about\-gcc\-clarity\-banner-(640|960|1600|2164)\.webp$ /assets/images/about/gcc-clarity-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/abu\-dhabi\-mainland\-abu\-dhabi\-breadcrumb\-enhanced-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/abu-dhabi-mainland/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/abu\-dhabi\-mainland\-abu\-dhabi-(640|960|1600|2880)\.webp$ /assets/images/locations/uae/abu-dhabi-mainland/skyline-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/ajman\-offshore\-ajman\-waterfront\-real\-maryam20-(640|960|1600|1800|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/ajman/waterfront-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/bahrain\-manama\-night\-breadcrumb\-enhanced-(960|1600|2170|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/bahrain/manama/night-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/bahrain\-manama\-waterfront\-enhanced-(640|960|1546)\.webp$ /assets/images/locations/bahrain/manama/waterfront-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/bg\-1-(960|1376|mobile\-640|mobile\-960)\.webp$ /assets/images/home/hero-dubai-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-bahrain\-fintech\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/bahrain-fintech/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-misa\-operational\-readiness\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/misa-operational-readiness/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-sama\-fintech\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/sama-fintech/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-saudi\-ai\-market\-entry\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/saudi-ai-market-entry/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-saudi\-entry\-decisions\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/saudi-entry-decisions/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-saudi\-nitaqat\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/saudi-nitaqat/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-saudi\-trading\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/saudi-trading/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-saudi\-transport\-tga\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/saudi-transport-tga/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/blogs\-generated\-uae\-golden\-residency\-editorial-(640|960|1600|1672)\.webp$ /assets/images/blogs/uae-golden-residency/cover-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/breadcrumbs\-blogs\-insights\-no\-people-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/blogs/shared/insights-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/breadcrumbs\-contact\-connectivity\-no\-people-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/contact/connectivity-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/breadcrumbs\-pricing\-planning\-no\-people-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/pricing/planning-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/business\-setup\-uae\-uae\-night\-interchange\-breadcrumb\-wide-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/business-setup/uae/interchange-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/dafza\-dafza-(640|960|1260)\.webp$ /assets/images/locations/uae/dafza/airport-district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/difc\-difc\-skyline-(640|960|1200)\.webp$ /assets/images/locations/uae/difc/skyline-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/dmcc\-dmcc\-2-(640|960|1200)\.webp$ /assets/images/locations/uae/dmcc/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/dubai\-mainland\-museum\-of\-the\-future\-hero\-generated-(640|960|1402)\.webp$ /assets/images/locations/uae/dubai-mainland/museum-of-the-future-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/footer\-bg-(960|1440)\.webp$ /assets/images/shared/backgrounds/footer-pattern-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/footer\-bg\-webp-(960|1440|mobile\-640|mobile\-960)\.webp$ /assets/images/shared/backgrounds/footer-photo-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/freezone\-web\-ajman\-nuventures\-skyline\-pexels-(640|960|1600|1800)\.webp$ /assets/images/locations/uae/ajman-nuventures/skyline-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/freezone\-web\-dubai\-silicon\-oasis\-pexels-(640|960|1600|1800|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/dubai-silicon-oasis/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/freezone\-web\-jafza\-port\-imre\-solt-(640|960|1600|1800|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/jafza/port-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/freezone\-web\-masdar\-city\-nnegm-(640|960|1600|1715|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/masdar/architecture-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/freezone\-web\-rak\-ports\-rakports-(640|960|1600|1800)\.webp$ /assets/images/locations/uae/rakez/port-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/freezone\-web\-sharjah\-skyline\-pexels-(960|1600|1800|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/sharjah/skyline-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/hero\-3-(640|960|1600|2880)\.webp$ /assets/images/home/advisory-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/jafza\-jafza\-port\-breadcrumb-(960|1600|2880|mobile\-640)\.webp$ /assets/images/locations/uae/jafza/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/jafza\-offshore\-jafza\-port\-real\-imre\-solt-(640|960|1210|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/jafza-offshore/port-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/masdar\-masdar\-masterplan\-breadcrumb-(960|1600|2043|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/masdar/masterplan-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/meydan\-meydan\-2-(640|960|1600|1920)\.webp$ /assets/images/locations/uae/meydan/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/meydan\-meydan\-bridge\-breadcrumb\-wide-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/meydan/bridge-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-adgm-(640|960|1104|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/adgm/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-ajman\-free\-zone-(640|960|1024)\.webp$ /assets/images/locations/uae/ajman-free-zone/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-dubai\-south\-hub-(640|960|1200|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/dubai-south/business-hub-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-dubai\-south-(640|930)\.webp$ /assets/images/locations/uae/dubai-south/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-ifza\-building-(640|960|1024)\.webp$ /assets/images/locations/uae/ifza/building-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-kezad\-headquarters-(640|960|1600|2560)\.webp$ /assets/images/locations/uae/kezad/headquarters-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-rak\-icc-(640|960|1000|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/rak-icc/building-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-optimized\-shams\-business\-center-(640|697)\.webp$ /assets/images/locations/uae/shams/business-center-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-bahrain\-world\-trade\-centre-(640|960|1376|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/bahrain/manama/world-trade-centre-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-business\-document\-review-(640|960|1600|1800|mobile\-640|mobile\-960)\.webp$ /assets/images/shared/photography/document-review-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-business\-strategy\-planning-(640|960|1600|1800|mobile\-640|mobile\-960)\.webp$ /assets/images/pricing/business-planning-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-cargo\-port\-logistics-(640|960|1600|1800)\.webp$ /assets/images/shared/photography/cargo-logistics-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-dubai\-skyline\-dusk-(640|960|1600|1920|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/dubai/skyline-dusk-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-port\-logistics\-sunset-(640|960|1080|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/kezad/port-logistics-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/new\-images\-optimized\-riyadh\-kingdom\-centre-(640|960|1376|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/saudi-arabia/riyadh/kingdom-centre-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/newsletter\-bg-(960|1440)\.webp$ /assets/images/shared/backgrounds/newsletter-pattern-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/pricing\-uae\-offshore\-documents\-web-(640|960|1600|1800)\.webp$ /assets/images/pricing/offshore-documents-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/rak\-icc\-marjan\-island\-breadcrumb-(960|1000|mobile\-640|mobile\-811)\.webp$ /assets/images/locations/uae/rak-icc/marjan-island-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/saudi\-riyadh\-night\-breadcrumb-(960|1600|2880|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/saudi-arabia/riyadh/night-banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/saudi\-saudi\-business\-district-(640|960|1600)\.webp$ /assets/images/locations/saudi-arabia/riyadh/business-district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-accounting\-bookkeeping\-breadcrumb\-right-(960|1600|2167|mobile\-640|mobile\-960)\.webp$ /assets/images/services/accounting-bookkeeping/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-accounting\-bookkeeping-(640|960|1600|1774)\.webp$ /assets/images/services/accounting-bookkeeping/hero-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-business\-structuring\-breadcrumb\-right-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/services/business-structuring/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-business\-structuring\-card-(640|960|1536)\.webp$ /assets/images/services/business-structuring/card-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-business\-structuring-(640|960|1600|1774)\.webp$ /assets/images/services/business-structuring/hero-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-business\-support\-breadcrumb\-right-(960|1600|2170|mobile\-640|mobile\-960)\.webp$ /assets/images/services/business-support/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-business\-support-(640|960|1600|1672)\.webp$ /assets/images/services/business-support/hero-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-company\-liquidation\-breadcrumb\-right-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/services/company-liquidation/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-company\-liquidation-(640|960|1600|1672)\.webp$ /assets/images/services/company-liquidation/hero-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-corporate\-compliance\-breadcrumb\-right-(960|1600|2162|mobile\-640|mobile\-960)\.webp$ /assets/images/services/corporate-compliance/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-corporate\-compliance-(640|960|1600|1672)\.webp$ /assets/images/services/corporate-compliance/hero-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-pro\-services\-breadcrumb\-right-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/services/pro-services/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-pro\-services-(640|960|1600|1672)\.webp$ /assets/images/services/pro-services/hero-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/services\-services\-main\-breadcrumb\-generated-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/services/overview/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/sharjah\-mainland\-sharjah\-breadcrumb\-enhanced-(960|1600|2172|mobile\-640|mobile\-960)\.webp$ /assets/images/locations/uae/sharjah-mainland/banner-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/sharjah\-mainland\-sharjah-(640|960|1600|2880)\.webp$ /assets/images/locations/uae/sharjah-mainland/district-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/banners/spc\-freezone-(560)\.webp$ /assets/images/locations/uae/spc-free-zone/campus-$1.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/about/vision\-mission\-strategy\-v2\.jpg$ /assets/images/about/vision-mission-strategy.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/about\-9\-shape\.jpg$ /assets/images/shared/decorations/paper-texture.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/abu\-dhabi\-mainland/abu\-dhabi\-3\.jpg$ /assets/images/locations/uae/abu-dhabi-mainland/louvre.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/abu\-dhabi\-mainland/abu\-dhabi\-skyline\-real\.jpeg$ /assets/images/locations/uae/abu-dhabi-mainland/skyline.jpeg [R=301,L,NE]
+RewriteRule ^assets/imgs/bg\-line\-shape\.png$ /assets/images/shared/decorations/line-pattern.png [R=301,L,NE]
+RewriteRule ^assets/imgs/bg\-shape\-2\.png$ /assets/images/shared/decorations/background-shape.png [R=301,L,NE]
+RewriteRule ^assets/imgs/bg\.jpg$ /assets/images/shared/backgrounds/texture.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/bahrain\-fintech\.jpg$ /assets/images/blogs/bahrain-fintech/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/bahrain\-fintech\-editorial\.jpg$ /assets/images/blogs/bahrain-fintech/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/misa\-operational\-readiness\-editorial\.jpg$ /assets/images/blogs/misa-operational-readiness/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/sama\-fintech\-editorial\.jpg$ /assets/images/blogs/sama-fintech/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/saudi\-ai\-market\-entry\-editorial\.jpg$ /assets/images/blogs/saudi-ai-market-entry/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/saudi\-entry\-decisions\-editorial\.jpg$ /assets/images/blogs/saudi-entry-decisions/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/saudi\-nitaqat\-editorial\.jpg$ /assets/images/blogs/saudi-nitaqat/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/saudi\-trading\-editorial\.jpg$ /assets/images/blogs/saudi-trading/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/saudi\-transport\-tga\-editorial\.jpg$ /assets/images/blogs/saudi-transport-tga/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/generated/uae\-golden\-residency\-editorial\.jpg$ /assets/images/blogs/uae-golden-residency/social.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/misa\-license\-operational\-readiness\.png$ /assets/images/blogs/misa-operational-readiness/thumbnail.png [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/sama\-licensing\-fintech\.jpg$ /assets/images/blogs/sama-licensing-fintech/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/saudi\-ai\-market\-entry\.jpg$ /assets/images/blogs/saudi-ai-market-entry/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/saudi\-entry\-decisions\.jpg$ /assets/images/blogs/saudi-entry-decisions/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/saudi\-nitaqat\-tier\.jpg$ /assets/images/blogs/saudi-nitaqat/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/saudi\-trading\.jpg$ /assets/images/blogs/saudi-trading/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/saudi\-transport\-tga\.jpg$ /assets/images/blogs/saudi-transport-tga/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/blogs/uae\-golden\-residency\-2026\.jpg$ /assets/images/blogs/uae-golden-residency/thumbnail.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/dafza/dafza\-2\.jpg$ /assets/images/locations/uae/dafza/overview.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/dmcc/dmcc\-office\-signage\.jpeg$ /assets/images/locations/uae/dmcc/office-signage.jpeg [R=301,L,NE]
+RewriteRule ^assets/imgs/dso/dso\-headquarters\-skyline\.jpg$ /assets/images/locations/uae/dubai-silicon-oasis/headquarters.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/home\-1\.jpeg$ /assets/images/locations/uae/adgm/headquarters.jpeg [R=301,L,NE]
+RewriteRule ^assets/imgs/meydan/meydan\.avif$ /assets/images/locations/uae/meydan/overview.avif [R=301,L,NE]
+RewriteRule ^assets/imgs/new/SHAMS\.avif$ /assets/images/locations/uae/shams/campus.avif [R=301,L,NE]
+RewriteRule ^assets/imgs/new\-images/optimized/ajman\-waterfront\.jpg$ /assets/images/locations/uae/ajman/waterfront-portrait.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/new\-images/optimized/dubai\-skyline\-dusk\.jpg$ /assets/images/social/source-dubai-skyline.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/nikkita\-new\.png$ /assets/images/team/nikita-d-founder.png [R=301,L,NE]
+RewriteRule ^assets/imgs/pricing\-bahrain\.jpeg$ /assets/images/locations/bahrain/manama/waterfront-original.jpeg [R=301,L,NE]
+RewriteRule ^assets/imgs/services/accounting\-bookkeeping\-card\.jpg$ /assets/images/services/accounting-bookkeeping/card.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/services/business\-support\-card\.jpg$ /assets/images/services/business-support/card.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/services/company\-liquidation\-card\.jpg$ /assets/images/services/company-liquidation/card.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/services/corporate\-compliance\-card\.jpg$ /assets/images/services/corporate-compliance/card.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/services/pro\-services\-card\.jpg$ /assets/images/services/pro-services/card.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/sharjah\-mainland/sharjah\-2\.jpg$ /assets/images/shared/photography/business-planning.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/sharjah\-mainland/sharjah\-waterfront\-real\.jpeg$ /assets/images/locations/uae/sharjah-mainland/waterfront.jpeg [R=301,L,NE]
+RewriteRule ^assets/css/(aos\.css|bootstrap\.min\.css|line\-awesome\.min\.css|swiper\.min\.css)$ /assets/css/vendor/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/(gold\-cursor\.svg|star\-shape\.svg)$ /assets/icons/ui/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/adgm/adgm\-market\-square\.avif$ /assets/images/locations/uae/adgm/adgm-market-square.avif [R=301,L,NE]
+RewriteRule ^assets/imgs/ajman\-free\-zone/ajman\-freezone\.jpg$ /assets/images/locations/uae/ajman-free-zone/ajman-freezone.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/business\-setup\-uae/(free\-zone\-jlt\-1800\.webp|free\-zone\-jlt\-960\.webp|offshore\-global\-structuring\-1800\.webp|offshore\-global\-structuring\-960\.webp|uae\-structure\-closing\-generated\.jpg)$ /assets/images/business-setup/uae/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/dafza/(setup\-budget\-planning\-1800\.webp|setup\-budget\-planning\-960\.webp)$ /assets/images/locations/uae/dafza/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/difc/difc\-gate\.webp$ /assets/images/locations/uae/difc/difc-gate.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/dubai\-mainland/(business\-documents\-real\.webp|commercial\-architecture\-real\.webp|corporate\-office\-real\.webp|dubai\-business\-skyline\-1800\.webp|dubai\-business\-skyline\-2400\.webp|dubai\-business\-skyline\-960\.webp)$ /assets/images/locations/uae/dubai-mainland/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/favicon/(android\-chrome\-192x192\.png|android\-chrome\-512x512\.png|apple\-touch\-icon\.png|favicon\-16x16\.png|favicon\-32x32\.png|favicon\.ico|site\.webmanifest)$ /assets/icons/favicons/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/jafza/jafza\-business\-district\.jpg$ /assets/images/locations/uae/jafza/jafza-business-district.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/logo/(logo\-alt\.png|logo\.png)$ /assets/images/brand/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/masdar/(masdar\-institute\-pexels\-1600\.webp|masdar\-institute\-pexels\-2400\.webp|masdar\-institute\-pexels\-3840\.webp|masdar\-institute\-pexels\-960\.webp)$ /assets/images/locations/uae/masdar/$1 [R=301,L,NE]
+RewriteRule ^assets/imgs/new\-images/optimized/business\-team\-meeting\.jpg$ /assets/images/shared/photography/business-team-meeting.jpg [R=301,L,NE]
+RewriteRule ^assets/imgs/new/optimized/ifza\-free\-zone\.webp$ /assets/images/locations/uae/ifza/ifza-free-zone.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/rak\-icc/marjan\-island\.webp$ /assets/images/locations/uae/rak-icc/marjan-island.webp [R=301,L,NE]
+RewriteRule ^assets/imgs/social/(nikki\-advisory\-og\.jpg|nikki\-advisory\-square\.jpg)$ /assets/images/social/$1 [R=301,L,NE]
+RewriteRule ^assets/js/country\-codes\.js$ /assets/js/data/country-codes.js [R=301,L,NE]
+RewriteRule ^assets/js/(aos\.js|bootstrap\.bundle\.min\.js|jquery\-3\.7\.1\.js|jquery\.counterup\.min\.js|swiper\.min\.js|waypoints\.min\.js)$ /assets/js/vendor/$1 [R=301,L,NE]
+# Browser fallback requests must use the same branded icons as page metadata.
+RewriteRule ^favicon\.ico$ assets/icons/favicons/favicon.ico [END]
+RewriteRule ^apple-touch-icon(?:-precomposed)?\.png$ assets/icons/favicons/apple-touch-icon.png [END]
+
+# Existing descriptive links are the canonical URLs for these pages.
+RewriteCond %{THE_REQUEST} \s/+dafza(?:\.html)?(?:[?\s/]) [NC]
+RewriteRule ^dafza(?:\.html)?/?$ /dafza-company-formation [R=301,L,NE,NC]
+RewriteCond %{THE_REQUEST} \s/+dmcc(?:\.html)?(?:[?\s/]) [NC]
+RewriteRule ^dmcc(?:\.html)?/?$ /dmcc-company-formation [R=301,L,NE,NC]
+RewriteCond %{THE_REQUEST} \s/+dubai-silicon-oasis(?:\.html)?(?:[?\s/]) [NC]
+RewriteRule ^dubai-silicon-oasis(?:\.html)?/?$ /dubai-silicon-oasis-company-formation [R=301,L,NE,NC]
+RewriteCond %{THE_REQUEST} \s/+dubai-south(?:\.html)?(?:[?\s/]) [NC]
+RewriteRule ^dubai-south(?:\.html)?/?$ /dubai-south-company-formation [R=301,L,NE,NC]
+RewriteCond %{THE_REQUEST} \s/+shams(?:\.html)?(?:[?\s/]) [NC]
+RewriteRule ^shams(?:\.html)?/?$ /shams-company-formation [R=301,L,NE,NC]
+RewriteRule ^kizad(?:\.html)?/?$ /kezad-company-formation [R=301,L,NE,NC]
+
+# Service pages now use root-level URLs; retain redirects from the old folders.
+RewriteRule ^services/(?:index\.html)?$ /services [R=301,L,NE]
+RewriteRule ^services/(accounting-bookkeeping|business-structuring|business-support|company-liquidation|corporate-compliance)(?:/index\.html|\.html|/)?$ /$1 [R=301,L,NE]
+RewriteRule ^services/(?:pro-services|pro-government-services)(?:/index\.html|\.html|/)?$ /pro-government-services [R=301,L,NE]
+RewriteRule ^pro-services(?:\.html)?/?$ /pro-government-services [R=301,L,NE]
+RewriteRule ^(accounting-bookkeeping|business-structuring|business-support|company-liquidation|corporate-compliance|pro-government-services)/$ /$1 [R=301,L,NE]
+
+# Preserve old article paths and let the error document keep its 404 status.
+RewriteRule ^blogs/([^/]+?)(?:\.html)?/?$ /blog/$1 [R=301,L,NE]
+RewriteRule ^blog/?$ /blogs [R=301,L,NE]
+RewriteRule ^404\.html$ - [L]
+
+# Canonical home and directory URLs.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[?\s]) [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NE]
+
+# Direct .html requests redirect once; internal rewrites do not redirect.
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html(?:[?\s]) [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L,NE]
+
+# Every public page uses the extensionless, slashless URL in its canonical tag.
+RewriteRule ^(dafza-company-formation|dmcc-company-formation|dubai-silicon-oasis-company-formation|dubai-south-company-formation|shams-company-formation)/$ /$1 [R=301,L,NE]
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+)/$ /$1 [R=301,L,NE]
+
+# Resolve descriptive aliases to their static source files.
+RewriteRule ^dafza-company-formation/?$ dafza.html [L,NC]
+RewriteRule ^dmcc-company-formation/?$ dmcc.html [L,NC]
+RewriteRule ^dubai-silicon-oasis-company-formation/?$ dubai-silicon-oasis.html [L,NC]
+RewriteRule ^dubai-south-company-formation/?$ dubai-south.html [L,NC]
+RewriteRule ^shams-company-formation/?$ shams.html [L,NC]
+
+# Serve extensionless static pages. Missing paths retain a true 404 status.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [END]

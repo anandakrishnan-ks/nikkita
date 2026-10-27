@@ -12,6 +12,13 @@
 .sa-breadcrumb a:hover { color:var(--sa-gold); }
 .sa-breadcrumb span:not([aria-current]) { color:var(--sa-gold); }
 .sa-breadcrumb .sa-crumb-label { color:#e9eee9!important; }
+/* Retain the shared breadcrumb height and fit the supplied Riyadh photograph. */
+html body main .saudi-suite .visual-breadcrumb--saudi {
+  --visual-breadcrumb-image:var(--banner-saudi-riyadh-night-breadcrumb);
+  background-image:linear-gradient(90deg,rgba(6,25,20,.62),rgba(6,25,20,.2) 56%,rgba(6,25,20,.1)),var(--visual-breadcrumb-image)!important;
+  background-position:center 58%!important;
+  background-size:cover!important;
+}
 .sa-kicker { display:inline-flex; align-items:center; gap:10px; color:var(--sa-gold-dark); font-size:10px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
 .sa-kicker::before { content:""; display:block; width:25px; height:1px; background:currentColor; }
 .sa-kicker--light { color:var(--sa-gold); }
@@ -29,7 +36,7 @@
 .sa-hero-foot { margin-top:20px; color:#708276; font-size:10px; font-weight:700; letter-spacing:.035em; }
 .sa-hero-image { position:relative; min-width:0; margin:0; overflow:hidden; background:#ddd9cb; }
 .sa-hero-image::after { content:""; position:absolute; inset:65% 0 0; background:linear-gradient(transparent,rgba(7,27,20,.38)); pointer-events:none; }
-.sa-hero-image img { display:block; width:100%; height:100%; object-fit:cover; object-position:62% center; }
+.sa-hero-image img { display:block; width:100%; height:100%; object-fit:cover; object-position:center top; }
 .sa-hero-image figcaption { position:absolute; z-index:1; bottom:18px; left:22px; color:#fff; font-size:9px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
 .sa-section { padding:clamp(44px,4.7vw,62px) 0; }
 .saudi-suite > .sa-section { border-top:1px solid var(--sa-line); }

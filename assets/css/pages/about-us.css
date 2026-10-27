@@ -8,8 +8,8 @@
 
 .about-page .breadcrumb-area::before {
   background-image:
-    linear-gradient(90deg, rgba(9, 27, 22, 0.88), rgba(9, 27, 22, 0.48) 58%, rgba(9, 27, 22, 0.68)),
-    url("../../imgs/aboug-breadcrumb-bg.jpg");
+    linear-gradient(90deg, rgba(9, 27, 22, 0.78), rgba(9, 27, 22, 0.3) 48%, rgba(9, 27, 22, 0.08)),
+    var(--banner-about-about-breadcrumb-advisory-office-v2);
   background-position: center;
 }
 
@@ -26,6 +26,10 @@
 
   .about-page .breadcrumb-area .content ul li {
     font-size: 18px;
+  }
+
+  .about-page .breadcrumb-area::before {
+    background-position: center, 65% center;
   }
 }
 
@@ -160,9 +164,10 @@
 .about-intro-visual::before {
   position: absolute;
   z-index: 1;
-  inset: 0 auto 0 0;
-  width: 15%;
-  background: linear-gradient(90deg, var(--about-paper), transparent);
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--about-paper) 0%, rgba(251, 248, 242, 0.7) 15%, rgba(251, 248, 242, 0.16) 38%, transparent 58%),
+    linear-gradient(0deg, rgba(20, 38, 33, 0.08), transparent 55%);
   content: "";
   pointer-events: none;
 }
@@ -170,9 +175,12 @@
 .about-intro-visual img {
   position: absolute;
   inset: 0;
+  display: block;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 53%;
+  object-position: center;
+  filter: saturate(0.8) contrast(0.96);
 }
 
 /* Section 02: Vision and mission */
@@ -196,10 +204,13 @@
 .about-purpose-visual img {
   position: absolute;
   inset: 0;
+  display: block;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 48% center;
 }
+
 
 .about-purpose-copy {
   display: grid;
@@ -263,7 +274,7 @@
 }
 
 .about-section-heading {
-  max-width: 760px;
+  /* max-width: change the image in dubai mainland 1st section because it is getting cropped out place a 760px; */
   margin: 0 auto 58px;
   text-align: center;
 }
@@ -361,7 +372,77 @@
   line-height: 1.75;
 }
 
-/* Section 04: Closing brand statement */
+/* Section 04: Who we work with */
+.about-audience {
+  padding: 76px 0 82px;
+  border-top: 1px solid var(--about-line);
+  background: var(--about-paper);
+}
+
+.about-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-audience-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 18px 16px;
+  align-content: start;
+  align-items: center;
+  min-width: 0;
+  padding: 32px 24px 28px;
+  border: 1px solid var(--about-line);
+  border-radius: 2px;
+  background: var(--about-card);
+  transition: background-color 220ms ease, transform 220ms ease;
+}
+
+.about-audience-card:hover {
+  background: var(--about-cream);
+  transform: translateY(-4px);
+}
+
+.about-audience-num {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  color: var(--about-gold);
+  font-family: "Marcellus", serif;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.about-audience-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #eee3d0;
+  color: var(--about-gold);
+  font-size: 26px;
+  place-items: center;
+}
+
+.about-audience-card h3 {
+  min-width: 0;
+  color: var(--about-ink);
+  font-family: "Marcellus", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.about-audience-card p {
+  grid-column: 1 / -1;
+  color: var(--about-muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+/* Section 05: Closing brand statement */
 .about-clarity-banner {
   position: relative;
   min-height: 470px;
@@ -430,6 +511,10 @@
 }
 
 @media (max-width: 1199px) {
+  .about-audience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .about-shell,
   .about-clarity-content {
     width: min(var(--about-max), calc(100% - 64px));
@@ -486,14 +571,13 @@
   }
 
   .about-intro-visual::before {
-    inset: 0 0 auto;
-    width: 100%;
-    height: 15%;
-    background: linear-gradient(180deg, var(--about-paper), transparent);
+    background:
+      linear-gradient(180deg, var(--about-paper) 0%, rgba(251, 248, 242, 0.58) 13%, rgba(251, 248, 242, 0.12) 34%, transparent 55%),
+      linear-gradient(0deg, rgba(20, 38, 33, 0.06), transparent 55%);
   }
 
   .about-intro-visual img {
-    object-position: center 58%;
+    object-position: center;
   }
 
   .about-purpose-copy {
@@ -518,6 +602,15 @@
 }
 
 @media (max-width: 767px) {
+  .about-audience {
+    padding: 48px 0;
+  }
+
+  .about-audience-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
   .about-redesign {
     font-size: 14px;
   }

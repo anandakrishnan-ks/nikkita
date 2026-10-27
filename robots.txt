@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /legacy-next-export/
+Disallow: /tools/
+Disallow: /assets/mail/
+Disallow: /config.php
+Disallow: /config.local.php
+
+Sitemap: https://nikkiadvisory.com/sitemap.xml

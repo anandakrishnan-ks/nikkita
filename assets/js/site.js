@@ -1,9 +1,45 @@
 /**
  * Nikki Advisory — site enhancements (after theme main.js)
  * 1) Mobile nav: chevron toggles one-level submenu; label links navigate
- * 2) Custom cursor: replaces broken theme main.js cursor (DOMContentLoaded + matrix bugs)
- * 3) Fluid desktop wheel scrolling with touch and reduced-motion safeguards
+ * 2) Fluid desktop wheel scrolling with touch and reduced-motion safeguards
  */
+/* Shared WhatsApp contact link, mounted outside page animation wrappers. */
+(function () {
+  "use strict";
+
+  function mountWhatsApp() {
+    if (document.getElementById("nikki-whatsapp")) return;
+
+    var message = "Hi Nikki Advisory, I'm interested in your business setup and advisory services. Could you please guide me on the next steps?";
+    var link = document.createElement("a");
+    link.id = "nikki-whatsapp";
+    link.className = "nikki-whatsapp";
+    link.href = "https://wa.me/971521559885?text=" + encodeURIComponent(message);
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", "Chat with Nikki Advisory on WhatsApp at +971 52 155 9885 (opens in a new tab)");
+
+    var icon = document.createElement("i");
+    icon.className = "lab la-whatsapp";
+    icon.setAttribute("aria-hidden", "true");
+
+    var label = document.createElement("span");
+    label.className = "nikki-whatsapp__label";
+    label.textContent = "Chat on WhatsApp";
+    label.setAttribute("aria-hidden", "true");
+
+    link.appendChild(icon);
+    link.appendChild(label);
+    document.body.appendChild(link);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", mountWhatsApp, { once: true });
+  } else {
+    mountWhatsApp();
+  }
+})();
+
 (function ($) {
   // Guard against invalid usage of jQuery .load to prevent TypeError when url is not a string
   if ($ && $.fn && typeof $.fn.load === "function") {
@@ -32,13 +68,16 @@
 
     $(".responsive-menu > nav > ul > li.dropdown-item")
       .not($item)
-      .removeClass("dropdown-active");
+      .removeClass("dropdown-active")
+      .children("button.services-menu-trigger")
+      .attr("aria-expanded", "false");
 
     if (opening) {
       $item.addClass("dropdown-active");
     } else {
       $item.removeClass("dropdown-active");
     }
+    $item.children("button.services-menu-trigger").attr("aria-expanded", String(opening));
   }
 
   $(function () {
@@ -58,154 +97,29 @@
     $(document).on("click", ".responsive-menu li.dropdown-item > a", function (e) {
       e.stopPropagation();
     });
+
+    $(document).on("click", ".responsive-menu li.dropdown-item > button.services-menu-trigger", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleItem($(this).closest("li.dropdown-item"));
+    });
+
+    var $desktopServices = $(".menu-wrap nav > ul > li.dropdown-item").filter(function () {
+      return $(this).children("button.services-menu-trigger").length > 0;
+    });
+    $desktopServices.on("mouseenter focusin", function () {
+      $(this).children("button.services-menu-trigger").attr("aria-expanded", "true");
+    });
+    $desktopServices.on("mouseleave focusout", function () {
+      var item = this;
+      setTimeout(function () {
+        if (!item.matches(":hover") && !item.matches(":focus-within")) {
+          $(item).children("button.services-menu-trigger").attr("aria-expanded", "false");
+        }
+      }, 0);
+    });
   });
 })(jQuery);
-
-/* ---------- Custom cursor (vanilla — no jQuery dependency for motion) ---------- */
-(function () {
-  "use strict";
-
-  function preferReducedMotion() {
-    return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  }
-
-  function isTouchUi() {
-    return (
-      window.matchMedia &&
-      window.matchMedia("(hover: none), (pointer: coarse)").matches
-    );
-  }
-
-  function initCustomCursor() {
-    var dot = document.getElementById("custom-cursor");
-    var ring = document.getElementById("custom-cursor-inner");
-    if (!dot || !ring) return;
-
-    // Disable broken theme handlers if they bound anything
-    try {
-      if (window.jQuery) {
-        window.jQuery(document).off("mousemove.customCursor");
-      }
-    } catch (e) {}
-
-    if (isTouchUi() || preferReducedMotion()) {
-      dot.style.display = "none";
-      ring.style.display = "none";
-      document.documentElement.classList.remove("has-custom-cursor");
-      return;
-    }
-
-    document.documentElement.classList.add("has-custom-cursor");
-
-    var mouseX = window.innerWidth / 2;
-    var mouseY = window.innerHeight / 2;
-    var ringX = mouseX;
-    var ringY = mouseY;
-    var visible = false;
-    var hovering = false;
-    var raf = 0;
-
-    function setVisible(on) {
-      visible = on;
-      if (on) {
-        document.documentElement.classList.add("has-custom-cursor");
-      }
-    }
-
-    function applyHover(on) {
-      hovering = !!on;
-      dot.classList.toggle("zoom", hovering);
-      ring.classList.toggle("zoom", hovering);
-    }
-
-    function isInteractive(el) {
-      if (!el || el.nodeType !== 1) return false;
-      return !!el.closest(
-        "a, button, .theme-btn, input, textarea, select, label, summary, .menu-toggle-icon, [role='button'], .swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet"
-      );
-    }
-
-    window.addEventListener(
-      "mousemove",
-      function (e) {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        if (!visible) setVisible(true);
-      },
-      { passive: true }
-    );
-
-    document.addEventListener(
-      "mouseover",
-      function (e) {
-        if (isInteractive(e.target)) applyHover(true);
-      },
-      true
-    );
-
-    document.addEventListener(
-      "mouseout",
-      function (e) {
-        if (isInteractive(e.target)) {
-          // leaving interactive → check relatedTarget
-          if (!isInteractive(e.relatedTarget)) applyHover(false);
-        }
-      },
-      true
-    );
-
-    document.addEventListener("mouseleave", function () {
-      setVisible(false);
-      document.documentElement.classList.remove("has-custom-cursor");
-    });
-
-    document.addEventListener("mouseenter", function () {
-      setVisible(true);
-    });
-
-    function frame() {
-      // Dot tracks instantly; ring eases slightly
-      ringX += (mouseX - ringX) * 0.28;
-      ringY += (mouseY - ringY) * 0.28;
-
-      var dotHalf = hovering ? 6 : 4;
-      var ringHalf = hovering ? 24 : 17;
-
-      // Use translate3d from top-left origin (CSS left/top = 0)
-      dot.style.transform =
-        "translate3d(" +
-        (mouseX - dotHalf) +
-        "px," +
-        (mouseY - dotHalf) +
-        "px,0)";
-      ring.style.transform =
-        "translate3d(" +
-        (ringX - ringHalf) +
-        "px," +
-        (ringY - ringHalf) +
-        "px,0)";
-
-      raf = window.requestAnimationFrame(frame);
-    }
-
-    raf = window.requestAnimationFrame(frame);
-
-    // Keep sizes in sync if CSS changes zoom dims
-    window.addEventListener(
-      "resize",
-      function () {
-        /* no-op: halves derived from hover state each frame */
-      },
-      { passive: true }
-    );
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initCustomCursor);
-  } else {
-    initCustomCursor();
-  }
-})();
 
 /* ---------- Fluid desktop wheel scrolling ---------- */
 (function () {

@@ -14,7 +14,7 @@
     .hero-slider-style-2 .hero-slide-content-wrap .hero-img-box {
         max-width: 500px;
     }
-    .hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content h1 {
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content .slide-title {
         font-size: 44px;
         line-height: 44.7px;
     }
@@ -431,7 +431,7 @@
     .hero-slider-style-2 .swiper-slide .slide-inner .hero-slide-content-wrap {
         gap: 58px;
     }
-    .hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content h1 {
+    .hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content .slide-title {
         font-size: 34px;
         line-height: 34.7px;
     }
@@ -853,7 +853,7 @@
     .hero7-slider-wrap {
         padding-bottom: 80px;
     }
-    .hero7-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content h1 br {
+    .hero7-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content .slide-title br {
         display: none;
     }
     .hero7-slider-wrap.hero-slider-wrap .swiper-container {
@@ -1166,11 +1166,11 @@
         padding-right: 25px;
         margin: 0;
     }
-    .hero-slider-wrap .slide-inner .hero-slide-content h1 {
+    .hero-slider-wrap .slide-inner .hero-slide-content .slide-title {
         font-size: 44px;
         line-height: 44.1px;
     }
-    .hero-slider-wrap .slide-inner .hero-slide-content h1 br {
+    .hero-slider-wrap .slide-inner .hero-slide-content .slide-title br {
         display: none;
     }
     .hero-slider-wrap {

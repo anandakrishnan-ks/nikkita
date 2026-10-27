@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* KEZAD Free Zone page-specific layouts. */
 .kezad-redesign .hero-actions,
@@ -350,7 +350,7 @@
   background:
     radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
     linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
-    url("../../imgs/new/optimized/kizad-logistics.webp") center 47% / cover no-repeat;
+    var(--banner-new-images-optimized-port-logistics-sunset) center 47% / cover no-repeat;
   color: #fff;
 }
 
@@ -674,7 +674,7 @@
 .kezad-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/new/optimized/kizad-logistics.webp") !important;
+    var(--banner-new-images-optimized-port-logistics-sunset) !important;
   background-position: center 47% !important;
 }
 
@@ -1404,7 +1404,7 @@
 .kezad-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
-    url("../../imgs/new/optimized/kizad-logistics.webp") center / cover no-repeat;
+    var(--banner-new-images-optimized-port-logistics-sunset) center / cover no-repeat;
 }
 
 /* KEZAD's infrastructure choice is the page's main differentiator. */
@@ -1448,59 +1448,95 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.kezad-redesign .jurisdiction-choice {
-  display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(210px, .6fr);
-  align-items: center;
-  gap: 24px;
+.kezad-redesign .kezad-setup-information {
+  padding-block: clamp(36px, 4vw, 50px);
+  background: var(--cream);
+}
+
+.kezad-redesign .kezad-setup-information .compact-head {
+  max-width: 800px;
   margin-bottom: 22px;
-  padding: clamp(24px, 3vw, 38px);
-  border-left: 4px solid var(--gold);
-  background: #193b31;
-  color: #fff;
 }
 
-.kezad-redesign .jurisdiction-choice .eyebrow {
-  color: #d5ad61;
+.kezad-redesign .kezad-setup-information h2 {
+  font-size: clamp(28px, 3vw, 38px);
 }
 
-.kezad-redesign .jurisdiction-choice h3 {
-  margin: 8px 0 10px;
-  color: #fff;
-  font-size: clamp(23px, 2.5vw, 32px);
+.kezad-redesign .kezad-setup-information .compact-head p {
+  font-size: 13px;
 }
 
-.kezad-redesign .jurisdiction-choice p {
-  max-width: 720px;
+.kezad-redesign .kezad-information-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.kezad-redesign .kezad-information-card {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.kezad-redesign .kezad-information-card > i {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  color: #a37c35;
+  font-size: 30px;
+}
+
+.kezad-redesign .kezad-information-card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.kezad-redesign .kezad-information-card p {
   margin: 0;
-  color: #e1e8e2;
+  color: #59675f;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
-.kezad-redesign .jurisdiction-choice a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  min-height: 46px;
-  padding: 12px 15px;
-  color: #102b23;
-  background: var(--gold);
-  font: 650 11px/1.4 Montserrat, Arial, sans-serif;
+.kezad-redesign .kezad-setup-information .source-note {
+  margin-top: 16px;
+  color: #647069;
+  font-size: 11px;
+  line-height: 1.65;
 }
 
-.kezad-redesign .jurisdiction-choice a:hover,
-.kezad-redesign .jurisdiction-choice a:focus-visible {
-  background: #e5c17d;
+.kezad-redesign .kezad-setup-information .source-note a {
+  color: #826125;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .kezad-redesign .lead-cta {
   background: linear-gradient(90deg, rgba(10, 31, 25, .97), rgba(10, 31, 25, .88)),
-    url("../../imgs/new/optimized/kizad-logistics.webp") center / cover no-repeat;
+    var(--banner-new-images-optimized-port-logistics-sunset) center / cover no-repeat;
 }
 
-@media (max-width: 1050px) {
-  .kezad-redesign .jurisdiction-choice {
+@media (max-width: 1000px) {
+  .kezad-redesign .kezad-information-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .kezad-redesign .kezad-information-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .kezad-redesign .kezad-information-card {
+    padding: 16px;
   }
 }
 

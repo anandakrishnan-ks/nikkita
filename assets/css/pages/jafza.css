@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* JAFZA Free Zone page-specific layouts. */
 .jafza-redesign .hero-actions,
@@ -182,20 +182,6 @@
   font-size: 42px;
 }
 
-.jafza-redesign .licence-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.jafza-redesign .licence-grid .licence-secondary {
-  grid-column: 1 / -1;
-  grid-template-columns: 48px minmax(0, 1fr);
-  grid-template-rows: auto auto;
-}
-
-.jafza-redesign .licence-grid .licence-secondary p {
-  grid-column: 2;
-}
-
 .jafza-redesign .considerations-section {
   background: #fff;
 }
@@ -350,7 +336,7 @@
   background:
     radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
     linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
-    url("../../imgs/jafza/jafza-port-terminal.webp") center 47% / cover no-repeat;
+    var(--banner-freezone-web-jafza-port-imre-solt) center 47% / cover no-repeat;
   color: #fff;
 }
 
@@ -599,10 +585,6 @@
     max-width: 620px;
   }
 
-  .jafza-redesign .licence-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .jafza-redesign .process-flow {
     grid-template-columns: 1fr 1fr;
   }
@@ -615,16 +597,6 @@
   .jafza-redesign .process-step:nth-child(even)::after,
   .jafza-redesign .process-step:nth-child(even)::before {
     display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .jafza-redesign .licence-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .jafza-redesign .licence-grid .licence-secondary {
-    grid-template-columns: 48px minmax(0, 1fr);
   }
 }
 
@@ -673,9 +645,10 @@
 /* JAFZA Free Zone content variations and compact responsive layout. */
 .jafza-breadcrumb::before {
   background-image:
-    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/jafza/jafza-port-terminal.webp") !important;
-  background-position: center 47% !important;
+    linear-gradient(90deg, rgba(9, 27, 22, 0.5), rgba(9, 27, 22, 0.16) 58%, rgba(9, 27, 22, 0.08)),
+    var(--banner-jafza-jafza-port-breadcrumb) !important;
+  background-position: center 43% !important;
+  background-size: cover !important;
 }
 
 .jafza-redesign {
@@ -1242,29 +1215,6 @@
   }
 }
 
-/* Keep the six licence routes balanced without creating oversized cards. */
-@media (min-width: 1051px) {
-  .jafza-redesign .activity-card-grid.licence-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .jafza-redesign .licence-grid .content-card,
-  .jafza-redesign .licence-grid .licence-secondary {
-    grid-column: span 1;
-  }
-}
-
-@media (min-width: 521px) and (max-width: 1050px) {
-  .jafza-redesign .activity-card-grid.licence-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .jafza-redesign .licence-grid .content-card,
-  .jafza-redesign .licence-grid .licence-secondary {
-    grid-column: span 1;
-  }
-}
-
 @media (min-width: 1051px) {
   .jafza-redesign .compact-benefits,
   .jafza-redesign .support-grid-eight {
@@ -1369,10 +1319,6 @@
   color: var(--gold);
 }
 
-.jafza-redesign .licence-grid .content-card {
-  min-height: 177px;
-}
-
 @media (min-width: 1051px) {
   .jafza-redesign .structure-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1395,14 +1341,107 @@
   .jafza-redesign .considerations-grid {
     grid-template-columns: 1fr;
   }
-
-  .jafza-redesign .licence-grid .content-card {
-    min-height: 0;
-  }
 }
 
 .jafza-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
-    url("../../imgs/jafza/jafza-port-terminal.webp") center / cover no-repeat;
+    var(--banner-freezone-web-jafza-port-imre-solt) center / cover no-repeat;
+}
+
+/* Keep the supplied overview photograph visible at its original aspect ratio. */
+.jafza-redesign #overview .overview-visual {
+  min-width: 0;
+  height: auto;
+  margin: 0;
+}
+
+.jafza-redesign #overview .overview-visual .cover {
+  height: auto;
+}
+
+.jafza-redesign #overview .overview-visual figcaption {
+  position: static;
+  padding: 14px 16px;
+}
+
+/* Compact, consistently aligned licence cards. */
+.jafza-redesign #licences .compact-head {
+  margin-bottom: 20px;
+}
+
+.jafza-redesign #licences .activity-card-grid.licence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.jafza-redesign #licences .licence-grid .content-card {
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: 42px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 14px;
+  row-gap: 4px;
+  align-content: center;
+  align-items: start;
+  min-height: 0;
+  padding: 18px 20px;
+}
+
+.jafza-redesign #licences .licence-grid .content-card i {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  width: 42px;
+  height: 42px;
+  font-size: 34px;
+}
+
+.jafza-redesign #licences .licence-grid .content-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.jafza-redesign #licences .licence-grid .content-card p {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.6;
+}
+
+.jafza-redesign #licences .advisory-callout {
+  gap: 14px;
+  margin-top: 16px;
+  padding: 18px 20px;
+}
+
+@media (min-width: 1051px) {
+  .jafza-redesign #licences .licence-grid .content-card:last-child {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 1050px) {
+  .jafza-redesign #licences .activity-card-grid.licence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .jafza-redesign #licences .activity-card-grid.licence-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .jafza-redesign #licences .licence-grid .content-card {
+    padding: 17px 16px;
+  }
+
+  .jafza-redesign #licences .advisory-callout {
+    padding: 17px 16px;
+  }
 }

@@ -1,0 +1,2659 @@
+{
+  "analysis_date_local": "2026-10-27",
+  "timezone": "Asia/Kolkata",
+  "source_report": "https://pagespeed.web.dev/analysis/https-nikkiadvisory-com/m4tk0k97fl?form_factor=desktop",
+  "website": "https://nikkiadvisory.com/",
+  "scope": "Plan only; no application source changes or deployment. Lighthouse metrics are from the supplied saved report, not newly run audits.",
+  "homepage_live_matches_local": true,
+  "homepage_sha256": "64aa89e245882ebfe3ee191cb0a649e73f1d29421ade24b2bbb5f4f5f995c7a7",
+  "canonical_page_count": 57,
+  "crux": "Saved PageSpeed page reports insufficient real-world speed data.",
+  "reports": {
+    "desktop": {
+      "fetchTime": "2026-10-27T05:36:02.552Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "accessibility": 0.93,
+        "agentic-browsing": 0.93,
+        "best-practices": 1,
+        "performance": 0.89,
+        "seo": 1
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 747.9731115569807,
+          "displayValue": "0.7 s",
+          "score": 0.96,
+          "numericUnit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 1057.527613161445,
+          "displayValue": "1.1 s",
+          "score": 0.93,
+          "numericUnit": "millisecond"
+        },
+        "speed-index": {
+          "numericValue": 2008.5649723005654,
+          "displayValue": "2.0 s",
+          "score": 0.62,
+          "numericUnit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 36.000000000000114,
+          "displayValue": "40 ms",
+          "score": 1,
+          "numericUnit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0.1407216216583504,
+          "displayValue": "0.141",
+          "score": 0.78,
+          "numericUnit": "unitless"
+        }
+      },
+      "audits": {
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 1,830 ms",
+          "details": {
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedMs",
+                "label": "Duration",
+                "valueType": "timespanMs"
+              }
+            ],
+            "items": [
+              {
+                "totalBytes": 2696,
+                "url": "https://nikkiadvisory.com/assets/css/banner-images.css?v=52991f9805fd",
+                "wastedMs": 315
+              },
+              {
+                "totalBytes": 17584,
+                "url": "https://nikkiadvisory.com/assets/css/site.css?v=4e82dd6f2db2",
+                "wastedMs": 315
+              },
+              {
+                "totalBytes": 3214,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/swiper.min.css?v=5498fff34c59",
+                "wastedMs": 865
+              },
+              {
+                "totalBytes": 7275,
+                "url": "https://nikkiadvisory.com/assets/css/pages/index.css?v=969643375ead",
+                "wastedMs": 315
+              },
+              {
+                "totalBytes": 1261,
+                "url": "https://nikkiadvisory.com/assets/css/footer-v2.css?v=78287f927e0b",
+                "wastedMs": 865
+              },
+              {
+                "totalBytes": 27633,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/bootstrap.min.css?v=a4c123551432",
+                "wastedMs": 590
+              },
+              {
+                "totalBytes": 16019,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/line-awesome.min.css?v=25f6710a9ec2",
+                "wastedMs": 1140
+              },
+              {
+                "totalBytes": 6030,
+                "url": "https://nikkiadvisory.com/assets/css/responsive.css?v=8fab96741c0a",
+                "wastedMs": 865
+              },
+              {
+                "totalBytes": 17797,
+                "url": "https://nikkiadvisory.com/assets/css/style.css?v=d5fdf0e72c5a",
+                "wastedMs": 1140
+              },
+              {
+                "totalBytes": 2087,
+                "url": "https://nikkiadvisory.com/assets/css/enquiry-forms.css?v=6dcac5d48578",
+                "wastedMs": 315
+              },
+              {
+                "totalBytes": 1653,
+                "url": "https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap",
+                "wastedMs": 201
+              }
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 1850
+          },
+          "guidanceLevel": 3
+        },
+        "unused-css-rules": {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 66 KiB",
+          "details": {
+            "debugData": {
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 70
+              },
+              "type": "debugdata"
+            },
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedBytes",
+                "label": "Est Savings",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "totalBytes": 27069,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/bootstrap.min.css?v=a4c123551432",
+                "wastedBytes": 26358,
+                "wastedPercent": 97.37497317020821
+              },
+              {
+                "totalBytes": 15455,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/line-awesome.min.css?v=25f6710a9ec2",
+                "wastedBytes": 15266,
+                "wastedPercent": 98.7785453425441
+              },
+              {
+                "totalBytes": 17233,
+                "url": "https://nikkiadvisory.com/assets/css/style.css?v=d5fdf0e72c5a",
+                "wastedBytes": 14216,
+                "wastedPercent": 82.49146833147836
+              },
+              {
+                "totalBytes": 16963,
+                "url": "https://nikkiadvisory.com/assets/css/site.css?v=4e82dd6f2db2",
+                "wastedBytes": 11374,
+                "wastedPercent": 67.0522823065196
+              }
+            ],
+            "overallSavingsBytes": 67214,
+            "overallSavingsMs": 70,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "type": "opportunity"
+          },
+          "numericValue": 70,
+          "numericUnit": "millisecond",
+          "metricSavings": {
+            "LCP": 50,
+            "FCP": 0
+          },
+          "guidanceLevel": 1
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 333 KiB",
+          "details": {
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 341400
+            },
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node"
+              },
+              {
+                "key": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                },
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Resource Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedBytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                },
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 109390
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 251806,
+                "url": "https://nikkiadvisory.com/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-1376.webp",
+                "wastedBytes": 109390
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 4768,
+                    "height": 526,
+                    "left": 466,
+                    "right": 874,
+                    "top": 4242,
+                    "width": 408
+                  },
+                  "lhId": "page-24-IMG",
+                  "nodeLabel": "div.custom-container > div.pricing-table-lists > article.pricing-table > img.shape",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,13,SECTION,0,DIV,1,DIV,1,ARTICLE,0,IMG",
+                  "selector": "div.custom-container > div.pricing-table-lists > article.pricing-table > img.shape",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/locations/saudi-arabia/riyadh/king…\" alt=\"\" class=\"shape\" loading=\"lazy\" decoding=\"async\" srcset=\"assets/images/locations/saudi-arabia/riyadh/kingdom-centre-640.webp 640w, …\" sizes=\"(max-width: 767px) 100vw, (max-width: 1200px) 50vw, 600px\" width=\"1376\" height=\"621\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 56865
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 67692,
+                "url": "https://nikkiadvisory.com/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-640.webp",
+                "wastedBytes": 56865
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 1302,
+                    "height": 520,
+                    "left": 733,
+                    "right": 1284,
+                    "top": 782,
+                    "width": 551
+                  },
+                  "lhId": "page-21-IMG",
+                  "nodeLabel": "ADGM headquarters illuminated at dusk in Abu Dhabi",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,3,SECTION,0,DIV,0,DIV,1,DIV,0,IMG",
+                  "selector": "div.custom-container > div.custom-row > div.home-intro-image > img",
+                  "snippet": "<img src=\"assets/images/locations/uae/adgm/headquarters.jpeg\" alt=\"ADGM headquarters illuminated at dusk in Abu Dhabi\" loading=\"lazy\" width=\"1280\" height=\"720\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.",
+                      "wastedBytes": 22536
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (762x720) for its displayed dimensions (924x520). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 14180
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 114032,
+                "url": "https://nikkiadvisory.com/assets/images/locations/uae/adgm/headquarters.jpeg",
+                "wastedBytes": 33914
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 99,
+                    "height": 60,
+                    "left": 224,
+                    "right": 397,
+                    "top": 39,
+                    "width": 173
+                  },
+                  "lhId": "page-16-IMG",
+                  "nodeLabel": "Nikki Advisory",
+                  "path": "1,HTML,1,BODY,0,MAIN,5,HEADER,1,DIV,0,DIV,1,DIV,0,A,0,IMG",
+                  "selector": "div.custom-row > div.right > a.logo > img",
+                  "snippet": "<img src=\"assets/images/brand/logo-600.webp\" width=\"150\" alt=\"Nikki Advisory\" loading=\"eager\" height=\"52\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 12622
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (600x208) for its displayed dimensions (173x60). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 30642
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 33422,
+                "url": "https://nikkiadvisory.com/assets/images/brand/logo-600.webp",
+                "wastedBytes": 31692
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 4768,
+                    "height": 526,
+                    "left": 49,
+                    "right": 458,
+                    "top": 4242,
+                    "width": 408
+                  },
+                  "lhId": "page-19-IMG",
+                  "nodeLabel": "div.custom-container > div.pricing-table-lists > article.pricing-table > img.shape",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,13,SECTION,0,DIV,1,DIV,0,ARTICLE,0,IMG",
+                  "selector": "div.custom-container > div.pricing-table-lists > article.pricing-table > img.shape",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/locations/uae/dubai/skyline-dusk-6…\" alt=\"\" class=\"shape\" loading=\"lazy\" decoding=\"async\" srcset=\"assets/images/locations/uae/dubai/skyline-dusk-640.webp 640w, assets/image…\" sizes=\"(max-width: 767px) 100vw, (max-width: 1200px) 50vw, 600px\" width=\"1920\" height=\"1076\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 29149
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 45852,
+                "url": "https://nikkiadvisory.com/assets/images/locations/uae/dubai/skyline-dusk-640.webp",
+                "wastedBytes": 29149
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 3561,
+                    "height": 529,
+                    "left": 32,
+                    "right": 559,
+                    "top": 3032,
+                    "width": 527
+                  },
+                  "lhId": "page-23-IMG",
+                  "nodeLabel": "Nikita D, Founder of NIKKI ADVISORY",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,9,SECTION,0,DIV,0,DIV,0,DIV,0,IMG",
+                  "selector": "div.custom-container > div.home-founder-grid > div.home-founder-image > img",
+                  "snippet": "<img src=\"/assets/images/team/nikita-d-founder-960.webp\" alt=\"Nikita D, Founder of NIKKI ADVISORY\" width=\"1140\" height=\"2048\" loading=\"lazy\" decoding=\"async\" srcset=\"/assets/images/team/nikita-d-founder-640.webp 640w, /assets/images/team/ni…\" sizes=\"(max-width: 767px) 100vw, 800px\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (956x960) for its displayed dimensions (529x529). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 27991
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 40278,
+                "url": "https://nikkiadvisory.com/assets/images/team/nikita-d-founder-960.webp",
+                "wastedBytes": 27991
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 4768,
+                    "height": 526,
+                    "left": 882,
+                    "right": 1291,
+                    "top": 4242,
+                    "width": 408
+                  },
+                  "lhId": "page-20-IMG",
+                  "nodeLabel": "div.custom-container > div.pricing-table-lists > article.pricing-table > img.shape",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,13,SECTION,0,DIV,1,DIV,2,ARTICLE,0,IMG",
+                  "selector": "div.custom-container > div.pricing-table-lists > article.pricing-table > img.shape",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/locations/bahrain/manama/world-tra…\" alt=\"\" class=\"shape\" loading=\"lazy\" decoding=\"async\" srcset=\"assets/images/locations/bahrain/manama/world-trade-centre-640.webp 640w, a…\" sizes=\"(max-width: 767px) 100vw, (max-width: 1200px) 50vw, 600px\" width=\"1376\" height=\"621\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 25857
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 36684,
+                "url": "https://nikkiadvisory.com/assets/images/locations/bahrain/manama/world-trade-centre-640.webp",
+                "wastedBytes": 25857
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 5293,
+                    "height": 407,
+                    "left": 0,
+                    "right": 1340,
+                    "top": 4886,
+                    "width": 1340
+                  },
+                  "lhId": "page-12-IMG",
+                  "nodeLabel": "Illustrative GCC business advisory meeting overlooking the Dubai skyline",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,15,SECTION,0,DIV,0,DIV,0,IMG",
+                  "selector": "section.hero3-area > div.hero-banner-bottom > div.box-anim > img",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/home/advisory-banner-1600.webp\" alt=\"Illustrative GCC business advisory meeting overlooking the Dubai skyline\" loading=\"eager\" srcset=\"assets/images/home/advisory-banner-640.webp 640w, assets/images/home/advis…\" sizes=\"100vw\" width=\"2880\" height=\"874\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1600x486) for its displayed dimensions (1340x407). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 20340
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 68114,
+                "url": "https://nikkiadvisory.com/assets/images/home/advisory-banner-1600.webp",
+                "wastedBytes": 20340
+              },
+              {
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 6202
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 148618,
+                "url": "https://nikkiadvisory.com/assets/images/home/hero-dubai-1376.webp",
+                "wastedBytes": 6202
+              }
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "cls-culprits-insight": {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "description": "Layout shifts occur when elements move absent any user interaction. [Investigate the causes of layout shifts](https://developer.chrome.com/docs/performance/insights/cls-culprit), such as elements being added, removed, or their fonts changing as the page loads.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "headings": [
+                  {
+                    "key": "node",
+                    "label": "Element",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "valueType": "node"
+                  },
+                  {
+                    "granularity": 0.001,
+                    "key": "score",
+                    "label": "Layout shift score",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "valueType": "numeric"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.1407216216583504
+                  },
+                  {
+                    "node": {
+                      "boundingRect": {
+                        "bottom": 730,
+                        "height": 621,
+                        "left": 0,
+                        "right": 1340,
+                        "top": 109,
+                        "width": 1340
+                      },
+                      "lhId": "page-1-DIV",
+                      "nodeLabel": "BAHRAIN COMPANY REGISTRATION\n\nEfficient Business Setup\nin Bahrain\n\nA flexible a…",
+                      "path": "1,HTML,1,BODY,0,MAIN,7,DIV,1,SECTION,0,DIV",
+                      "selector": "main.home-page > div.page-html > section.hero-slider-wrap > div.swiper-container",
+                      "snippet": "<div class=\"swiper-container hero-slide-container swiper-container-fade swiper-contain…\">",
+                      "type": "node"
+                    },
+                    "score": 0.1407216216583504
+                  }
+                ],
+                "type": "table"
+              }
+            ],
+            "type": "list"
+          },
+          "metricSavings": {
+            "CLS": 0
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "items": {
+                  "eagerlyLoaded": {
+                    "label": "LCP resources should not use loading=lazy",
+                    "value": true
+                  },
+                  "priorityHinted": {
+                    "label": "fetchpriority=high applied",
+                    "value": true
+                  },
+                  "requestDiscoverable": {
+                    "label": "Request is discoverable in initial document",
+                    "value": true
+                  }
+                },
+                "type": "checklist"
+              },
+              {
+                "boundingRect": {
+                  "bottom": 730,
+                  "height": 621,
+                  "left": 0,
+                  "right": 1340,
+                  "top": 109,
+                  "width": 1340
+                },
+                "lhId": "page-0-DIV",
+                "nodeLabel": "UAE BUSINESS SETUP\n\nWe Structure Today.\nYou Grow Tomorrow.\n\nStrategic business …",
+                "path": "1,HTML,1,BODY,0,MAIN,7,DIV,1,SECTION,0,DIV,0,DIV,1,DIV,0,DIV",
+                "selector": "div.swiper-container > div.swiper-wrapper > div.swiper-slide > div.slide-inner",
+                "snippet": "<div class=\"slide-inner\">",
+                "type": "node"
+              }
+            ],
+            "type": "list"
+          },
+          "metricSavings": {
+            "LCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "headings": [
+                  {
+                    "key": "label",
+                    "label": "Subpart",
+                    "valueType": "text"
+                  },
+                  {
+                    "key": "duration",
+                    "label": "Duration",
+                    "valueType": "ms"
+                  }
+                ],
+                "items": [
+                  {
+                    "duration": 50.261,
+                    "label": "Time to first byte",
+                    "subpart": "timeToFirstByte"
+                  },
+                  {
+                    "duration": 958.912,
+                    "label": "Resource load delay",
+                    "subpart": "resourceLoadDelay"
+                  },
+                  {
+                    "duration": 864.614,
+                    "label": "Resource load duration",
+                    "subpart": "resourceLoadDuration"
+                  },
+                  {
+                    "duration": 754.734,
+                    "label": "Element render delay",
+                    "subpart": "elementRenderDelay"
+                  }
+                ],
+                "type": "table"
+              },
+              {
+                "boundingRect": {
+                  "bottom": 730,
+                  "height": 621,
+                  "left": 0,
+                  "right": 1340,
+                  "top": 109,
+                  "width": 1340
+                },
+                "lhId": "page-0-DIV",
+                "nodeLabel": "UAE BUSINESS SETUP\n\nWe Structure Today.\nYou Grow Tomorrow.\n\nStrategic business …",
+                "path": "1,HTML,1,BODY,0,MAIN,7,DIV,1,SECTION,0,DIV,0,DIV,1,DIV,0,DIV",
+                "selector": "div.swiper-container > div.swiper-wrapper > div.swiper-slide > div.slide-inner",
+                "snippet": "<div class=\"slide-inner\">",
+                "type": "node"
+              }
+            ],
+            "type": "list"
+          },
+          "metricSavings": {
+            "LCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "resource-summary": {
+          "id": "resource-summary",
+          "title": "Resources Summary",
+          "description": "Aggregates all network requests and groups them by type",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "details": {
+            "headings": [
+              {
+                "key": "label",
+                "label": "Resource Type",
+                "valueType": "text"
+              },
+              {
+                "key": "requestCount",
+                "label": "Requests",
+                "valueType": "numeric"
+              },
+              {
+                "key": "transferSize",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "label": "Total",
+                "requestCount": 41,
+                "resourceType": "total",
+                "transferSize": 1919232
+              },
+              {
+                "label": "Image",
+                "requestCount": 15,
+                "resourceType": "image",
+                "transferSize": 1451798
+              },
+              {
+                "label": "Font",
+                "requestCount": 5,
+                "resourceType": "font",
+                "transferSize": 271656
+              },
+              {
+                "label": "Stylesheet",
+                "requestCount": 11,
+                "resourceType": "stylesheet",
+                "transferSize": 103249
+              },
+              {
+                "label": "Script",
+                "requestCount": 9,
+                "resourceType": "script",
+                "transferSize": 80130
+              },
+              {
+                "label": "Document",
+                "requestCount": 1,
+                "resourceType": "document",
+                "transferSize": 12399
+              },
+              {
+                "label": "Media",
+                "requestCount": 0,
+                "resourceType": "media",
+                "transferSize": 0
+              },
+              {
+                "label": "Other",
+                "requestCount": 0,
+                "resourceType": "other",
+                "transferSize": 0
+              },
+              {
+                "label": "Third-party",
+                "requestCount": 4,
+                "resourceType": "third-party",
+                "transferSize": 90987
+              }
+            ],
+            "type": "table"
+          }
+        },
+        "document-latency-insight": {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "description": "Your first network request is the most important. [Reduce its latency](https://developer.chrome.com/docs/performance/insights/document-latency) by avoiding redirects, ensuring a fast server response, and enabling text compression.",
+          "score": 1,
+          "scoreDisplayMode": "metricSavings",
+          "details": {
+            "debugData": {
+              "redirectDuration": 0,
+              "serverResponseTime": 50,
+              "type": "debugdata",
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            },
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 50 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "type": "checklist"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "font-display-insight": {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "description": "Consider setting [`font-display`](https://developer.chrome.com/docs/performance/insights/font-display) to `swap` or `optional` to ensure text is consistently visible. `swap` can be further optimized to mitigate layout shifts with [font metric overrides](https://developer.chrome.com/blog/font-fallbacks).",
+          "score": 1,
+          "scoreDisplayMode": "metricSavings",
+          "details": {
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "wastedMs",
+                "label": "Est Savings",
+                "valueType": "ms"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "INP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "cache-insight": {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache).",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 4 KiB",
+          "details": {
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 3858.399999999999
+            },
+            "headings": [
+              {
+                "key": "url",
+                "label": "Request",
+                "valueType": "url"
+              },
+              {
+                "displayUnit": "duration",
+                "key": "cacheLifetimeMs",
+                "label": "Cache TTL",
+                "valueType": "ms"
+              },
+              {
+                "displayUnit": "kb",
+                "granularity": 1,
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "cacheLifetimeMs": 604800000,
+                "totalBytes": 32035,
+                "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                "wastedBytes": 3203.499999999999
+              },
+              {
+                "cacheLifetimeMs": 604800000,
+                "totalBytes": 3335,
+                "url": "https://nikkiadvisory.com/assets/js/data/country-codes.js?v=3f31ecdab885",
+                "wastedBytes": 333.49999999999994
+              },
+              {
+                "cacheLifetimeMs": 604800000,
+                "totalBytes": 3214,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/swiper.min.css?v=5498fff34c59",
+                "wastedBytes": 321.3999999999999
+              }
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as `offsetWidth`) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "headings": [
+                  {
+                    "key": "source",
+                    "label": "Source",
+                    "valueType": "source-location"
+                  },
+                  {
+                    "granularity": 1,
+                    "key": "reflowTime",
+                    "label": "Total reflow time",
+                    "valueType": "ms"
+                  }
+                ],
+                "items": [
+                  {
+                    "reflowTime": 111.897,
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    }
+                  },
+                  {
+                    "reflowTime": 2.738,
+                    "source": {
+                      "column": 6942,
+                      "line": 11,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                      "urlProvider": "network"
+                    }
+                  },
+                  {
+                    "reflowTime": 106.416,
+                    "source": {
+                      "column": 17000,
+                      "line": 11,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                      "urlProvider": "network"
+                    }
+                  },
+                  {
+                    "reflowTime": 0.836,
+                    "source": {
+                      "column": 22779,
+                      "line": 11,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                      "urlProvider": "network"
+                    }
+                  },
+                  {
+                    "reflowTime": 11.409,
+                    "source": {
+                      "column": 84992,
+                      "line": 1,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/jquery-3.7.1.js?v=fc9a93dd241f",
+                      "urlProvider": "network"
+                    }
+                  }
+                ],
+                "type": "table"
+              }
+            ],
+            "type": "list"
+          },
+          "guidanceLevel": 3
+        },
+        "unminified-css": {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/).",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 10 KiB",
+          "details": {
+            "debugData": {
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              },
+              "type": "debugdata"
+            },
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedBytes",
+                "label": "Est Savings",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "totalBytes": 17797,
+                "url": "https://nikkiadvisory.com/assets/css/style.css?v=d5fdf0e72c5a",
+                "wastedBytes": 4185,
+                "wastedPercent": 23.517922031974415
+              },
+              {
+                "totalBytes": 17584,
+                "url": "https://nikkiadvisory.com/assets/css/site.css?v=4e82dd6f2db2",
+                "wastedBytes": 3942,
+                "wastedPercent": 22.420410725495476
+              },
+              {
+                "totalBytes": 16019,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/line-awesome.min.css?v=25f6710a9ec2",
+                "wastedBytes": 2263,
+                "wastedPercent": 14.125929511154133
+              }
+            ],
+            "overallSavingsBytes": 10390,
+            "overallSavingsMs": 0,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "type": "opportunity"
+          },
+          "numericValue": 0,
+          "numericUnit": "millisecond",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        }
+      },
+      "configSettings": {
+        "formFactor": "desktop",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 40,
+          "throughputKbps": 10240,
+          "cpuSlowdownMultiplier": 1
+        },
+        "screenEmulation": {
+          "width": 1350,
+          "height": 940,
+          "deviceScaleFactor": 1
+        }
+      }
+    },
+    "mobile": {
+      "fetchTime": "2026-10-27T05:36:02.191Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "accessibility": 0.97,
+        "agentic-browsing": 1,
+        "best-practices": 1,
+        "performance": 0.79,
+        "seo": 1
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "numericValue": 2778.5928912059467,
+          "displayValue": "2.8 s",
+          "score": 0.57,
+          "numericUnit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "numericValue": 3947.2168170223003,
+          "displayValue": "3.9 s",
+          "score": 0.51,
+          "numericUnit": "millisecond"
+        },
+        "speed-index": {
+          "numericValue": 5688.422803574811,
+          "displayValue": "5.7 s",
+          "score": 0.51,
+          "numericUnit": "millisecond"
+        },
+        "total-blocking-time": {
+          "numericValue": 3,
+          "displayValue": "0 ms",
+          "score": 1,
+          "numericUnit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "numericValue": 0.0036441055136375404,
+          "displayValue": "0.004",
+          "score": 1,
+          "numericUnit": "unitless"
+        }
+      },
+      "audits": {
+        "render-blocking-insight": {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "description": "Requests are blocking the page's initial render, which may delay LCP. [Deferring or inlining](https://developer.chrome.com/docs/performance/insights/render-blocking) can move these network requests out of the critical path.",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 2,150 ms",
+          "details": {
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedMs",
+                "label": "Duration",
+                "valueType": "timespanMs"
+              }
+            ],
+            "items": [
+              {
+                "totalBytes": 3227,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/swiper.min.css?v=5498fff34c59",
+                "wastedMs": 1206
+              },
+              {
+                "totalBytes": 27691,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/bootstrap.min.css?v=a4c123551432",
+                "wastedMs": 1206
+              },
+              {
+                "totalBytes": 17855,
+                "url": "https://nikkiadvisory.com/assets/css/style.css?v=d5fdf0e72c5a",
+                "wastedMs": 1590
+              },
+              {
+                "totalBytes": 6088,
+                "url": "https://nikkiadvisory.com/assets/css/responsive.css?v=8fab96741c0a",
+                "wastedMs": 1206
+              },
+              {
+                "totalBytes": 16077,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/line-awesome.min.css?v=25f6710a9ec2",
+                "wastedMs": 1590
+              },
+              {
+                "totalBytes": 17526,
+                "url": "https://nikkiadvisory.com/assets/css/site.css?v=4e82dd6f2db2",
+                "wastedMs": 822
+              },
+              {
+                "totalBytes": 7275,
+                "url": "https://nikkiadvisory.com/assets/css/pages/index.css?v=969643375ead",
+                "wastedMs": 438
+              },
+              {
+                "totalBytes": 1261,
+                "url": "https://nikkiadvisory.com/assets/css/footer-v2.css?v=78287f927e0b",
+                "wastedMs": 1206
+              },
+              {
+                "totalBytes": 2145,
+                "url": "https://nikkiadvisory.com/assets/css/enquiry-forms.css?v=6dcac5d48578",
+                "wastedMs": 438
+              },
+              {
+                "totalBytes": 2696,
+                "url": "https://nikkiadvisory.com/assets/css/banner-images.css?v=52991f9805fd",
+                "wastedMs": 438
+              },
+              {
+                "totalBytes": 1653,
+                "url": "https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,500&display=swap",
+                "wastedMs": 751
+              }
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 2150
+          },
+          "guidanceLevel": 3
+        },
+        "unused-css-rules": {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+          "score": 0,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 55 KiB",
+          "details": {
+            "debugData": {
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 310
+              },
+              "type": "debugdata"
+            },
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedBytes",
+                "label": "Est Savings",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "totalBytes": 27069,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/bootstrap.min.css?v=a4c123551432",
+                "wastedBytes": 26373,
+                "wastedPercent": 97.42992058381627
+              },
+              {
+                "totalBytes": 15458,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/line-awesome.min.css?v=25f6710a9ec2",
+                "wastedBytes": 15263,
+                "wastedPercent": 98.74158489901879
+              },
+              {
+                "totalBytes": 17235,
+                "url": "https://nikkiadvisory.com/assets/css/style.css?v=d5fdf0e72c5a",
+                "wastedBytes": 14576,
+                "wastedPercent": 84.57297432760133
+              }
+            ],
+            "overallSavingsBytes": 56212,
+            "overallSavingsMs": 310,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "type": "opportunity"
+          },
+          "numericValue": 310,
+          "numericUnit": "millisecond",
+          "metricSavings": {
+            "LCP": 300,
+            "FCP": 0
+          },
+          "guidanceLevel": 1
+        },
+        "image-delivery-insight": {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "description": "Reducing the download time of images can improve the perceived load time of the page and LCP. [Learn more about optimizing image size](https://developer.chrome.com/docs/performance/insights/image-delivery)",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 319 KiB",
+          "details": {
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 326589
+            },
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node"
+              },
+              {
+                "key": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                },
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Resource Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedBytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                },
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 2710,
+                    "height": 185,
+                    "left": 1,
+                    "right": 411,
+                    "top": 2525,
+                    "width": 410
+                  },
+                  "lhId": "page-18-IMG",
+                  "nodeLabel": "Kingdom Centre and the Riyadh business district at sunset",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,5,SECTION,0,DIV,1,DIV,1,ARTICLE,0,A,0,IMG",
+                  "selector": "div.service-items > article.service-box > a.service-img > img",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/locations/saudi-arabia/riyadh/king…\" alt=\"Kingdom Centre and the Riyadh business district at sunset\" loading=\"lazy\" srcset=\"assets/images/locations/saudi-arabia/riyadh/kingdom-centre-640.webp 640w, …\" sizes=\"(max-width: 767px) 100vw, (max-width: 1200px) 50vw, 600px\" width=\"1376\" height=\"621\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 70204
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (960x433) for its displayed dimensions (718x324). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 61570
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 139484,
+                "url": "https://nikkiadvisory.com/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-960.webp",
+                "wastedBytes": 100785
+              },
+              {
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 73510
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 159910,
+                "url": "https://nikkiadvisory.com/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-mobile-960.webp",
+                "wastedBytes": 73510
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 2094,
+                    "height": 230,
+                    "left": 1,
+                    "right": 411,
+                    "top": 1864,
+                    "width": 410
+                  },
+                  "lhId": "page-19-IMG",
+                  "nodeLabel": "Dubai skyline and Sheikh Zayed Road at dusk",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,5,SECTION,0,DIV,1,DIV,0,ARTICLE,0,A,0,IMG",
+                  "selector": "div.service-items > article.service-box > a.service-img > img",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/locations/uae/dubai/skyline-dusk-9…\" alt=\"Dubai skyline and Sheikh Zayed Road at dusk\" loading=\"lazy\" srcset=\"assets/images/locations/uae/dubai/skyline-dusk-640.webp 640w, assets/image…\" sizes=\"(max-width: 767px) 100vw, (max-width: 1200px) 50vw, 600px\" width=\"1920\" height=\"1076\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 6152
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (960x538) for its displayed dimensions (718x402). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 40712
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 92232,
+                "url": "https://nikkiadvisory.com/assets/images/locations/uae/dubai/skyline-dusk-960.webp",
+                "wastedBytes": 44149
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 3345,
+                    "height": 185,
+                    "left": 1,
+                    "right": 411,
+                    "top": 3160,
+                    "width": 410
+                  },
+                  "lhId": "page-20-IMG",
+                  "nodeLabel": "Bahrain World Trade Center and the Manama waterfront",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,5,SECTION,0,DIV,1,DIV,2,ARTICLE,0,A,0,IMG",
+                  "selector": "div.service-items > article.service-box > a.service-img > img",
+                  "snippet": "<img src=\"https://nikkiadvisory.com/assets/images/locations/bahrain/manama/world-tra…\" alt=\"Bahrain World Trade Center and the Manama waterfront\" loading=\"lazy\" srcset=\"assets/images/locations/bahrain/manama/world-trade-centre-640.webp 640w, a…\" sizes=\"(max-width: 767px) 100vw, (max-width: 1200px) 50vw, 600px\" width=\"1376\" height=\"621\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 5626
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (960x433) for its displayed dimensions (718x324). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 33065
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 74906,
+                "url": "https://nikkiadvisory.com/assets/images/locations/bahrain/manama/world-trade-centre-960.webp",
+                "wastedBytes": 36207
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 977,
+                    "height": 300,
+                    "left": 20,
+                    "right": 392,
+                    "top": 677,
+                    "width": 372
+                  },
+                  "lhId": "page-21-IMG",
+                  "nodeLabel": "ADGM headquarters illuminated at dusk in Abu Dhabi",
+                  "path": "1,HTML,1,BODY,0,MAIN,7,DIV,3,SECTION,0,DIV,0,DIV,1,DIV,0,IMG",
+                  "selector": "div.custom-container > div.custom-row > div.home-intro-image > img",
+                  "snippet": "<img src=\"assets/images/locations/uae/adgm/headquarters.jpeg\" alt=\"ADGM headquarters illuminated at dusk in Abu Dhabi\" loading=\"lazy\" width=\"1280\" height=\"720\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Using a modern image format (WebP, AVIF) or increasing the image compression could improve this image's download size.",
+                      "wastedBytes": 7030
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (892x720) for its displayed dimensions (933x525). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 27001
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 114032,
+                "url": "https://nikkiadvisory.com/assets/images/locations/uae/adgm/headquarters.jpeg",
+                "wastedBytes": 32366
+              },
+              {
+                "node": {
+                  "boundingRect": {
+                    "bottom": 113,
+                    "height": 40,
+                    "left": 277,
+                    "right": 392,
+                    "top": 73,
+                    "width": 115
+                  },
+                  "lhId": "page-22-IMG",
+                  "nodeLabel": "Nikki Advisory",
+                  "path": "1,HTML,1,BODY,0,MAIN,5,HEADER,1,DIV,0,DIV,1,DIV,0,A,0,IMG",
+                  "selector": "div.custom-row > div.right > a.logo > img",
+                  "snippet": "<img src=\"assets/images/brand/logo-600.webp\" width=\"150\" alt=\"Nikki Advisory\" loading=\"eager\" height=\"52\" decoding=\"async\">",
+                  "type": "node"
+                },
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 12622
+                    },
+                    {
+                      "reason": "This image file is larger than it needs to be (600x208) for its displayed dimensions (202x70). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 29637
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 33422,
+                "url": "https://nikkiadvisory.com/assets/images/brand/logo-600.webp",
+                "wastedBytes": 31066
+              },
+              {
+                "subItems": {
+                  "items": [
+                    {
+                      "reason": "Increasing the image compression factor could improve this image's download size.",
+                      "wastedBytes": 8506
+                    }
+                  ],
+                  "type": "subitems"
+                },
+                "totalBytes": 94906,
+                "url": "https://nikkiadvisory.com/assets/images/home/hero-dubai-mobile-960.webp",
+                "wastedBytes": 8506
+              }
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "cls-culprits-insight": {
+          "id": "cls-culprits-insight",
+          "title": "Layout shift culprits",
+          "description": "Layout shifts occur when elements move absent any user interaction. [Investigate the causes of layout shifts](https://developer.chrome.com/docs/performance/insights/cls-culprit), such as elements being added, removed, or their fonts changing as the page loads.",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "details": {
+            "items": [
+              {
+                "headings": [
+                  {
+                    "key": "node",
+                    "label": "Element",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "valueType": "node"
+                  },
+                  {
+                    "granularity": 0.001,
+                    "key": "score",
+                    "label": "Layout shift score",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "valueType": "numeric"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.0036441055136375404
+                  },
+                  {
+                    "node": {
+                      "boundingRect": {
+                        "bottom": 381,
+                        "height": 61,
+                        "left": 24,
+                        "right": 388,
+                        "top": 320,
+                        "width": 364
+                      },
+                      "lhId": "page-1-H1",
+                      "nodeLabel": "We Structure Today. You Grow Tomorrow.",
+                      "path": "1,HTML,1,BODY,0,MAIN,7,DIV,1,SECTION,0,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,H1",
+                      "selector": "div.slide-inner > div.hero-slide-content-wrap > div.hero-slide-content > h1.slide-title",
+                      "snippet": "<h1 class=\"slide-title\">",
+                      "type": "node"
+                    },
+                    "score": 0.003585257858656031,
+                    "subItems": {
+                      "items": [
+                        {
+                          "cause": "Web font",
+                          "extra": {
+                            "type": "url",
+                            "value": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
+                          }
+                        },
+                        {
+                          "cause": "Web font",
+                          "extra": {
+                            "type": "url",
+                            "value": "https://fonts.gstatic.com/s/marcellus/v14/wEO_EBrOk8hQLDvIAF81VvoK_kgXiQ.woff2"
+                          }
+                        },
+                        {
+                          "cause": "Web font",
+                          "extra": {
+                            "type": "url",
+                            "value": "https://fonts.gstatic.com/s/montserrat/v31/JTUQjIg1_i6t8kCHKm459WxRyS7m0dR9pA.woff2"
+                          }
+                        }
+                      ],
+                      "type": "subitems"
+                    }
+                  },
+                  {
+                    "node": {
+                      "boundingRect": {
+                        "bottom": 57,
+                        "height": 17,
+                        "left": 126,
+                        "right": 286,
+                        "top": 40,
+                        "width": 160
+                      },
+                      "lhId": "page-3-LI",
+                      "nodeLabel": " Working Days, 9am-6pm",
+                      "path": "1,HTML,1,BODY,0,MAIN,3,DIV,0,DIV,0,DIV,1,DIV,0,UL,2,LI",
+                      "selector": "div.custom-row > div.right > ul > li",
+                      "snippet": "<li>",
+                      "type": "node"
+                    },
+                    "score": 5.884765498150954e-05,
+                    "subItems": {
+                      "items": [
+                        {
+                          "cause": "Web font",
+                          "extra": {
+                            "type": "url",
+                            "value": "https://nikkiadvisory.com/assets/fonts/la-solid-900.woff2"
+                          }
+                        },
+                        {
+                          "cause": "Web font",
+                          "extra": {
+                            "type": "url",
+                            "value": "https://nikkiadvisory.com/assets/fonts/la-brands-400.woff2"
+                          }
+                        }
+                      ],
+                      "type": "subitems"
+                    }
+                  }
+                ],
+                "type": "table"
+              }
+            ],
+            "type": "list"
+          },
+          "metricSavings": {
+            "CLS": 0
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-discovery-insight": {
+          "id": "lcp-discovery-insight",
+          "title": "LCP request discovery",
+          "description": "[Optimize LCP](https://developer.chrome.com/docs/performance/insights/lcp-discovery) by making the LCP image discoverable from the HTML immediately, and avoiding lazy-loading",
+          "score": 1,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "items": {
+                  "eagerlyLoaded": {
+                    "label": "LCP resources should not use loading=lazy",
+                    "value": true
+                  },
+                  "priorityHinted": {
+                    "label": "fetchpriority=high applied",
+                    "value": true
+                  },
+                  "requestDiscoverable": {
+                    "label": "Request is discoverable in initial document",
+                    "value": true
+                  }
+                },
+                "type": "checklist"
+              },
+              {
+                "boundingRect": {
+                  "bottom": 643,
+                  "height": 520,
+                  "left": 0,
+                  "right": 412,
+                  "top": 123,
+                  "width": 412
+                },
+                "lhId": "page-0-DIV",
+                "nodeLabel": "UAE BUSINESS SETUP\n\nWe Structure Today. You Grow Tomorrow.\n\nStrategic business …",
+                "path": "1,HTML,1,BODY,0,MAIN,7,DIV,1,SECTION,0,DIV,0,DIV,1,DIV,0,DIV",
+                "selector": "div.swiper-container > div.swiper-wrapper > div.swiper-slide > div.slide-inner",
+                "snippet": "<div class=\"slide-inner\">",
+                "type": "node"
+              }
+            ],
+            "type": "list"
+          },
+          "metricSavings": {
+            "LCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "lcp-breakdown-insight": {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "description": "Each [subpart has specific improvement strategies](https://developer.chrome.com/docs/performance/insights/lcp-breakdown). Ideally, most of the LCP time should be spent on loading the resources, not within delays.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "headings": [
+                  {
+                    "key": "label",
+                    "label": "Subpart",
+                    "valueType": "text"
+                  },
+                  {
+                    "key": "duration",
+                    "label": "Duration",
+                    "valueType": "ms"
+                  }
+                ],
+                "items": [
+                  {
+                    "duration": 36.217,
+                    "label": "Time to first byte",
+                    "subpart": "timeToFirstByte"
+                  },
+                  {
+                    "duration": 957.349,
+                    "label": "Resource load delay",
+                    "subpart": "resourceLoadDelay"
+                  },
+                  {
+                    "duration": 1768.905,
+                    "label": "Resource load duration",
+                    "subpart": "resourceLoadDuration"
+                  },
+                  {
+                    "duration": 254.993,
+                    "label": "Element render delay",
+                    "subpart": "elementRenderDelay"
+                  }
+                ],
+                "type": "table"
+              },
+              {
+                "boundingRect": {
+                  "bottom": 643,
+                  "height": 520,
+                  "left": 0,
+                  "right": 412,
+                  "top": 123,
+                  "width": 412
+                },
+                "lhId": "page-0-DIV",
+                "nodeLabel": "UAE BUSINESS SETUP\n\nWe Structure Today. You Grow Tomorrow.\n\nStrategic business …",
+                "path": "1,HTML,1,BODY,0,MAIN,7,DIV,1,SECTION,0,DIV,0,DIV,1,DIV,0,DIV",
+                "selector": "div.swiper-container > div.swiper-wrapper > div.swiper-slide > div.slide-inner",
+                "snippet": "<div class=\"slide-inner\">",
+                "type": "node"
+              }
+            ],
+            "type": "list"
+          },
+          "metricSavings": {
+            "LCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "resource-summary": {
+          "id": "resource-summary",
+          "title": "Resources Summary",
+          "description": "Aggregates all network requests and groups them by type",
+          "score": 1,
+          "scoreDisplayMode": "informative",
+          "details": {
+            "headings": [
+              {
+                "key": "label",
+                "label": "Resource Type",
+                "valueType": "text"
+              },
+              {
+                "key": "requestCount",
+                "label": "Requests",
+                "valueType": "numeric"
+              },
+              {
+                "key": "transferSize",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "label": "Total",
+                "requestCount": 39,
+                "resourceType": "total",
+                "transferSize": 1570658
+              },
+              {
+                "label": "Image",
+                "requestCount": 13,
+                "resourceType": "image",
+                "transferSize": 1102835
+              },
+              {
+                "label": "Font",
+                "requestCount": 5,
+                "resourceType": "font",
+                "transferSize": 271658
+              },
+              {
+                "label": "Stylesheet",
+                "requestCount": 11,
+                "resourceType": "stylesheet",
+                "transferSize": 103494
+              },
+              {
+                "label": "Script",
+                "requestCount": 9,
+                "resourceType": "script",
+                "transferSize": 80272
+              },
+              {
+                "label": "Document",
+                "requestCount": 1,
+                "resourceType": "document",
+                "transferSize": 12399
+              },
+              {
+                "label": "Media",
+                "requestCount": 0,
+                "resourceType": "media",
+                "transferSize": 0
+              },
+              {
+                "label": "Other",
+                "requestCount": 0,
+                "resourceType": "other",
+                "transferSize": 0
+              },
+              {
+                "label": "Third-party",
+                "requestCount": 4,
+                "resourceType": "third-party",
+                "transferSize": 90989
+              }
+            ],
+            "type": "table"
+          }
+        },
+        "document-latency-insight": {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "description": "Your first network request is the most important. [Reduce its latency](https://developer.chrome.com/docs/performance/insights/document-latency) by avoiding redirects, ensuring a fast server response, and enabling text compression.",
+          "score": 1,
+          "scoreDisplayMode": "metricSavings",
+          "details": {
+            "debugData": {
+              "redirectDuration": 0,
+              "serverResponseTime": 36,
+              "type": "debugdata",
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            },
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 36 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "type": "checklist"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "font-display-insight": {
+          "id": "font-display-insight",
+          "title": "Font display",
+          "description": "Consider setting [`font-display`](https://developer.chrome.com/docs/performance/insights/font-display) to `swap` or `optional` to ensure text is consistently visible. `swap` can be further optimized to mitigate layout shifts with [font metric overrides](https://developer.chrome.com/blog/font-fallbacks).",
+          "score": 1,
+          "scoreDisplayMode": "metricSavings",
+          "details": {
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "wastedMs",
+                "label": "Est Savings",
+                "valueType": "ms"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ],
+            "type": "table"
+          },
+          "metricSavings": {
+            "INP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "cache-insight": {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more about caching](https://developer.chrome.com/docs/performance/insights/cache).",
+          "score": 1,
+          "scoreDisplayMode": "metricSavings",
+          "details": {
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            },
+            "headings": [
+              {
+                "key": "url",
+                "label": "Request",
+                "valueType": "url"
+              },
+              {
+                "displayUnit": "duration",
+                "key": "cacheLifetimeMs",
+                "label": "Cache TTL",
+                "valueType": "ms"
+              },
+              {
+                "displayUnit": "kb",
+                "granularity": 1,
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [],
+            "type": "table"
+          },
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        },
+        "forced-reflow-insight": {
+          "id": "forced-reflow-insight",
+          "title": "Forced reflow",
+          "description": "A forced reflow occurs when JavaScript queries geometric properties (such as `offsetWidth`) after styles have been invalidated by a change to the DOM state. This can result in poor performance. Learn more about [forced reflows](https://developer.chrome.com/docs/performance/insights/forced-reflow) and possible mitigations.",
+          "score": 0,
+          "scoreDisplayMode": "numeric",
+          "details": {
+            "items": [
+              {
+                "headings": [
+                  {
+                    "key": "source",
+                    "label": "Source",
+                    "valueType": "source-location"
+                  },
+                  {
+                    "granularity": 1,
+                    "key": "reflowTime",
+                    "label": "Total reflow time",
+                    "valueType": "ms"
+                  }
+                ],
+                "items": [
+                  {
+                    "reflowTime": 45.464,
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    }
+                  },
+                  {
+                    "reflowTime": 53.057,
+                    "source": {
+                      "column": 6942,
+                      "line": 11,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                      "urlProvider": "network"
+                    }
+                  },
+                  {
+                    "reflowTime": 6.237,
+                    "source": {
+                      "column": 17000,
+                      "line": 11,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                      "urlProvider": "network"
+                    }
+                  },
+                  {
+                    "reflowTime": 0.608,
+                    "source": {
+                      "column": 22779,
+                      "line": 11,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+                      "urlProvider": "network"
+                    }
+                  },
+                  {
+                    "reflowTime": 4.452,
+                    "source": {
+                      "column": 84992,
+                      "line": 1,
+                      "type": "source-location",
+                      "url": "https://nikkiadvisory.com/assets/js/vendor/jquery-3.7.1.js?v=fc9a93dd241f",
+                      "urlProvider": "network"
+                    }
+                  }
+                ],
+                "type": "table"
+              }
+            ],
+            "type": "list"
+          },
+          "guidanceLevel": 3
+        },
+        "unminified-css": {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "description": "Minifying CSS files can reduce network payload sizes. [Learn how to minify CSS](https://developer.chrome.com/docs/lighthouse/performance/unminified-css/).",
+          "score": 0.5,
+          "scoreDisplayMode": "metricSavings",
+          "displayValue": "Est savings of 10 KiB",
+          "details": {
+            "debugData": {
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              },
+              "type": "debugdata"
+            },
+            "headings": [
+              {
+                "key": "url",
+                "label": "URL",
+                "valueType": "url"
+              },
+              {
+                "key": "totalBytes",
+                "label": "Transfer Size",
+                "valueType": "bytes"
+              },
+              {
+                "key": "wastedBytes",
+                "label": "Est Savings",
+                "valueType": "bytes"
+              }
+            ],
+            "items": [
+              {
+                "totalBytes": 17855,
+                "url": "https://nikkiadvisory.com/assets/css/style.css?v=d5fdf0e72c5a",
+                "wastedBytes": 4199,
+                "wastedPercent": 23.517922031974415
+              },
+              {
+                "totalBytes": 17526,
+                "url": "https://nikkiadvisory.com/assets/css/site.css?v=4e82dd6f2db2",
+                "wastedBytes": 3929,
+                "wastedPercent": 22.420410725495476
+              },
+              {
+                "totalBytes": 16077,
+                "url": "https://nikkiadvisory.com/assets/css/vendor/line-awesome.min.css?v=25f6710a9ec2",
+                "wastedBytes": 2271,
+                "wastedPercent": 14.125929511154133
+              }
+            ],
+            "overallSavingsBytes": 10399,
+            "overallSavingsMs": 0,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "type": "opportunity"
+          },
+          "numericValue": 0,
+          "numericUnit": "millisecond",
+          "metricSavings": {
+            "LCP": 0,
+            "FCP": 0
+          },
+          "guidanceLevel": 3
+        }
+      },
+      "configSettings": {
+        "formFactor": "mobile",
+        "throttlingMethod": "simulate",
+        "throttling": {
+          "rttMs": 150,
+          "throughputKbps": 1638.4,
+          "requestLatencyMs": 562.5,
+          "downloadThroughputKbps": 1474.5600000000002,
+          "uploadThroughputKbps": 675,
+          "cpuSlowdownMultiplier": 1.2
+        },
+        "screenEmulation": {
+          "width": 412,
+          "height": 823,
+          "deviceScaleFactor": 1.75,
+          "mobile": true
+        }
+      }
+    }
+  },
+  "live_checks": {
+    "protocol_in_saved_audit": "h2",
+    "html_and_css_js_compression_observed": "br",
+    "html_cache_control_observed": "public, max-age=0, must-revalidate",
+    "versioned_assets": [
+      {
+        "path": "assets/js/vendor/swiper.min.js?v=b2fb5c96fe9f",
+        "status": 200,
+        "cache": "public, max-age=31536000, immutable",
+        "encoding": "br",
+        "type": "application/x-javascript"
+      },
+      {
+        "path": "assets/js/data/country-codes.js?v=3f31ecdab885",
+        "status": 200,
+        "cache": "public, max-age=31536000, immutable",
+        "encoding": "br",
+        "type": "application/x-javascript"
+      },
+      {
+        "path": "assets/css/vendor/swiper.min.css?v=5498fff34c59",
+        "status": 200,
+        "cache": "public, max-age=31536000, immutable",
+        "encoding": "br",
+        "type": "text/css"
+      },
+      {
+        "path": "assets/fonts/la-solid-900.woff2",
+        "status": 200,
+        "cache": "public, max-age=2592000",
+        "encoding": null,
+        "type": "font/woff2"
+      },
+      {
+        "path": "assets/fonts/la-brands-400.woff2",
+        "status": 200,
+        "cache": "public, max-age=2592000",
+        "encoding": null,
+        "type": "font/woff2"
+      }
+    ]
+  },
+  "browser_checks": {
+    "desktop": {
+      "kind": "Unthrottled local Chrome observation; not a comparable Lighthouse score or full functional test.",
+      "viewport": {
+        "width": 1350,
+        "height": 940
+      },
+      "hero": {
+        "x": 0,
+        "y": 108.78125,
+        "width": 1350,
+        "height": 621,
+        "top": 108.78125,
+        "right": 1350,
+        "bottom": 729.78125,
+        "left": 0
+      },
+      "h1_count": 1,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "observed_shift_entries": [
+        {
+          "time": 1865.5,
+          "value": 5.454513615270117e-05,
+          "recent": false,
+          "sources": [
+            {
+              "node": "#text",
+              "prev": {
+                "x": 61,
+                "y": 891.1875,
+                "width": 598.953125,
+                "height": 48.8125,
+                "top": 891.1875,
+                "right": 659.953125,
+                "bottom": 940,
+                "left": 61
+              },
+              "now": {
+                "x": 61,
+                "y": 888.1875,
+                "width": 598.953125,
+                "height": 51.8125,
+                "top": 888.1875,
+                "right": 659.953125,
+                "bottom": 940,
+                "left": 61
+              }
+            }
+          ]
+        },
+        {
+          "time": 1984.7999999970198,
+          "value": 0.001344182901380498,
+          "recent": false,
+          "sources": [
+            {
+              "node": "div.right",
+              "prev": {
+                "x": 257.15625,
+                "y": 38.796875,
+                "width": 1052.84375,
+                "height": 59.984375,
+                "top": 38.796875,
+                "right": 1310,
+                "bottom": 98.78125,
+                "left": 257.15625
+              },
+              "now": {
+                "x": 245.09375,
+                "y": 38.796875,
+                "width": 1064.90625,
+                "height": 59.984375,
+                "top": 38.796875,
+                "right": 1310,
+                "bottom": 98.78125,
+                "left": 245.09375
+              }
+            },
+            {
+              "node": "div.right",
+              "prev": {
+                "x": 812.453125,
+                "y": 6,
+                "width": 497.546875,
+                "height": 16.796875,
+                "top": 6,
+                "right": 1310,
+                "bottom": 22.796875,
+                "left": 812.453125
+              },
+              "now": {
+                "x": 782.046875,
+                "y": 6,
+                "width": 527.953125,
+                "height": 16.796875,
+                "top": 6,
+                "right": 1310,
+                "bottom": 22.796875,
+                "left": 782.046875
+              }
+            },
+            {
+              "node": "span.",
+              "prev": {
+                "x": 952.1875,
+                "y": 693.53125,
+                "width": 120.625,
+                "height": 22.5,
+                "top": 693.53125,
+                "right": 1072.8125,
+                "bottom": 716.03125,
+                "left": 952.1875
+              },
+              "now": {
+                "x": 948.4375,
+                "y": 693.53125,
+                "width": 128.109375,
+                "height": 22.5,
+                "top": 693.53125,
+                "right": 1076.546875,
+                "bottom": 716.03125,
+                "left": 948.4375
+              }
+            },
+            {
+              "node": null,
+              "prev": {
+                "x": 978.1875,
+                "y": 3.390625,
+                "width": 1,
+                "height": 22,
+                "top": 3.390625,
+                "right": 979.1875,
+                "bottom": 25.390625,
+                "left": 978.1875
+              },
+              "now": {
+                "x": 963.4375,
+                "y": 3.390625,
+                "width": 1,
+                "height": 22,
+                "top": 3.390625,
+                "right": 964.4375,
+                "bottom": 25.390625,
+                "left": 963.4375
+              }
+            },
+            {
+              "node": null,
+              "prev": {
+                "x": 1138.703125,
+                "y": 3.390625,
+                "width": 1,
+                "height": 22,
+                "top": 3.390625,
+                "right": 1139.703125,
+                "bottom": 25.390625,
+                "left": 1138.703125
+              },
+              "now": {
+                "x": 1122.640625,
+                "y": 3.390625,
+                "width": 1,
+                "height": 22,
+                "top": 3.390625,
+                "right": 1123.640625,
+                "bottom": 25.390625,
+                "left": 1122.640625
+              }
+            }
+          ]
+        },
+        {
+          "time": 2300.199999988079,
+          "value": 4.2930347605288504e-05,
+          "recent": false,
+          "sources": [
+            {
+              "node": "div.right",
+              "prev": {
+                "x": 782.046875,
+                "y": 6,
+                "width": 527.953125,
+                "height": 16.796875,
+                "top": 6,
+                "right": 1310,
+                "bottom": 22.796875,
+                "left": 782.046875
+              },
+              "now": {
+                "x": 773.984375,
+                "y": 6,
+                "width": 536.015625,
+                "height": 16.796875,
+                "top": 6,
+                "right": 1310,
+                "bottom": 22.796875,
+                "left": 773.984375
+              }
+            },
+            {
+              "node": null,
+              "prev": {
+                "x": 963.4375,
+                "y": 3.390625,
+                "width": 1,
+                "height": 22,
+                "top": 3.390625,
+                "right": 964.4375,
+                "bottom": 25.390625,
+                "left": 963.4375
+              },
+              "now": {
+                "x": 958.0625,
+                "y": 3.390625,
+                "width": 1,
+                "height": 22,
+                "top": 3.390625,
+                "right": 959.0625,
+                "bottom": 25.390625,
+                "left": 958.0625
+              }
+            }
+          ]
+        },
+        {
+          "time": 2460.199999988079,
+          "value": 3.557321935743367e-06,
+          "recent": false,
+          "sources": [
+            {
+              "node": "i.lab.la-whatsapp",
+              "prev": {
+                "x": 1283.79931640625,
+                "y": 867.4434204101562,
+                "width": 24.4013671875,
+                "height": 39.737548828125,
+                "top": 867.4434204101562,
+                "right": 1308.20068359375,
+                "bottom": 907.1809692382812,
+                "left": 1283.79931640625
+              },
+              "now": {
+                "x": 1279.1114501953125,
+                "y": 870.4237670898438,
+                "width": 33.7769775390625,
+                "height": 33.77691650390625,
+                "top": 870.4237670898438,
+                "right": 1312.888427734375,
+                "bottom": 904.20068359375,
+                "left": 1279.1114501953125
+              }
+            }
+          ]
+        }
+      ],
+      "notes": "Saved desktop carousel shift of 0.141 was not reproduced in this local desktop observation. Mobile initial header movement and web-font/icon movements were observed. Do not compare or sum raw layout-shift entries as Lighthouse CLS, especially hadRecentInput entries."
+    },
+    "mobile": {
+      "kind": "Unthrottled local Chrome observation; not a comparable Lighthouse score or full functional test.",
+      "viewport": {
+        "width": 412,
+        "height": 823
+      },
+      "hero": {
+        "x": 0,
+        "y": 122.59375,
+        "width": 412,
+        "height": 520,
+        "top": 122.59375,
+        "right": 412,
+        "bottom": 642.59375,
+        "left": 0
+      },
+      "h1_count": 1,
+      "horizontal_overflow": false,
+      "page_errors": [],
+      "observed_shift_entries": [
+        {
+          "time": 1666.7000000029802,
+          "value": 0.027989036949203402,
+          "recent": true,
+          "sources": [
+            {
+              "node": "div.swiper-container.hero-slide-container",
+              "prev": {
+                "x": 0,
+                "y": 96.59375,
+                "width": 412,
+                "height": 520,
+                "top": 96.59375,
+                "right": 412,
+                "bottom": 616.59375,
+                "left": 0
+              },
+              "now": {
+                "x": 0,
+                "y": 122.59375,
+                "width": 412,
+                "height": 520,
+                "top": 122.59375,
+                "right": 412,
+                "bottom": 642.59375,
+                "left": 0
+              }
+            },
+            {
+              "node": "section.about5-area.home-premium-section.home-gcc-intro",
+              "prev": {
+                "x": 0,
+                "y": 616.59375,
+                "width": 412,
+                "height": 206.40625,
+                "top": 616.59375,
+                "right": 412,
+                "bottom": 823,
+                "left": 0
+              },
+              "now": {
+                "x": 0,
+                "y": 642.59375,
+                "width": 412,
+                "height": 180.40625,
+                "top": 642.59375,
+                "right": 412,
+                "bottom": 823,
+                "left": 0
+              }
+            },
+            {
+              "node": "a.",
+              "prev": {
+                "x": 20,
+                "y": 72.59375,
+                "width": 54,
+                "height": 14,
+                "top": 72.59375,
+                "right": 74,
+                "bottom": 86.59375,
+                "left": 20
+              },
+              "now": {
+                "x": 20,
+                "y": 85.59375,
+                "width": 54,
+                "height": 14,
+                "top": 85.59375,
+                "right": 74,
+                "bottom": 99.59375,
+                "left": 20
+              }
+            }
+          ]
+        },
+        {
+          "time": 2060.5999999940395,
+          "value": 0.003203185059985835,
+          "recent": true,
+          "sources": [
+            {
+              "node": "#text",
+              "prev": {
+                "x": 24,
+                "y": 319.890625,
+                "width": 364,
+                "height": 62.65625,
+                "top": 319.890625,
+                "right": 388,
+                "bottom": 382.546875,
+                "left": 24
+              },
+              "now": {
+                "x": 23,
+                "y": 318.890625,
+                "width": 365,
+                "height": 62.65625,
+                "top": 318.890625,
+                "right": 388,
+                "bottom": 381.546875,
+                "left": 23
+              }
+            },
+            {
+              "node": "li.",
+              "prev": {
+                "x": 131.84375,
+                "y": 39.796875,
+                "width": 148.296875,
+                "height": 16.796875,
+                "top": 39.796875,
+                "right": 280.140625,
+                "bottom": 56.59375,
+                "left": 131.84375
+              },
+              "now": {
+                "x": 123.8125,
+                "y": 39.796875,
+                "width": 164.359375,
+                "height": 16.796875,
+                "top": 39.796875,
+                "right": 288.171875,
+                "bottom": 56.59375,
+                "left": 123.8125
+              }
+            },
+            {
+              "node": "li.",
+              "prev": {
+                "x": 69.875,
+                "y": 18,
+                "width": 142.734375,
+                "height": 16.796875,
+                "top": 18,
+                "right": 212.609375,
+                "bottom": 34.796875,
+                "left": 69.875
+              },
+              "now": {
+                "x": 62.703125,
+                "y": 18,
+                "width": 158.390625,
+                "height": 16.796875,
+                "top": 18,
+                "right": 221.09375,
+                "bottom": 34.796875,
+                "left": 62.703125
+              }
+            },
+            {
+              "node": "li.",
+              "prev": {
+                "x": 227.609375,
+                "y": 18,
+                "width": 114.515625,
+                "height": 16.796875,
+                "top": 18,
+                "right": 342.125,
+                "bottom": 34.796875,
+                "left": 227.609375
+              },
+              "now": {
+                "x": 236.09375,
+                "y": 18,
+                "width": 113.203125,
+                "height": 16.796875,
+                "top": 18,
+                "right": 349.296875,
+                "bottom": 34.796875,
+                "left": 236.09375
+              }
+            }
+          ]
+        },
+        {
+          "time": 2571.7000000029802,
+          "value": 1.8191457831788647e-05,
+          "recent": false,
+          "sources": [
+            {
+              "node": "i.lab.la-whatsapp",
+              "prev": {
+                "x": 354.4375,
+                "y": 758,
+                "width": 23.109375,
+                "height": 37,
+                "top": 758,
+                "right": 377.546875,
+                "bottom": 795,
+                "left": 354.4375
+              },
+              "now": {
+                "x": 350,
+                "y": 761,
+                "width": 32,
+                "height": 32,
+                "top": 761,
+                "right": 382,
+                "bottom": 793,
+                "left": 350
+              }
+            }
+          ]
+        }
+      ],
+      "notes": "Saved desktop carousel shift of 0.141 was not reproduced in this local desktop observation. Mobile initial header movement and web-font/icon movements were observed. Do not compare or sum raw layout-shift entries as Lighthouse CLS, especially hadRecentInput entries."
+    }
+  }
+}

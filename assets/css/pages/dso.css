@@ -1,9 +1,9 @@
-@import url("spc.css");
+@import url("spc.css?v=20261023-banners-search");
 
 .dso-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgb(9 27 22 / 90%), rgb(9 27 22 / 55%) 55%, rgb(9 27 22 / 72%)),
-    url("../../imgs/hero-3.jpeg") !important;
+    var(--banner-freezone-web-dubai-silicon-oasis-pexels) !important;
   background-position: center 48% !important;
   background-size: cover !important;
 }
@@ -14,6 +14,34 @@
 
 .dso-redesign .overview-grid {
   grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+}
+
+.dso-redesign #overview .overview-visual {
+  height: auto;
+  min-height: 0;
+  margin: 0;
+}
+
+.dso-redesign #overview .overview-visual .cover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dso-redesign #overview .photo-tag {
+  position: static;
+  width: auto;
+  max-width: none;
+  padding: 14px 18px;
+}
+
+.dso-redesign #overview .photo-tag span {
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+.dso-redesign #overview .photo-tag small {
+  line-height: 1.5;
 }
 
 .dso-redesign .sector-grid {

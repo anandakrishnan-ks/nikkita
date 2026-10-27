@@ -922,7 +922,7 @@ main section {
     left: 0;
     top: 0;
     z-index: -1;
-    background-image: url(../imgs/aboug-breadcrumb-bg.jpg);
+    background-image: var(--banner-new-images-optimized-dubai-skyline-dusk);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -940,7 +940,7 @@ main section {
     }
 }
 .breadcrumb-contact::before {
-    background-image: url(../imgs/contact-breadcrumb-bg.jpg);
+    background-image: var(--banner-new-images-optimized-dubai-skyline-dusk);
 }
 
 .breadcrumb-work-query .content ul .seperate,
@@ -957,7 +957,7 @@ main section {
     color: var(--dark);
 }
 .breadcrumb-pricing::before {
-    background-image: url(../imgs/breadcrimb-pricing-bg.jpg);
+    background-image: var(--banner-new-images-optimized-business-strategy-planning);
 }
 
 
@@ -980,7 +980,7 @@ main section {
 .hero-style-1 .swiper-slide.slide-bg-image .slide-inner:before {
     content: '';
     position: absolute;
-    background-image: url(../imgs/bg-1.webp);
+    background-image: var(--banner-bg-1);
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -1012,10 +1012,10 @@ main section {
     }
 }
 .hero-style-1 .swiper-slide.slide-bg-image2 .slide-inner:before {
-    background-image: url(../imgs/bg-4.webp);
+    background-image: var(--banner-new-images-optimized-riyadh-kingdom-centre);
 }
 .hero-style-1 .swiper-slide.slide-bg-image3 .slide-inner:before {
-    background-image: url(../imgs/bg-3.webp);
+    background-image: var(--banner-new-images-optimized-bahrain-world-trade-centre);
 }
 .hero-slider-wrap .swiper-slide {
     overflow: hidden;
@@ -1057,7 +1057,7 @@ main section {
     width: 100%;
     padding-bottom: 62px;
 }
-.hero-slider-wrap .slide-inner .hero-slide-content h4 {
+.hero-slider-wrap .slide-inner .hero-slide-content .slide-subtitle {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 18px;
@@ -1070,11 +1070,11 @@ main section {
     transition: 1s;
     opacity: 0;
 }
-.hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content h4 {
+.hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content .slide-subtitle {
     max-height: 20px;
     opacity: 1;
 }
-.hero-slider-wrap .slide-inner .hero-slide-content h1 {
+.hero-slider-wrap .slide-inner .hero-slide-content .slide-title {
     font-family: var(--font_marcellus);
     font-size: 54px;
     line-height: 62.5px;
@@ -1085,11 +1085,11 @@ main section {
     transition: 1.5s;
     opacity: 0;
 }
-.hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content h1 {
+.hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content .slide-title {
     max-height: 190px;
     opacity: 1;
 }
-.hero-slider-wrap .slide-inner .hero-slide-content p {
+.hero-slider-wrap .slide-inner .hero-slide-content .slide-content {
     font-size: 14px;
     line-height: 26.6px;
     color: #ffffff;
@@ -1099,7 +1099,7 @@ main section {
     transition: 1.7s;
     overflow: hidden;
 }
-.hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content p {
+.hero-slider-wrap .swiper-slide.swiper-slide-active .slide-inner .hero-slide-content .slide-content {
     max-height: 60px;
 }
 .hero-slider-wrap .slide-inner .hero-slide-content .btn-box {
@@ -1216,7 +1216,7 @@ main section {
     bottom: 49px;
     z-index: 9;
     background-color: #122620;
-    background-image: url(../imgs/footer-bg.png);
+    background-image: var(--banner-footer-bg);
     display: inline-flex;
     align-items: center;
     color: #ffffff;
@@ -1291,11 +1291,11 @@ main section {
     align-items: flex-start;
     justify-content: center;
 }
-.hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content h4 {
+.hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content .slide-subtitle {
     color: var(--dark);
     margin-bottom: 8px;
 }
-.hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content h1 {
+.hero-slider-style-2 .hero-slide-content-wrap .hero-slide-content .slide-title {
     font-size: 54px;
     line-height: 54.7px;
     color: var(--dark);
@@ -1334,7 +1334,7 @@ main section {
 .hero-slider-style-2 .hero-slider-2-pagination .swiper-pagination-bullet {
     width: 11px;
     height: 11px;
-    background: url(../imgs/star-shape.svg) no-repeat center;
+    background: url(../icons/ui/star-shape.svg) no-repeat center;
     background-size: contain;
     opacity: 1;
     margin: 0;
@@ -1476,7 +1476,7 @@ main section {
 }
 .funfacts-wrap {
     background-color: rgb(211 177 132 / 30%);
-    background-image: url(../imgs/newsletter-bg.png);
+    background-image: var(--banner-newsletter-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1567,7 +1567,7 @@ main section {
     animation: zoomInAnim 35s infinite linear;
 }
 .home4-page {
-    background-image: url(../imgs/bg-line-shape.png);
+    background-image: url(../images/shared/decorations/line-pattern.png);
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -1921,7 +1921,7 @@ main section {
 /*  # Demo Feature */
 .demo-features-area {
     background-color: #F6F4F1;
-    background-image: url(../imgs/about-9-shape.jpg);
+    background-image: url(../images/shared/decorations/paper-texture.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2428,7 +2428,7 @@ section.active .section-header .subtitle::before {
 .contact-and-footer-area .right,
 .service8-area .right,
 .service7-area .right {
-    background-image: url(../imgs/about-9-shape.jpg);
+    background-image: url(../images/shared/decorations/paper-texture.jpg);
     background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2452,7 +2452,7 @@ section.active .section-header .subtitle::before {
 .service8-area .left,
 .service7-area .left {
     overflow: hidden;
-    /* background-image: url(../imgs/about-9-shape.jpeg);
+    /* background-image: url(../images/shared/decorations/paper-texture.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
@@ -2688,7 +2688,7 @@ section.active .section-header .subtitle::before {
 /* # Client */
 .client-area {
     background-color: #122620;
-    background-image: url(../imgs/bg-shape-2.png);
+    background-image: url(../images/shared/decorations/background-shape.png);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -3094,7 +3094,7 @@ section.active .section-header .subtitle::before {
     display: block;
 }
 .video-area .video-content-wrap .content {
-    background-image: url(../imgs/bg.jpg);
+    background-image: url(../images/shared/backgrounds/texture.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -3157,7 +3157,7 @@ section.active .section-header .subtitle::before {
     content: '';
     position: absolute;
     background-color: #122620;
-    background-image: url(../imgs/footer-bg.png);
+    background-image: var(--banner-footer-bg);
     background-size: cover;
     background-repeat: no-repeat;
     left: 0;
@@ -3417,7 +3417,7 @@ section.active .section-header .subtitle::before {
     content: '';
     position: absolute;
     background-color: #122620;
-    background-image: url(../imgs/bg-shape-2.png);
+    background-image: url(../images/shared/decorations/background-shape.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -3537,7 +3537,7 @@ section.active .section-header .subtitle::before {
     position: relative;
     padding-left: 110px;
     background-color: #122620;
-    background-image: url(../imgs/footer-bg.png);
+    background-image: var(--banner-footer-bg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -4005,7 +4005,7 @@ section.active .section-header .subtitle::before {
 .ticket-area {
     position: relative;
     background-color: #122620;
-    background-image: url(../imgs/bg-shape-2.png);
+    background-image: url(../images/shared/decorations/background-shape.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4274,7 +4274,7 @@ section.active .section-header .subtitle::before {
 }
 /* # Story 2 */
 .story2-area {
-    background-image: url(../imgs/about-9-shape.jpg);
+    background-image: url(../images/shared/decorations/paper-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4483,7 +4483,7 @@ section.active .section-header .subtitle::before {
     position: relative;
     z-index: 1;
     background-color: #122620;
-    background-image: url(../imgs/footer-bg.png);
+    background-image: var(--banner-footer-bg);
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -4981,7 +4981,7 @@ section.active .section-header .subtitle::before {
 /* # Pricing Table 2 */
 .pricing-table2-area {
     width: 2276px;
-    background-image: url(../imgs/about-9-shape.jpg);
+    background-image: url(../images/shared/decorations/paper-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -5043,7 +5043,7 @@ section.active .section-header .subtitle::before {
     bottom: 0;
     z-index: 2;
     background-color: #122620;
-    background-image: url(../imgs/bg-shape-2.png);
+    background-image: url(../images/shared/decorations/background-shape.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -5205,7 +5205,7 @@ section.active .section-header .subtitle::before {
 }
 .blog-widget {
     position: relative;
-    background-image: url(../imgs/about-9-shape.jpg);
+    background-image: url(../images/shared/decorations/paper-texture.jpg);
     background-color: #F6F4F1;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5752,7 +5752,7 @@ section.active .section-header .subtitle::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: url(../imgs/about-9-shape.jpg) no-repeat center;
+    background: url(../images/shared/decorations/paper-texture.jpg) no-repeat center;
     background-size: cover;
     max-width: 600px;
     width: 100%;
@@ -5930,7 +5930,7 @@ section.active .section-header .subtitle::before {
 /* # Newsletter */
 .newsletter-area {
     background-color: #F6F4F1;
-    background-image: url(../imgs/newsletter-bg.png);
+    background-image: var(--banner-newsletter-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -5995,7 +5995,7 @@ section.active .section-header .subtitle::before {
 .newsletter2-area .custom-container {
     max-width: 1306px;
     background-color: #122620;
-    background-image: url(../imgs/newsletter-bg.png);
+    background-image: var(--banner-newsletter-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6038,7 +6038,7 @@ section.active .section-header .subtitle::before {
 .demo-footer-area,
 .footer-area {
     background-color: #122620;
-    background-image: url(../imgs/footer-bg.webp);
+    background-image: var(--banner-footer-bg-webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

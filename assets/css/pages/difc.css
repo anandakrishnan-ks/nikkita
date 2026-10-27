@@ -1,15 +1,15 @@
-@import url("spc.css");
+@import url("spc.css?v=20261023-banners-search");
 
 .difc-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgb(9 27 22 / 90%), rgb(9 27 22 / 55%) 55%, rgb(9 27 22 / 72%)),
-    url("../../imgs/dubai-mainland/dubai-skyline.jpg") !important;
+    var(--banner-new-images-optimized-dubai-skyline-dusk) !important;
   background-position: center 44% !important;
   background-size: cover !important;
 }
 
 .difc-redesign .hero-image .cover {
-  object-position: center 42%;
+  object-position: 62% 42%;
 }
 
 .difc-redesign .overview-grid {

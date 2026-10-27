@@ -1,0 +1,172 @@
+{
+  "audit_date": "2026-10-24",
+  "timezone": "Asia/Kolkata",
+  "origin": "https://nikkiadvisory.com",
+  "live_server_modified": false,
+  "scope": "Read-only public HTTPS crawl, downloaded-file comparison and six mobile browser checks. No forms submitted and no server configuration or private files accessed.",
+  "summary": {
+    "sitemap_pages": 57,
+    "internal_urls_requested": 532,
+    "broken_page_or_asset_requests": 0,
+    "broken_section_links": 0,
+    "files_compared_with_local_source": 528,
+    "deployed_file_mismatches": 0,
+    "mobile_browser_pages": 6,
+    "broken_images_in_browser": 0,
+    "favicon_related_findings": 3,
+    "javascript_findings": 1
+  },
+  "findings": [
+    {
+      "id": "root-favicon-placeholder",
+      "severity": "medium",
+      "url": "https://nikkiadvisory.com/favicon.ico",
+      "live_status": 200,
+      "description": "Returns the old black/white Vercel triangle placeholder. The favicon explicitly linked by pages is valid Nikki artwork; the browser fallback and declared icon disagree.",
+      "branded_icon_url": "https://nikkiadvisory.com/assets/icons/favicons/favicon.ico",
+      "live_cache_control": "public, max-age=604800",
+      "local_fix": "Map the root favicon to the existing branded ICO, remove the unused placeholder locally, and use versioned icon links on all pages."
+    },
+    {
+      "id": "apple-default-icons-404",
+      "severity": "medium",
+      "urls": [
+        "https://nikkiadvisory.com/apple-touch-icon.png",
+        "https://nikkiadvisory.com/apple-touch-icon-precomposed.png"
+      ],
+      "live_status": 404,
+      "description": "The default Apple icon URLs return 404. The dedicated assets/icons/favicons/apple-touch-icon.png is valid. Blog pages declared only an ICO, without an Apple touch icon or manifest.",
+      "local_fix": "Resolve both default URLs to the existing Apple icon and declare Apple/PNG/ICO/manifest links consistently on all 58 HTML pages."
+    },
+    {
+      "id": "manifest-mime",
+      "severity": "low",
+      "url": "https://nikkiadvisory.com/assets/icons/favicons/site.webmanifest",
+      "live_status": 200,
+      "live_content_type": "text/plain",
+      "description": "Manifest JSON and its icon images load, but the manifest is served as text/plain.",
+      "local_fix": "AddType application/manifest+json .webmanifest in .htaccess."
+    },
+    {
+      "id": "home-waypoints-jquery-error",
+      "severity": "medium",
+      "url": "https://nikkiadvisory.com/",
+      "message": "TypeError: elem.getClientRects is not a function",
+      "stack": "TypeError: elem.getClientRects is not a function\n    at jQuery.fn.init.offset (https://nikkiadvisory.com/assets/js/vendor/jquery-3.7.1.js:10340:14)\n    at t.refresh (https://nikkiadvisory.com/assets/js/vendor/waypoints.min.js:8:2072)\n    at t.<anonymous> (https://nikkiadvisory.com/assets/js/vendor/waypoints.min.js:8:6130)\n    at jQuery.each (https://nikkiadvisory.com/assets/js/vendor/jquery-3.7.1.js:389:19)\n    at refresh (https://nikkiadvisory.com/assets/js/vendor/waypoints.min.js:8:6100)\n    at n.<computed> [as waypoints] (https://nikkiadvisory.com/assets/js/vendor/waypoints.min.js:8:7638)\n    at https://nikkiadvisory.com/assets/js/vendor/waypoints.min.js:8:7785\n    at dispatch (https://nikkiadvisory.com/assets/js/vendor/jquery-3.7.1.js:5145:27)\n    at elemData.handle (https://nikkiadvisory.com/assets/js/vendor/jquery-3.7.1.js:4949:28)",
+      "description": "Existing Waypoints/jQuery offset error reproduced in the homepage browser console. This is a client-side JavaScript error, not a missing server file.",
+      "local_fix_prepared": false,
+      "status": "Reported; existing scripts and animation behavior have not been changed."
+    }
+  ],
+  "passed_checks": {
+    "all_57_sitemap_pages_return_200": true,
+    "sitemap_robots_rss_return_200": true,
+    "primary_https_and_www_redirects_work": true,
+    "new_root_level_service_urls_work": true,
+    "old_service_url_redirect_test": "/services/accounting-bookkeeping/ returns 301 to /accounting-bookkeeping, then 200.",
+    "unknown_root_and_service_urls_return_404": true,
+    "explicit_ico_png_apple_icons_decode_successfully": true,
+    "manifest_icon_targets_load": true,
+    "mobile_footer_overflow_on_six_sample_pages": false,
+    "enquiry_country_pickers_initialize_on_sample_form_pages": true,
+    "recaptcha_script_loads_on_sample_form_pages": true
+  },
+  "browser_pages_checked": [
+    "/",
+    "/contact-us",
+    "/accounting-bookkeeping",
+    "/services",
+    "/dubai-mainland",
+    "/blog/saudi-ai-market-entry"
+  ],
+  "excluded_browser_noise": [
+    {
+      "url": "https://nikkiadvisory.com/assets/images/team/nikita-d-founder.png",
+      "event": "net::ERR_ABORTED while navigating between pages",
+      "classification": "Not a missing file: the full HTTP crawl downloaded this image successfully with matching local bytes."
+    }
+  ],
+  "forms": {
+    "action_urls": {
+      "https://nikkiadvisory.com/assets/mail/send-enquiry.php": 40
+    },
+    "submission_tested": false,
+    "reason": "Read-only crawl; no enquiry or email sent."
+  },
+  "prepared_local_fix": {
+    "status": "Validated locally through Apache; not uploaded",
+    "production_files_to_reupload": [
+      ".htaccess",
+      "company-liquidation.html",
+      "rakez.html",
+      "index.html",
+      "shams.html",
+      "privacy-policy.html",
+      "meydan-free-zone-company-formation.html",
+      "pricing.html",
+      "corporate-compliance.html",
+      "spc-free-zone-company-formation.html",
+      "dmcc.html",
+      "accounting-bookkeeping.html",
+      "ajman-free-zone-company-formation.html",
+      "kezad-company-formation.html",
+      "jafza-company-formation.html",
+      "uae-free-zone-pricing.html",
+      "404.html",
+      "blogs-saudi-arabia.html",
+      "dubai-silicon-oasis.html",
+      "masdar.html",
+      "contact-us.html",
+      "ajman-nuventures-company-formation.html",
+      "business-setup-uae.html",
+      "blogs-uae.html",
+      "ifza.html",
+      "pro-government-services.html",
+      "jafza-offshore.html",
+      "saudi-arabia-pricing.html",
+      "adgm.html",
+      "uae-offshore-pricing.html",
+      "business-structuring.html",
+      "bahrain.html",
+      "refund-cancellation-policy.html",
+      "difc-company-formation.html",
+      "about-us.html",
+      "dubai-south.html",
+      "services.html",
+      "saudi-arabia.html",
+      "terms-and-conditions.html",
+      "bahrain-pricing.html",
+      "rak-icc.html",
+      "ajman-offshore.html",
+      "abu-dhabi-mainland.html",
+      "uae-mainland-pricing.html",
+      "dubai-mainland.html",
+      "blogs-bahrain.html",
+      "sharjah-mainland.html",
+      "blogs.html",
+      "dafza.html",
+      "business-support.html",
+      "blog/saudi-trading-foreign-investor.html",
+      "blog/uae-golden-residency-2026.html",
+      "blog/saudi-transport-tga-license.html",
+      "blog/bahrain-fintech-gcc-base.html",
+      "blog/misa-license-operational-readiness.html",
+      "blog/saudi-ai-market-entry.html",
+      "blog/saudi-entry-strategic-decisions.html",
+      "blog/saudi-nitaqat-2026.html",
+      "blog/sama-licensing-fintech.html"
+    ],
+    "new_image_assets_required": false,
+    "optional_obsolete_server_file_to_delete": "assets/icons/favicons/browser-fallback.ico",
+    "local_ui_changes": "Head icon declarations only; page bodies, CSS, fonts, images and JavaScript retained.",
+    "validation": {
+      "html_pages": 58,
+      "branded_root_favicon_returns_correct_bytes": true,
+      "both_apple_fallback_urls_return_correct_bytes": true,
+      "manifest_content_type": "application/manifest+json",
+      "manifest_icon_images_decode": true,
+      "page_bodies_styles_scripts_fonts_images_php_unchanged": true
+    }
+  },
+  "full_raw_crawl_report": "/tmp/nikki-live-crawl/crawl.json"
+}

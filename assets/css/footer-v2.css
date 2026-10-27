@@ -1,0 +1,105 @@
+/*
+ * Nikki Advisory footer theme V2 — warm ivory skyline.
+ * This file changes footer colors and imagery only; all existing footer layout
+ * rules remain in site.css. Loaded directly before site.css to avoid a nested CSS request.
+ */
+
+html body main footer.footer-reference {
+  --footer-gold: #b77b0e;
+  --footer-ink: #37342f;
+  background-color: #f8ecdd !important;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(255, 250, 244, 0.985) 0%,
+      rgba(255, 247, 237, 0.96) 43%,
+      rgba(249, 229, 205, 0.82) 100%
+    ),
+    var(--banner-new-images-optimized-dubai-skyline-dusk) !important;
+  background-position: center, center bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  color: var(--footer-ink) !important;
+}
+
+html body main footer.footer-reference::before {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 251, 246, 0.08),
+    rgba(205, 153, 80, 0.08)
+  ) !important;
+}
+
+html body main footer.footer-reference .footer-left .logo img {
+  content: url("../images/brand/logo-600.webp");
+}
+
+html body main footer.footer-reference .footer-left p,
+html body main footer.footer-reference .footer-widget-link ul li,
+html body main footer.footer-reference .footer-widget-link ul li a,
+html body main footer.footer-reference .footer-hours-group,
+html body main footer.footer-reference .footer-hours-group strong,
+html body main footer.footer-reference .footer-hours small,
+html body main footer.footer-reference .footer-contact-infos p,
+html body main footer.footer-reference .footer-contact-infos li,
+html body main footer.footer-reference .footer-contact-infos li a,
+html body main footer.footer-reference .copyright-area p,
+html body main footer.footer-reference .copyright-area a,
+html body main footer.footer-reference .copyright-area li a {
+  color: #3f3c37 !important;
+}
+
+html body main footer.footer-reference .footer-links h3,
+html body main footer.footer-reference .footer-contact-infos h3,
+html body main footer.footer-reference .footer-contact-infos h3 i,
+html body main footer.footer-reference .footer-contact-infos .footer-widget:first-child h3 i,
+html body main footer.footer-reference .social-icons li a,
+html body main .home-page footer.footer-reference .social-icons li a {
+  color: var(--footer-gold) !important;
+}
+
+html body main footer.footer-reference .footer-links h3::after {
+  background: var(--footer-gold) !important;
+}
+
+html body main footer.footer-reference .footer-contact-infos {
+  border-top-color: rgba(71, 63, 52, 0.22) !important;
+  border-bottom-color: rgba(71, 63, 52, 0.22) !important;
+}
+
+html body main footer.footer-reference .footer-contact-infos .footer-widget + .footer-widget {
+  border-left-color: rgba(71, 63, 52, 0.28) !important;
+}
+
+html body main footer.footer-reference .footer-contact-infos .footer-widget:last-child li + li::before,
+html body main footer.footer-reference .copyright-area li + li::before {
+  background: rgba(71, 63, 52, 0.45) !important;
+}
+
+html body main footer.footer-reference .footer-widget-link ul li a:hover,
+html body main footer.footer-reference .copyright-area a:hover,
+html body main footer.footer-reference .social-icons li a:hover,
+html body main footer.footer-reference .social-icons li a:focus-visible,
+html body main .home-page footer.footer-reference .social-icons li a:hover,
+html body main .home-page footer.footer-reference .social-icons li a:focus-visible {
+  color: #8e5d08 !important;
+}
+
+html body main footer.footer-reference .social-icons li a:hover,
+html body main footer.footer-reference .social-icons li a:focus-visible,
+html body main .home-page footer.footer-reference .social-icons li a:hover,
+html body main .home-page footer.footer-reference .social-icons li a:focus-visible {
+  background: transparent !important;
+}
+
+@media (max-width: 820px) {
+  html body main footer.footer-reference {
+    background-position: center, 58% bottom !important;
+  }
+
+  html body main footer.footer-reference .footer-contact-infos .footer-widget + .footer-widget,
+  html body main footer.footer-reference .footer-contact-infos .footer-widget:last-child {
+    border-top-color: rgba(71, 63, 52, 0.2) !important;
+    border-left-color: transparent !important;
+  }
+}

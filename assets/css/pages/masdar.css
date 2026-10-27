@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 @font-face {
   font-family: "Line Awesome Free";
@@ -374,7 +374,7 @@
   background:
     radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
     linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
-    url("../../imgs/masdar/masdar-sustainable-architecture.webp") center 47% / cover no-repeat;
+    var(--banner-freezone-web-masdar-city-nnegm) center 47% / cover no-repeat;
   color: #fff;
 }
 
@@ -697,9 +697,11 @@
 /* Masdar City Free Zone content variations and compact responsive layout. */
 .masdar-breadcrumb::before {
   background-image:
-    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/masdar/masdar-sustainable-architecture.webp") !important;
-  background-position: center 47% !important;
+    linear-gradient(0deg, rgba(9, 27, 22, 0.82), rgba(9, 27, 22, 0) 52%),
+    linear-gradient(90deg, rgba(9, 27, 22, 0.25), rgba(9, 27, 22, 0.04) 70%),
+    var(--banner-masdar-masdar-masterplan-breadcrumb) !important;
+  background-position: center 56% !important;
+  background-size: cover !important;
 }
 
 .masdar-redesign {
@@ -1428,7 +1430,7 @@
 .masdar-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
-    url("../../imgs/masdar/masdar-sustainable-architecture.webp") center / cover no-repeat;
+    var(--banner-freezone-web-masdar-city-nnegm) center / cover no-repeat;
 }
 
 /* Masdar City's innovation ecosystem is the page's main differentiator. */
@@ -1519,7 +1521,7 @@
 
 .masdar-redesign .lead-cta {
   background: linear-gradient(90deg, rgba(10, 31, 25, .97), rgba(10, 31, 25, .88)),
-    url("../../imgs/masdar/masdar-sustainable-architecture.webp") center / cover no-repeat;
+    var(--banner-freezone-web-masdar-city-nnegm) center / cover no-repeat;
 }
 
 @media (max-width: 1050px) {
@@ -1545,7 +1547,7 @@
   }
 }
 
-/* Masdar City: innovation-led overview and compact business-area grid. */
+/* Masdar City: overview copy paired with Masdar Institute photography. */
 .masdar-redesign .hero-image .cover {
   object-position: center 54%;
 }
@@ -1553,7 +1555,7 @@
 .masdar-redesign .masdar-overview-grid {
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  align-items: start;
+  align-items: center;
   gap: clamp(32px, 5vw, 70px);
 }
 
@@ -1561,20 +1563,24 @@
   max-width: 610px;
 }
 
-.masdar-redesign .masdar-business-panel {
+.masdar-redesign .masdar-overview-photo {
   min-width: 0;
-  padding: clamp(22px, 2.7vw, 34px);
-  border: 1px solid var(--line);
-  background: var(--cream);
-}
-
-.masdar-redesign .masdar-business-panel h3 {
   margin: 0;
-  font-size: 26px;
 }
 
-.masdar-redesign .masdar-business-panel .business-area-grid {
-  margin-top: 22px;
+.masdar-redesign .masdar-overview-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 460 / 307;
+  object-fit: cover;
+}
+
+.masdar-redesign .masdar-overview-photo figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
 }
 
 .masdar-redesign .masdar-fsra-callout {
@@ -1618,7 +1624,7 @@
 .masdar-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, .98), rgba(9, 29, 23, .91)),
-    url("../../imgs/masdar/masdar-sustainable-architecture.webp") center / cover no-repeat;
+    var(--banner-freezone-web-masdar-city-nnegm) center / cover no-repeat;
 }
 
 .masdar-redesign .support-card p {
@@ -1640,10 +1646,6 @@
   .masdar-redesign .masdar-overview-grid {
     grid-template-columns: 1fr;
   }
-
-  .masdar-redesign .masdar-business-panel .business-area-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
@@ -1656,20 +1658,10 @@
     min-height: 0;
   }
 
-  .masdar-redesign .masdar-business-panel .business-area-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .whatsapp-float.masdar-form-visible {
     opacity: 0;
     pointer-events: none;
     transform: translateY(10px);
-  }
-}
-
-@media (max-width: 520px) {
-  .masdar-redesign .masdar-business-panel .business-area-grid {
-    grid-template-columns: 1fr;
   }
 }
 

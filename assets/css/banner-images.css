@@ -1,0 +1,152 @@
+/* Responsive banner assets. Inventory: tools/banner-assets.json. */
+:root {
+  --banner-about-about-breadcrumb-advisory-office-v2: url("/assets/images/about/office-banner-2164.webp");
+  --banner-abu-dhabi-mainland-abu-dhabi-breadcrumb-enhanced: url("/assets/images/locations/uae/abu-dhabi-mainland/banner-2172.webp");
+  --banner-ajman-offshore-ajman-waterfront-real-maryam20: url("/assets/images/locations/uae/ajman/waterfront-1800.webp");
+  --banner-bahrain-manama-night-breadcrumb-enhanced: url("/assets/images/locations/bahrain/manama/night-banner-2170.webp");
+  --banner-bg-1: url("/assets/images/home/hero-dubai-1376.webp");
+  --banner-breadcrumbs-blogs-insights-no-people: url("/assets/images/blogs/shared/insights-banner-2172.webp");
+  --banner-breadcrumbs-contact-connectivity-no-people: url("/assets/images/contact/connectivity-banner-2172.webp");
+  --banner-breadcrumbs-pricing-planning-no-people: url("/assets/images/pricing/planning-banner-2172.webp");
+  --banner-business-setup-uae-uae-night-interchange-breadcrumb-wide: url("/assets/images/business-setup/uae/interchange-banner-2172.webp");
+  --banner-footer-bg: url("/assets/images/shared/backgrounds/footer-pattern-1440.webp");
+  --banner-footer-bg-webp: url("/assets/images/shared/backgrounds/footer-photo-1440.webp");
+  --banner-freezone-web-dubai-silicon-oasis-pexels: url("/assets/images/locations/uae/dubai-silicon-oasis/district-1800.webp");
+  --banner-freezone-web-jafza-port-imre-solt: url("/assets/images/locations/uae/jafza/port-1800.webp");
+  --banner-freezone-web-masdar-city-nnegm: url("/assets/images/locations/uae/masdar/architecture-1715.webp");
+  --banner-freezone-web-sharjah-skyline-pexels: url("/assets/images/locations/uae/sharjah/skyline-1800.webp");
+  --banner-jafza-jafza-port-breadcrumb: url("/assets/images/locations/uae/jafza/banner-2880.webp");
+  --banner-jafza-offshore-jafza-port-real-imre-solt: url("/assets/images/locations/uae/jafza-offshore/port-1210.webp");
+  --banner-masdar-masdar-masterplan-breadcrumb: url("/assets/images/locations/uae/masdar/masterplan-banner-2043.webp");
+  --banner-meydan-meydan-bridge-breadcrumb-wide: url("/assets/images/locations/uae/meydan/bridge-banner-2172.webp");
+  --banner-new-optimized-adgm: url("/assets/images/locations/uae/adgm/district-1104.webp");
+  --banner-new-optimized-dubai-south-hub: url("/assets/images/locations/uae/dubai-south/business-hub-1200.webp");
+  --banner-new-optimized-ifza-building: url("/assets/images/locations/uae/ifza/building-1024.webp");
+  --banner-new-optimized-rak-icc: url("/assets/images/locations/uae/rak-icc/building-1000.webp");
+  --banner-new-images-optimized-bahrain-world-trade-centre: url("/assets/images/locations/bahrain/manama/world-trade-centre-1376.webp");
+  --banner-new-images-optimized-business-document-review: url("/assets/images/shared/photography/document-review-1800.webp");
+  --banner-new-images-optimized-business-strategy-planning: url("/assets/images/pricing/business-planning-1800.webp");
+  --banner-new-images-optimized-dubai-skyline-dusk: url("/assets/images/locations/uae/dubai/skyline-dusk-1920.webp");
+  --banner-new-images-optimized-port-logistics-sunset: url("/assets/images/locations/uae/kezad/port-logistics-1080.webp");
+  --banner-new-images-optimized-riyadh-kingdom-centre: url("/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-1376.webp");
+  --banner-newsletter-bg: url("/assets/images/shared/backgrounds/newsletter-pattern-1440.webp");
+  --banner-rak-icc-marjan-island-breadcrumb: url("/assets/images/locations/uae/rak-icc/marjan-island-banner-1000.webp");
+  --banner-saudi-riyadh-night-breadcrumb: url("/assets/images/locations/saudi-arabia/riyadh/night-banner-2880.webp");
+  --banner-services-accounting-bookkeeping-breadcrumb-right: url("/assets/images/services/accounting-bookkeeping/banner-2167.webp");
+  --banner-services-business-structuring-breadcrumb-right: url("/assets/images/services/business-structuring/banner-2172.webp");
+  --banner-services-business-support-breadcrumb-right: url("/assets/images/services/business-support/banner-2170.webp");
+  --banner-services-company-liquidation-breadcrumb-right: url("/assets/images/services/company-liquidation/banner-2172.webp");
+  --banner-services-corporate-compliance-breadcrumb-right: url("/assets/images/services/corporate-compliance/banner-2162.webp");
+  --banner-services-pro-services-breadcrumb-right: url("/assets/images/services/pro-services/banner-2172.webp");
+  --banner-services-services-main-breadcrumb-generated: url("/assets/images/services/overview/banner-2172.webp");
+  --banner-sharjah-mainland-sharjah-breadcrumb-enhanced: url("/assets/images/locations/uae/sharjah-mainland/banner-2172.webp");
+}
+
+@media (max-width: 767px) {
+  :root {
+    --banner-about-about-breadcrumb-advisory-office-v2: image-set(url("/assets/images/about/office-banner-960.webp") 1x, url("/assets/images/about/office-banner-1600.webp") 2x);
+    --banner-abu-dhabi-mainland-abu-dhabi-breadcrumb-enhanced: image-set(url("/assets/images/locations/uae/abu-dhabi-mainland/banner-960.webp") 1x, url("/assets/images/locations/uae/abu-dhabi-mainland/banner-1600.webp") 2x);
+    --banner-ajman-offshore-ajman-waterfront-real-maryam20: image-set(url("/assets/images/locations/uae/ajman/waterfront-960.webp") 1x, url("/assets/images/locations/uae/ajman/waterfront-1600.webp") 2x);
+    --banner-bahrain-manama-night-breadcrumb-enhanced: image-set(url("/assets/images/locations/bahrain/manama/night-banner-960.webp") 1x, url("/assets/images/locations/bahrain/manama/night-banner-1600.webp") 2x);
+    --banner-bg-1: image-set(url("/assets/images/home/hero-dubai-960.webp") 1x, url("/assets/images/home/hero-dubai-1376.webp") 2x);
+    --banner-breadcrumbs-blogs-insights-no-people: image-set(url("/assets/images/blogs/shared/insights-banner-960.webp") 1x, url("/assets/images/blogs/shared/insights-banner-1600.webp") 2x);
+    --banner-breadcrumbs-contact-connectivity-no-people: image-set(url("/assets/images/contact/connectivity-banner-960.webp") 1x, url("/assets/images/contact/connectivity-banner-1600.webp") 2x);
+    --banner-breadcrumbs-pricing-planning-no-people: image-set(url("/assets/images/pricing/planning-banner-960.webp") 1x, url("/assets/images/pricing/planning-banner-1600.webp") 2x);
+    --banner-business-setup-uae-uae-night-interchange-breadcrumb-wide: image-set(url("/assets/images/business-setup/uae/interchange-banner-960.webp") 1x, url("/assets/images/business-setup/uae/interchange-banner-1600.webp") 2x);
+    --banner-footer-bg: image-set(url("/assets/images/shared/backgrounds/footer-pattern-960.webp") 1x, url("/assets/images/shared/backgrounds/footer-pattern-1440.webp") 2x);
+    --banner-footer-bg-webp: image-set(url("/assets/images/shared/backgrounds/footer-photo-960.webp") 1x, url("/assets/images/shared/backgrounds/footer-photo-1440.webp") 2x);
+    --banner-freezone-web-dubai-silicon-oasis-pexels: image-set(url("/assets/images/locations/uae/dubai-silicon-oasis/district-960.webp") 1x, url("/assets/images/locations/uae/dubai-silicon-oasis/district-1600.webp") 2x);
+    --banner-freezone-web-jafza-port-imre-solt: image-set(url("/assets/images/locations/uae/jafza/port-960.webp") 1x, url("/assets/images/locations/uae/jafza/port-1600.webp") 2x);
+    --banner-freezone-web-masdar-city-nnegm: image-set(url("/assets/images/locations/uae/masdar/architecture-960.webp") 1x, url("/assets/images/locations/uae/masdar/architecture-1600.webp") 2x);
+    --banner-freezone-web-sharjah-skyline-pexels: image-set(url("/assets/images/locations/uae/sharjah/skyline-960.webp") 1x, url("/assets/images/locations/uae/sharjah/skyline-1600.webp") 2x);
+    --banner-jafza-jafza-port-breadcrumb: image-set(url("/assets/images/locations/uae/jafza/banner-960.webp") 1x, url("/assets/images/locations/uae/jafza/banner-1600.webp") 2x);
+    --banner-jafza-offshore-jafza-port-real-imre-solt: image-set(url("/assets/images/locations/uae/jafza-offshore/port-960.webp") 1x, url("/assets/images/locations/uae/jafza-offshore/port-1210.webp") 2x);
+    --banner-masdar-masdar-masterplan-breadcrumb: image-set(url("/assets/images/locations/uae/masdar/masterplan-banner-960.webp") 1x, url("/assets/images/locations/uae/masdar/masterplan-banner-1600.webp") 2x);
+    --banner-meydan-meydan-bridge-breadcrumb-wide: image-set(url("/assets/images/locations/uae/meydan/bridge-banner-960.webp") 1x, url("/assets/images/locations/uae/meydan/bridge-banner-1600.webp") 2x);
+    --banner-new-optimized-adgm: image-set(url("/assets/images/locations/uae/adgm/district-960.webp") 1x, url("/assets/images/locations/uae/adgm/district-1104.webp") 2x);
+    --banner-new-optimized-dubai-south-hub: image-set(url("/assets/images/locations/uae/dubai-south/business-hub-960.webp") 1x, url("/assets/images/locations/uae/dubai-south/business-hub-1200.webp") 2x);
+    --banner-new-optimized-ifza-building: image-set(url("/assets/images/locations/uae/ifza/building-960.webp") 1x, url("/assets/images/locations/uae/ifza/building-1024.webp") 2x);
+    --banner-new-optimized-rak-icc: image-set(url("/assets/images/locations/uae/rak-icc/building-960.webp") 1x, url("/assets/images/locations/uae/rak-icc/building-1000.webp") 2x);
+    --banner-new-images-optimized-bahrain-world-trade-centre: image-set(url("/assets/images/locations/bahrain/manama/world-trade-centre-960.webp") 1x, url("/assets/images/locations/bahrain/manama/world-trade-centre-1376.webp") 2x);
+    --banner-new-images-optimized-business-document-review: image-set(url("/assets/images/shared/photography/document-review-960.webp") 1x, url("/assets/images/shared/photography/document-review-1600.webp") 2x);
+    --banner-new-images-optimized-business-strategy-planning: image-set(url("/assets/images/pricing/business-planning-960.webp") 1x, url("/assets/images/pricing/business-planning-1600.webp") 2x);
+    --banner-new-images-optimized-dubai-skyline-dusk: image-set(url("/assets/images/locations/uae/dubai/skyline-dusk-960.webp") 1x, url("/assets/images/locations/uae/dubai/skyline-dusk-1600.webp") 2x);
+    --banner-new-images-optimized-port-logistics-sunset: image-set(url("/assets/images/locations/uae/kezad/port-logistics-960.webp") 1x, url("/assets/images/locations/uae/kezad/port-logistics-1080.webp") 2x);
+    --banner-new-images-optimized-riyadh-kingdom-centre: image-set(url("/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-960.webp") 1x, url("/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-1376.webp") 2x);
+    --banner-newsletter-bg: image-set(url("/assets/images/shared/backgrounds/newsletter-pattern-960.webp") 1x, url("/assets/images/shared/backgrounds/newsletter-pattern-1440.webp") 2x);
+    --banner-rak-icc-marjan-island-breadcrumb: image-set(url("/assets/images/locations/uae/rak-icc/marjan-island-banner-960.webp") 1x, url("/assets/images/locations/uae/rak-icc/marjan-island-banner-1000.webp") 2x);
+    --banner-saudi-riyadh-night-breadcrumb: image-set(url("/assets/images/locations/saudi-arabia/riyadh/night-banner-960.webp") 1x, url("/assets/images/locations/saudi-arabia/riyadh/night-banner-1600.webp") 2x);
+    --banner-services-accounting-bookkeeping-breadcrumb-right: image-set(url("/assets/images/services/accounting-bookkeeping/banner-960.webp") 1x, url("/assets/images/services/accounting-bookkeeping/banner-1600.webp") 2x);
+    --banner-services-business-structuring-breadcrumb-right: image-set(url("/assets/images/services/business-structuring/banner-960.webp") 1x, url("/assets/images/services/business-structuring/banner-1600.webp") 2x);
+    --banner-services-business-support-breadcrumb-right: image-set(url("/assets/images/services/business-support/banner-960.webp") 1x, url("/assets/images/services/business-support/banner-1600.webp") 2x);
+    --banner-services-company-liquidation-breadcrumb-right: image-set(url("/assets/images/services/company-liquidation/banner-960.webp") 1x, url("/assets/images/services/company-liquidation/banner-1600.webp") 2x);
+    --banner-services-corporate-compliance-breadcrumb-right: image-set(url("/assets/images/services/corporate-compliance/banner-960.webp") 1x, url("/assets/images/services/corporate-compliance/banner-1600.webp") 2x);
+    --banner-services-pro-services-breadcrumb-right: image-set(url("/assets/images/services/pro-services/banner-960.webp") 1x, url("/assets/images/services/pro-services/banner-1600.webp") 2x);
+    --banner-services-services-main-breadcrumb-generated: image-set(url("/assets/images/services/overview/banner-960.webp") 1x, url("/assets/images/services/overview/banner-1600.webp") 2x);
+    --banner-sharjah-mainland-sharjah-breadcrumb-enhanced: image-set(url("/assets/images/locations/uae/sharjah-mainland/banner-960.webp") 1x, url("/assets/images/locations/uae/sharjah-mainland/banner-1600.webp") 2x);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --banner-about-about-breadcrumb-advisory-office-v2: image-set(url("/assets/images/about/office-banner-mobile-640.webp") 1x, url("/assets/images/about/office-banner-mobile-960.webp") 2x);
+    --banner-abu-dhabi-mainland-abu-dhabi-breadcrumb-enhanced: image-set(url("/assets/images/locations/uae/abu-dhabi-mainland/banner-mobile-640.webp") 1x, url("/assets/images/locations/uae/abu-dhabi-mainland/banner-mobile-960.webp") 2x);
+    --banner-ajman-offshore-ajman-waterfront-real-maryam20: image-set(url("/assets/images/locations/uae/ajman/waterfront-mobile-640.webp") 1x, url("/assets/images/locations/uae/ajman/waterfront-mobile-960.webp") 2x);
+    --banner-bahrain-manama-night-breadcrumb-enhanced: image-set(url("/assets/images/locations/bahrain/manama/night-banner-mobile-640.webp") 1x, url("/assets/images/locations/bahrain/manama/night-banner-mobile-960.webp") 2x);
+    --banner-bg-1: image-set(url("/assets/images/home/hero-dubai-mobile-640.webp") 1x, url("/assets/images/home/hero-dubai-mobile-960.webp") 2x);
+    --banner-breadcrumbs-blogs-insights-no-people: image-set(url("/assets/images/blogs/shared/insights-banner-mobile-640.webp") 1x, url("/assets/images/blogs/shared/insights-banner-mobile-960.webp") 2x);
+    --banner-breadcrumbs-contact-connectivity-no-people: image-set(url("/assets/images/contact/connectivity-banner-mobile-640.webp") 1x, url("/assets/images/contact/connectivity-banner-mobile-960.webp") 2x);
+    --banner-breadcrumbs-pricing-planning-no-people: image-set(url("/assets/images/pricing/planning-banner-mobile-640.webp") 1x, url("/assets/images/pricing/planning-banner-mobile-960.webp") 2x);
+    --banner-business-setup-uae-uae-night-interchange-breadcrumb-wide: image-set(url("/assets/images/business-setup/uae/interchange-banner-mobile-640.webp") 1x, url("/assets/images/business-setup/uae/interchange-banner-mobile-960.webp") 2x);
+    --banner-footer-bg-webp: image-set(url("/assets/images/shared/backgrounds/footer-photo-mobile-640.webp") 1x, url("/assets/images/shared/backgrounds/footer-photo-mobile-960.webp") 2x);
+    --banner-freezone-web-dubai-silicon-oasis-pexels: image-set(url("/assets/images/locations/uae/dubai-silicon-oasis/district-mobile-640.webp") 1x, url("/assets/images/locations/uae/dubai-silicon-oasis/district-mobile-960.webp") 2x);
+    --banner-freezone-web-jafza-port-imre-solt: image-set(url("/assets/images/locations/uae/jafza/port-mobile-640.webp") 1x, url("/assets/images/locations/uae/jafza/port-mobile-960.webp") 2x);
+    --banner-freezone-web-masdar-city-nnegm: image-set(url("/assets/images/locations/uae/masdar/architecture-mobile-640.webp") 1x, url("/assets/images/locations/uae/masdar/architecture-mobile-960.webp") 2x);
+    --banner-freezone-web-sharjah-skyline-pexels: image-set(url("/assets/images/locations/uae/sharjah/skyline-mobile-640.webp") 1x, url("/assets/images/locations/uae/sharjah/skyline-mobile-960.webp") 2x);
+    --banner-jafza-jafza-port-breadcrumb: image-set(url("/assets/images/locations/uae/jafza/banner-mobile-640.webp") 1x, url("/assets/images/locations/uae/jafza/banner-960.webp") 2x);
+    --banner-jafza-offshore-jafza-port-real-imre-solt: image-set(url("/assets/images/locations/uae/jafza-offshore/port-mobile-640.webp") 1x, url("/assets/images/locations/uae/jafza-offshore/port-mobile-960.webp") 2x);
+    --banner-masdar-masdar-masterplan-breadcrumb: image-set(url("/assets/images/locations/uae/masdar/masterplan-banner-mobile-640.webp") 1x, url("/assets/images/locations/uae/masdar/masterplan-banner-mobile-960.webp") 2x);
+    --banner-meydan-meydan-bridge-breadcrumb-wide: image-set(url("/assets/images/locations/uae/meydan/bridge-banner-mobile-640.webp") 1x, url("/assets/images/locations/uae/meydan/bridge-banner-mobile-960.webp") 2x);
+    --banner-new-optimized-adgm: image-set(url("/assets/images/locations/uae/adgm/district-mobile-640.webp") 1x, url("/assets/images/locations/uae/adgm/district-mobile-960.webp") 2x);
+    --banner-new-optimized-dubai-south-hub: image-set(url("/assets/images/locations/uae/dubai-south/business-hub-mobile-640.webp") 1x, url("/assets/images/locations/uae/dubai-south/business-hub-mobile-960.webp") 2x);
+    --banner-new-optimized-ifza-building: image-set(url("/assets/images/locations/uae/ifza/building-640.webp") 1x, url("/assets/images/locations/uae/ifza/building-960.webp") 2x);
+    --banner-new-optimized-rak-icc: image-set(url("/assets/images/locations/uae/rak-icc/building-mobile-640.webp") 1x, url("/assets/images/locations/uae/rak-icc/building-mobile-960.webp") 2x);
+    --banner-new-images-optimized-bahrain-world-trade-centre: image-set(url("/assets/images/locations/bahrain/manama/world-trade-centre-mobile-640.webp") 1x, url("/assets/images/locations/bahrain/manama/world-trade-centre-mobile-960.webp") 2x);
+    --banner-new-images-optimized-business-document-review: image-set(url("/assets/images/shared/photography/document-review-mobile-640.webp") 1x, url("/assets/images/shared/photography/document-review-mobile-960.webp") 2x);
+    --banner-new-images-optimized-business-strategy-planning: image-set(url("/assets/images/pricing/business-planning-mobile-640.webp") 1x, url("/assets/images/pricing/business-planning-mobile-960.webp") 2x);
+    --banner-new-images-optimized-dubai-skyline-dusk: image-set(url("/assets/images/locations/uae/dubai/skyline-dusk-mobile-640.webp") 1x, url("/assets/images/locations/uae/dubai/skyline-dusk-mobile-960.webp") 2x);
+    --banner-new-images-optimized-port-logistics-sunset: image-set(url("/assets/images/locations/uae/kezad/port-logistics-mobile-640.webp") 1x, url("/assets/images/locations/uae/kezad/port-logistics-mobile-960.webp") 2x);
+    --banner-new-images-optimized-riyadh-kingdom-centre: image-set(url("/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-mobile-640.webp") 1x, url("/assets/images/locations/saudi-arabia/riyadh/kingdom-centre-mobile-960.webp") 2x);
+    --banner-rak-icc-marjan-island-breadcrumb: image-set(url("/assets/images/locations/uae/rak-icc/marjan-island-banner-mobile-640.webp") 1x, url("/assets/images/locations/uae/rak-icc/marjan-island-banner-mobile-811.webp") 2x);
+    --banner-saudi-riyadh-night-breadcrumb: image-set(url("/assets/images/locations/saudi-arabia/riyadh/night-banner-mobile-640.webp") 1x, url("/assets/images/locations/saudi-arabia/riyadh/night-banner-mobile-960.webp") 2x);
+    --banner-services-accounting-bookkeeping-breadcrumb-right: image-set(url("/assets/images/services/accounting-bookkeeping/banner-mobile-640.webp") 1x, url("/assets/images/services/accounting-bookkeeping/banner-mobile-960.webp") 2x);
+    --banner-services-business-structuring-breadcrumb-right: image-set(url("/assets/images/services/business-structuring/banner-mobile-640.webp") 1x, url("/assets/images/services/business-structuring/banner-mobile-960.webp") 2x);
+    --banner-services-business-support-breadcrumb-right: image-set(url("/assets/images/services/business-support/banner-mobile-640.webp") 1x, url("/assets/images/services/business-support/banner-mobile-960.webp") 2x);
+    --banner-services-company-liquidation-breadcrumb-right: image-set(url("/assets/images/services/company-liquidation/banner-mobile-640.webp") 1x, url("/assets/images/services/company-liquidation/banner-mobile-960.webp") 2x);
+    --banner-services-corporate-compliance-breadcrumb-right: image-set(url("/assets/images/services/corporate-compliance/banner-mobile-640.webp") 1x, url("/assets/images/services/corporate-compliance/banner-mobile-960.webp") 2x);
+    --banner-services-pro-services-breadcrumb-right: image-set(url("/assets/images/services/pro-services/banner-mobile-640.webp") 1x, url("/assets/images/services/pro-services/banner-mobile-960.webp") 2x);
+    --banner-services-services-main-breadcrumb-generated: image-set(url("/assets/images/services/overview/banner-mobile-640.webp") 1x, url("/assets/images/services/overview/banner-mobile-960.webp") 2x);
+    --banner-sharjah-mainland-sharjah-breadcrumb-enhanced: image-set(url("/assets/images/locations/uae/sharjah-mainland/banner-mobile-640.webp") 1x, url("/assets/images/locations/uae/sharjah-mainland/banner-mobile-960.webp") 2x);
+  }
+}
+
+/* Keep photographic detail stable and respect reduced-motion preferences. */
+.breadcrumb-area::before,
+.hero-banner-bottom .box-anim > img,
+.hero-style-1 .swiper-slide .slide-inner::before {
+  animation: none !important;
+  transform: none !important;
+}
+
+.hero-banner-bottom .box-anim > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2880 / 874;
+  object-fit: cover;
+  object-position: var(--image-focus, center);
+}
+
+@media (max-width: 767px) {
+  .hero-banner-bottom .box-anim > img { aspect-ratio: 16 / 9; }
+}

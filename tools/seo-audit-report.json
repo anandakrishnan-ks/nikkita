@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "scope": "local sources and https://127.0.0.1:9443",
+  "canonical_pages": 57,
+  "schema_types": {
+    "AboutPage": 1,
+    "BlogPosting": 9,
+    "BreadcrumbList": 56,
+    "CollectionPage": 6,
+    "ContactPage": 1,
+    "FAQPage": 38,
+    "ItemList": 2,
+    "Organization": 57,
+    "Service": 31,
+    "WebPage": 49,
+    "WebSite": 57
+  },
+  "faq_answers_matched_to_visible_content": 271,
+  "images_checked": 406,
+  "internal_links": 6368,
+  "maximum_click_depth": 2,
+  "sitemap_urls": 57,
+  "rss_articles": 9,
+  "llms_links": 36,
+  "direct_http_urls": 61,
+  "canonical_redirects": 157,
+  "private_and_missing_routes": 8,
+  "errors": [],
+  "warnings": []
+}

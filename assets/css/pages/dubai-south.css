@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* Dubai South page-specific layouts. */
 .dubai-south-redesign .hero-actions,
@@ -673,7 +673,7 @@
 .dubai-south-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/dubai-south/dubai-south-aviation-logistics-corridor.webp") !important;
+    var(--banner-new-optimized-dubai-south-hub) !important;
   background-position: center 47% !important;
 }
 

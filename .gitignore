@@ -5,4 +5,5 @@
 # Editor and OS files
 .vscode/
 .DS_Store
+config.local.php
 Thumbs.db

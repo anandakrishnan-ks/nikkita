@@ -6,6 +6,30 @@
   object-position: var(--image-focus, center);
 }
 
+.hero-banner-bottom .refreshed-banner-wrap {
+  position: relative;
+}
+
+.hero-banner-bottom .image-credit {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  z-index: 2;
+  margin: 0;
+  padding: 7px 10px;
+  border-radius: 3px;
+  background: rgba(15, 34, 29, 0.82);
+  color: #fff;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.hero-banner-bottom .image-credit a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* Keep the IFZA sign visible when its portrait photo fills a short frame. */
 .about2-area img[src$="/ifza-free-zone.webp"] {
   object-position: center bottom;
@@ -15,5 +39,11 @@
 @media (max-width: 767px) {
   .hero-banner-bottom .box-anim > .refreshed-banner {
     aspect-ratio: 16 / 9;
+  }
+
+  .hero-banner-bottom .image-credit {
+    right: 10px;
+    bottom: 10px;
+    max-width: calc(100% - 20px);
   }
 }

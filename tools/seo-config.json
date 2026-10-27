@@ -1,0 +1,520 @@
+{
+  "origin": "https://nikkiadvisory.com",
+  "organization": {
+    "name": "Nikki Advisory",
+    "description": "Business setup and advisory across the UAE, Saudi Arabia and Bahrain, with support for company formation, business structuring, corporate compliance and ongoing operations.",
+    "email": "info@nikkiadvisory.com",
+    "telephone": "+971521559885",
+    "logo": "/assets/images/brand/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ajman",
+      "addressCountry": "AE"
+    },
+    "areaServed": [
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Bahrain"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/nikkiadvisory/",
+      "https://www.instagram.com/nikkiadvisory/"
+    ],
+    "founder": {
+      "name": "Nikita D",
+      "jobTitle": "Founder"
+    }
+  },
+  "pages": {
+    "/accounting-bookkeeping": {
+      "name": "Accounting & Bookkeeping",
+      "kind": "service",
+      "parent": "/services",
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "title": "Accounting & Bookkeeping in UAE & GCC | Nikki Advisory"
+    },
+    "/business-structuring": {
+      "name": "Business Structuring",
+      "kind": "service",
+      "parent": "/services",
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "title": "Business Structuring in UAE & GCC | Nikki Advisory"
+    },
+    "/business-support": {
+      "name": "Business Support",
+      "kind": "service",
+      "parent": "/services",
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "title": "Business Support in UAE & GCC | Nikki Advisory"
+    },
+    "/company-liquidation": {
+      "name": "Company Liquidation & Closure",
+      "kind": "service",
+      "parent": "/services",
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "title": "Company Liquidation & Closure in UAE & GCC | Nikki Advisory"
+    },
+    "/corporate-compliance": {
+      "name": "Corporate Compliance",
+      "kind": "service",
+      "parent": "/services",
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "title": "Corporate Compliance in UAE & GCC | Nikki Advisory"
+    },
+    "/pro-government-services": {
+      "name": "PRO & Government Services",
+      "kind": "service",
+      "parent": "/services",
+      "areaServed": [
+        "United Arab Emirates",
+        "Saudi Arabia",
+        "Bahrain"
+      ],
+      "title": "PRO & Government Services in UAE & GCC | Nikki Advisory"
+    },
+    "/abu-dhabi-mainland": {
+      "name": "Abu Dhabi Mainland Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/adgm": {
+      "name": "ADGM Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/ajman-free-zone-company-formation": {
+      "name": "Ajman Free Zone Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/ajman-offshore": {
+      "name": "Ajman Offshore Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/dafza-company-formation": {
+      "name": "DAFZA Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/difc-company-formation": {
+      "name": "DIFC Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/dmcc-company-formation": {
+      "name": "DMCC Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/dubai-mainland": {
+      "name": "Dubai Mainland Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/dubai-silicon-oasis-company-formation": {
+      "name": "Dubai Silicon Oasis Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/dubai-south-company-formation": {
+      "name": "Dubai South Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/ifza": {
+      "name": "IFZA Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/jafza-company-formation": {
+      "name": "JAFZA Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/jafza-offshore": {
+      "name": "JAFZA Offshore Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/kezad-company-formation": {
+      "name": "KEZAD Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/masdar": {
+      "name": "Masdar City Free Zone Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/meydan-free-zone-company-formation": {
+      "name": "Meydan Free Zone Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/rak-icc": {
+      "name": "RAK ICC Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/rakez": {
+      "name": "RAKEZ Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/shams-company-formation": {
+      "name": "SHAMS Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/sharjah-mainland": {
+      "name": "Sharjah Mainland Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/spc-free-zone-company-formation": {
+      "name": "SPC Free Zone Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/saudi-arabia": {
+      "name": "Saudi Arabia Business Setup",
+      "kind": "service",
+      "areaServed": [
+        "Saudi Arabia"
+      ]
+    },
+    "/bahrain": {
+      "name": "Bahrain Company Formation",
+      "kind": "service",
+      "areaServed": [
+        "Bahrain"
+      ]
+    },
+    "/": {
+      "name": "Nikki Advisory",
+      "title": "Business Setup in UAE, Saudi Arabia & Bahrain | Nikki Advisory",
+      "description": "Nikki Advisory supports company formation, business structuring, compliance and ongoing operations across the UAE, Saudi Arabia and Bahrain."
+    },
+    "/business-setup-uae": {
+      "name": "UAE Business Setup Guide",
+      "kind": "service",
+      "areaServed": [
+        "United Arab Emirates"
+      ],
+      "title": "UAE Business Setup: Mainland, Free Zone & Offshore | Nikki Advisory"
+    },
+    "/services": {
+      "name": "Business Services",
+      "kind": "collection",
+      "items": [
+        "/accounting-bookkeeping",
+        "/business-structuring",
+        "/business-support",
+        "/company-liquidation",
+        "/corporate-compliance",
+        "/pro-government-services"
+      ],
+      "title": "Business Services in UAE & GCC | Nikki Advisory"
+    },
+    "/about-us": {
+      "name": "About Nikki Advisory",
+      "kind": "about"
+    },
+    "/contact-us": {
+      "name": "Contact Nikki Advisory",
+      "kind": "contact",
+      "title": "Contact Nikki Advisory | Business Setup & Advisory",
+      "description": "Contact Nikki Advisory in Ajman, United Arab Emirates, for company formation, business structuring and corporate support across the UAE, Saudi Arabia and Bahrain."
+    },
+    "/blogs": {
+      "name": "Business Setup Insights",
+      "kind": "collection",
+      "title": "UAE, Saudi Arabia & Bahrain Business Insights | Nikki Advisory"
+    },
+    "/pricing": {
+      "name": "Business Setup Costs & Process",
+      "kind": "collection",
+      "title": "Business Setup Costs & Process in UAE & GCC | Nikki Advisory",
+      "items": [
+        "/uae-free-zone-pricing",
+        "/uae-mainland-pricing",
+        "/uae-offshore-pricing",
+        "/saudi-arabia-pricing",
+        "/bahrain-pricing"
+      ]
+    },
+    "/uae-free-zone-pricing": {
+      "name": "UAE Free Zone Setup Costs",
+      "parent": "/pricing"
+    },
+    "/uae-mainland-pricing": {
+      "name": "UAE Mainland Setup Costs",
+      "parent": "/pricing"
+    },
+    "/uae-offshore-pricing": {
+      "name": "UAE Offshore Setup Costs",
+      "parent": "/pricing"
+    },
+    "/saudi-arabia-pricing": {
+      "name": "Saudi Arabia Setup Costs",
+      "parent": "/pricing"
+    },
+    "/bahrain-pricing": {
+      "name": "Bahrain Setup Costs",
+      "parent": "/pricing"
+    },
+    "/blog/bahrain-fintech-gcc-base": {
+      "parent": "/blogs",
+      "title": "Bahrain Fintech Setup: Licensing & GCC Expansion | Nikki Advisory"
+    },
+    "/blog/misa-license-operational-readiness": {
+      "parent": "/blogs",
+      "title": "After MISA Registration: Saudi Operational Readiness | Nikki Advisory"
+    },
+    "/blog/sama-licensing-fintech": {
+      "parent": "/blogs",
+      "title": "SAMA Fintech Licensing: Choosing a Saudi Pathway | Nikki Advisory"
+    },
+    "/blog/saudi-ai-market-entry": {
+      "parent": "/blogs",
+      "title": "Saudi AI Market Entry: Structure & Readiness | Nikki Advisory"
+    },
+    "/blog/saudi-entry-strategic-decisions": {
+      "parent": "/blogs",
+      "title": "Saudi Company Formation: 10 Investor Decisions | Nikki Advisory"
+    },
+    "/blog/saudi-nitaqat-2026": {
+      "parent": "/blogs",
+      "title": "Saudi Nitaqat 2026: Workforce Planning | Nikki Advisory"
+    },
+    "/blog/saudi-trading-foreign-investor": {
+      "parent": "/blogs",
+      "title": "Saudi Trading Setup for Foreign Investors | Nikki Advisory"
+    },
+    "/blog/saudi-transport-tga-license": {
+      "parent": "/blogs",
+      "title": "Saudi Transport Setup: Choosing a TGA Licence | Nikki Advisory"
+    },
+    "/blog/uae-golden-residency-2026": {
+      "parent": "/blogs",
+      "title": "UAE Golden Residency 2026: Routes & Eligibility | Nikki Advisory"
+    },
+    "/ajman-nuventures-company-formation": {
+      "name": "Ajman NuVentures Company Formation",
+      "kind": "service",
+      "parent": "/business-setup-uae",
+      "areaServed": [
+        "United Arab Emirates"
+      ]
+    },
+    "/blogs-uae": {
+      "name": "UAE Business Insights",
+      "kind": "collection",
+      "parent": "/blogs"
+    },
+    "/blogs-saudi-arabia": {
+      "name": "Saudi Arabia Business Insights",
+      "kind": "collection",
+      "parent": "/blogs"
+    },
+    "/blogs-bahrain": {
+      "name": "Bahrain Business Insights",
+      "kind": "collection",
+      "parent": "/blogs"
+    },
+    "/privacy-policy": {
+      "name": "Privacy Policy"
+    },
+    "/terms-and-conditions": {
+      "name": "Terms & Conditions"
+    },
+    "/refund-cancellation-policy": {
+      "name": "Refund & Cancellation Policy"
+    }
+  },
+  "llms_sections": {
+    "Company": [
+      "/",
+      "/about-us",
+      "/contact-us"
+    ],
+    "Business setup": [
+      "/business-setup-uae",
+      "/dubai-mainland",
+      "/abu-dhabi-mainland",
+      "/sharjah-mainland",
+      "/dmcc-company-formation",
+      "/ifza",
+      "/rakez",
+      "/rak-icc",
+      "/jafza-offshore",
+      "/saudi-arabia",
+      "/bahrain"
+    ],
+    "Corporate services": [
+      "/services",
+      "/accounting-bookkeeping",
+      "/business-structuring",
+      "/business-support",
+      "/company-liquidation",
+      "/corporate-compliance",
+      "/pro-government-services"
+    ],
+    "Costs, documents and process": [
+      "/pricing",
+      "/uae-free-zone-pricing",
+      "/uae-mainland-pricing",
+      "/uae-offshore-pricing",
+      "/saudi-arabia-pricing",
+      "/bahrain-pricing"
+    ],
+    "Guides and insights": [
+      "/blogs",
+      "/blog/uae-golden-residency-2026",
+      "/blog/saudi-entry-strategic-decisions",
+      "/blog/misa-license-operational-readiness",
+      "/blog/sama-licensing-fintech",
+      "/blog/bahrain-fintech-gcc-base"
+    ],
+    "Policies": [
+      "/privacy-policy",
+      "/terms-and-conditions",
+      "/refund-cancellation-policy"
+    ]
+  },
+  "provenance": {
+    "business_facts": "Existing homepage founder note, About, Contact and shared footer. Only Ajman and country are published as an address; no street address, registration number or credentials were supplied.",
+    "social_profiles": "LinkedIn and Instagram already appear in existing Organization schema. The Facebook share link is retained in the UI but excluded from sameAs because it is not a verified profile URL.",
+    "articles": "Existing visible corporate bylines and publication dates are preserved. Shorter search titles do not replace article headlines.",
+    "llms_full": "Skipped: this static site already exposes the full public content in HTML. A second full-text copy adds drift and maintenance without an established consumer requirement."
+  },
+  "image_derivatives": {
+    "assets/images/brand/logo.png": {
+      "widths": [
+        600
+      ]
+    },
+    "assets/images/brand/logo-alt.png": {
+      "widths": [
+        600
+      ]
+    },
+    "assets/images/team/nikita-d-founder.png": {
+      "widths": [
+        640,
+        960
+      ]
+    },
+    "assets/images/shared/photography/business-planning.jpg": {
+      "widths": [
+        640,
+        960,
+        1600
+      ]
+    },
+    "assets/images/locations/uae/abu-dhabi-mainland/louvre.jpg": {
+      "widths": [
+        640,
+        960,
+        1600
+      ]
+    },
+    "assets/images/locations/bahrain/manama/waterfront-original.jpeg": {
+      "widths": [
+        640,
+        960,
+        1280
+      ]
+    },
+    "assets/images/blogs/misa-operational-readiness/thumbnail.png": {
+      "widths": [
+        640,
+        960
+      ]
+    }
+  }
+}

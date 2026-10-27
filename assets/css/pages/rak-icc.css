@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 @font-face {
   font-family: "Line Awesome Free";
@@ -374,7 +374,7 @@
   background:
     radial-gradient(circle at 8% 18%, rgba(201, 160, 80, 0.13), transparent 28%),
     linear-gradient(105deg, rgba(9, 28, 22, 0.98) 0%, rgba(13, 43, 34, 0.94) 49%, rgba(18, 49, 39, 0.86) 100%),
-    url("../../imgs/rak-icc/international-architecture.webp") center 47% / cover no-repeat;
+    var(--banner-new-optimized-rak-icc) center 47% / cover no-repeat;
   color: #fff;
 }
 
@@ -697,9 +697,10 @@
 /* Compact service-page layout. */
 .rak-icc-breadcrumb::before {
   background-image:
-    linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/rak-icc/international-architecture.webp") !important;
-  background-position: center 47% !important;
+    linear-gradient(90deg, rgba(9, 27, 22, 0.8), rgba(9, 27, 22, 0.35) 58%, rgba(9, 27, 22, 0.2)),
+    var(--banner-rak-icc-marjan-island-breadcrumb) !important;
+  background-position: center 60% !important;
+  background-size: cover !important;
 }
 
 .rak-icc-redesign {
@@ -1428,7 +1429,7 @@
 .rak-icc-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, 0.98), rgba(9, 29, 23, 0.91)),
-    url("../../imgs/rak-icc/international-architecture.webp") center / cover no-repeat;
+    var(--banner-new-optimized-rak-icc) center / cover no-repeat;
 }
 
 /* Registry structure is the page's main differentiator. */
@@ -1519,7 +1520,7 @@
 
 .rak-icc-redesign .lead-cta {
   background: linear-gradient(90deg, rgba(10, 31, 25, .97), rgba(10, 31, 25, .88)),
-    url("../../imgs/rak-icc/international-architecture.webp") center / cover no-repeat;
+    var(--banner-new-optimized-rak-icc) center / cover no-repeat;
 }
 
 @media (max-width: 1050px) {
@@ -1545,6 +1546,24 @@
   object-position: center 50%;
 }
 
+.rak-icc-redesign .rak-icc-brandmark {
+  display: block;
+  height: auto;
+  object-fit: contain;
+}
+
+.rak-icc-redesign .rak-icc-brandmark--full {
+  width: 104px;
+  max-height: 108px;
+  margin: 0 0 18px;
+}
+
+.rak-icc-redesign .rak-icc-brandmark--compact {
+  width: 92px;
+  max-height: 66px;
+  margin: 0 0 14px auto;
+}
+
 .rak-icc-redesign .hero-distinction {
   display: flex;
   align-items: flex-start;
@@ -1568,16 +1587,6 @@
 
 .rak-icc-redesign .hero-distinction strong {
   color: var(--green);
-}
-
-.rak-icc-redesign .registry-distinction-callout {
-  margin-top: 23px;
-  padding: 20px 22px;
-  background: var(--cream);
-}
-
-.rak-icc-redesign .registry-business-panel .business-area-grid span:last-child {
-  grid-column: 1 / -1;
 }
 
 .rak-icc-redesign .advantage-grid {
@@ -1631,10 +1640,6 @@
 }
 
 /* RAK ICC: compact registry-specific cards and the RAKEZ distinction. */
-.rak-icc-redesign .registry-business-panel .business-area-grid span:last-child {
-  grid-column: auto;
-}
-
 .rak-icc-redesign .advantage-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -1871,13 +1876,9 @@
     grid-template-columns: 1fr;
     gap: 18px;
   }
-
-  .rak-icc-redesign .registry-business-panel .business-area-grid span:last-child {
-    grid-column: auto;
-  }
 }
 
-/* RAK ICC overview and compact use-case grid. */
+/* RAK ICC overview with the supplied Marjan Island photograph. */
 .rak-icc-redesign .hero-image .cover {
   object-position: center 54%;
 }
@@ -1885,7 +1886,7 @@
 .rak-icc-redesign .registry-overview-grid {
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  align-items: start;
+  align-items: center;
   gap: clamp(32px, 5vw, 70px);
 }
 
@@ -1893,20 +1894,20 @@
   max-width: 610px;
 }
 
-.rak-icc-redesign .registry-business-panel {
+.rak-icc-redesign .registry-overview-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.rak-icc-redesign .registry-overview-image {
   min-width: 0;
-  padding: clamp(22px, 2.7vw, 34px);
-  border: 1px solid var(--line);
-  background: var(--cream);
-}
-
-.rak-icc-redesign .registry-business-panel h3 {
   margin: 0;
-  font-size: 26px;
 }
 
-.rak-icc-redesign .registry-business-panel .business-area-grid {
-  margin-top: 22px;
+.rak-icc-redesign .registry-overview-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
 }
 
 .rak-icc-redesign .advisory-callout a {
@@ -1938,7 +1939,7 @@
 .rak-icc-redesign .decision-section {
   background:
     linear-gradient(105deg, rgba(9, 29, 23, .98), rgba(9, 29, 23, .91)),
-    url("../../imgs/rak-icc/international-architecture.webp") center / cover no-repeat;
+    var(--banner-new-optimized-rak-icc) center / cover no-repeat;
 }
 
 .rak-icc-redesign .support-card p {
@@ -1960,10 +1961,6 @@
   .rak-icc-redesign .registry-overview-grid {
     grid-template-columns: 1fr;
   }
-
-  .rak-icc-redesign .registry-business-panel .business-area-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
@@ -1976,20 +1973,10 @@
     min-height: 0;
   }
 
-  .rak-icc-redesign .registry-business-panel .business-area-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .whatsapp-float.rak-icc-cta-visible {
     opacity: 0;
     pointer-events: none;
     transform: translateY(10px);
-  }
-}
-
-@media (max-width: 520px) {
-  .rak-icc-redesign .registry-business-panel .business-area-grid {
-    grid-template-columns: 1fr;
   }
 }
 

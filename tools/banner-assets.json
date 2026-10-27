@@ -1,0 +1,2633 @@
+{
+  "description": "Referenced responsive WebP banner files. original_source records provenance, not a build dependency.",
+  "assets": [
+    {
+      "key": "about-about-breadcrumb-advisory-office-v2",
+      "original_source": "assets/imgs/about/about-breadcrumb-advisory-office-v2.jpg",
+      "width": 2164,
+      "height": 727,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/about/office-banner-960.webp",
+          "width": 960,
+          "height": 323,
+          "bytes": 77372
+        },
+        {
+          "path": "assets/images/about/office-banner-1600.webp",
+          "width": 1600,
+          "height": 538,
+          "bytes": 192212
+        },
+        {
+          "path": "assets/images/about/office-banner-2164.webp",
+          "width": 2164,
+          "height": 727,
+          "bytes": 321212
+        },
+        {
+          "path": "assets/images/about/office-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 54412
+        },
+        {
+          "path": "assets/images/about/office-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 112190
+        }
+      ]
+    },
+    {
+      "key": "about-gcc-clarity-banner",
+      "original_source": "assets/imgs/about/gcc-clarity-banner.webp",
+      "width": 2164,
+      "height": 727,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/about/gcc-clarity-banner-640.webp",
+          "width": 640,
+          "height": 215,
+          "bytes": 41552
+        },
+        {
+          "path": "assets/images/about/gcc-clarity-banner-960.webp",
+          "width": 960,
+          "height": 323,
+          "bytes": 85818
+        },
+        {
+          "path": "assets/images/about/gcc-clarity-banner-1600.webp",
+          "width": 1600,
+          "height": 538,
+          "bytes": 204620
+        },
+        {
+          "path": "assets/images/about/gcc-clarity-banner-2164.webp",
+          "width": 2164,
+          "height": 727,
+          "bytes": 220958
+        }
+      ]
+    },
+    {
+      "key": "abu-dhabi-mainland-abu-dhabi-breadcrumb-enhanced",
+      "original_source": "assets/imgs/abu-dhabi-mainland/abu-dhabi-breadcrumb-enhanced.webp",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 65536
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 159114
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 207278
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 46614
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 91720
+        }
+      ]
+    },
+    {
+      "key": "abu-dhabi-mainland-abu-dhabi",
+      "original_source": "assets/imgs/abu-dhabi-mainland/abu-dhabi.jpg",
+      "width": 7231,
+      "height": 4821,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/skyline-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 62356
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/skyline-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 130034
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/skyline-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 365518
+        },
+        {
+          "path": "assets/images/locations/uae/abu-dhabi-mainland/skyline-2880.webp",
+          "width": 2880,
+          "height": 1920,
+          "bytes": 1207468
+        }
+      ]
+    },
+    {
+      "key": "ajman-offshore-ajman-waterfront-real-maryam20",
+      "original_source": "assets/imgs/ajman-offshore/ajman-waterfront-real-maryam20.jpg",
+      "width": 1800,
+      "height": 1350,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/ajman/waterfront-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 38346
+        },
+        {
+          "path": "assets/images/locations/uae/ajman/waterfront-960.webp",
+          "width": 960,
+          "height": 720,
+          "bytes": 77614
+        },
+        {
+          "path": "assets/images/locations/uae/ajman/waterfront-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 208020
+        },
+        {
+          "path": "assets/images/locations/uae/ajman/waterfront-1800.webp",
+          "width": 1800,
+          "height": 1350,
+          "bytes": 253428
+        },
+        {
+          "path": "assets/images/locations/uae/ajman/waterfront-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 32384
+        },
+        {
+          "path": "assets/images/locations/uae/ajman/waterfront-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 67628
+        }
+      ]
+    },
+    {
+      "key": "bahrain-manama-night-breadcrumb-enhanced",
+      "original_source": "assets/imgs/bahrain/manama-night-breadcrumb-enhanced.webp",
+      "width": 2170,
+      "height": 725,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/bahrain/manama/night-banner-960.webp",
+          "width": 960,
+          "height": 321,
+          "bytes": 74502
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/night-banner-1600.webp",
+          "width": 1600,
+          "height": 535,
+          "bytes": 175350
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/night-banner-2170.webp",
+          "width": 2170,
+          "height": 725,
+          "bytes": 225366
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/night-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 49252
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/night-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 95906
+        }
+      ]
+    },
+    {
+      "key": "bahrain-manama-waterfront-enhanced",
+      "original_source": "assets/imgs/bahrain/manama-waterfront-enhanced.webp",
+      "width": 1546,
+      "height": 1017,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/bahrain/manama/waterfront-640.webp",
+          "width": 640,
+          "height": 421,
+          "bytes": 152792
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/waterfront-960.webp",
+          "width": 960,
+          "height": 632,
+          "bytes": 318470
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/waterfront-1546.webp",
+          "width": 1546,
+          "height": 1017,
+          "bytes": 564088
+        }
+      ]
+    },
+    {
+      "key": "bg-1",
+      "original_source": "assets/imgs/bg-1.webp",
+      "width": 1376,
+      "height": 621,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/home/hero-dubai-960.webp",
+          "width": 960,
+          "height": 433,
+          "bytes": 84974
+        },
+        {
+          "path": "assets/images/home/hero-dubai-1376.webp",
+          "width": 1376,
+          "height": 621,
+          "bytes": 148618
+        },
+        {
+          "path": "assets/images/home/hero-dubai-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 52610
+        },
+        {
+          "path": "assets/images/home/hero-dubai-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 94906
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-bahrain-fintech-editorial",
+      "original_source": "assets/imgs/blogs/generated/bahrain-fintech-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/bahrain-fintech/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 71126
+        },
+        {
+          "path": "assets/images/blogs/bahrain-fintech/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 127270
+        },
+        {
+          "path": "assets/images/blogs/bahrain-fintech/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 259244
+        },
+        {
+          "path": "assets/images/blogs/bahrain-fintech/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 278020
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-misa-operational-readiness-editorial",
+      "original_source": "assets/imgs/blogs/generated/misa-operational-readiness-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/misa-operational-readiness/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 66626
+        },
+        {
+          "path": "assets/images/blogs/misa-operational-readiness/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 123610
+        },
+        {
+          "path": "assets/images/blogs/misa-operational-readiness/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 263618
+        },
+        {
+          "path": "assets/images/blogs/misa-operational-readiness/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 284842
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-sama-fintech-editorial",
+      "original_source": "assets/imgs/blogs/generated/sama-fintech-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/sama-fintech/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 61864
+        },
+        {
+          "path": "assets/images/blogs/sama-fintech/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 107330
+        },
+        {
+          "path": "assets/images/blogs/sama-fintech/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 221564
+        },
+        {
+          "path": "assets/images/blogs/sama-fintech/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 235062
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-saudi-ai-market-entry-editorial",
+      "original_source": "assets/imgs/blogs/generated/saudi-ai-market-entry-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/saudi-ai-market-entry/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 70708
+        },
+        {
+          "path": "assets/images/blogs/saudi-ai-market-entry/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 139076
+        },
+        {
+          "path": "assets/images/blogs/saudi-ai-market-entry/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 306544
+        },
+        {
+          "path": "assets/images/blogs/saudi-ai-market-entry/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 333470
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-saudi-entry-decisions-editorial",
+      "original_source": "assets/imgs/blogs/generated/saudi-entry-decisions-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/saudi-entry-decisions/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 106434
+        },
+        {
+          "path": "assets/images/blogs/saudi-entry-decisions/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 209696
+        },
+        {
+          "path": "assets/images/blogs/saudi-entry-decisions/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 470138
+        },
+        {
+          "path": "assets/images/blogs/saudi-entry-decisions/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 508618
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-saudi-nitaqat-editorial",
+      "original_source": "assets/imgs/blogs/generated/saudi-nitaqat-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/saudi-nitaqat/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 61498
+        },
+        {
+          "path": "assets/images/blogs/saudi-nitaqat/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 105336
+        },
+        {
+          "path": "assets/images/blogs/saudi-nitaqat/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 216346
+        },
+        {
+          "path": "assets/images/blogs/saudi-nitaqat/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 232386
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-saudi-trading-editorial",
+      "original_source": "assets/imgs/blogs/generated/saudi-trading-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/saudi-trading/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 70272
+        },
+        {
+          "path": "assets/images/blogs/saudi-trading/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 129114
+        },
+        {
+          "path": "assets/images/blogs/saudi-trading/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 247386
+        },
+        {
+          "path": "assets/images/blogs/saudi-trading/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 264802
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-saudi-transport-tga-editorial",
+      "original_source": "assets/imgs/blogs/generated/saudi-transport-tga-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/saudi-transport-tga/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 77936
+        },
+        {
+          "path": "assets/images/blogs/saudi-transport-tga/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 154616
+        },
+        {
+          "path": "assets/images/blogs/saudi-transport-tga/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 358724
+        },
+        {
+          "path": "assets/images/blogs/saudi-transport-tga/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 391726
+        }
+      ]
+    },
+    {
+      "key": "blogs-generated-uae-golden-residency-editorial",
+      "original_source": "assets/imgs/blogs/generated/uae-golden-residency-editorial.jpg",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/uae-golden-residency/cover-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 62644
+        },
+        {
+          "path": "assets/images/blogs/uae-golden-residency/cover-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 117122
+        },
+        {
+          "path": "assets/images/blogs/uae-golden-residency/cover-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 242554
+        },
+        {
+          "path": "assets/images/blogs/uae-golden-residency/cover-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 265064
+        }
+      ]
+    },
+    {
+      "key": "breadcrumbs-blogs-insights-no-people",
+      "original_source": "assets/imgs/breadcrumbs/blogs-insights-no-people.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/blogs/shared/insights-banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 73110
+        },
+        {
+          "path": "assets/images/blogs/shared/insights-banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 161150
+        },
+        {
+          "path": "assets/images/blogs/shared/insights-banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 255624
+        },
+        {
+          "path": "assets/images/blogs/shared/insights-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 57598
+        },
+        {
+          "path": "assets/images/blogs/shared/insights-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 104650
+        }
+      ]
+    },
+    {
+      "key": "breadcrumbs-contact-connectivity-no-people",
+      "original_source": "assets/imgs/breadcrumbs/contact-connectivity-no-people.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/contact/connectivity-banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 76844
+        },
+        {
+          "path": "assets/images/contact/connectivity-banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 170942
+        },
+        {
+          "path": "assets/images/contact/connectivity-banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 268504
+        },
+        {
+          "path": "assets/images/contact/connectivity-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 69296
+        },
+        {
+          "path": "assets/images/contact/connectivity-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 124830
+        }
+      ]
+    },
+    {
+      "key": "breadcrumbs-pricing-planning-no-people",
+      "original_source": "assets/imgs/breadcrumbs/pricing-planning-no-people.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/pricing/planning-banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 77112
+        },
+        {
+          "path": "assets/images/pricing/planning-banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 168406
+        },
+        {
+          "path": "assets/images/pricing/planning-banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 267972
+        },
+        {
+          "path": "assets/images/pricing/planning-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 56616
+        },
+        {
+          "path": "assets/images/pricing/planning-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 105256
+        }
+      ]
+    },
+    {
+      "key": "business-setup-uae-uae-night-interchange-breadcrumb-wide",
+      "original_source": "assets/imgs/business-setup-uae/uae-night-interchange-breadcrumb-wide.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/business-setup/uae/interchange-banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 113796
+        },
+        {
+          "path": "assets/images/business-setup/uae/interchange-banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 273322
+        },
+        {
+          "path": "assets/images/business-setup/uae/interchange-banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 440784
+        },
+        {
+          "path": "assets/images/business-setup/uae/interchange-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 79212
+        },
+        {
+          "path": "assets/images/business-setup/uae/interchange-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 152818
+        }
+      ]
+    },
+    {
+      "key": "dafza-dafza",
+      "original_source": "assets/imgs/dafza/dafza.jpg",
+      "width": 1260,
+      "height": 742,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dafza/airport-district-640.webp",
+          "width": 640,
+          "height": 377,
+          "bytes": 141662
+        },
+        {
+          "path": "assets/images/locations/uae/dafza/airport-district-960.webp",
+          "width": 960,
+          "height": 565,
+          "bytes": 279890
+        },
+        {
+          "path": "assets/images/locations/uae/dafza/airport-district-1260.webp",
+          "width": 1260,
+          "height": 742,
+          "bytes": 362628
+        }
+      ]
+    },
+    {
+      "key": "difc-difc-skyline",
+      "original_source": "assets/imgs/difc/difc-skyline.jpg",
+      "width": 1200,
+      "height": 764,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/difc/skyline-640.webp",
+          "width": 640,
+          "height": 407,
+          "bytes": 70444
+        },
+        {
+          "path": "assets/images/locations/uae/difc/skyline-960.webp",
+          "width": 960,
+          "height": 611,
+          "bytes": 132352
+        },
+        {
+          "path": "assets/images/locations/uae/difc/skyline-1200.webp",
+          "width": 1200,
+          "height": 764,
+          "bytes": 184542
+        }
+      ]
+    },
+    {
+      "key": "dmcc-dmcc-2",
+      "original_source": "assets/imgs/dmcc/dmcc-2.jpg",
+      "width": 1200,
+      "height": 800,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dmcc/district-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 87058
+        },
+        {
+          "path": "assets/images/locations/uae/dmcc/district-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 181350
+        },
+        {
+          "path": "assets/images/locations/uae/dmcc/district-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 269020
+        }
+      ]
+    },
+    {
+      "key": "dubai-mainland-museum-of-the-future-hero-generated",
+      "original_source": "assets/imgs/dubai-mainland/museum-of-the-future-hero-generated.jpg",
+      "width": 1402,
+      "height": 1122,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dubai-mainland/museum-of-the-future-640.webp",
+          "width": 640,
+          "height": 512,
+          "bytes": 116156
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-mainland/museum-of-the-future-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 237886
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-mainland/museum-of-the-future-1402.webp",
+          "width": 1402,
+          "height": 1122,
+          "bytes": 468928
+        }
+      ]
+    },
+    {
+      "key": "footer-bg",
+      "original_source": "assets/imgs/footer-bg.png",
+      "width": 1440,
+      "height": 603,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/shared/backgrounds/footer-pattern-960.webp",
+          "width": 960,
+          "height": 402,
+          "bytes": 170888
+        },
+        {
+          "path": "assets/images/shared/backgrounds/footer-pattern-1440.webp",
+          "width": 1440,
+          "height": 603,
+          "bytes": 137410
+        }
+      ]
+    },
+    {
+      "key": "footer-bg-webp",
+      "original_source": "assets/imgs/footer-bg.webp",
+      "width": 1440,
+      "height": 603,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/shared/backgrounds/footer-photo-960.webp",
+          "width": 960,
+          "height": 402,
+          "bytes": 19954
+        },
+        {
+          "path": "assets/images/shared/backgrounds/footer-photo-1440.webp",
+          "width": 1440,
+          "height": 603,
+          "bytes": 64304
+        },
+        {
+          "path": "assets/images/shared/backgrounds/footer-photo-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 14118
+        },
+        {
+          "path": "assets/images/shared/backgrounds/footer-photo-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 28460
+        }
+      ]
+    },
+    {
+      "key": "freezone-web-ajman-nuventures-skyline-pexels",
+      "original_source": "assets/imgs/freezone-web/ajman-nuventures-skyline-pexels.jpg",
+      "width": 1800,
+      "height": 1351,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/ajman-nuventures/skyline-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 137968
+        },
+        {
+          "path": "assets/images/locations/uae/ajman-nuventures/skyline-960.webp",
+          "width": 960,
+          "height": 721,
+          "bytes": 270208
+        },
+        {
+          "path": "assets/images/locations/uae/ajman-nuventures/skyline-1600.webp",
+          "width": 1600,
+          "height": 1201,
+          "bytes": 609830
+        },
+        {
+          "path": "assets/images/locations/uae/ajman-nuventures/skyline-1800.webp",
+          "width": 1800,
+          "height": 1351,
+          "bytes": 704748
+        }
+      ]
+    },
+    {
+      "key": "freezone-web-dubai-silicon-oasis-pexels",
+      "original_source": "assets/imgs/freezone-web/dubai-silicon-oasis-pexels.jpg",
+      "width": 1800,
+      "height": 1200,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dubai-silicon-oasis/district-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 94378
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-silicon-oasis/district-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 189918
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-silicon-oasis/district-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 456950
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-silicon-oasis/district-1800.webp",
+          "width": 1800,
+          "height": 1200,
+          "bytes": 522486
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-silicon-oasis/district-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 82252
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-silicon-oasis/district-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 168144
+        }
+      ]
+    },
+    {
+      "key": "freezone-web-jafza-port-imre-solt",
+      "original_source": "assets/imgs/freezone-web/jafza-port-imre-solt.jpg",
+      "width": 1800,
+      "height": 1062,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/jafza/port-640.webp",
+          "width": 640,
+          "height": 378,
+          "bytes": 74332
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/port-960.webp",
+          "width": 960,
+          "height": 566,
+          "bytes": 140388
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/port-1600.webp",
+          "width": 1600,
+          "height": 944,
+          "bytes": 281988
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/port-1800.webp",
+          "width": 1800,
+          "height": 1062,
+          "bytes": 341956
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/port-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 71620
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/port-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 132712
+        }
+      ]
+    },
+    {
+      "key": "freezone-web-masdar-city-nnegm",
+      "original_source": "assets/imgs/freezone-web/masdar-city-nnegm.jpg",
+      "width": 1715,
+      "height": 1800,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/masdar/architecture-640.webp",
+          "width": 640,
+          "height": 672,
+          "bytes": 70458
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/architecture-960.webp",
+          "width": 960,
+          "height": 1008,
+          "bytes": 142164
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/architecture-1600.webp",
+          "width": 1600,
+          "height": 1679,
+          "bytes": 289840
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/architecture-1715.webp",
+          "width": 1715,
+          "height": 1800,
+          "bytes": 326496
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/architecture-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 30556
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/architecture-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 57324
+        }
+      ]
+    },
+    {
+      "key": "freezone-web-rak-ports-rakports",
+      "original_source": "assets/imgs/freezone-web/rak-ports-rakports.jpg",
+      "width": 1800,
+      "height": 1011,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/rakez/port-640.webp",
+          "width": 640,
+          "height": 359,
+          "bytes": 72840
+        },
+        {
+          "path": "assets/images/locations/uae/rakez/port-960.webp",
+          "width": 960,
+          "height": 539,
+          "bytes": 155016
+        },
+        {
+          "path": "assets/images/locations/uae/rakez/port-1600.webp",
+          "width": 1600,
+          "height": 899,
+          "bytes": 393310
+        },
+        {
+          "path": "assets/images/locations/uae/rakez/port-1800.webp",
+          "width": 1800,
+          "height": 1011,
+          "bytes": 486208
+        }
+      ]
+    },
+    {
+      "key": "freezone-web-sharjah-skyline-pexels",
+      "original_source": "assets/imgs/freezone-web/sharjah-skyline-pexels.jpg",
+      "width": 1800,
+      "height": 1200,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/sharjah/skyline-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 158350
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah/skyline-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 422860
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah/skyline-1800.webp",
+          "width": 1800,
+          "height": 1200,
+          "bytes": 474616
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah/skyline-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 56054
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah/skyline-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 138218
+        }
+      ]
+    },
+    {
+      "key": "hero-3",
+      "original_source": "assets/imgs/hero-3.jpeg",
+      "width": 2880,
+      "height": 874,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/home/advisory-banner-640.webp",
+          "width": 640,
+          "height": 194,
+          "bytes": 18020
+        },
+        {
+          "path": "assets/images/home/advisory-banner-960.webp",
+          "width": 960,
+          "height": 291,
+          "bytes": 32982
+        },
+        {
+          "path": "assets/images/home/advisory-banner-1600.webp",
+          "width": 1600,
+          "height": 486,
+          "bytes": 68114
+        },
+        {
+          "path": "assets/images/home/advisory-banner-2880.webp",
+          "width": 2880,
+          "height": 874,
+          "bytes": 142070
+        }
+      ]
+    },
+    {
+      "key": "jafza-jafza-port-breadcrumb",
+      "original_source": "assets/imgs/jafza/jafza-port-breadcrumb.webp",
+      "width": 2880,
+      "height": 1620,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/jafza/banner-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 68694
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/banner-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 192688
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/banner-2880.webp",
+          "width": 2880,
+          "height": 1620,
+          "bytes": 392224
+        },
+        {
+          "path": "assets/images/locations/uae/jafza/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 33570
+        }
+      ]
+    },
+    {
+      "key": "jafza-offshore-jafza-port-real-imre-solt",
+      "original_source": "assets/imgs/jafza-offshore/jafza-port-real-imre-solt.jpg",
+      "width": 1210,
+      "height": 714,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/jafza-offshore/port-640.webp",
+          "width": 640,
+          "height": 378,
+          "bytes": 78122
+        },
+        {
+          "path": "assets/images/locations/uae/jafza-offshore/port-960.webp",
+          "width": 960,
+          "height": 566,
+          "bytes": 150860
+        },
+        {
+          "path": "assets/images/locations/uae/jafza-offshore/port-1210.webp",
+          "width": 1210,
+          "height": 714,
+          "bytes": 197864
+        },
+        {
+          "path": "assets/images/locations/uae/jafza-offshore/port-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 75074
+        },
+        {
+          "path": "assets/images/locations/uae/jafza-offshore/port-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 150900
+        }
+      ]
+    },
+    {
+      "key": "masdar-masdar-masterplan-breadcrumb",
+      "original_source": "assets/imgs/masdar/masdar-masterplan-breadcrumb.webp",
+      "width": 2043,
+      "height": 770,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/masdar/masterplan-banner-960.webp",
+          "width": 960,
+          "height": 362,
+          "bytes": 198898
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/masterplan-banner-1600.webp",
+          "width": 1600,
+          "height": 603,
+          "bytes": 500346
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/masterplan-banner-2043.webp",
+          "width": 2043,
+          "height": 770,
+          "bytes": 630458
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/masterplan-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 140270
+        },
+        {
+          "path": "assets/images/locations/uae/masdar/masterplan-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 294188
+        }
+      ]
+    },
+    {
+      "key": "meydan-meydan-2",
+      "original_source": "assets/imgs/meydan/meydan-2.webp",
+      "width": 1920,
+      "height": 1080,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/meydan/district-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 104544
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/district-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 177630
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/district-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 339798
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/district-1920.webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 135616
+        }
+      ]
+    },
+    {
+      "key": "meydan-meydan-bridge-breadcrumb-wide",
+      "original_source": "assets/imgs/meydan/meydan-bridge-breadcrumb-wide.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/meydan/bridge-banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 59724
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/bridge-banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 142082
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/bridge-banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 233834
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/bridge-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 44168
+        },
+        {
+          "path": "assets/images/locations/uae/meydan/bridge-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 83416
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-adgm",
+      "original_source": "assets/imgs/new/optimized/adgm.webp",
+      "width": 1104,
+      "height": 826,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/adgm/district-640.webp",
+          "width": 640,
+          "height": 479,
+          "bytes": 116636
+        },
+        {
+          "path": "assets/images/locations/uae/adgm/district-960.webp",
+          "width": 960,
+          "height": 718,
+          "bytes": 240610
+        },
+        {
+          "path": "assets/images/locations/uae/adgm/district-1104.webp",
+          "width": 1104,
+          "height": 826,
+          "bytes": 245428
+        },
+        {
+          "path": "assets/images/locations/uae/adgm/district-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 95690
+        },
+        {
+          "path": "assets/images/locations/uae/adgm/district-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 196970
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-ajman-free-zone",
+      "original_source": "assets/imgs/new/optimized/ajman-free-zone.webp",
+      "width": 1024,
+      "height": 683,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/ajman-free-zone/district-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 62802
+        },
+        {
+          "path": "assets/images/locations/uae/ajman-free-zone/district-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 107614
+        },
+        {
+          "path": "assets/images/locations/uae/ajman-free-zone/district-1024.webp",
+          "width": 1024,
+          "height": 683,
+          "bytes": 76838
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-dubai-south-hub",
+      "original_source": "assets/imgs/new/optimized/dubai-south-hub.webp",
+      "width": 1200,
+      "height": 806,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dubai-south/business-hub-640.webp",
+          "width": 640,
+          "height": 430,
+          "bytes": 120426
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-south/business-hub-960.webp",
+          "width": 960,
+          "height": 645,
+          "bytes": 278510
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-south/business-hub-1200.webp",
+          "width": 1200,
+          "height": 806,
+          "bytes": 348262
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-south/business-hub-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 103638
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-south/business-hub-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 232872
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-dubai-south",
+      "original_source": "assets/imgs/new/optimized/dubai-south.webp",
+      "width": 930,
+      "height": 523,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dubai-south/district-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 77160
+        },
+        {
+          "path": "assets/images/locations/uae/dubai-south/district-930.webp",
+          "width": 930,
+          "height": 523,
+          "bytes": 105912
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-ifza-building",
+      "original_source": "assets/imgs/new/optimized/ifza-building.webp",
+      "width": 1024,
+      "height": 576,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/ifza/building-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 65084
+        },
+        {
+          "path": "assets/images/locations/uae/ifza/building-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 127842
+        },
+        {
+          "path": "assets/images/locations/uae/ifza/building-1024.webp",
+          "width": 1024,
+          "height": 576,
+          "bytes": 98094
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-kezad-headquarters",
+      "original_source": "assets/imgs/new/optimized/kezad-headquarters.webp",
+      "width": 2560,
+      "height": 2560,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/kezad/headquarters-640.webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 86828
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/headquarters-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 168346
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/headquarters-1600.webp",
+          "width": 1600,
+          "height": 1600,
+          "bytes": 395574
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/headquarters-2560.webp",
+          "width": 2560,
+          "height": 2560,
+          "bytes": 544026
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-rak-icc",
+      "original_source": "assets/imgs/new/optimized/rak-icc.webp",
+      "width": 1000,
+      "height": 800,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/rak-icc/building-640.webp",
+          "width": 640,
+          "height": 512,
+          "bytes": 108446
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/building-960.webp",
+          "width": 960,
+          "height": 768,
+          "bytes": 199840
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/building-1000.webp",
+          "width": 1000,
+          "height": 800,
+          "bytes": 116026
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/building-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 85808
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/building-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 156416
+        }
+      ]
+    },
+    {
+      "key": "new-optimized-shams-business-center",
+      "original_source": "assets/imgs/new/optimized/shams-business-center.webp",
+      "width": 697,
+      "height": 840,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/shams/business-center-640.webp",
+          "width": 640,
+          "height": 771,
+          "bytes": 105242
+        },
+        {
+          "path": "assets/images/locations/uae/shams/business-center-697.webp",
+          "width": 697,
+          "height": 840,
+          "bytes": 92910
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-bahrain-world-trade-centre",
+      "original_source": "assets/imgs/new-images/optimized/bahrain-world-trade-centre.jpg",
+      "width": 1376,
+      "height": 621,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/bahrain/manama/world-trade-centre-640.webp",
+          "width": 640,
+          "height": 289,
+          "bytes": 36684
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/world-trade-centre-960.webp",
+          "width": 960,
+          "height": 433,
+          "bytes": 74906
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/world-trade-centre-1376.webp",
+          "width": 1376,
+          "height": 621,
+          "bytes": 140008
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/world-trade-centre-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 42390
+        },
+        {
+          "path": "assets/images/locations/bahrain/manama/world-trade-centre-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 86640
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-business-document-review",
+      "original_source": "assets/imgs/new-images/optimized/business-document-review.jpg",
+      "width": 1800,
+      "height": 872,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/shared/photography/document-review-640.webp",
+          "width": 640,
+          "height": 310,
+          "bytes": 29244
+        },
+        {
+          "path": "assets/images/shared/photography/document-review-960.webp",
+          "width": 960,
+          "height": 465,
+          "bytes": 44314
+        },
+        {
+          "path": "assets/images/shared/photography/document-review-1600.webp",
+          "width": 1600,
+          "height": 775,
+          "bytes": 85048
+        },
+        {
+          "path": "assets/images/shared/photography/document-review-1800.webp",
+          "width": 1800,
+          "height": 872,
+          "bytes": 99886
+        },
+        {
+          "path": "assets/images/shared/photography/document-review-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 30268
+        },
+        {
+          "path": "assets/images/shared/photography/document-review-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 47270
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-business-strategy-planning",
+      "original_source": "assets/imgs/new-images/optimized/business-strategy-planning.jpg",
+      "width": 1800,
+      "height": 811,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/pricing/business-planning-640.webp",
+          "width": 640,
+          "height": 288,
+          "bytes": 24158
+        },
+        {
+          "path": "assets/images/pricing/business-planning-960.webp",
+          "width": 960,
+          "height": 433,
+          "bytes": 45114
+        },
+        {
+          "path": "assets/images/pricing/business-planning-1600.webp",
+          "width": 1600,
+          "height": 721,
+          "bytes": 88454
+        },
+        {
+          "path": "assets/images/pricing/business-planning-1800.webp",
+          "width": 1800,
+          "height": 811,
+          "bytes": 106572
+        },
+        {
+          "path": "assets/images/pricing/business-planning-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 25920
+        },
+        {
+          "path": "assets/images/pricing/business-planning-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 47576
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-cargo-port-logistics",
+      "original_source": "assets/imgs/new-images/optimized/cargo-port-logistics.jpg",
+      "width": 1800,
+      "height": 1199,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/shared/photography/cargo-logistics-640.webp",
+          "width": 640,
+          "height": 426,
+          "bytes": 89530
+        },
+        {
+          "path": "assets/images/shared/photography/cargo-logistics-960.webp",
+          "width": 960,
+          "height": 639,
+          "bytes": 196208
+        },
+        {
+          "path": "assets/images/shared/photography/cargo-logistics-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 473992
+        },
+        {
+          "path": "assets/images/shared/photography/cargo-logistics-1800.webp",
+          "width": 1800,
+          "height": 1199,
+          "bytes": 600348
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-dubai-skyline-dusk",
+      "original_source": "assets/imgs/new-images/optimized/dubai-skyline-dusk.jpg",
+      "width": 1920,
+      "height": 1076,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/dubai/skyline-dusk-640.webp",
+          "width": 640,
+          "height": 359,
+          "bytes": 45852
+        },
+        {
+          "path": "assets/images/locations/uae/dubai/skyline-dusk-960.webp",
+          "width": 960,
+          "height": 538,
+          "bytes": 92232
+        },
+        {
+          "path": "assets/images/locations/uae/dubai/skyline-dusk-1600.webp",
+          "width": 1600,
+          "height": 897,
+          "bytes": 213102
+        },
+        {
+          "path": "assets/images/locations/uae/dubai/skyline-dusk-1920.webp",
+          "width": 1920,
+          "height": 1076,
+          "bytes": 287772
+        },
+        {
+          "path": "assets/images/locations/uae/dubai/skyline-dusk-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 45800
+        },
+        {
+          "path": "assets/images/locations/uae/dubai/skyline-dusk-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 91198
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-port-logistics-sunset",
+      "original_source": "assets/imgs/new-images/optimized/port-logistics-sunset.jpg",
+      "width": 1080,
+      "height": 608,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/kezad/port-logistics-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 83468
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/port-logistics-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 156288
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/port-logistics-1080.webp",
+          "width": 1080,
+          "height": 608,
+          "bytes": 175806
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/port-logistics-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 82998
+        },
+        {
+          "path": "assets/images/locations/uae/kezad/port-logistics-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 156084
+        }
+      ]
+    },
+    {
+      "key": "new-images-optimized-riyadh-kingdom-centre",
+      "original_source": "assets/imgs/new-images/optimized/riyadh-kingdom-centre.jpg",
+      "width": 1376,
+      "height": 621,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/kingdom-centre-640.webp",
+          "width": 640,
+          "height": 289,
+          "bytes": 67692
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/kingdom-centre-960.webp",
+          "width": 960,
+          "height": 433,
+          "bytes": 139484
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/kingdom-centre-1376.webp",
+          "width": 1376,
+          "height": 621,
+          "bytes": 251806
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/kingdom-centre-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 81316
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/kingdom-centre-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 159910
+        }
+      ]
+    },
+    {
+      "key": "newsletter-bg",
+      "original_source": "assets/imgs/newsletter-bg.png",
+      "width": 1440,
+      "height": 116,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/shared/backgrounds/newsletter-pattern-960.webp",
+          "width": 960,
+          "height": 77,
+          "bytes": 37838
+        },
+        {
+          "path": "assets/images/shared/backgrounds/newsletter-pattern-1440.webp",
+          "width": 1440,
+          "height": 116,
+          "bytes": 40068
+        }
+      ]
+    },
+    {
+      "key": "pricing-uae-offshore-documents-web",
+      "original_source": "assets/imgs/pricing/uae-offshore-documents-web.jpg",
+      "width": 1800,
+      "height": 1200,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/pricing/offshore-documents-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 66532
+        },
+        {
+          "path": "assets/images/pricing/offshore-documents-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 137364
+        },
+        {
+          "path": "assets/images/pricing/offshore-documents-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 331470
+        },
+        {
+          "path": "assets/images/pricing/offshore-documents-1800.webp",
+          "width": 1800,
+          "height": 1200,
+          "bytes": 390552
+        }
+      ]
+    },
+    {
+      "key": "rak-icc-marjan-island-breadcrumb",
+      "original_source": "assets/imgs/rak-icc/marjan-island-breadcrumb.jpg",
+      "width": 1000,
+      "height": 456,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/rak-icc/marjan-island-banner-960.webp",
+          "width": 960,
+          "height": 438,
+          "bytes": 105282
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/marjan-island-banner-1000.webp",
+          "width": 1000,
+          "height": 456,
+          "bytes": 107220
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/marjan-island-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 66988
+        },
+        {
+          "path": "assets/images/locations/uae/rak-icc/marjan-island-banner-mobile-811.webp",
+          "width": 811,
+          "height": 456,
+          "bytes": 96540
+        }
+      ]
+    },
+    {
+      "key": "saudi-riyadh-night-breadcrumb",
+      "original_source": "assets/imgs/saudi/riyadh-night-breadcrumb.webp",
+      "width": 2880,
+      "height": 1921,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/night-banner-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 131648
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/night-banner-1600.webp",
+          "width": 1600,
+          "height": 1067,
+          "bytes": 339592
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/night-banner-2880.webp",
+          "width": 2880,
+          "height": 1921,
+          "bytes": 698640
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/night-banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 56426
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/night-banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 117480
+        }
+      ]
+    },
+    {
+      "key": "saudi-saudi-business-district",
+      "original_source": "assets/imgs/saudi/saudi-business-district.webp",
+      "width": 1600,
+      "height": 1388,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/business-district-640.webp",
+          "width": 640,
+          "height": 555,
+          "bytes": 82520
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/business-district-960.webp",
+          "width": 960,
+          "height": 833,
+          "bytes": 158378
+        },
+        {
+          "path": "assets/images/locations/saudi-arabia/riyadh/business-district-1600.webp",
+          "width": 1600,
+          "height": 1388,
+          "bytes": 206424
+        }
+      ]
+    },
+    {
+      "key": "services-accounting-bookkeeping-breadcrumb-right",
+      "original_source": "assets/imgs/services/accounting-bookkeeping-breadcrumb-right.jpg",
+      "width": 2167,
+      "height": 726,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/accounting-bookkeeping/banner-960.webp",
+          "width": 960,
+          "height": 322,
+          "bytes": 87610
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/banner-1600.webp",
+          "width": 1600,
+          "height": 536,
+          "bytes": 189698
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/banner-2167.webp",
+          "width": 2167,
+          "height": 726,
+          "bytes": 290270
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 69554
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 130184
+        }
+      ]
+    },
+    {
+      "key": "services-accounting-bookkeeping",
+      "original_source": "assets/imgs/services/accounting-bookkeeping.webp",
+      "width": 1774,
+      "height": 887,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/accounting-bookkeeping/hero-640.webp",
+          "width": 640,
+          "height": 320,
+          "bytes": 74726
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/hero-960.webp",
+          "width": 960,
+          "height": 480,
+          "bytes": 142934
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/hero-1600.webp",
+          "width": 1600,
+          "height": 800,
+          "bytes": 306528
+        },
+        {
+          "path": "assets/images/services/accounting-bookkeeping/hero-1774.webp",
+          "width": 1774,
+          "height": 887,
+          "bytes": 193906
+        }
+      ]
+    },
+    {
+      "key": "services-business-structuring-breadcrumb-right",
+      "original_source": "assets/imgs/services/business-structuring-breadcrumb-right.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/business-structuring/banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 75756
+        },
+        {
+          "path": "assets/images/services/business-structuring/banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 170524
+        },
+        {
+          "path": "assets/images/services/business-structuring/banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 258232
+        },
+        {
+          "path": "assets/images/services/business-structuring/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 60450
+        },
+        {
+          "path": "assets/images/services/business-structuring/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 114660
+        }
+      ]
+    },
+    {
+      "key": "services-business-structuring-card",
+      "original_source": "assets/imgs/services/business-structuring-card.jpg",
+      "width": 1536,
+      "height": 1024,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/business-structuring/card-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 82438
+        },
+        {
+          "path": "assets/images/services/business-structuring/card-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 147986
+        },
+        {
+          "path": "assets/images/services/business-structuring/card-1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 276980
+        }
+      ]
+    },
+    {
+      "key": "services-business-structuring",
+      "original_source": "assets/imgs/services/business-structuring.webp",
+      "width": 1774,
+      "height": 887,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/business-structuring/hero-640.webp",
+          "width": 640,
+          "height": 320,
+          "bytes": 44694
+        },
+        {
+          "path": "assets/images/services/business-structuring/hero-960.webp",
+          "width": 960,
+          "height": 480,
+          "bytes": 82374
+        },
+        {
+          "path": "assets/images/services/business-structuring/hero-1600.webp",
+          "width": 1600,
+          "height": 800,
+          "bytes": 158684
+        },
+        {
+          "path": "assets/images/services/business-structuring/hero-1774.webp",
+          "width": 1774,
+          "height": 887,
+          "bytes": 103652
+        }
+      ]
+    },
+    {
+      "key": "services-business-support-breadcrumb-right",
+      "original_source": "assets/imgs/services/business-support-breadcrumb-right.jpg",
+      "width": 2170,
+      "height": 725,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/business-support/banner-960.webp",
+          "width": 960,
+          "height": 321,
+          "bytes": 71394
+        },
+        {
+          "path": "assets/images/services/business-support/banner-1600.webp",
+          "width": 1600,
+          "height": 535,
+          "bytes": 154910
+        },
+        {
+          "path": "assets/images/services/business-support/banner-2170.webp",
+          "width": 2170,
+          "height": 725,
+          "bytes": 240172
+        },
+        {
+          "path": "assets/images/services/business-support/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 46870
+        },
+        {
+          "path": "assets/images/services/business-support/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 86646
+        }
+      ]
+    },
+    {
+      "key": "services-business-support",
+      "original_source": "assets/imgs/services/business-support.webp",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/business-support/hero-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 79196
+        },
+        {
+          "path": "assets/images/services/business-support/hero-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 143496
+        },
+        {
+          "path": "assets/images/services/business-support/hero-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 291722
+        },
+        {
+          "path": "assets/images/services/business-support/hero-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 177104
+        }
+      ]
+    },
+    {
+      "key": "services-company-liquidation-breadcrumb-right",
+      "original_source": "assets/imgs/services/company-liquidation-breadcrumb-right.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/company-liquidation/banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 70698
+        },
+        {
+          "path": "assets/images/services/company-liquidation/banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 154486
+        },
+        {
+          "path": "assets/images/services/company-liquidation/banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 240556
+        },
+        {
+          "path": "assets/images/services/company-liquidation/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 50720
+        },
+        {
+          "path": "assets/images/services/company-liquidation/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 92370
+        }
+      ]
+    },
+    {
+      "key": "services-company-liquidation",
+      "original_source": "assets/imgs/services/company-liquidation.webp",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/company-liquidation/hero-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 45822
+        },
+        {
+          "path": "assets/images/services/company-liquidation/hero-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 83202
+        },
+        {
+          "path": "assets/images/services/company-liquidation/hero-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 166160
+        },
+        {
+          "path": "assets/images/services/company-liquidation/hero-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 94526
+        }
+      ]
+    },
+    {
+      "key": "services-corporate-compliance-breadcrumb-right",
+      "original_source": "assets/imgs/services/corporate-compliance-breadcrumb-right.jpg",
+      "width": 2162,
+      "height": 727,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/corporate-compliance/banner-960.webp",
+          "width": 960,
+          "height": 323,
+          "bytes": 84820
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/banner-1600.webp",
+          "width": 1600,
+          "height": 538,
+          "bytes": 185424
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/banner-2162.webp",
+          "width": 2162,
+          "height": 727,
+          "bytes": 282946
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 57476
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 102520
+        }
+      ]
+    },
+    {
+      "key": "services-corporate-compliance",
+      "original_source": "assets/imgs/services/corporate-compliance.webp",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/corporate-compliance/hero-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 69788
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/hero-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 138594
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/hero-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 307528
+        },
+        {
+          "path": "assets/images/services/corporate-compliance/hero-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 171266
+        }
+      ]
+    },
+    {
+      "key": "services-pro-services-breadcrumb-right",
+      "original_source": "assets/imgs/services/pro-services-breadcrumb-right.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/pro-services/banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 75698
+        },
+        {
+          "path": "assets/images/services/pro-services/banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 169714
+        },
+        {
+          "path": "assets/images/services/pro-services/banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 259348
+        },
+        {
+          "path": "assets/images/services/pro-services/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 60126
+        },
+        {
+          "path": "assets/images/services/pro-services/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 109780
+        }
+      ]
+    },
+    {
+      "key": "services-pro-services",
+      "original_source": "assets/imgs/services/pro-services.webp",
+      "width": 1672,
+      "height": 941,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/pro-services/hero-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 48862
+        },
+        {
+          "path": "assets/images/services/pro-services/hero-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 84328
+        },
+        {
+          "path": "assets/images/services/pro-services/hero-1600.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 154526
+        },
+        {
+          "path": "assets/images/services/pro-services/hero-1672.webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 89686
+        }
+      ]
+    },
+    {
+      "key": "services-services-main-breadcrumb-generated",
+      "original_source": "assets/imgs/services/services-main-breadcrumb-generated.jpg",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/services/overview/banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 73422
+        },
+        {
+          "path": "assets/images/services/overview/banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 172134
+        },
+        {
+          "path": "assets/images/services/overview/banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 283184
+        },
+        {
+          "path": "assets/images/services/overview/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 57282
+        },
+        {
+          "path": "assets/images/services/overview/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 112680
+        }
+      ]
+    },
+    {
+      "key": "sharjah-mainland-sharjah-breadcrumb-enhanced",
+      "original_source": "assets/imgs/sharjah-mainland/sharjah-breadcrumb-enhanced.webp",
+      "width": 2172,
+      "height": 724,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/banner-960.webp",
+          "width": 960,
+          "height": 320,
+          "bytes": 79464
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/banner-1600.webp",
+          "width": 1600,
+          "height": 533,
+          "bytes": 172844
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/banner-2172.webp",
+          "width": 2172,
+          "height": 724,
+          "bytes": 218430
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/banner-mobile-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 58930
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/banner-mobile-960.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 108078
+        }
+      ]
+    },
+    {
+      "key": "sharjah-mainland-sharjah",
+      "original_source": "assets/imgs/sharjah-mainland/sharjah.jpg",
+      "width": 5464,
+      "height": 3640,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/district-640.webp",
+          "width": 640,
+          "height": 426,
+          "bytes": 91562
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/district-960.webp",
+          "width": 960,
+          "height": 640,
+          "bytes": 195522
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/district-1600.webp",
+          "width": 1600,
+          "height": 1066,
+          "bytes": 506992
+        },
+        {
+          "path": "assets/images/locations/uae/sharjah-mainland/district-2880.webp",
+          "width": 2880,
+          "height": 1919,
+          "bytes": 1562768
+        }
+      ]
+    },
+    {
+      "key": "spc-freezone",
+      "original_source": "assets/imgs/spc-freezone.jpeg",
+      "width": 560,
+      "height": 540,
+      "quality": 94,
+      "variants": [
+        {
+          "path": "assets/images/locations/uae/spc-free-zone/campus-560.webp",
+          "width": 560,
+          "height": 540,
+          "bytes": 65352
+        }
+      ]
+    }
+  ]
+}

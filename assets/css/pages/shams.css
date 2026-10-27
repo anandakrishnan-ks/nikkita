@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* SHAMS Free Zone page-specific layouts. */
 .shams-redesign .hero-actions,
@@ -642,7 +642,7 @@
 .shams-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/shams/shams-creative-business-district.webp") !important;
+    var(--banner-freezone-web-sharjah-skyline-pexels) !important;
   background-position: center 54% !important;
 }
 
@@ -1140,6 +1140,186 @@
 
   .shams-redesign .lead-form {
     padding: 27px 20px 24px;
+  }
+}
+
+/* Compact considerations and advisory support sections. */
+.shams-redesign #overview .overview-visual {
+  height: auto;
+  min-height: 0;
+  margin: 0;
+}
+
+.shams-redesign #overview .shams-overview-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.shams-redesign #overview .photo-tag {
+  position: static;
+  width: auto;
+  max-width: none;
+  padding: 18px 20px;
+}
+
+.shams-redesign #considerations,
+.shams-redesign #why-nikki {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.shams-redesign #considerations .compact-head,
+.shams-redesign #why-nikki .compact-head {
+  margin-bottom: 20px;
+}
+
+.shams-redesign #considerations .considerations-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.shams-redesign #considerations .content-card {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  row-gap: 3px;
+  align-content: center;
+  align-items: start;
+  min-height: 0;
+  padding: 16px 18px;
+}
+
+.shams-redesign #considerations .content-card i {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  width: 38px;
+  height: 38px;
+  font-size: 30px;
+}
+
+.shams-redesign #considerations .content-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.shams-redesign #considerations .content-card p {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.shams-redesign #considerations .source-note {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.shams-redesign #why-nikki .support-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.shams-redesign #why-nikki .support-card {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  grid-template-rows: auto;
+  gap: 12px;
+  align-content: center;
+  align-items: center;
+  min-height: 70px;
+  padding: 15px 17px;
+}
+
+.shams-redesign #why-nikki .support-card i {
+  grid-column: 1;
+  grid-row: 1;
+  width: 36px;
+  height: 36px;
+  font-size: 28px;
+}
+
+.shams-redesign #why-nikki .support-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.shams-redesign #why-nikki .advisory-callout {
+  gap: 14px;
+  margin-top: 16px;
+  padding: 18px 20px;
+}
+
+.shams-redesign #why-nikki .section-actions {
+  margin-top: 18px;
+}
+
+.shams-redesign #why-nikki .related-links {
+  gap: 8px 16px;
+  margin-top: 18px;
+  padding-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .shams-redesign #considerations .considerations-grid,
+  .shams-redesign #why-nikki .support-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shams-redesign #why-nikki .support-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 5px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .shams-redesign #considerations,
+  .shams-redesign #why-nikki {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .shams-redesign #considerations .considerations-grid,
+  .shams-redesign #why-nikki .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shams-redesign #considerations .content-card {
+    grid-template-columns: 36px minmax(0, 1fr);
+    padding: 15px 16px;
+  }
+
+  .shams-redesign #considerations .content-card i {
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+  }
+
+  .shams-redesign #why-nikki .support-card:last-child {
+    grid-column: auto;
+    width: auto;
+    justify-self: stretch;
+  }
+
+  .shams-redesign #why-nikki .advisory-callout {
+    padding: 17px 16px;
+  }
+
+  .shams-redesign #why-nikki .related-links {
+    flex-direction: row;
+    gap: 8px 14px;
+    align-items: center;
   }
 }
 

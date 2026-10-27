@@ -1,4 +1,14 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
+
+/* Preserve the shared breadcrumb dimensions while framing the Abu Dhabi skyline. */
+.abu-dhabi-mainland-breadcrumb::before {
+  background-image:
+    linear-gradient(90deg, rgba(9, 27, 22, 0.62), rgba(9, 27, 22, 0.24) 52%, rgba(9, 27, 22, 0.08)),
+    var(--banner-abu-dhabi-mainland-abu-dhabi-breadcrumb-enhanced) !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 
 /* Abu Dhabi Mainland page-specific layouts. */
 .abu-dhabi-mainland-redesign .hero-actions,

@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* DAFZA Free Zone page-specific layouts. */
 .dafza-redesign .hero-actions,
@@ -642,7 +642,7 @@
 .dafza-breadcrumb::before {
   background-image:
     linear-gradient(90deg, rgba(9, 27, 22, 0.91), rgba(9, 27, 22, 0.58) 58%, rgba(9, 27, 22, 0.75)),
-    url("../../imgs/dafza/dafza-airport-business-district.jpg") !important;
+    var(--banner-new-images-optimized-dubai-skyline-dusk) !important;
   background-position: center 52% !important;
 }
 
@@ -921,6 +921,16 @@
   position: relative;
   min-height: 360px;
   overflow: hidden;
+}
+
+.dafza-redesign #cost .facility-visual > .cover {
+  position: absolute;
+  inset: 0;
+  object-position: 60% center;
+}
+
+.dafza-redesign #cost .facility-overlay {
+  max-width: 340px;
 }
 
 .dafza-redesign .facility-visual::after {

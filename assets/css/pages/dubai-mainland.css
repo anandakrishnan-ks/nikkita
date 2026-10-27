@@ -1,1 +1,28 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
+
+.dubai-mainland-redesign .hero-image .cover {
+  object-position: center;
+}
+
+.dubai-mainland-redesign #why-nikki .advisor-image .cover {
+  object-position: 60% center;
+}
+
+.dubai-mainland-redesign .wide-image::after {
+  background: linear-gradient(
+    90deg,
+    #0a2d23 0%,
+    #0a2d23 35%,
+    rgba(10, 45, 35, 0.9) 55%,
+    rgba(10, 45, 35, 0.5) 78%,
+    rgba(10, 45, 35, 0.08) 100%
+  );
+}
+
+.dubai-mainland-redesign .requirements .req-list {
+  grid-template-columns: 1fr;
+}
+
+.dubai-mainland-redesign .requirements .req-item {
+  padding: 10px 0;
+}

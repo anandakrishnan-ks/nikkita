@@ -1,4 +1,4 @@
-@import url("mainland-base.css");
+@import url("mainland-base.css?v=20261023-banners-search");
 
 /* DMCC Free Zone page-specific layouts. */
 .dmcc-redesign .hero-actions,
@@ -10,7 +10,7 @@
 }
 
 .dmcc-redesign .hero-image .cover {
-  object-position: center 44%;
+  object-position: center 35%;
 }
 
 .dmcc-redesign .hero-content p {
