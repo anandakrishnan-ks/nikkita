@@ -3,6 +3,14 @@
 Static HTML, CSS and JavaScript, with PHP for enquiry delivery and Apache
 `.htaccess` rules for clean URLs and historical redirects. No build is required.
 
+Live website: [nikkiadvisory.com](https://nikkiadvisory.com/). The current catalog
+contains 57 canonical public pages, including nine blog articles, plus the custom
+404 page. The repository includes the website source, responsive assets, enquiry
+delivery code, SEO tooling and maintenance documentation.
+
+Documentation updated: **27 October 2026**. The latest performance work is a
+prepared plan; its proposed changes have not been implemented.
+
 ## Layout
 
 ```text
@@ -208,3 +216,49 @@ use real account-provided DNS records or verification files; no placeholder
 verification values are shipped. Preserve any existing verification records
 when deploying, submit `https://nikkiadvisory.com/sitemap.xml`, then inspect
 representative pages and rerun the public PageSpeed audit after upload.
+
+## Performance improvement plan
+
+The [performance plan](tools/performance-plan.md) records the analysis, priorities,
+affected files, validation steps and acceptance criteria. The
+[saved baseline](tools/performance-baseline-2026-10-27.json) contains extracted
+results from the [PageSpeed report](https://pagespeed.web.dev/analysis/https-nikkiadvisory-com/m4tk0k97fl?form_factor=desktop)
+run on **27 October 2026 at approximately 11:06 AM IST**, plus subsequent live
+resource checks and local browser observations.
+
+| Lighthouse category | Desktop baseline | Mobile baseline |
+| --- | ---: | ---: |
+| Performance | 89 | 79 |
+| Accessibility | 93 | 97 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+
+These are saved homepage laboratory results, not scores for every page. The report
+does not have sufficient real-user data. Performance improvements remain pending;
+the baseline website source is preserved in
+[commit 5427d47](https://github.com/anandakrishnan-ks/nikkita/commit/5427d478b12edf09f9cf8cdc539bc024ad6b69c7).
+
+Implementation priorities are:
+
+1. Reproduce and fix the desktop hero/header layout shift.
+2. Reduce the CSS that blocks the first screen, preserving responsive and
+   interactive states.
+3. Optimize delivery of the existing fonts and icons.
+4. Improve responsive image selection, compression and below-screen loading.
+5. Validate appearance, menus, carousel controls, forms and other interactions
+   across device sizes and representative page templates.
+
+Preserve the current design, typefaces, photography, responsive layouts and
+functionality. Keep changes small and compare screenshots and behavior after
+each batch. The target is **at least 91 in every one of three fresh homepage
+PageSpeed runs per device**, aiming for a median of **95 or better**, while
+preserving or improving Accessibility, Best Practices and SEO. Extend validation
+to representative public landing pages before completing the broader rollout.
+
+The pre-performance dependency check found no missing dependencies, duplicate
+images or broken internal links. It currently reports the two performance
+planning files above as unreferenced because they have not been added to its
+maintenance allowlist. The SEO audit passed for all 57 canonical public pages.
+These checks do not establish that the proposed optimizations are implemented
+or that their target scores have been achieved. Keep the planning files in Git;
+exclude them with the rest of `tools/` from production uploads.
